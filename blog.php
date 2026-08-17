@@ -1,7 +1,45 @@
 <?php include 'includes/header.php'; ?>
 
 <?php
-// Fetch Slider Blogs (Featured blogs first, then latest published)
+$searchQuery = isset($_GET['search']) ? trim($_GET['search']) : '';
+$tagQuery = isset($_GET['tag']) ? trim($_GET['tag']) : '';
+
+$filteredBlogs = null;
+if (!empty($searchQuery) && isset($pdo) && $pdo) {
+    try {
+        $stmt = $pdo->prepare("
+            SELECT b.*, c.name as category_name 
+            FROM blogs b 
+            LEFT JOIN categories c ON b.category_id = c.id 
+            WHERE b.status = 'published' 
+            AND (b.published_at IS NULL OR b.published_at <= NOW()) 
+            AND (b.title LIKE :s OR b.short_description LIKE :s OR b.content LIKE :s) 
+            ORDER BY b.is_featured DESC, COALESCE(b.published_at, b.created_at) DESC
+        ");
+        $stmt->execute(['s' => '%' . $searchQuery . '%']);
+        $filteredBlogs = $stmt->fetchAll();
+    } catch (Exception $e) {
+        error_log("Error in blog search: " . $e->getMessage());
+    }
+} elseif (!empty($tagQuery) && isset($pdo) && $pdo) {
+    try {
+        $stmt = $pdo->prepare("
+            SELECT b.*, c.name as category_name 
+            FROM blogs b 
+            LEFT JOIN categories c ON b.category_id = c.id 
+            WHERE b.status = 'published' 
+            AND (b.published_at IS NULL OR b.published_at <= NOW()) 
+            AND (b.tags LIKE :t OR b.meta_keywords LIKE :t) 
+            ORDER BY b.is_featured DESC, COALESCE(b.published_at, b.created_at) DESC
+        ");
+        $stmt->execute(['t' => '%' . $tagQuery . '%']);
+        $filteredBlogs = $stmt->fetchAll();
+    } catch (Exception $e) {
+        error_log("Error in tag filter: " . $e->getMessage());
+    }
+}
+
+// Fetch Slider Blogs
 $sliderBlogs = [];
 if (isset($pdo) && $pdo) {
     try {
@@ -50,7 +88,6 @@ if (isset($pdo) && $pdo) {
             $blogStmt->execute(['cat_id' => $cat['id']]);
             $catBlogs = $blogStmt->fetchAll();
             
-            // STRICT CONDITION: Only include category if it has at least 1 published blog
             if (!empty($catBlogs)) {
                 $categoriesWithBlogs[] = [
                     'category' => $cat,
@@ -59,7 +96,7 @@ if (isset($pdo) && $pdo) {
             }
         }
 
-        // Fetch uncategorized published blogs if any
+        // Uncategorized blogs
         $uncatStmt = $pdo->query("
             SELECT b.*, 'Uncategorized' as category_name 
             FROM blogs b 
@@ -92,181 +129,249 @@ if (isset($pdo) && $pdo) {
     <div class="container">
         <div class="page-heading">
             <div class="breadcrumb-sub-title">
-                <h1 class="wow fadeInUp" data-wow-delay=".3s">Blog</h1>
+                <h1 class="wow fadeInUp" data-wow-delay=".3s">
+                    <?php if (!empty($searchQuery)): ?>
+                        Search: "<?= htmlspecialchars($searchQuery) ?>"
+                    <?php elseif (!empty($tagQuery)): ?>
+                        Tag: #<?= htmlspecialchars($tagQuery) ?>
+                    <?php else: ?>
+                        Blog
+                    <?php endif; ?>
+                </h1>
             </div>
             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
-                <li>
-                    <a href="index.php">Home</a>
-                </li>
-                <li>
-                    <i class="fa-solid fa-chevron-right"></i>
-                </li>
-                <li>Blog</li>
+                <li><a href="index.php">Home</a></li>
+                <li><i class="fa-solid fa-chevron-right"></i></li>
+                <li><a href="blog.php">Blog</a></li>
+                <?php if (!empty($searchQuery) || !empty($tagQuery)): ?>
+                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                    <li>Filtered Results</li>
+                <?php endif; ?>
             </ul>
         </div>
     </div>
 </div>
 
-<section class="news-section section-padding section-bg bg-white">
-    <div class="left-shape">
-        <img src="assets/img/news/left-shape.png" alt="img">
-    </div>
-
-    <div class="container">
-        <div class="section-title-area d-flex flex-wrap justify-content-between align-items-start mb-5">
-            <div class="section-title mb-0">
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Technology Insights & <br>Resources
-                </h2>
-                <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    Stay ahead with expert insights on AI, software development, web technologies, mobile apps, cloud
-                    computing, UI/UX design, digital transformation, and emerging technology trends. Explore practical
-                    guides, industry updates, and best practices from the Webwiders team.
-                </p>
-            </div>
-            <div class="main-button wow fadeInUp" data-wow-delay=".5s">
-                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#getCallOffcanvas"> <span class="theme-btn">
-                        Get a Call </span><span class="arrow-btn"><i class="fa-solid fa-turn-up"></i></span></a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Latest Updates Swiper Section -->
-<section class="testimonial-section fix section-padding pt-0" style="background: #f9f9fc;">
-    <div class="container">
-        <div class="testimonial-wrapper">
-
-            <!-- Section Title Area -->
-            <div class="section-title-area mb-5">
-                <div class="section-title">
-                    <div class="sub-title bg-color-2 wow fadeInUp">
-                        <span>LATEST UPDATES</span>
-                    </div>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                        Our Latest News <br> & Insights
-                    </h2>
-                </div>
-            </div>
-
-            <!-- Blog Slider Area -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="swiper brand-slider">
-                        <div class="swiper-wrapper">
-                            <?php if (!empty($sliderBlogs)): ?>
-                                <?php foreach ($sliderBlogs as $slide): ?>
-                                    <div class="swiper-slide">
-                                        <div class="news-standard-wrapper"
-                                            style="background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                                            <div class="news-standard-items row">
-                                                <div class="col-12">
-                                                    <div class="thumb">
-                                                        <img src="<?= htmlspecialchars(get_blog_image_url($slide['featured_image'])) ?>" 
-                                                             alt="<?= htmlspecialchars($slide['title']) ?>"
-                                                             style="width: 100%; height: 240px; object-fit: cover; border-radius: 8px;">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 d-flex align-items-center mt-4">
-                                                    <div class="content text-content-right w-100">
-                                                        <p style="color: #666; margin-bottom: 10px;">
-                                                            <small><i class="fa-regular fa-calendar-days me-2"></i> <?= date('F j, Y', strtotime($slide['published_at'] ?? $slide['created_at'])) ?></small>
-                                                            <?php if (!empty($slide['category_name'])): ?>
-                                                                <span class="badge bg-secondary ms-2"><?= htmlspecialchars($slide['category_name']) ?></span>
-                                                            <?php endif; ?>
-                                                            <?php if (!empty($slide['is_featured'])): ?>
-                                                                <span class="badge bg-warning text-dark ms-1"><i class="fa-solid fa-star me-1"></i>Featured</span>
-                                                            <?php endif; ?>
-                                                        </p>
-                                                        <h3 class="mb-3" style="font-size: 20px; color: #222; min-height: 52px;"><?= htmlspecialchars($slide['title']) ?></h3>
-                                                        <a href="blog-detail.php?slug=<?= urlencode($slide['slug']) ?>" class="theme-btn">See Details</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <?php endforeach; ?>
-                            <?php else: ?>
-                                <div class="swiper-slide">
-                                    <div class="news-standard-wrapper text-center p-4" style="background: #fff; border-radius: 12px;">
-                                        <p class="mb-0">No published blogs found at the moment.</p>
-                                    </div>
-                                </div>
-                            <?php endif; ?>
-                        </div>
-                        <div class="swiper-pagination mt-4 position-relative"></div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- Dynamic Category Sections (ONLY SHOWS CATEGORIES WITH AT LEAST 1 PUBLISHED BLOG) -->
-<?php if (!empty($categoriesWithBlogs)): ?>
-    <?php 
-    $sectionIdx = 0;
-    foreach ($categoriesWithBlogs as $catGroup): 
-        $cat = $catGroup['category'];
-        $blogs = $catGroup['blogs'];
-        $bgStyle = ($sectionIdx % 2 === 1) ? 'style="background: #f0eeee"' : '';
-        $sectionIdx++;
-    ?>
-    <section class="section-padding news-section" id="cat-<?= htmlspecialchars($cat['slug'] ?? 'cat') ?>" <?= $bgStyle ?>>
+<!-- Search or Tag Filtered Results View -->
+<?php if ($filteredBlogs !== null): ?>
+    <section class="section-padding news-section">
         <div class="container blogs-container">
             <div class="section-title-area mb-5">
                 <div class="section-title">
-                    <div class="sub-title bg-color-2 wow fadeInUp">
-                        <span><?= htmlspecialchars($cat['name']) ?></span>
-                    </div>
-                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                        <?= htmlspecialchars($cat['name']) ?>
+                    <h2>
+                        <?php if (!empty($searchQuery)): ?>
+                            Search Results for "<?= htmlspecialchars($searchQuery) ?>"
+                        <?php else: ?>
+                            Blogs tagged with "#<?= htmlspecialchars($tagQuery) ?>"
+                        <?php endif; ?>
                     </h2>
+                    <p class="text-muted">Found <?= count($filteredBlogs) ?> post(s)</p>
                 </div>
+                <a href="blog.php" class="btn btn-outline-secondary">Clear Filter</a>
             </div>
-            <div class="row g-4">
-                <?php foreach ($blogs as $blog): ?>
-                    <div class="col-md-6 col-12">
-                        <div class="news-standard-wrapper h-100" style="background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                            <div class="news-standard-items row">
-                                <div class="col-12">
-                                    <div class="thumb">
-                                        <img src="<?= htmlspecialchars(get_blog_image_url($blog['featured_image'])) ?>" 
-                                             alt="<?= htmlspecialchars($blog['title']) ?>"
-                                             style="width: 100%; height: 260px; object-fit: cover; border-radius: 8px;">
+
+            <?php if (!empty($filteredBlogs)): ?>
+                <div class="row g-4">
+                    <?php foreach ($filteredBlogs as $fblog): ?>
+                        <div class="col-md-6 col-12">
+                            <div class="news-standard-wrapper h-100" style="background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                                <div class="news-standard-items row">
+                                    <div class="col-12">
+                                        <div class="thumb">
+                                            <img src="<?= htmlspecialchars(get_blog_image_url($fblog['featured_image'])) ?>" 
+                                                 alt="<?= htmlspecialchars($fblog['title']) ?>"
+                                                 style="width: 100%; height: 260px; object-fit: cover; border-radius: 8px;">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12 d-flex align-items-center mt-3">
-                                    <div class="content text-content-right w-100">
-                                        <p>
-                                            <small><i class="fa-regular fa-calendar-days me-1"></i> <?= date('F j, Y', strtotime($blog['published_at'] ?? $blog['created_at'])) ?></small>
-                                            <small class="ms-2 text-muted"><i class="fa-regular fa-user me-1"></i> <?= htmlspecialchars($blog['author'] ?? 'Admin') ?></small>
-                                        </p>
-                                        <h3 style="font-size: 20px; color: #222;"><?= htmlspecialchars($blog['title']) ?></h3>
-                                        <?php if (!empty($blog['short_description'])): ?>
-                                            <p class="text-muted mt-2 mb-3" style="font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
-                                                <?= htmlspecialchars($blog['short_description']) ?>
+                                    <div class="col-12 d-flex align-items-center mt-3">
+                                        <div class="content text-content-right w-100">
+                                            <p>
+                                                <small><i class="fa-regular fa-calendar-days me-1"></i> <?= date('F j, Y', strtotime($fblog['published_at'] ?? $fblog['created_at'])) ?></small>
+                                                <?php if (!empty($fblog['category_name'])): ?>
+                                                    <span class="badge bg-secondary ms-2"><?= htmlspecialchars($fblog['category_name']) ?></span>
+                                                <?php endif; ?>
                                             </p>
-                                        <?php endif; ?>
-                                        <a href="blog-detail.php?slug=<?= urlencode($blog['slug']) ?>" class="theme-btn mt-2">See Details</a>
+                                            <h3 style="font-size: 20px; color: #222;"><?= htmlspecialchars($fblog['title']) ?></h3>
+                                            <?php if (!empty($fblog['short_description'])): ?>
+                                                <p class="text-muted mt-2 mb-3" style="font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                                    <?= htmlspecialchars($fblog['short_description']) ?>
+                                                </p>
+                                            <?php endif; ?>
+                                            <a href="blog-detail.php?slug=<?= urlencode($fblog['slug']) ?>" class="theme-btn mt-2">See Details</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                <?php endforeach; ?>
+                    <?php endforeach; ?>
+                </div>
+            <?php else: ?>
+                <div class="text-center py-5">
+                    <h4>No blogs found matching your search.</h4>
+                    <a href="blog.php" class="theme-btn mt-3">View All Blogs</a>
+                </div>
+            <?php endif; ?>
+        </div>
+    </section>
+<?php else: ?>
+    <!-- Normal Blog Page View -->
+    <section class="news-section section-padding section-bg bg-white">
+        <div class="left-shape">
+            <img src="assets/img/news/left-shape.png" alt="img">
+        </div>
+
+        <div class="container">
+            <div class="section-title-area d-flex flex-wrap justify-content-between align-items-start mb-5">
+                <div class="section-title mb-0">
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                        Technology Insights & <br>Resources
+                    </h2>
+                    <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
+                        Stay ahead with expert insights on AI, software development, web technologies, mobile apps, cloud
+                        computing, UI/UX design, digital transformation, and emerging technology trends. Explore practical
+                        guides, industry updates, and best practices from the Webwiders team.
+                    </p>
+                </div>
+                <div class="main-button wow fadeInUp" data-wow-delay=".5s">
+                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#getCallOffcanvas"> <span class="theme-btn">
+                            Get a Call </span><span class="arrow-btn"><i class="fa-solid fa-turn-up"></i></span></a>
+                </div>
             </div>
         </div>
     </section>
-    <?php endforeach; ?>
-<?php else: ?>
-    <section class="section-padding news-section">
-        <div class="container text-center">
-            <h3>No blogs available.</h3>
-            <p class="text-muted">Please add and publish blogs from the Admin Panel.</p>
+
+    <!-- Latest Updates Swiper Section -->
+    <section class="testimonial-section fix section-padding pt-0" style="background: #f9f9fc;">
+        <div class="container">
+            <div class="testimonial-wrapper">
+                <div class="section-title-area mb-5">
+                    <div class="section-title">
+                        <div class="sub-title bg-color-2 wow fadeInUp">
+                            <span>LATEST UPDATES</span>
+                        </div>
+                        <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                            Our Latest News <br> & Insights
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="swiper brand-slider">
+                            <div class="swiper-wrapper">
+                                <?php if (!empty($sliderBlogs)): ?>
+                                    <?php foreach ($sliderBlogs as $slide): ?>
+                                        <div class="swiper-slide">
+                                            <div class="news-standard-wrapper"
+                                                style="background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                                                <div class="news-standard-items row">
+                                                    <div class="col-12">
+                                                        <div class="thumb">
+                                                            <img src="<?= htmlspecialchars(get_blog_image_url($slide['featured_image'])) ?>" 
+                                                                 alt="<?= htmlspecialchars($slide['title']) ?>"
+                                                                 style="width: 100%; height: 240px; object-fit: cover; border-radius: 8px;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 d-flex align-items-center mt-4">
+                                                        <div class="content text-content-right w-100">
+                                                            <p style="color: #666; margin-bottom: 10px;">
+                                                                <small><i class="fa-regular fa-calendar-days me-2"></i> <?= date('F j, Y', strtotime($slide['published_at'] ?? $slide['created_at'])) ?></small>
+                                                                <?php if (!empty($slide['category_name'])): ?>
+                                                                    <span class="badge bg-secondary ms-2"><?= htmlspecialchars($slide['category_name']) ?></span>
+                                                                <?php endif; ?>
+                                                                <?php if (!empty($slide['is_featured'])): ?>
+                                                                    <span class="badge bg-warning text-dark ms-1"><i class="fa-solid fa-star me-1"></i>Featured</span>
+                                                                <?php endif; ?>
+                                                            </p>
+                                                            <h3 class="mb-3" style="font-size: 20px; color: #222; min-height: 52px;"><?= htmlspecialchars($slide['title']) ?></h3>
+                                                            <a href="blog-detail.php?slug=<?= urlencode($slide['slug']) ?>" class="theme-btn">See Details</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                <?php else: ?>
+                                    <div class="swiper-slide">
+                                        <div class="news-standard-wrapper text-center p-4" style="background: #fff; border-radius: 12px;">
+                                            <p class="mb-0">No published blogs found at the moment.</p>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
+                            <div class="swiper-pagination mt-4 position-relative"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Dynamic Category Sections -->
+    <?php if (!empty($categoriesWithBlogs)): ?>
+        <?php 
+        $sectionIdx = 0;
+        foreach ($categoriesWithBlogs as $catGroup): 
+            $cat = $catGroup['category'];
+            $blogs = $catGroup['blogs'];
+            $bgStyle = ($sectionIdx % 2 === 1) ? 'style="background: #f0eeee"' : '';
+            $sectionIdx++;
+        ?>
+        <section class="section-padding news-section" id="cat-<?= htmlspecialchars($cat['slug'] ?? 'cat') ?>" <?= $bgStyle ?>>
+            <div class="container blogs-container">
+                <div class="section-title-area mb-5">
+                    <div class="section-title">
+                        <div class="sub-title bg-color-2 wow fadeInUp">
+                            <span><?= htmlspecialchars($cat['name']) ?></span>
+                        </div>
+                        <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                            <?= htmlspecialchars($cat['name']) ?>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <?php foreach ($blogs as $blog): ?>
+                        <div class="col-md-6 col-12">
+                            <div class="news-standard-wrapper h-100" style="background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                                <div class="news-standard-items row">
+                                    <div class="col-12">
+                                        <div class="thumb">
+                                            <img src="<?= htmlspecialchars(get_blog_image_url($blog['featured_image'])) ?>" 
+                                                 alt="<?= htmlspecialchars($blog['title']) ?>"
+                                                 style="width: 100%; height: 260px; object-fit: cover; border-radius: 8px;">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex align-items-center mt-3">
+                                        <div class="content text-content-right w-100">
+                                            <p>
+                                                <small><i class="fa-regular fa-calendar-days me-1"></i> <?= date('F j, Y', strtotime($blog['published_at'] ?? $blog['created_at'])) ?></small>
+                                                <small class="ms-2 text-muted"><i class="fa-regular fa-user me-1"></i> <?= htmlspecialchars($blog['author'] ?? 'Admin') ?></small>
+                                            </p>
+                                            <h3 style="font-size: 20px; color: #222;"><?= htmlspecialchars($blog['title']) ?></h3>
+                                            <?php if (!empty($blog['short_description'])): ?>
+                                                <p class="text-muted mt-2 mb-3" style="font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                                    <?= htmlspecialchars($blog['short_description']) ?>
+                                                </p>
+                                            <?php endif; ?>
+                                            <a href="blog-detail.php?slug=<?= urlencode($blog['slug']) ?>" class="theme-btn mt-2">See Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </section>
+        <?php endforeach; ?>
+    <?php else: ?>
+        <section class="section-padding news-section">
+            <div class="container text-center">
+                <h3>No blogs available.</h3>
+                <p class="text-muted">Please add and publish blogs from the Admin Panel.</p>
+            </div>
+        </section>
+    <?php endif; ?>
 <?php endif; ?>
 
 <!-- Cta Section Start -->

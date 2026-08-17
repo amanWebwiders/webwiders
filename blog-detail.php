@@ -5,8 +5,8 @@ $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 $blog = null;
 $recentBlogs = [];
 $sidebarCategories = [];
+$allSidebarTags = [];
 
-// Require DB connection directly before header to set meta titles if needed
 require_once __DIR__ . '/config.php';
 
 if (isset($pdo) && $pdo) {
@@ -35,7 +35,7 @@ if (isset($pdo) && $pdo) {
             $blog = $stmt->fetch();
         }
 
-        // Fallback to latest published blog if no specific post requested or found
+        // Fallback to latest published blog if no post specified
         if (!$blog) {
             $stmt = $pdo->query("
                 SELECT b.*, c.name as category_name, c.slug as category_slug 
@@ -49,7 +49,7 @@ if (isset($pdo) && $pdo) {
             $blog = $stmt->fetch();
         }
 
-        // Recent blogs
+        // Recent blogs for sidebar
         $recentStmt = $pdo->query("
             SELECT b.*, c.name as category_name 
             FROM blogs b 
@@ -61,7 +61,7 @@ if (isset($pdo) && $pdo) {
         ");
         $recentBlogs = $recentStmt->fetchAll();
 
-        // Categories list - ONLY categories with published blogs (blog_count > 0)
+        // Categories list for sidebar (only active categories)
         $catStmt = $pdo->query("
             SELECT c.*, COUNT(b.id) as blog_count 
             FROM categories c
@@ -71,6 +71,29 @@ if (isset($pdo) && $pdo) {
             ORDER BY c.name ASC
         ");
         $sidebarCategories = $catStmt->fetchAll();
+
+        // Collect all distinct tags across published blogs for sidebar tagcloud
+        $tagsStmt = $pdo->query("
+            SELECT tags, meta_keywords 
+            FROM blogs 
+            WHERE status = 'published' 
+            AND (published_at IS NULL OR published_at <= NOW())
+        ");
+        $tagRows = $tagsStmt->fetchAll();
+        $tagSet = [];
+        foreach ($tagRows as $trow) {
+            $rawTags = !empty($trow['tags']) ? $trow['tags'] : $trow['meta_keywords'];
+            if (!empty($rawTags)) {
+                $parts = explode(',', $rawTags);
+                foreach ($parts as $p) {
+                    $cleanP = trim($p);
+                    if ($cleanP !== '' && !in_array($cleanP, $tagSet)) {
+                        $tagSet[] = $cleanP;
+                    }
+                }
+            }
+        }
+        $allSidebarTags = array_slice($tagSet, 0, 12);
     } catch (Exception $e) {
         error_log("Error in blog-detail.php: " . $e->getMessage());
     }
@@ -78,6 +101,13 @@ if (isset($pdo) && $pdo) {
 ?>
 
 <?php include 'includes/header.php'; ?>
+
+<!-- Dynamic Page Meta Title if Blog exists -->
+<?php if ($blog && !empty($blog['meta_title'])): ?>
+    <script>document.title = "<?= addslashes($blog['meta_title']) ?>";</script>
+<?php elseif ($blog): ?>
+    <script>document.title = "<?= addslashes($blog['title']) ?> - WebWiders";</script>
+<?php endif; ?>
 
 <!-- Breadcrumb Section Start -->
 <div class="breadcrumb-wrapper bg-cover">
@@ -162,12 +192,59 @@ if (isset($pdo) && $pdo) {
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Dynamic Tags / Hashtags & Social Share Section -->
+                            <div class="row tag-share-wrap mt-5 mb-5 pt-4 border-top">
+                                <div class="col-lg-8 col-12">
+                                    <?php 
+                                    $blogTags = !empty($blog['tags']) ? array_map('trim', explode(',', $blog['tags'])) : (!empty($blog['meta_keywords']) ? array_map('trim', explode(',', $blog['meta_keywords'])) : []);
+                                    ?>
+                                    <?php if (!empty($blogTags)): ?>
+                                        <div class="tagcloud">
+                                            <span>Tags:</span>
+                                            <?php foreach ($blogTags as $btag): ?>
+                                                <a href="blog.php?tag=<?= urlencode($btag) ?>"><?= htmlspecialchars($btag) ?></a>
+                                            <?php endforeach; ?>
+                                        </div>
+                                    <?php endif; ?>
+                                </div>
+                                <div class="col-lg-4 col-12 mt-3 mt-lg-0 text-lg-end">
+                                    <div class="social-share">
+                                        <span class="me-3 fw-bold">Share:</span>
+                                        <?php 
+                                        $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? 'https' : 'http';
+                                        $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+                                        $reqUri = $_SERVER['REQUEST_URI'] ?? '';
+                                        $fullUrl = urlencode($protocol . '://' . $host . $reqUri);
+                                        $encodedTitle = urlencode($blog['title']);
+                                        ?>
+                                        <a href="https://www.facebook.com/sharer/sharer.php?u=<?= $fullUrl ?>" target="_blank" class="me-2 text-dark" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://twitter.com/intent/tweet?url=<?= $fullUrl ?>&text=<?= $encodedTitle ?>" target="_blank" class="me-2 text-dark" title="Share on X/Twitter"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=<?= $fullUrl ?>" target="_blank" class="me-2 text-dark" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="https://api.whatsapp.com/send?text=<?= $encodedTitle ?>%20<?= $fullUrl ?>" target="_blank" class="text-success" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Sidebar -->
+                    <!-- Sidebar Section -->
                     <div class="col-12 col-lg-4">
                         <div class="main-sidebar sticky-style">
+                            <!-- Search Widget -->
+                            <div class="single-sidebar-widget mb-4">
+                                <div class="wid-title">
+                                    <h4>Search</h4>
+                                </div>
+                                <div class="search-widget">
+                                    <form action="blog.php" method="GET">
+                                        <input type="text" name="search" placeholder="Search blogs..." required>
+                                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <!-- Categories Widget -->
                             <?php if (!empty($sidebarCategories)): ?>
                                 <div class="single-sidebar-widget mb-4">
                                     <div class="wid-title">
@@ -188,6 +265,7 @@ if (isset($pdo) && $pdo) {
                                 </div>
                             <?php endif; ?>
 
+                            <!-- Recent Posts Widget -->
                             <?php if (!empty($recentBlogs)): ?>
                                 <div class="single-sidebar-widget mb-4">
                                     <div class="wid-title">
@@ -214,6 +292,22 @@ if (isset($pdo) && $pdo) {
                                                 </div>
                                             </div>
                                         <?php endforeach; ?>
+                                    </div>
+                                </div>
+                            <?php endif; ?>
+
+                            <!-- Popular Tags / Hashtags Widget -->
+                            <?php if (!empty($allSidebarTags)): ?>
+                                <div class="single-sidebar-widget mb-4">
+                                    <div class="wid-title">
+                                        <h4>Popular Tags</h4>
+                                    </div>
+                                    <div class="news-widget-categories">
+                                        <div class="tagcloud">
+                                            <?php foreach ($allSidebarTags as $stag): ?>
+                                                <a href="blog.php?tag=<?= urlencode($stag) ?>"><?= htmlspecialchars($stag) ?></a>
+                                            <?php endforeach; ?>
+                                        </div>
                                     </div>
                                 </div>
                             <?php endif; ?>
