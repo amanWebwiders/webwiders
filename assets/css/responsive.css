@@ -1,0 +1,258 @@
+@media screen and (min-width:1400px) {
+    .contact-section::before {
+        right: 0px;
+        left: 0px;
+        border-radius: 0px;
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width:1024px) {
+    .contact-section::before {
+        left: 26px;
+        border-radius: 30px;
+        width: calc(100% - 48px);
+    }
+
+    .offcanvas__logo {
+        width: 50%;
+    }
+
+    .offcanvas__logo img {
+        width: 100%;
+    }
+
+    .header-1 .header-right .sidebar__toggle {
+        color: var(--black);
+    }
+
+    li.has-dropdown.d-block.d-lg-none {
+        display: block !important;
+    }
+
+    li.has-dropdown.dropdown.mega-dropdown.d-none.d-lg-inline-block {
+        display: none !important;
+    }
+
+    .mean-container .mean-nav ul li li a {
+        width: 80%;
+        padding: 10px 3%;
+    }
+
+    .mean-container .mean-nav ul li li li a {
+        width: 75%;
+        padding: 10px 6%;
+    }
+
+    .breadcrumb-wrapper .page-heading {
+        padding: 60px 0 50px;
+    }
+
+    .about-wrapper .about-image .emoji-shape {
+        top: 15%;
+        left: 50px;
+    }
+
+    .about-wrapper .about-image .box-shape {
+        position: absolute;
+        right: -46px;
+        top: 38%;
+    }
+
+    .contain-wrapp {
+        padding: 40px 0;
+    }
+
+
+}
+
+
+@media screen and (max-width:991px) {
+    /* Home Page */
+
+    .header-1 .header-right .sidebar__toggle {
+        color: var(--black);
+    }
+
+    .about-wrapper .about-image .emoji-shape {
+        top: 15%;
+        left: 50px;
+
+    }
+
+    .hero-1 {
+        padding: 160px 0 100px;
+    }
+
+    .about-wrapper .about-image .box-shape {
+        right: -35px;
+        top: 35%;
+    }
+
+    .hero-1 .energy-shape {
+        top: 10%;
+    }
+
+    .hero-1 .mike-shape {
+        top: 23%;
+        left: 12px;
+    }
+
+    .section-title-area h2.wow.fadeInUp.w-50 {
+        width: 75% !important;
+    }
+
+    .contact-section::before {
+        left: 0;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .breadcrumb-wrapper .page-heading {
+        padding: 90px 0 50px;
+    }
+
+    .filters.pb-5 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        white-space: nowrap;
+    }
+
+    .filters-btns {
+        margin-top: 0px;
+        gap: 10px;
+    }
+
+    .footer-bottom .footer-wrapper .footer-menu li a {
+        margin-right: 50px;
+        display: block;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    /* Home Page */
+    .section-title-area h2.wow.fadeInUp.w-50 {
+        width: 100% !important;
+    }
+
+    .hero-1 {
+        padding: 160px 0 56px;
+    }
+
+    .header-main .sidebar__toggle {
+        font-size: 26px;
+    }
+
+
+}
+
+@media screen and (max-width:575px) {
+
+
+    .widget-head img,
+    .header-logo img {
+        width: 180px;
+    }
+
+    .hero-1 {
+        padding: 120px 0 56px;
+    }
+
+    .hero-1 .mike-shape {
+        top: 38%;
+        left: 0px;
+    }
+
+    .hero-1 .hero-content h1 {
+        margin-bottom: 12px;
+    }
+
+    .about-wrapper .about-image {
+        max-width: 250px;
+        margin: auto;
+    }
+
+    .contact-section::before {
+        left: 0;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .contact-wrapper {
+        padding: 20px;
+    }
+
+    .section-heading h1::after {
+        display: none;
+    }
+
+    .footer-bottom .footer-wrapper .footer-menu {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width:576px) {
+    .hero-1 .hero-image {
+        display: none;
+    }
+
+    .hero-1 .mike-shape img {
+        display: none;
+    }
+
+    .hero-1 .rocket-shape img {
+        display: none;
+    }
+
+    #hero-section .social-anchor .social-text {
+        /* margin-top: 40px; */
+        position: static;
+        left: unset;
+        top: unset;
+        transform: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        white-space: normal;
+        font-size: 10px;
+        font-weight: 500;
+        color: #111111;
+        letter-spacing: 1px;
+    }
+
+    #hero-section .social-anchor {
+        position: static;
+        right: unset;
+        top: unset;
+        width: auto;
+        height: auto;
+        z-index: 99;
+    }
+
+    .case-study-wrapper .case-study-box-items .thumb .number {
+        left: 30px;
+        top: 30px;
+    }
+
+    .case-study-wrapper .main-box .box {
+        min-height: 260px;
+        height: auto;
+    }
+
+    #hero-section {
+        min-height: unset;
+    }
+
+    section#hero-section.hero-1 {
+        padding: 120px 0 24px;
+    }
+}

@@ -1,0 +1,2249 @@
+<?php include 'includes/header.php'; ?>
+
+
+<!-- Hero Section Start -->
+
+<section class="hero-section fix hero-1 bg-cover" style="background: #f0eeee" id="hero-section">
+
+    <div class="mike-shape">
+        <img src="assets/img/hero/mike-shape.png" alt="img">
+    </div>
+
+    <div class="arrow-shape">
+        <img src="assets/img/hero/arrow-shape.png" alt="img">
+    </div>
+
+    <div class="arrow-shape-2">
+        <img src="assets/img/hero/arrow-shape.png" alt="img">
+    </div>
+
+    <div class="energy-shape float-bob-y">
+        <img src="assets/img/hero/energy-shape.png" alt="img">
+    </div>
+
+    <div class="rocket-shape">
+
+        <img src="assets/img/hero/rocket.png" alt="img" class="float-bob-y">
+
+    </div>
+
+    <div class="container-fluid">
+
+        <section class="hero-slider-section">
+
+            <div class="bg-shape">
+
+                <img src="assets/img/hero/bg-shape.png" alt="img">
+
+            </div>
+
+
+
+            <div class="container position-relative">
+
+                <div class="">
+                    <!-- Slide 1 -->
+
+                    <div class="item">
+
+                        <div class="row g-4 align-items-center justify-content-center pb-md-5 pb-2">
+
+                            <div class="col-lg-8 m-auto">
+
+                                <div class="hero-content">
+
+                                    <span class="wow img-custom-anim-left" data-wow-duration="1.5s"
+                                        data-wow-delay="0.2s">
+
+                                        GLOBAL IT SERVICE PROVIDER
+
+                                    </span>
+
+                                    <h1 class="wow img-custom-anim-right" data-wow-duration="1.5s"
+                                        data-wow-delay="0.2s">
+                                        Web, Mobile, <span class="typewriter">
+                                            <span id="text"></span><span class="cursor"></span>
+                                        </span>
+                                    </h1>
+
+                                    <p class="wow fadeInUp" data-wow-delay=".3s">Description -We help startups,
+                                        enterprises across industries build scalable digital solutions from custom
+                                        software, web and mobile apps to AI-powered solutions and dedicated development
+                                        teams. With 10+ years of experience and 40+ in-house experts, we deliver
+                                        reliable technology solutions through flexible engagement models.
+                                    </p>
+
+                                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                                        <div class="main-button wow fadeInUp mt-4" data-wow-delay=".3s">
+
+                                            <a href="#" class="offcanvas-btn" data-bs-toggle="offcanvas"
+                                                data-bs-target="#consultationOffcanvas"> <span class="theme-btn">
+                                                    Book a Consultation
+                                                </span><span class="arrow-btn"><i
+                                                        class="fa-solid fa-turn-up"></i></span></a>
+                                        </div>
+
+
+                                        <div class="main-button wow fadeInUp mt-md-4" data-wow-delay=".3s">
+                                            <a href="on-demand-hire.php" class="offcanvas-btn hire-btn">
+                                                <span class="theme-btn">
+                                                    Hire Dedicated Developers
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- <div class="col-xl-5 col-lg-6">
+
+                                        <div class="hero-image">
+
+                                            <img src="assets/img/hero/hero-image-3.png" alt="img"
+                                                class="wow img-custom-anim-left" data-wow-duration="1.5s"
+                                                data-wow-delay="0.3s">
+
+
+
+                                        </div>
+
+                                    </div> -->
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="social-anchor">
+                    <div class="social-text">
+                        <span class="follow-label">Follow Us &mdash;</span>
+                        <a href="https://www.facebook.com/WebWidersSoftwareSolutions">Facebook</a>
+                        <span class="separator">|</span>
+                        <!-- <a href="#">YouTube</a>
+            <span class="separator">|</span> -->
+                        <a href="https://www.instagram.com/webwiderstech/">Instagram</a>
+                        <span class="separator">|</span>
+                        <a href="https://www.linkedin.com/company/webwiderssoftwaresolutions/about/">LinkedIn</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+<!-- Service Section Start -->
+
+<!-- <section class="service-section fix section-padding">
+
+    <div class="left-shape float-bob-y">
+
+        <img src="assets/img/service/left-shape.png" alt="img">
+
+    </div>
+
+    <div class="right-shape">
+
+        <img src="assets/img/service/right-shape.png" alt="img">
+
+    </div>
+
+    <div class="bg-shape">
+
+        <img src="assets/img/service/bg-shape.png" alt="img">
+
+    </div>
+
+    <div class="container">
+
+        <div class="section-title-area">
+
+            <div class="section-title">
+
+                <div class="sub-title wow fadeInUp">
+
+                    <span>how it works</span>
+
+                </div>
+
+                <h2 class="wow fadeInUp w-50" data-wow-delay=".3s">
+
+                    Empowering businesses with cutting-edge technology solutions.
+
+                </h2>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+
+                <div class="service-box-items">
+
+                    <div class="icon">
+
+                        <img src="assets/img/service/icon-1.png" alt="img">
+
+                    </div>
+
+                    <div class="content">
+
+                        <h4><a href="service.php">Consultation & Planning</a></h4>
+
+                        <p>We begin by understanding your requirements, goals, and vision through detailed discussions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+
+                <div class="service-box-items">
+
+                    <div class="icon">
+
+                        <img src="assets/img/service/icon-2.png" alt="img">
+
+                    </div>
+
+                    <div class="content">
+
+                        <h4><a href="service.php">Design & Development</a></h4>
+
+                        <p>Our team creates prototypes and develops your solution with regular updates and feedback.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+
+                <div class="service-box-items">
+
+                    <div class="icon">
+
+                        <img src="assets/img/service/icon-3.png" alt="img">
+
+                    </div>
+
+                    <div class="content">
+
+                        <h4><a href="service.php">Launch & Support</a></h4>
+
+                        <p>We deploy your solution and provide ongoing maintenance and support services for your
+                            project.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section> -->
+
+
+
+<!-- Values Section Start -->
+<section class="value-section fix section-padding" id="value-section">
+    <div class="value-shape">
+        <img src="assets/img/value-shape.png" alt="img">
+    </div>
+    <div class="value-shape-2">
+        <img src="assets/img/value-shape-2.png" alt="img">
+    </div>
+    <div class="container">
+        <div class="section-title text-center wow fadeInUp" data-wow-delay=".3s">
+            <h2>Our Achievements</h2>
+        </div>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 mt-4">
+
+            <!-- Card 1 -->
+            <div class=" wow fadeInUp" data-wow-delay=".2s">
+                <div class="value-box-items">
+                    <div class="content">
+                        <h3 class="project-text"><span class="counter" data-target="10">0</span><br> Years</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class=" wow fadeInUp" data-wow-delay=".2s">
+                <div class="value-box-items">
+                    <div class="content">
+                        <h3 class="project-text"><span class="counter" data-target="500">0 </span>+<br> Projects</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class=" wow fadeInUp" data-wow-delay=".2s">
+                <div class="value-box-items">
+                    <div class="content">
+                        <h3 class="project-text"><span class="counter" data-target="26">0</span><br> Countries</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class=" wow fadeInUp" data-wow-delay=".2s">
+                <div class="value-box-items">
+                    <div class="content">
+                        <h3 class="project-text"><span class="counter" data-target="4">0</span><br> Continent</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 5 -->
+            <div class=" wow fadeInUp" data-wow-delay=".2s">
+                <div class="value-box-items">
+                    <div class="content">
+                        <h3 class="project-text"><span class="counter" data-target="13">0</span><br> Industries</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 6 -->
+            <div class=" wow fadeInUp" data-wow-delay=".2s">
+                <div class="value-box-items">
+                    <div class="content">
+                        <h3 class="project-text"><span class="counter" data-target="14">0 </span>+<br> Inhouse Developer
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class=" wow fadeInUp" data-wow-delay=".2s">
+                <div class="value-box-items">
+                    <div class="content">
+                        <h3 class="project-text"><span class="counter" data-target="95">0 </span>%<br> Client Recommend
+                            us</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class=" wow fadeInUp" data-wow-delay=".2s">
+                <div class="value-box-items">
+                    <div class="content">
+                        <h3 class="project-text"><span class="counter" data-target="62">0 </span>+<br> Five star Rating
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 9 -->
+            <div class=" wow fadeInUp" data-wow-delay=".2s">
+                <div class="value-box-items">
+                    <div class="content">
+                        <h3 class="project-text"><span class="counter" data-target="100">0</span>+<br> Custom Software
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 10 -->
+            <div class=" wow fadeInUp" data-wow-delay=".2s">
+                <div class="value-box-items">
+                    <div class="content">
+                        <h3 class="project-text"><span class="counter" data-target="200">0</span><br> Mobile Apps</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 11 -->
+            <div class=" wow fadeInUp" data-wow-delay=".2s">
+                <div class="value-box-items">
+                    <div class="content">
+                        <h3 class="project-text"><span class="counter" data-target="170">0</span><br> Web APPs</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class=" wow fadeInUp" data-wow-delay=".2s">
+                <div class="value-box-items">
+                    <div class="content">
+                        <h3 class="project-text"><span class="counter" data-target="350">0 </span><br> Websites</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 13 -->
+            <div class=" wow fadeInUp" data-wow-delay=".2s">
+                <div class="value-box-items">
+                    <div class="content">
+                        <h3 class="project-text"><span class="counter" data-target="82">0</span><br> Ecomme Websites
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 14 -->
+            <div class=" wow fadeInUp" data-wow-delay=".2s">
+                <div class="value-box-items" style="display: flex; justify-content: center; align-items: center;">
+                    <div class="content">
+                        <h3 class="project-text fw-bold">
+                            Flexible C2C Hiring
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Card 15 -->
+            <div class=" wow fadeInUp" data-wow-delay=".2s">
+                <div class="value-box-items" style="display: flex; justify-content: center; align-items: center;">
+                    <div class="content">
+                        <h3 class="project-text fw-bold">
+                            NDA-Protected Projects</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- About Section Start -->
+
+<section class="about-section fix section-padding" style="background: #f0eeee">
+
+    <div class="left-shape float-bob-y">
+
+        <img src="assets/img/about/left-shape.png" alt="img">
+
+    </div>
+
+    <div class="container">
+
+
+
+        <div class="about-wrapper">
+
+            <div class="row g-4">
+
+                <div class="col-lg-6">
+
+                    <div class="about-image">
+
+                        <img src="assets/img/about/01.png" alt="img" class="wow img-custom-anim-left"
+                            data-wow-duration="1.5s" data-wow-delay="0.3s">
+
+                        <div class="bg-shape">
+
+                            <img src="assets/img/about/bg-shape.png" alt="img">
+
+                        </div>
+
+                        <div class="grap-shape float-bob-x">
+
+                            <img src="assets/img/about/grap.png" alt="img">
+
+                        </div>
+
+                        <div class="box-shape float-bob-y">
+
+                            <img src="assets/img/about/box-shape.png" alt="img">
+
+                        </div>
+
+                        <div class="emoji-shape">
+
+                            <img src="assets/img/about/emoji.png" alt="img">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="about-content">
+
+                        <div class="section-title">
+
+                            <div class="sub-title bg-color-2 wow fadeInUp">
+
+                                <span>ABOUT COMPANY</span>
+
+                            </div>
+
+                            <h2 class="wow fadeInUp" data-wow-delay=".3s">
+
+                                Who We are
+
+                            </h2>
+
+                        </div>
+
+                        <p class="mt-3 mt-md-0 mb-4 wow fadeInUp" data-wow-delay=".5s">
+
+                            Webwiders is a global IT services and AI solutions company helping startups, enterprises,
+                            and agencies across diverse industries transform ideas into innovative digital products.
+                            With over 10 years of experience, our team of 40+ in-house experts delivers custom software,
+                            AI-powered solutions, web applications, Web Development, mobile apps, and dedicated
+                            development teams tailored to business needs. Whether you're launching a new product,
+                            modernizing existing systems, or scaling your engineering team through flexible
+                            contract-to-contract (C2C) engagement models, we're committed to delivering reliable,
+                            scalable, and future-ready technology solutions.
+
+
+
+                        </p>
+
+                        <div class="main-button wow fadeInUp justify-content-start" data-wow-delay=".3s">
+
+                            <a href="about.php"> <span class="theme-btn"> About us </span><span class="arrow-btn"><i
+                                        class="fa-solid fa-turn-up"></i></span></a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Service Section Start -->
+<section class="service-section fix section-bg section-padding section-new-padding bg-white">
+    <div class="bg-shape-2">
+        <img src="assets/img/service/bg-shape-2.png" alt="img">
+    </div>
+    <div class="container">
+        <div class="section-title-area d-flex flex-wrap justify-content-between align-items-end mb-5">
+            <div class="section-title mb-0">
+                <div class="sub-title bg-color-2 wow fadeInUp">
+                    <span>OUR SERVICES</span>
+                </div>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                    Our IT Services
+                </h2>
+                <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
+                    We provide end-to-end technology solutions that help businesses innovate, scale, and stay
+                    competitive. From custom software, web applications, Web Development, and mobile app development to
+                    AI solutions and dedicated development teams, our experts deliver reliable, scalable, and
+                    business-focused services tailored to your goals.
+                </p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <!-- Service Card 1 -->
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="service-card-items h-100">
+                    <h3 class="title">
+                        <p>
+                            Custom Software <br> Development
+                        </p>
+                    </h3>
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-laptop-code custom-service-icon"></i>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Transform your business with tailor-made software solutions, including enterprise
+                            applications, SaaS platforms, CRM, ERP, and industry-specific business systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="service-card-items h-100">
+                    <h3 class="title">
+                        <p>
+                            AI Development <br> Services
+                        </p>
+                    </h3>
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-robot custom-service-icon"></i>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Build intelligent AI agents, chatbots, workflow automation, and custom AI applications that
+                            improve productivity, automate business processes, and enhance customer experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="service-card-items h-100">
+                    <h3 class="title">
+                        <p>
+                            Web Development <br> Services
+                        </p>
+                    </h3>
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-code custom-service-icon"></i>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Create responsive business websites, scalable web applications, eCommerce platforms, and
+                            custom web solutions designed for performance, security, and long-term growth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Service Card 4 -->
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="service-card-items h-100">
+                    <h3 class="title">
+                        <p>
+                            Mobile App <br> Development Services
+                        </p>
+                    </h3>
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-mobile-screen-button custom-service-icon"></i>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Create high-performance Android and iOS applications using Flutter and React Native with
+                            exceptional user experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Service Card 5 -->
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                <div class="service-card-items h-100">
+                    <h3 class="title">
+                        <p>
+                            IT Staff <br> Augmentation
+                        </p>
+                    </h3>
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-users-gear custom-service-icon"></i>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Scale your engineering team with experienced in-house developers available on flexible
+                            remote contract-to-contract (C2C) engagements.
+                        </p>
+                        <br> <!-- Extra break for vertical alignment if needed -->
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Service Card 6 -->
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                <div class="service-card-items h-100">
+                    <h3 class="title">
+                        <p>
+                            UI/UX Design <br> Services
+                        </p>
+                    </h3>
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-pen-nib custom-service-icon"></i>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Design intuitive and engaging digital experiences that enhance usability, customer
+                            satisfaction, and conversion rates.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Industries We Serve -->
+
+<section class="service-section fix section-bg section-padding section-new-padding" style="background: #f0eeee">
+
+    <div class="container">
+        <div class="section-title">
+            <div class="sub-title bg-color-2 wow fadeInUp">
+                <span>Industries</span>
+            </div>
+            <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                Industries We Serve
+            </h2>
+        </div>
+    </div>
+
+    <div class="marquee-section pt-0">
+        <!-- Removed 'theme-blue-bg' if you want white cards to show clearly, or keep it based on your theme -->
+        <div class="mycustom-marque theme-blue-bg" style="padding: 20px 0;">
+            <div class="scrolling-wrap">
+
+                <!-- First Set of Cards -->
+                <div class="comm">
+                    <!-- Healthcare -->
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">Healthcare</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Manufacturing -->
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-industry"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">Manufacturing</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Real Estate -->
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-building"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">Real Estate</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Food & Restaurant -->
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-utensils"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">Food & Restaurant</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Logistics & Transportation -->
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">Logistics & Transportation</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Beauty & Wellness -->
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-spa"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">Beauty & Wellness</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Travel & Hospitality -->
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-plane-departure"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">Travel & Hospitality</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- eCommerce & Retail -->
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">eCommerce & Retail</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education & eLearning -->
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">Education & eLearning</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FinTech -->
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-building-columns"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">FinTech</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Set of Cards (Duplicated for Seamless Infinite Scrolling) -->
+                <div class="comm">
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">Healthcare</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-industry"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">Manufacturing</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-building"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">Real Estate</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-utensils"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">Food & Restaurant</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">Logistics & Transportation</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-spa"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">Beauty & Wellness</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-plane-departure"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">Travel & Hospitality</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">eCommerce & Retail</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">Education & eLearning</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marquee-card-item">
+                        <div class="value-box-items">
+                            <div class="icon"><i class="fa-solid fa-building-columns"></i></div>
+                            <div class="content">
+                                <h3 class="project-text">FinTech</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Why Choose Us Section Start -->
+<section class="service-section fix section-bg section-padding section-new-padding bg-white">
+    <div class="bg-shape-2">
+        <img src="assets/img/service/bg-shape-2.png" alt="img">
+    </div>
+    <div class="container">
+        <div class="section-title-area d-flex flex-wrap justify-content-between align-items-end mb-5">
+            <div class="section-title mb-0">
+                <div class="sub-title bg-color-2 wow fadeInUp">
+                    <span>WHY CHOOSE US</span>
+                </div>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                    Why Choose US
+                </h2>
+                <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
+                    We combine technical expertise, industry knowledge, and a client-first approach to deliver scalable,
+                    high-quality digital solutions. Our experienced in-house team focuses on innovation, transparency,
+                    and long-term partnerships to help businesses achieve their technology goals.
+                </p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="service-card-items h-100">
+                    <h3 class="title">
+                        <p>
+                            10+ Years of <br> Experience
+                        </p>
+                    </h3>
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-award custom-service-icon"></i>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Delivering reliable software solutions across diverse industries with proven expertise.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="service-card-items h-100">
+                    <h3 class="title">
+                        <p>
+                            Experienced <br> In-House Team
+                        </p>
+                    </h3>
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-people-group custom-service-icon"></i>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Work with 40+ skilled developers, designers, QA engineers, and AI specialists dedicated to
+                            your project's success.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                <div class="service-card-items h-100">
+                    <h3 class="title">
+                        <p>
+                            Global <br> Delivery
+                        </p>
+                    </h3>
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-earth-americas custom-service-icon"></i>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Serving startups, agencies, and enterprises across North America, Europe, Oceania, the
+                            Middle East, and beyond.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="service-card-items h-100">
+                    <h3 class="title">
+                        <p>
+                            Flexible <br> Engagement Models
+                        </p>
+                    </h3>
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-handshake custom-service-icon"></i>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Choose project-based development, dedicated teams, or remote developers on a flexible
+                            contract-to-contract (C2C) basis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="service-card-items h-100">
+                    <h3 class="title">
+                        <p>
+                            Agile <br> Development Process
+                        </p>
+                    </h3>
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-arrows-spin custom-service-icon"></i>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Rapid development cycles, transparent communication, and continuous collaboration ensure
+                            faster delivery and high-quality outcomes.
+                        </p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                <div class="service-card-items h-100">
+                    <h3 class="title">
+                        <p>
+                            End-to-End <br> Development
+                        </p>
+                    </h3>
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-code-branch custom-service-icon"></i>
+                    </div>
+                    <div class="content">
+                        <p>
+                            From idea validation and UI/UX design to development, deployment, and ongoing support, we
+                            handle the complete software lifecycle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Countries We Serve Section -->
+<section class="service-section fix section-bg section-padding section-new-padding" style="background: #f0eeee">
+
+    <div class="bg-shape-2">
+        <img src="assets/img/service/bg-shape-2.png" alt="img">
+    </div>
+
+    <div class="container">
+        <div class="section-title">
+            <div class="sub-title bg-color-2 wow fadeInUp">
+                <span>GLOBAL REACH</span>
+            </div>
+            <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                Countries we have Served
+            </h2>
+            <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s"
+                style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                We proudly deliver software development, AI solutions, and IT staff augmentation services to businesses
+                across North America, Europe, Oceania, the Middle East, and Asia.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- First Set of Cards -->
+        <div class="comm">
+            <!-- United States -->
+            <div class="marquee-card-item new-marquee-card-item">
+                <div class="value-box-items">
+                    <div class="icon country-flag"><img src="/assets/images/flag/united_states.png" alt="United States">
+                    </div>
+                    <div class="content">
+                        <h3 class="project-text">United States</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Canada -->
+            <div class="marquee-card-item new-marquee-card-item">
+                <div class="value-box-items">
+                    <div class="icon country-flag"><img src="/assets/images/flag/canada.png" alt="Canada">
+                    </div>
+                    <div class="content">
+                        <h3 class="project-text">Canada</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- United Kingdom -->
+            <div class="marquee-card-item new-marquee-card-item">
+                <div class="value-box-items">
+                    <div class="icon country-flag"><img src="/assets/images/flag/united_kingdom.png"
+                            alt="United Kingdom">
+                    </div>
+                    <div class="content">
+                        <h3 class="project-text">United Kingdom</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Germany -->
+            <div class="marquee-card-item new-marquee-card-item">
+                <div class="value-box-items">
+                    <div class="icon country-flag"><img src="/assets/images/flag/germany.png" alt="Germany">
+                    </div>
+                    <div class="content">
+                        <h3 class="project-text">Germany</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Netherlands -->
+            <div class="marquee-card-item new-marquee-card-item">
+                <div class="value-box-items">
+                    <div class="icon country-flag"><img src="/assets/images/flag/netherlands.png" alt="Netherlands">
+                    </div>
+                    <div class="content">
+                        <h3 class="project-text">Netherlands</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- France -->
+            <div class="marquee-card-item new-marquee-card-item">
+                <div class="value-box-items">
+                    <div class="icon country-flag"><img src="/assets/images/flag/france.png" alt="France">
+                    </div>
+                    <div class="content">
+                        <h3 class="project-text">France</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Switzerland -->
+            <div class="marquee-card-item new-marquee-card-item">
+                <div class="value-box-items">
+                    <div class="icon country-flag"><img src="/assets/images/flag/switzerland.png" alt="Switzerland">
+                    </div>
+                    <div class="content">
+                        <h3 class="project-text">Switzerland</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ireland -->
+            <div class="marquee-card-item new-marquee-card-item">
+                <div class="value-box-items">
+                    <div class="icon country-flag"><img src="/assets/images/flag/ireland.png" alt="Ireland">
+                    </div>
+                    <div class="content">
+                        <h3 class="project-text">Ireland</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sweden -->
+            <div class="marquee-card-item new-marquee-card-item">
+                <div class="value-box-items">
+                    <div class="icon country-flag"><img src="/assets/images/flag/sweden.png" alt="Sweden">
+                    </div>
+                    <div class="content">
+                        <h3 class="project-text">Sweden</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Australia -->
+            <div class="marquee-card-item new-marquee-card-item">
+                <div class="value-box-items">
+                    <div class="icon country-flag"><img src="/assets/images/flag/australia.png" alt="Australia">
+                    </div>
+                    <div class="content">
+                        <h3 class="project-text">Australia</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Zealand -->
+            <div class="marquee-card-item new-marquee-card-item">
+                <div class="value-box-items">
+                    <div class="icon country-flag"><img src="/assets/images/flag/new-zealand.png" alt="New Zealand">
+                    </div>
+                    <div class="content">
+                        <h3 class="project-text">New Zealand</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- United Arab Emirates -->
+            <div class="marquee-card-item new-marquee-card-item">
+                <div class="value-box-items">
+                    <div class="icon country-flag"><img src="/assets/images/flag/uae.png" alt="United Arab Emirates">
+                    </div>
+                    <div class="content">
+                        <h3 class="project-text">United Arab Emirates</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Saudi Arabia -->
+            <div class="marquee-card-item new-marquee-card-item">
+                <div class="value-box-items">
+                    <div class="icon country-flag"><img src="/assets/images/flag/saudi_arabia.png" alt="Saudi Arabia">
+                    </div>
+                    <div class="content">
+                        <h3 class="project-text">Saudi Arabia</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Qatar -->
+            <div class="marquee-card-item new-marquee-card-item">
+                <div class="value-box-items">
+                    <div class="icon country-flag"><img src="/assets/images/flag/qatar.png" alt="Qatar">
+                    </div>
+                    <div class="content">
+                        <h3 class="project-text">Qatar</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kuwait -->
+            <div class="marquee-card-item new-marquee-card-item">
+                <div class="value-box-items">
+                    <div class="icon country-flag"><img src="/assets/images/flag/kuwait.png" alt="Kuwait">
+                    </div>
+                    <div class="content">
+                        <h3 class="project-text">Kuwait</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Our Product -->
+<section class="news-section section-padding section-bg bg-white">
+    <div class="left-shape">
+        <img src="assets/img/news/left-shape.png" alt="img">
+    </div>
+    <div class="container">
+        <div class="section-title-area">
+            <div class="section-title">
+                <div class="sub-title wow fadeInUp">
+                    <span>Products</span>
+                </div>
+
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">Our Products</h2>
+            </div>
+
+            <!-- <div class="main-button wow fadeInUp" data-wow-delay=".5s">
+                <a href="products.php"> <span class="theme-btn"> See All </span><span class="arrow-btn"><i
+                            class="fa-solid fa-turn-up"></i></span></a>
+            </div> -->
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-6 col-md-6">
+                <div class="case-studies-card-items mt-0">
+                    <div class="thumb">
+                        <img decoding="async" class="border" src="assets/img/thevenco.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <h3>
+                                <a href="https://thevenco.com/">Vendor Management Software </a>
+                            </h3>
+                            <p>A smart vendor management platform that connects hiring teams with verified vendors,
+                                streamlining recruitment workflows and reducing time-to-hire through an intuitive web
+                                application.</p>
+                        </div>
+                        <a href="https://thevenco.com/" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="case-studies-card-items mt-0">
+                    <div class="thumb">
+                        <img decoding="async" src="assets/img/healthcare.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <h3>
+                                <a href="health-erp.php">
+                                    HealthCard ERP </a>
+                            </h3>
+                            <p>A comprehensive hospital management ERP designed to streamline patient care, appointment
+                                scheduling, medical records, billing, inventory, and hospital operations through a
+                                centralized digital platform.</p>
+                        </div>
+                        <a href="health-erp.php" class="icon"><i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Testimonials -->
+
+<section class="news-section section-padding section-bg" style="background: #f0eeee">
+    <div class="bg-shape-2">
+        <img src="assets/img/service/bg-shape-2.png" alt="img">
+    </div>
+    <div class="container">
+        <div class="section-title-area">
+            <div class="section-title">
+                <div class="sub-title wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                    <span>Testimonials</span>
+                </div>
+
+                <h2 class="wow fadeInUp" data-wow-delay=".3s"
+                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">What Our Clients Say
+                </h2>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- Video 1 -->
+            <div class="col-lg-6 col-md-6">
+                <div class="case-studies-card-items mt-0"
+                    style="padding: 0; background: transparent; box-shadow: none;">
+                    <!-- Responsive Video Wrapper -->
+                    <div class="video-wrapper"
+                        style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <iframe src="https://www.youtube.com/embed/d6UoL9XGy3o"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="col-lg-6 col-md-6">
+                <div class="case-studies-card-items mt-0"
+                    style="padding: 0; background: transparent; box-shadow: none;">
+                    <!-- Responsive Video Wrapper -->
+                    <div class="video-wrapper"
+                        style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <iframe src="https://www.youtube.com/embed/MCwzjFcZWpE"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Testimonial Section Start -->
+    <div class="testimonial-section section-padding ">
+        <div class="container">
+            <div class="testimonial-wrapper-2">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-12">
+                        <div class="testimonial-content">
+                            <div class="swiper testimonial-slider-3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>
+                                                The team did an outstanding job on my project from start to finish.
+                                                Their technical expertise is exceptional, and they consistently
+                                                demonstrated a deep understanding of the project requirements while
+                                                delivering a high-quality solution. Communication was clear and
+                                                professional throughout the entire project. The team was responsive to
+                                                feedback, proactive in addressing challenges, and completed the work
+                                                with confidence and attention to detail.
+                                                I am extremely satisfied with the results and would absolutely work with
+                                                this team again on future projects. Highly recommended!
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="/assets/images/flag/united_states.png" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                                <div class="star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="assets/img/testimonial/icon.png" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>
+                                                I would highly recommend this team for website development. Their depth
+                                                of knowledge, technical skills, and expertise made them true subject
+                                                matter experts, especially when it came to developing a secure website
+                                                capable of protecting sensitive patient data.
+                                                The team responded promptly to every request, addressed all of my
+                                                concerns with professionalism, and ensured the project was completed to
+                                                a high standard. Their communication, attention to detail, and
+                                                commitment to quality made the entire process smooth and efficient.
+                                                A true 5-star website development team! I look forward to working with
+                                                them again in the future.
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="/assets/images/flag/united_states.png" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                                <div class="star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="assets/img/testimonial/icon.png" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>
+                                                The team exceeded my expectations! From the very beginning, they were
+                                                professional, patient, and took the time to guide me through every step
+                                                of the development process. Their communication was outstanding, keeping
+                                                me informed and ensuring all my requirements were met.
+                                                The team worked diligently to develop an exceptional Dallas Vibez app
+                                                and website, paying close attention to every detail while maintaining
+                                                the highest standards of quality. Their technical expertise,
+                                                problem-solving abilities, and commitment to delivering a polished final
+                                                product truly set them apart.
+                                                I highly recommend this team to anyone looking for a talented, reliable,
+                                                and dedicated development partner. Thank you for bringing my vision to
+                                                life—I look forward to working with you again on future projects!
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="/assets/images/flag/united_states.png" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                                <div class="star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="assets/img/testimonial/icon.png" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>
+                                                The team was very cooparative and did the task as requested
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="/assets/images/flag/kuwait.png" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                                <div class="star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="assets/img/testimonial/icon.png" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>
+                                                Excellent works full recommended.
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="/assets/images/flag/united_states.png" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                                <div class="star">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="assets/img/testimonial/icon.png" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="array-button d-none">
+                                <button class="array-prev"><i class="fas fa-arrow-left-long"></i></button>
+                                <button class="array-next"><i class="fas fa-arrow-right-long"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+<!-- Case Study Section Start -->
+<section class="case-study-section fix section-padding" style="background: #fff">
+
+    <div class="left-shape float-bob-x">
+        <img src="assets/img/case-studies/left-shape.png" alt="img">
+    </div>
+
+    <div class="right-shape float-bob-x">
+        <img src="assets/img/case-studies/right-shaape.png" alt="img">
+    </div>
+
+    <div class="container">
+        <div class="section-title-area">
+            <div class="section-title">
+                <div class="sub-title wow fadeInUp">
+                    <span>Projects</span>
+                </div>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                    Our Projects
+                </h2>
+            </div>
+            <!-- <div class="main-button wow fadeInUp" data-wow-delay=".5s">
+                <a href="about.php"> <span class="theme-btn"> EXPLORE MORE </span><span class="arrow-btn"><i
+                            class="fa-solid fa-turn-up"></i></span></a>
+            </div> -->
+        </div>
+
+        <div class="case-study-wrapper">
+            <div class="row">
+
+                <!-- Left Side: Original Design & Content -->
+                <div class="col-xxl-6 wow fadeInUp">
+                    <div class="case-study-box-items">
+                        <div class="thumb">
+                            <img src="assets/img/case-studies/01.jpg" alt="img">
+                            <h3 class="project-title text-white">
+                                <img src="assets/img/case-studies/icon.png" alt="img">
+                                Our Top Project
+                            </h3>
+                            <span class="number">01</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Accordion with 4 New Projects -->
+                <div class="col-xxl-6">
+                    <div class="main-box">
+
+                        <!-- Project 1 (Active) -->
+                        <div class="box active wow fadeInUp">
+                            <div class="title-items">
+                                <h3><a href="https://aliadoai.ai/">AI Productivity Platform</a></h3>
+                                <span class="number">02</span>
+                            </div>
+                            <span class="number-hover">02</span>
+                            <div class="project-content">
+                                <h3><a href="https://aliadoai.ai/">AI Productivity Platform</a></h3>
+                                <p>
+                                    An AI-powered SaaS platform that automates scheduling, reminders, payments,
+                                    invoicing, and client communication, enabling independent professionals to focus on
+                                    serving their clients.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="box bg-1 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="title-items">
+                                <h3><a href="https://www.inatlantis.com/">Live Language Exchange</a></h3>
+                                <span class="number">03</span>
+                            </div>
+                            <span class="number-hover">03</span>
+                            <div class="project-content">
+                                <h3><a href="https://www.inatlantis.com/">Live Language Exchange</a></h3>
+                                <p>
+                                    A live language exchange platform that matches learners with native speakers based
+                                    on language pairs and discussion topics, making language practice interactive and
+                                    engaging.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="box bg-2 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="title-items">
+                                <h3><a href="https://misy.app/en/apps">Smart Taxi Booking</a></h3>
+                                <span class="number">04</span>
+                            </div>
+                            <span class="number-hover">04</span>
+                            <div class="project-content">
+                                <h3><a href="https://misy.app/en/apps">Smart Taxi Booking</a></h3>
+                                <p>
+                                    A feature-rich ride booking app that enables users to book or schedule rides, track
+                                    drivers in real time, choose vehicle types, and make secure payments for a seamless
+                                    travel experience.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="box bg-3 wow fadeInUp" data-wow-delay=".6s">
+                            <div class="title-items">
+                                <h3><a href="https://meetzane.com.au/">AI Mental Wellness Platform</a></h3>
+                                <span class="number">05</span>
+                            </div>
+                            <span class="number-hover">05</span>
+                            <div class="project-content">
+                                <h3><a href="https://meetzane.com.au/">AI Mental Wellness Platform</a></h3>
+                                <p style="font-size: 14px;">
+                                    An AI-powered mental wellness companion that provides personalized, judgment-free
+                                    conversations using evidence-based therapeutic techniques to support emotional
+                                    well-being and self-growth.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Brand section -->
+<section class="news-section section-padding section-bg" style="background: #f0eeee">
+    <div class="bg-shape-2">
+        <img src="assets/img/service/bg-shape-2.png" alt="img">
+    </div>
+    <div class="container">
+        <div class="section-title">
+            <div class="sub-title bg-color-2 wow fadeInUp">
+                <span>Brands</span>
+            </div>
+            <h2 class="wow fadeInUp mb-4" data-wow-delay=".3s">
+                Our partners
+            </h2>
+            <div class="brand-wrapper mt-4">
+                <div class="swiper brand-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="brand-img center">
+                                <img src="assets/img/brand/aliadoai.png" alt="Aliado Ai.png">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-img center">
+                                <img src="assets/img/brand/heathcard.png" alt="HealthCard.png">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-img center">
+                                <img src="assets/img/brand/herstay.png" alt="HerStay.png">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-img center">
+                                <img src="assets/img/brand/inatlantis.png" alt="Inatlantis">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-img center">
+                                <img src="assets/img/brand/meetzane.png" alt="Meetzane">
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <div class="brand-img center">
+                                <img src="assets/img/brand/misy.png" alt="Misy">
+                            </div>
+                        </div> -->
+                        <div class="swiper-slide">
+                            <div class="brand-img center">
+                                <img src="assets/img/brand/thevenco.png" alt="TheVenco">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+<!-- News Section Start -->
+<section class="news-section section-padding section-bg bg-white">
+    <div class="left-shape">
+        <!-- <img src="assets/img/news/left-shape.png" alt="img"> -->
+    </div>
+    <div class="container">
+        <div class="section-title-area">
+            <div class="section-title">
+                <div class="sub-title wow fadeInUp">
+                    <span>Blog</span>
+                </div>
+
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">Latest Blogs</h2>
+                <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
+                    Stay updated with the latest trends, technology insights, industry best practices, and expert
+                    guidance on AI, software development, web technologies, mobile apps, and digital transformation.
+                    Explore practical resources designed to help businesses make informed technology decisions.
+                </p>
+            </div>
+
+            <div class="main-button wow fadeInUp" data-wow-delay=".5s">
+                <a href="blog.php"> <span class="theme-btn"> See All </span><span class="arrow-btn"><i
+                            class="fa-solid fa-turn-up"></i></span></a>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-6">
+                <div class="news-standard-wrapper">
+                    <div class="news-standard-items row ">
+                        <div class="col-12">
+                            <div class="thumb">
+                                <img src="assets/img/news/post-1.jpg" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex align-items-center">
+                            <div class="content text-content-right">
+                                <p><small><i class="fa-regular fa-calendar-days"></i> August 4, 2026</small></p>
+                                <h3>Choose The Best IT Service Company in the City.</h3>
+                                <a href="blog-detail.php" class="theme-btn">See Details</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="news-standard-wrapper">
+                    <div class="news-standard-items row ">
+                        <div class="col-12">
+                            <div class="thumb">
+                                <img src="assets/img/news/post-1.jpg" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex align-items-center">
+                            <div class="content text-content-right">
+                                <p><small><i class="fa-regular fa-calendar-days"></i> August 4, 2026</small></p>
+                                <h3>Choose The Best IT Service Company in the City.</h3>
+                                <a href="blog-detail.php" class="theme-btn">See Details</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Tech Section -->
+
+<!-- Technology Section Start -->
+<section class="technology-section fix section-padding" style="background: #f0eeee">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- Left Side: Main Title (Sticky) -->
+            <div class="col-xl-4">
+                <div class="pricing-content">
+                    <div class="section-title">
+                        <div class="sub-title bg-color-2 wow fadeInUp">
+                            <span>OUR TECH STACK</span>
+                        </div>
+                        <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                            Technologies <br> We Use
+                        </h2>
+                        <p class="wow fadeInUp mt-3" data-wow-delay=".4s" style="color: #666; max-width: 90%;">
+                            We leverage the latest tools, frameworks, and programming languages to build secure,
+                            scalable, and high-performance digital solutions tailored to your business needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Technology Grid with Badges -->
+            <div class="col-xl-8">
+                <div class="row g-4">
+
+                    <!-- Front End -->
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="tech-category-box">
+                            <h4><i class="fa-solid fa-desktop"></i> Front End</h4>
+                            <div class="tech-list">
+                                <span class="tech-badge">React.js</span>
+                                <span class="tech-badge">Next.js</span>
+                                <span class="tech-badge">Angular</span>
+                                <span class="tech-badge">Vue.js</span>
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Back End -->
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="tech-category-box">
+                            <h4><i class="fa-solid fa-server"></i> Back End</h4>
+                            <div class="tech-list">
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">Laravel</span>
+                                <span class="tech-badge">PHP</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">.NET</span>
+                                <span class="tech-badge">Java</span>
+                                <span class="tech-badge">Express.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="tech-category-box">
+                            <h4><i class="fa-solid fa-mobile-screen"></i> Mobile</h4>
+                            <div class="tech-list">
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">React Native</span>
+                                <span class="tech-badge">Android</span>
+                                <span class="tech-badge">iOS</span>
+                                <span class="tech-badge">Kotlin</span>
+                                <span class="tech-badge">Swift</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI & Automation -->
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="tech-category-box">
+                            <h4><i class="fa-solid fa-robot"></i> AI & Automation</h4>
+                            <div class="tech-list">
+                                <span class="tech-badge">OpenAI</span>
+                                <span class="tech-badge">Gemini</span>
+                                <span class="tech-badge">Claude</span>
+                                <span class="tech-badge">LangChain</span>
+                                <span class="tech-badge">MCP</span>
+                                <span class="tech-badge">RAG</span>
+                                <span class="tech-badge">AI Agents</span>
+                                <span class="tech-badge">Vector DBs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="tech-category-box">
+                            <h4><i class="fa-solid fa-cloud"></i> Cloud & DevOps</h4>
+                            <div class="tech-list">
+                                <span class="tech-badge">AWS</span>
+                                <span class="tech-badge">Microsoft Azure</span>
+                                <span class="tech-badge">Google Cloud</span>
+                                <span class="tech-badge">Docker</span>
+                                <span class="tech-badge">Kubernetes</span>
+                                <span class="tech-badge">CI/CD</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                        <div class="tech-category-box">
+                            <h4><i class="fa-solid fa-database"></i> Databases</h4>
+                            <div class="tech-list">
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                                <span class="tech-badge">MongoDB</span>
+                                <span class="tech-badge">Firebase</span>
+                                <span class="tech-badge">Redis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CMS & eCommerce -->
+                    <div class="col-md-12 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="tech-category-box">
+                            <h4><i class="fa-solid fa-cart-shopping"></i> CMS & eCommerce</h4>
+                            <div class="tech-list">
+                                <span class="tech-badge">WordPress</span>
+                                <span class="tech-badge">Shopify</span>
+                                <span class="tech-badge">WooCommerce</span>
+                                <span class="tech-badge">Magento</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- faq Section Start -->
+
+<?php include 'includes/faq.php'; ?>
+
+
+
+<!-- OFFCANVAS FREE CONSULTATION FORM (Right Side Panel) -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="consultationOffcanvas"
+    aria-labelledby="consultationOffcanvasLabel" style="width: 500px; max-width: 100vw;">
+
+    <div class="offcanvas-header px-4 pt-4 pb-0">
+        <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body px-4 pb-4">
+        <h3 class="fw-bold mb-3 text-center" style="color: #2c3e50;">Book a Free Consultation</h3>
+        <p class="mb-4 text-muted text-center" style="font-size: 0.75rem; line-height: 1.6;">
+            Discuss your specific needs with our experts. Schedule a 30-minute free consultation call to see how we can
+            help your business grow.
+        </p>
+
+        <form class="text-start">
+            <div class="row g-3">
+                <!-- Name -->
+                <div class="col-md-6">
+                    <input type="text" class="form-control bg-white py-2" placeholder="First Name*" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control bg-white py-2" placeholder="Last Name*" required>
+                </div>
+
+                <!-- Contact & Company -->
+                <div class="col-md-6">
+                    <input type="email" class="form-control bg-white py-2" placeholder="Work Email*" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="tel" class="form-control bg-white py-2" placeholder="Phone Number*" required>
+                </div>
+
+                <div class="col-12">
+                    <input type="text" class="form-control bg-white py-2" placeholder="Company Name*" required>
+                </div>
+
+                <!-- Consultation Specifics -->
+                <div class="col-12">
+                    <select class="form-select bg-white text-muted py-2" required>
+                        <option value="" selected disabled>What is your primary goal?*</option>
+                        <option value="optimize">Optimize current operations</option>
+                        <option value="implementation">New software implementation</option>
+                        <option value="integration">System integration & APIs</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Date & Time Picker -->
+                <div class="col-md-6">
+                    <!-- Date input gives a native calendar popup -->
+                    <input type="date" class="form-control bg-white py-2 text-muted" required title="Preferred Date">
+                </div>
+                <div class="col-md-6">
+                    <select class="form-select bg-white text-muted py-2" required>
+                        <option value="" selected disabled>Preferred Time*</option>
+                        <option value="morning">Morning (9 AM - 12 PM)</option>
+                        <option value="afternoon">Afternoon (1 PM - 5 PM)</option>
+                    </select>
+                </div>
+
+                <!-- Message -->
+                <div class="col-12">
+                    <textarea class="form-control bg-white" rows="3"
+                        placeholder="Briefly describe what you'd like to discuss..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 text-center mt-4">
+                    <button type="submit" class="btn fw-bold px-5 py-2 w-100"
+                        style="background-color: var(--primary-red, #ff0000); color: white; border-radius: 25px;">BOOK
+                        MY SESSION</button>
+                </div>
+
+                <!-- Footer Text -->
+                <div class="col-12 text-center mt-2">
+                    <small class="text-muted" style="font-size: 0.75rem;">This site is protected by reCAPTCHA.</small>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+<!-- Contact Section Start -->
+
+<?php include 'includes/contact-section.php'; ?>
+
+
+
+<?php include 'includes/footer.php'; ?>
+
+
+
+<script>
+
+    // Add mobile touch support
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const dropdownItems = document.querySelectorAll('.dropdown.mega-dropdown');
+
+
+
+        // For mobile devices, add click functionality
+
+        if (window.innerWidth <= 992) {
+
+            dropdownItems.forEach(item => {
+
+                const toggle = item.querySelector('.dropdown-toggle');
+
+
+
+                toggle.addEventListener('click', function (e) {
+
+                    e.preventDefault();
+
+                    const megaMenu = item.querySelector('.mega-menu');
+
+
+
+                    // Close other open dropdowns
+
+                    document.querySelectorAll('.mega-menu').forEach(menu => {
+
+                        if (menu !== megaMenu) {
+
+                            menu.style.display = 'none';
+
+                        }
+
+                    });
+
+
+
+                    // Toggle current dropdown
+
+                    if (megaMenu.style.display === 'block') {
+
+                        megaMenu.style.display = 'none';
+
+                    } else {
+
+                        megaMenu.style.display = 'block';
+
+                    }
+
+                });
+
+            });
+
+        }
+
+
+
+        // Close dropdown when clicking outside
+
+        document.addEventListener('click', function (e) {
+
+            if (!e.target.closest('.dropdown.mega-dropdown')) {
+
+                document.querySelectorAll('.mega-menu').forEach(menu => {
+
+                    if (window.innerWidth <= 992) {
+
+                        menu.style.display = 'none';
+
+                    }
+
+                });
+
+            }
+
+        });
+
+    });
+
+</script>
+
+<!-- Counter Animation Script -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll(".counter");
+
+        // Scroll hone par counter trigger karne ke liye IntersectionObserver
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const target = +counter.getAttribute("data-target");
+                    const duration = 2000; // Counter total time (2 seconds)
+                    const increment = target / (duration / 16);
+
+                    let currentCount = 0;
+                    const updateCounter = () => {
+                        currentCount += increment;
+                        if (currentCount < target) {
+                            counter.innerText = Math.ceil(currentCount);
+                            setTimeout(updateCounter, 16);
+                        } else {
+                            counter.innerText = target; // Final value set karna
+                        }
+                    };
+
+                    updateCounter();
+                    observer.unobserve(counter); // Ek baar count hone ke baad dobara trigger na ho
+                }
+            });
+        }, { threshold: 0.5 }); // Jab card 50% screen par dikhega tabhi counter start hoga
+
+        counters.forEach(counter => {
+            observer.observe(counter);
+        });
+    });
+
+
+
+
+
+
+
+
+
+    const words = [
+        "Software & AI",
+    ];
+
+    const textElement = document.getElementById("text");
+
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    const typingSpeed = 200;
+    const deletingSpeed = 100;
+    const pauseAfterTyping = 1500;
+    const pauseAfterDeleting = 500;
+
+    function typeWriter() {
+        const currentWord = words[wordIndex];
+
+        if (!isDeleting) {
+            charIndex++;
+            textElement.textContent = currentWord.substring(0, charIndex);
+
+            if (charIndex === currentWord.length) {
+                isDeleting = true;
+                setTimeout(typeWriter, pauseAfterTyping);
+                return;
+            }
+
+            setTimeout(typeWriter, typingSpeed);
+
+        } else {
+            charIndex--;
+            textElement.textContent = currentWord.substring(0, charIndex);
+
+            if (charIndex === 0) {
+                isDeleting = false;
+
+                wordIndex++;
+                if (wordIndex === words.length) {
+                    wordIndex = 0;
+                }
+
+                setTimeout(typeWriter, pauseAfterDeleting);
+                return;
+            }
+
+            setTimeout(typeWriter, deletingSpeed);
+        }
+    }
+
+    typeWriter();
+
+
+</script>
