@@ -1741,6 +1741,27 @@
 
 
 <!-- News Section Start -->
+<?php
+$homeBlogs = [];
+if (isset($pdo) && $pdo) {
+    try {
+        $stmt = $pdo->prepare("
+            SELECT b.*, c.name as category_name 
+            FROM blogs b 
+            LEFT JOIN categories c ON b.category_id = c.id 
+            WHERE b.status = 'published' 
+            AND (b.published_at IS NULL OR b.published_at <= NOW()) 
+            ORDER BY b.is_featured DESC, COALESCE(b.published_at, b.created_at) DESC 
+            LIMIT 2
+        ");
+        $stmt->execute();
+        $homeBlogs = $stmt->fetchAll();
+    } catch (Exception $e) {
+        error_log("Error fetching home blogs: " . $e->getMessage());
+    }
+}
+?>
+<?php if (!empty($homeBlogs)): ?>
 <section class="news-section section-padding section-bg bg-white">
     <div class="left-shape">
         <!-- <img src="assets/img/news/left-shape.png" alt="img"> -->
@@ -1769,53 +1790,42 @@
     </div>
     <div class="container">
         <div class="row g-4">
-            <div class="col-6">
-                <div class="news-standard-wrapper">
-                    <div class="news-standard-items row ">
-                        <div class="col-12">
-                            <div class="thumb">
-                                <img src="assets/img/news/post-1.jpg" alt="img">
+            <?php foreach ($homeBlogs as $hblog): ?>
+                <div class="col-md-6 col-12">
+                    <div class="news-standard-wrapper h-100" style="background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                        <div class="news-standard-items row">
+                            <div class="col-12">
+                                <div class="thumb">
+                                    <img src="<?= htmlspecialchars(get_blog_image_url($hblog['featured_image'])) ?>" 
+                                         alt="<?= htmlspecialchars($hblog['title']) ?>"
+                                         style="width: 100%; height: 260px; object-fit: cover; border-radius: 8px;">
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex align-items-center mt-3">
+                                <div class="content text-content-right w-100">
+                                    <p>
+                                        <small><i class="fa-regular fa-calendar-days me-1"></i> <?= date('F j, Y', strtotime($hblog['published_at'] ?? $hblog['created_at'])) ?></small>
+                                        <?php if (!empty($hblog['category_name'])): ?>
+                                            <span class="badge bg-secondary ms-2"><?= htmlspecialchars($hblog['category_name']) ?></span>
+                                        <?php endif; ?>
+                                    </p>
+                                    <h3 style="font-size: 20px; color: #222;"><?= htmlspecialchars($hblog['title']) ?></h3>
+                                    <?php if (!empty($hblog['short_description'])): ?>
+                                        <p class="text-muted mt-2 mb-3" style="font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                            <?= htmlspecialchars($hblog['short_description']) ?>
+                                        </p>
+                                    <?php endif; ?>
+                                    <a href="blog-detail.php?slug=<?= urlencode($hblog['slug']) ?>" class="theme-btn mt-2">See Details</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-12 d-flex align-items-center">
-                            <div class="content text-content-right">
-                                <p><small><i class="fa-regular fa-calendar-days"></i> August 4, 2026</small></p>
-                                <h3>Choose The Best IT Service Company in the City.</h3>
-                                <a href="blog-detail.php" class="theme-btn">See Details</a>
-                            </div>
-                        </div>
-
-
                     </div>
-
                 </div>
-            </div>
-
-            <div class="col-6">
-                <div class="news-standard-wrapper">
-                    <div class="news-standard-items row ">
-                        <div class="col-12">
-                            <div class="thumb">
-                                <img src="assets/img/news/post-1.jpg" alt="img">
-                            </div>
-                        </div>
-                        <div class="col-12 d-flex align-items-center">
-                            <div class="content text-content-right">
-                                <p><small><i class="fa-regular fa-calendar-days"></i> August 4, 2026</small></p>
-                                <h3>Choose The Best IT Service Company in the City.</h3>
-                                <a href="blog-detail.php" class="theme-btn">See Details</a>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                </div>
-            </div>
-
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
+<?php endif; ?>
 
 
 <!-- Tech Section -->

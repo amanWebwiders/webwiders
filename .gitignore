@@ -1,2 +1,5 @@
-*.zip
-maheshwaritrade.com/
+.env
+.env.backup
+.idea/
+.vscode/
+*.log

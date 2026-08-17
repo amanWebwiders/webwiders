@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 /**
  * -------------------------------------------------
- * BASE PATH (Filesystem) â€“ for PHP includes
+ * BASE PATH (Filesystem) – for PHP includes
  * Example: G:/xampp/htdocs/webwiders/
  * -------------------------------------------------
  */
@@ -14,16 +14,21 @@ define('BASE_PATH', realpath(__DIR__) . DIRECTORY_SEPARATOR);
 
 /**
  * -------------------------------------------------
- * BASE URL â€“ for browser links
+ * BASE URL – for browser links
  * Example: http://localhost/webwiders/
  * -------------------------------------------------
  */
-define(
-    'BASE_URL',
-    (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http')
-    . '://' . $_SERVER['HTTP_HOST']
-    . '/'
-);
+define('BASE_URL', (function () {
+    $scheme = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? 'https' : 'http';
+    $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+    $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
+    $dir = str_replace('\\', '/', dirname($scriptName));
+    $dir = rtrim($dir, '/');
+    if ($dir === '/' || $dir === '.') {
+        $dir = '';
+    }
+    return $scheme . '://' . $host . ($dir !== '' ? $dir : '') . '/';
+})());
 
 /**
  * -------------------------------------------------
@@ -42,3 +47,6 @@ if (!function_exists('url')) {
         return rtrim(BASE_URL, '/') . '/' . ltrim($path, '/');
     }
 }
+
+// Database Connection & Helper Load
+require_once __DIR__ . '/db.php';
