@@ -2449,11 +2449,103 @@ section.news-section.section-padding .case-studies-card-items .content p {
     /* Theme text color */
     border-radius: 5px;
     /* Fully rounded edges for badge/pill look */
-    font-weight: 600;
-    font-size: 12px;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(106, 71, 237, 0.2);
 }
+
+
+/* Custom CSS for Our Projects Section */
+section.news-section.section-padding.custom-our-projects-section .case-studies-card-items .content p {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 310px;
+}
+
+section.news-section.section-padding.custom-our-projects-section .case-studies-card-items .content .icon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.custom-our-projects-section .case-studies-card-items .content .title h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.custom-our-projects-section .case-studies-card-items .content .title h3 a {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.custom-our-projects-section .case-studies-card-items .thumb {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.custom-our-projects-section .case-studies-card-items .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    transition: transform 0.3s ease;
+}
+
+.custom-our-projects-section .case-studies-card-items:hover .thumb img {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments for Our Projects */
+@media (max-width: 991px) {
+    .custom-our-projects-section .case-studies-card-items .thumb {
+        height: 180px;
+    }
+}
+
+@media (max-width: 767px) {
+    .custom-our-projects-section .case-studies-card-items .thumb {
+        height: 160px;
+    }
+    
+    .custom-our-projects-section .case-studies-card-items .content .title h3 {
+        font-size: 16px;
+    }
+    
+    .custom-our-projects-section .case-studies-card-items .content p {
+        font-size: 13px;
+        -webkit-line-clamp: 2;
+    }
+}
+
+@media (max-width: 575px) {
+    .custom-our-projects-section .case-studies-card-items .thumb {
+        height: 140px;
+    }
+    
+    .custom-our-projects-section .case-studies-card-items .content .title h3 {
+        font-size: 15px;
+    }
+    
+    .custom-our-projects-section .case-studies-card-items .content p {
+        font-size: 12px;
+        -webkit-line-clamp: 2;
+    }
+    
+    .custom-our-projects-section .case-studies-card-items .content .icon {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+}
+  
 
 .tech-badge:hover {
     background-color: var(--theme, #6A47ED);
@@ -3606,3 +3698,352 @@ section#about-us-cta .main-button {
         gap: 16px 18px;
     }
 }
+
+
+
+/* ==========================================
+     START: THEVENCO CASE STUDY SECTION
+     ========================================== */
+
+    #thevenco-case-study.thevenco-vendor-page {
+        color: #333;
+        background-color: #fff;
+    }
+    #thevenco-case-study.thevenco-vendor-page h1, 
+    #thevenco-case-study.thevenco-vendor-page h2, 
+    #thevenco-case-study.thevenco-vendor-page h3, 
+    #thevenco-case-study.thevenco-vendor-page h4, 
+    #thevenco-case-study.thevenco-vendor-page h5,
+    #thevenco-case-study.thevenco-vendor-page h6 {
+        color: #1a1a1a;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+    #thevenco-case-study.thevenco-vendor-page .section-spacer {
+        padding: 80px 0;
+    }
+    #thevenco-case-study.thevenco-vendor-page .bg-light-gray {
+        background-color: #f8f9fa;
+    }
+    #thevenco-case-study.thevenco-vendor-page .theme-text-primary {
+        color: #a5110d;
+    }
+    #thevenco-case-study.thevenco-vendor-page .btn-custom-primary {
+        background-color: #a5110d;
+        color: #fff;
+        padding: 12px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        transition: 0.3s ease;
+        border: 2px solid #a5110d;
+    }
+    #thevenco-case-study.thevenco-vendor-page .btn-custom-primary:hover {
+        background-color: transparent;
+        color: #a5110d;
+    }
+    #thevenco-case-study.thevenco-vendor-page .btn-custom-outline {
+        background-color: transparent;
+        color: #1a1a1a;
+        padding: 12px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        transition: 0.3s ease;
+        border: 2px solid #e0e0e0;
+    }
+    #thevenco-case-study.thevenco-vendor-page .btn-custom-outline:hover {
+        border-color: #a5110d;
+        color: #a5110d;
+    }
+
+    /* Glance Table */
+    #thevenco-case-study.thevenco-vendor-page .glance-row {
+        display: flex;
+        border-bottom: 1px solid #eaeaea;
+        padding: 15px 0;
+    }
+    #thevenco-case-study.thevenco-vendor-page .glance-row:last-child {
+        border-bottom: none;
+    }
+    #thevenco-case-study.thevenco-vendor-page .glance-label {
+        width: 25%;
+        font-weight: 700;
+        color: #1a1a1a;
+    }
+    #thevenco-case-study.thevenco-vendor-page .glance-value {
+        width: 75%;
+        color: #555;
+    }
+
+    /* Challenge Cards & Numbered Cards */
+    #thevenco-case-study.thevenco-vendor-page .num-card {
+        background: #fff;
+        border: 1px solid #eaeaea;
+        border-radius: 18px;
+        padding: 30px;
+        height: 100%;
+        transition: 0.3s ease;
+        border-top: 4px solid var(--theme);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    }
+    #thevenco-case-study.thevenco-vendor-page .num-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    #thevenco-case-study.thevenco-vendor-page .num-card .number {
+        font-size: 2.6rem;
+        font-weight: 800;
+        color: rgba(165, 17, 13, 0.12);
+        margin-bottom: 18px;
+        display: block;
+    }
+
+    /* Info Cards (Modules, Impact, Features) */
+    #thevenco-case-study.thevenco-vendor-page .info-card {
+        background: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        height: 100%;
+        border: 1px solid #f1f1f1;
+    }
+    #thevenco-case-study.thevenco-vendor-page .info-card h4, 
+    #thevenco-case-study.thevenco-vendor-page .info-card h5 {
+        margin-bottom: 15px;
+    }
+    #thevenco-case-study.thevenco-vendor-page .info-card p {
+        color: #666;
+        font-size: 0.95rem;
+        margin-bottom: 0;
+    }
+
+    /* Role Cards */
+    #thevenco-case-study.thevenco-vendor-page .role-card {
+        background: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        border-top: 4px solid #a5110d;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        height: 100%;
+    }
+    #thevenco-case-study.thevenco-vendor-page .check-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    #thevenco-case-study.thevenco-vendor-page .check-list li {
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 10px;
+        color: #444;
+        font-size: 0.95rem;
+    }
+    #thevenco-case-study.thevenco-vendor-page .check-list li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #a5110d;
+        font-weight: bold;
+    }
+
+    /* Tech Stack Logos */
+    #thevenco-case-study.thevenco-vendor-page .tech-box {
+        border: 1px solid #eee;
+        padding: 20px;
+        text-align: center;
+        border-radius: 6px;
+        font-weight: 600;
+        background: #fff;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    #thevenco-case-study.thevenco-vendor-page .tech-box p {
+        font-size: 0.85rem;
+        color: #666;
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-weight: normal;
+    }
+
+    /* Goal Step Box */
+    #thevenco-case-study.thevenco-vendor-page .goal-step-box {
+        background: #fff;
+        border: 1px solid #eaeaea;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        height: 100%;
+    }
+
+    /* Arrow Flow */
+    #thevenco-case-study.thevenco-vendor-page .workflow-arrow {
+        color: #a5110d;
+        font-weight: bold;
+        margin: 0 10px;
+    }
+
+    @media (max-width: 768px) {
+        #thevenco-case-study.thevenco-vendor-page .glance-row {
+            flex-direction: column;
+        }
+        #thevenco-case-study.thevenco-vendor-page .glance-label, 
+        #thevenco-case-study.thevenco-vendor-page .glance-value {
+            width: 100%;
+        }
+        #thevenco-case-study.thevenco-vendor-page .glance-label {
+            margin-bottom: 5px;
+        }
+    }
+
+    /* Hero Section Styles */
+    #thevenco-case-study.thevenco-vendor-page .hero-shell {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+    #thevenco-case-study.thevenco-vendor-page .hero-copy {
+        flex: 1;
+    }
+    #thevenco-case-study.thevenco-vendor-page .hero-media {
+        flex: 1;
+        position: relative;
+    }
+    #thevenco-case-study.thevenco-vendor-page .hero-badge {
+        display: inline-block;
+        background: #a5110d;
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    #thevenco-case-study.thevenco-vendor-page .hero-copy h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+    #thevenco-case-study.thevenco-vendor-page .hero-copy h4 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #666;
+    }
+    #thevenco-case-study.thevenco-vendor-page .hero-copy p {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
+    #thevenco-case-study.thevenco-vendor-page .hero-visual-card {
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+    #thevenco-case-study.thevenco-vendor-page .hero-visual-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    #thevenco-case-study.thevenco-vendor-page .flying-tag {
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        background: #fff;
+        padding: 15px 20px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    #thevenco-case-study.thevenco-vendor-page .flying-tag span {
+        display: block;
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 5px;
+    }
+    #thevenco-case-study.thevenco-vendor-page .flying-tag strong {
+        display: block;
+        font-size: 16px;
+        color: #1a1a1a;
+    }
+    #thevenco-case-study.thevenco-vendor-page .floating-card {
+        position: absolute;
+        bottom: -20px;
+        left: -20px;
+        background: #fff;
+        padding: 15px 20px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    #thevenco-case-study.thevenco-vendor-page .floating-card .label {
+        display: block;
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 5px;
+    }
+    #thevenco-case-study.thevenco-vendor-page .floating-card strong {
+        display: block;
+        font-size: 16px;
+        color: #1a1a1a;
+    }
+
+    /* Glance Panel */
+    #thevenco-case-study.thevenco-vendor-page .glance-panel {
+        background: #fff;
+        border: 1px solid #eaeaea;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 991px) {
+        #thevenco-case-study.thevenco-vendor-page .hero-shell {
+            flex-direction: column;
+            gap: 30px;
+        }
+        #thevenco-case-study.thevenco-vendor-page .hero-copy h1 {
+            font-size: 2.5rem;
+        }
+        #thevenco-case-study.thevenco-vendor-page .hero-visual-card {
+            min-height: 300px;
+        }
+        #thevenco-case-study.thevenco-vendor-page .flying-tag,
+        #thevenco-case-study.thevenco-vendor-page .floating-card {
+            position: relative;
+            top: auto;
+            right: auto;
+            bottom: auto;
+            left: auto;
+            margin: 10px;
+            display: inline-block;
+        }
+    }
+
+    @media (max-width: 767px) {
+        #thevenco-case-study.thevenco-vendor-page .hero-copy h1 {
+            font-size: 2rem;
+        }
+        #thevenco-case-study.thevenco-vendor-page .hero-copy h4 {
+            font-size: 1.2rem;
+        }
+        #thevenco-case-study.thevenco-vendor-page .glance-panel {
+            padding: 20px;
+        }
+        #thevenco-case-study.thevenco-vendor-page .num-card,
+        #thevenco-case-study.thevenco-vendor-page .info-card,
+        #thevenco-case-study.thevenco-vendor-page .role-card {
+            padding: 20px;
+        }
+    }
