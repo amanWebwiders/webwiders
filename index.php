@@ -85,7 +85,7 @@
 
 
                                         <div class="main-button wow fadeInUp mt-md-4" data-wow-delay=".3s">
-                                            <a href="on-demand-hire.php" class="offcanvas-btn hire-btn">
+                                            <a href="<?= url('on-demand-hire') ?>" class="offcanvas-btn hire-btn">
                                                 <span class="theme-btn">
                                                     Hire Dedicated Developers
                                                 </span>
@@ -205,7 +205,7 @@
 
                     <div class="content">
 
-                        <h4><a href="service.php">Consultation & Planning</a></h4>
+                        <h4><a href="<?= url('service') ?>">Consultation & Planning</a></h4>
 
                         <p>We begin by understanding your requirements, goals, and vision through detailed discussions.
                         </p>
@@ -228,7 +228,7 @@
 
                     <div class="content">
 
-                        <h4><a href="service.php">Design & Development</a></h4>
+                        <h4><a href="<?= url('service') ?>">Design & Development</a></h4>
 
                         <p>Our team creates prototypes and develops your solution with regular updates and feedback.</p>
 
@@ -250,7 +250,7 @@
 
                     <div class="content">
 
-                        <h4><a href="service.php">Launch & Support</a></h4>
+                        <h4><a href="<?= url('service') ?>">Launch & Support</a></h4>
 
                         <p>We deploy your solution and provide ongoing maintenance and support services for your
                             project.</p>
@@ -528,7 +528,7 @@
 
                         <div class="main-button wow fadeInUp justify-content-start" data-wow-delay=".3s">
 
-                            <a href="about.php"> <span class="theme-btn"> About us </span><span class="arrow-btn"><i
+                            <a href="<?= url('about') ?>"> <span class="theme-btn"> About us </span><span class="arrow-btn"><i
                                         class="fa-solid fa-turn-up"></i></span></a>
 
                         </div>
@@ -1271,7 +1271,7 @@
             </div>
 
             <!-- <div class="main-button wow fadeInUp" data-wow-delay=".5s">
-                <a href="products.php"> <span class="theme-btn"> See All </span><span class="arrow-btn"><i
+                <a href="<?= url('products') ?>"> <span class="theme-btn"> See All </span><span class="arrow-btn"><i
                             class="fa-solid fa-turn-up"></i></span></a>
             </div> -->
 
@@ -1305,14 +1305,14 @@
                     <div class="content">
                         <div class="title">
                             <h3>
-                                <a href="health-erp.php">
+                                <a href="<?= url('health-erp') ?>">
                                     HealthCard ERP </a>
                             </h3>
                             <p>A comprehensive hospital management ERP designed to streamline patient care, appointment
                                 scheduling, medical records, billing, inventory, and hospital operations through a
                                 centralized digital platform.</p>
                         </div>
-                        <a href="health-erp.php" class="icon"><i
+                        <a href="<?= url('health-erp') ?>" class="icon"><i
                                 class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -1580,7 +1580,7 @@
                 </h2>
             </div>
             <!-- <div class="main-button wow fadeInUp" data-wow-delay=".5s">
-                <a href="about.php"> <span class="theme-btn"> EXPLORE MORE </span><span class="arrow-btn"><i
+                <a href="<?= url('about') ?>"> <span class="theme-btn"> EXPLORE MORE </span><span class="arrow-btn"><i
                             class="fa-solid fa-turn-up"></i></span></a>
             </div> -->
         </div>
@@ -1782,7 +1782,7 @@ if (isset($pdo) && $pdo) {
             </div>
 
             <div class="main-button wow fadeInUp" data-wow-delay=".5s">
-                <a href="blog.php"> <span class="theme-btn"> See All </span><span class="arrow-btn"><i
+                <a href="<?= url('blog') ?>"> <span class="theme-btn"> See All </span><span class="arrow-btn"><i
                             class="fa-solid fa-turn-up"></i></span></a>
             </div>
 
@@ -1815,7 +1815,7 @@ if (isset($pdo) && $pdo) {
                                             <?= htmlspecialchars($hblog['short_description']) ?>
                                         </p>
                                     <?php endif; ?>
-                                    <a href="blog-detail.php?slug=<?= urlencode($hblog['slug']) ?>" class="theme-btn mt-2">See Details</a>
+                                    <a href="<?= url('blog-detail/' . urlencode($hblog['slug'])) ?>" class="theme-btn mt-2">See Details</a>
                                 </div>
                             </div>
                         </div>

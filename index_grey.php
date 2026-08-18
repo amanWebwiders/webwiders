@@ -174,7 +174,7 @@
                         <img src="assets/img/service/icon-1.png" alt="img">
                     </div>
                     <div class="content">
-                        <h4><a href="service.php">Consultation & Planning</a></h4>
+                        <h4><a href="<?= url('service') ?>">Consultation & Planning</a></h4>
                         <p>We begin by understanding your requirements, goals, and vision through detailed discussions.</p>
                     </div>
                 </div>
@@ -185,7 +185,7 @@
                         <img src="assets/img/service/icon-2.png" alt="img">
                     </div>
                     <div class="content">
-                        <h4><a href="service.php">Design & Development</a></h4>
+                        <h4><a href="<?= url('service') ?>">Design & Development</a></h4>
                         <p>Our team creates prototypes and develops your solution with regular updates and feedback.</p>
                     </div>
                 </div>
@@ -196,7 +196,7 @@
                         <img src="assets/img/service/icon-3.png" alt="img">
                     </div>
                     <div class="content">
-                        <h4><a href="service.php">Launch & Support</a></h4>
+                        <h4><a href="<?= url('service') ?>">Launch & Support</a></h4>
                         <p>We deploy your solution and provide ongoing maintenance and support services for projects.</p>
                     </div>
                 </div>
@@ -294,7 +294,7 @@
                             </div>
                         </div> -->
                         <div class="main-button wow fadeInUp" data-wow-delay=".3s">
-                            <a href="about.php"> <span class="theme-btn"> EXPLORE MORE </span><span class="arrow-btn"><i class="fa-solid fa-turn-up"></i></span></a>
+                            <a href="<?= url('about') ?>"> <span class="theme-btn"> EXPLORE MORE </span><span class="arrow-btn"><i class="fa-solid fa-turn-up"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -326,7 +326,7 @@
                 </h2>
             </div>
             <div class="main-button wow fadeInUp" data-wow-delay=".5s">
-                <a href="about.html"> <span class="theme-btn"> EXPLORE MORE </span><span class="arrow-btn"><i class="fa-solid fa-turn-up"></i></span></a>
+                <a href="<?= url('about') ?>"> <span class="theme-btn"> EXPLORE MORE </span><span class="arrow-btn"><i class="fa-solid fa-turn-up"></i></span></a>
 
             </div>
         </div>
@@ -355,7 +355,7 @@
                                 </ul>
                             </div>
                             <h3 class="project-title">
-                                <a href="service.php">
+                                <a href="<?= url('service') ?>">
                                     <img src="assets/img/case-studies/icon.png" alt="img">
                                     Experienced Professionals
                                 </a>
@@ -553,7 +553,7 @@
                             </ul>
                         </div>
                         <div class="main-button wow fadeInUp" data-wow-delay=".5s">
-                            <a href="team.html"> <span class="theme-btn"> EXPLORE MORE </span><span class="arrow-btn"><i class="fa-solid fa-turn-up"></i></span></a>
+                            <a href="<?= url('about') ?>"> <span class="theme-btn"> EXPLORE MORE </span><span class="arrow-btn"><i class="fa-solid fa-turn-up"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -837,9 +837,9 @@
                                 September 6, 2024
                             </li>
                         </ul>
-                        <h5><a href="news-details.html">Importers achieve savings through the First Sale rule!</a></h5>
+                        <h5><a href="<?= url('blog') ?>">Importers achieve savings through the First Sale rule!</a></h5>
                         <div class="news-btn">
-                            <a href="news-details.html" class="link-btn">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
+                            <a href="<?= url('blog') ?>" class="link-btn">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
                             <img src="assets/img/news/client-img.png" alt="img">
                         </div>
                     </div>
@@ -866,9 +866,9 @@
                                 September 6, 2024
                             </li>
                         </ul>
-                        <h5><a href="news-details.html">Is now the right time to invest in an enterprise</a></h5>
+                        <h5><a href="<?= url('blog') ?>">Is now the right time to invest in an enterprise</a></h5>
                         <div class="news-btn">
-                            <a href="news-details.html" class="link-btn">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
+                            <a href="<?= url('blog') ?>" class="link-btn">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
                             <img src="assets/img/news/client-img.png" alt="img">
                         </div>
                     </div>
@@ -895,10 +895,10 @@
                                 September 6, 2024
                             </li>
                         </ul>
-                        <h5><a href="news-details.html">Focus logistics secure new
+                        <h5><a href="<?= url('blog') ?>">Focus logistics secure new
                                 landmark Contracts</a></h5>
                         <div class="news-btn">
-                            <a href="news-details.html" class="link-btn">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
+                            <a href="<?= url('blog') ?>" class="link-btn">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
                             <img src="assets/img/news/client-img.png" alt="img">
                         </div>
                     </div>
@@ -925,9 +925,9 @@
                                 September 6, 2024
                             </li>
                         </ul>
-                        <h5><a href="news-details.html">Transid Named a Finalist For Year’ 25 Best Choice </a></h5>
+                        <h5><a href="<?= url('blog') ?>">Transid Named a Finalist For Year’ 25 Best Choice </a></h5>
                         <div class="news-btn">
-                            <a href="news-details.html" class="link-btn">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
+                            <a href="<?= url('blog') ?>" class="link-btn">Read More <i class="fa-regular fa-arrow-right-long"></i></a>
                             <img src="assets/img/news/client-img.png" alt="img">
                         </div>
                     </div>
@@ -951,7 +951,7 @@
                 Stay Connected With <br> Cutting Edge IT
             </h2>
             <div class="main-button wow fadeInUp" data-wow-delay=".5s">
-                <a href="contact.html"> <span class="theme-btn"> talk TO A SPECIALIST </span><span class="arrow-btn"><i class="fa-solid fa-turn-up"></i></span></a>
+                <a href="<?= url('contact') ?>"> <span class="theme-btn"> talk TO A SPECIALIST </span><span class="arrow-btn"><i class="fa-solid fa-turn-up"></i></span></a>
             </div>
         </div>
     </div>

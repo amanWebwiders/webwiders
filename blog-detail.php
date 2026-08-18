@@ -126,13 +126,13 @@ if (isset($pdo) && $pdo) {
             </div>
             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                 <li>
-                    <a href="index.php">Home</a>
+                    <a href="<?= url('/') ?>">Home</a>
                 </li>
                 <li>
                     <i class="fa-solid fa-chevron-right"></i>
                 </li>
                 <li>
-                    <a href="blog.php">Blog</a>
+                    <a href="<?= url('blog') ?>">Blog</a>
                 </li>
                 <li>
                     <i class="fa-solid fa-chevron-right"></i>
@@ -237,7 +237,7 @@ if (isset($pdo) && $pdo) {
                                     <h4>Search</h4>
                                 </div>
                                 <div class="search-widget">
-                                    <form action="blog.php" method="GET">
+                                    <form action="<?= url('blog') ?>" method="GET">
                                         <input type="text" name="search" placeholder="Search blogs..." required>
                                         <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                                     </form>
@@ -254,7 +254,7 @@ if (isset($pdo) && $pdo) {
                                         <ul>
                                             <?php foreach ($sidebarCategories as $scat): ?>
                                                 <li>
-                                                    <a href="blog.php#cat-<?= htmlspecialchars($scat['slug']) ?>">
+                                                    <a href="<?= url('blog') ?>#cat-<?= htmlspecialchars($scat['slug']) ?>">
                                                         <?= htmlspecialchars($scat['name']) ?>
                                                     </a>
                                                     <span>(<?= $scat['blog_count'] ?>)</span>
@@ -285,7 +285,7 @@ if (isset($pdo) && $pdo) {
                                                         <?= date('d M, Y', strtotime($rblog['published_at'] ?? $rblog['created_at'])) ?>
                                                     </p>
                                                     <h6 class="mb-0" style="font-size: 14px; line-height: 1.3;">
-                                                        <a href="blog-detail.php?slug=<?= urlencode($rblog['slug']) ?>" style="color: #222;">
+                                                        <a href="<?= url('blog-detail/' . urlencode($rblog['slug'])) ?>" style="color: #222;">
                                                             <?= htmlspecialchars($rblog['title']) ?>
                                                         </a>
                                                     </h6>
@@ -319,7 +319,7 @@ if (isset($pdo) && $pdo) {
             <div class="text-center py-5">
                 <h2>Blog Post Not Found</h2>
                 <p class="text-muted">The requested blog post is not available.</p>
-                <a href="blog.php" class="theme-btn mt-3">Back to Blogs</a>
+                <a href="<?= url('blog') ?>" class="theme-btn mt-3">Back to Blogs</a>
             </div>
         <?php endif; ?>
     </div>

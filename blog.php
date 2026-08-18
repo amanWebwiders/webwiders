@@ -140,9 +140,9 @@ if (isset($pdo) && $pdo) {
                 </h1>
             </div>
             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="<?= url('/') ?>">Home</a></li>
                 <li><i class="fa-solid fa-chevron-right"></i></li>
-                <li><a href="blog.php">Blog</a></li>
+                <li><a href="<?= url('blog') ?>">Blog</a></li>
                 <?php if (!empty($searchQuery) || !empty($tagQuery)): ?>
                     <li><i class="fa-solid fa-chevron-right"></i></li>
                     <li>Filtered Results</li>
@@ -167,7 +167,7 @@ if (isset($pdo) && $pdo) {
                     </h2>
                     <p class="text-muted">Found <?= count($filteredBlogs) ?> post(s)</p>
                 </div>
-                <a href="blog.php" class="btn btn-outline-secondary">Clear Filter</a>
+                <a href="<?= url('blog') ?>" class="btn btn-outline-secondary">Clear Filter</a>
             </div>
 
             <?php if (!empty($filteredBlogs)): ?>
@@ -197,7 +197,7 @@ if (isset($pdo) && $pdo) {
                                                     <?= htmlspecialchars($fblog['short_description']) ?>
                                                 </p>
                                             <?php endif; ?>
-                                            <a href="blog-detail.php?slug=<?= urlencode($fblog['slug']) ?>" class="theme-btn mt-2">See Details</a>
+                                            <a href="<?= url('blog-detail/' . urlencode($fblog['slug'])) ?>" class="theme-btn mt-2">See Details</a>
                                         </div>
                                     </div>
                                 </div>
@@ -208,7 +208,7 @@ if (isset($pdo) && $pdo) {
             <?php else: ?>
                 <div class="text-center py-5">
                     <h4>No blogs found matching your search.</h4>
-                    <a href="blog.php" class="theme-btn mt-3">View All Blogs</a>
+                    <a href="<?= url('blog') ?>" class="theme-btn mt-3">View All Blogs</a>
                 </div>
             <?php endif; ?>
         </div>
@@ -284,7 +284,7 @@ if (isset($pdo) && $pdo) {
                                                                 <?php endif; ?>
                                                             </p>
                                                             <h3 class="mb-3" style="font-size: 20px; color: #222; min-height: 52px;"><?= htmlspecialchars($slide['title']) ?></h3>
-                                                            <a href="blog-detail.php?slug=<?= urlencode($slide['slug']) ?>" class="theme-btn">See Details</a>
+                                                            <a href="<?= url('blog-detail/' . urlencode($slide['slug'])) ?>" class="theme-btn">See Details</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -353,7 +353,7 @@ if (isset($pdo) && $pdo) {
                                                     <?= htmlspecialchars($blog['short_description']) ?>
                                                 </p>
                                             <?php endif; ?>
-                                            <a href="blog-detail.php?slug=<?= urlencode($blog['slug']) ?>" class="theme-btn mt-2">See Details</a>
+                                            <a href="<?= url('blog-detail/' . urlencode($blog['slug'])) ?>" class="theme-btn mt-2">See Details</a>
                                         </div>
                                     </div>
                                 </div>
@@ -397,11 +397,11 @@ if (isset($pdo) && $pdo) {
             </div>
 
             <div class="main-button d-flex flex-wrap gap-4 mt-4 wow fadeInUp" data-wow-delay=".5s">
-                <a href="contact.php" class="d-inline-flex align-items-center">
+                <a href="<?= url('contact') ?>" class="d-inline-flex align-items-center">
                     <span class="theme-btn"> Contact Us </span>
                     <span class="arrow-btn"><i class="fa-regular fa-arrow-up-right"></i></span>
                 </a>
-                <a href="hire.php" class="d-inline-flex align-items-center">
+                <a href="<?= url('on-demand-hire') ?>" class="d-inline-flex align-items-center">
                     <span class="theme-btn" style="background: #ffffff; color: #222;"> Hire A Developer </span>
                     <span class="arrow-btn" style="background: #ffffff; color: #222;"><i
                             class="fa-regular fa-arrow-up-right"></i></span>
