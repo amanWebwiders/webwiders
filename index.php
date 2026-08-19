@@ -1629,11 +1629,11 @@
                     <div class="content">
                         <div class="title">
                             <h3>
-                                <a href="https://misy.app/en/apps">Smart Taxi Booking</a>
+                                <a href="smart-taxi.php">Smart Taxi Booking</a>
                             </h3>
                             <p>A feature-rich ride booking app that enables users to book or schedule rides, track drivers in real time, choose vehicle types, and make secure payments for a seamless travel experience.</p>
                         </div>
-                        <a href="https://misy.app/en/apps" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="smart-taxi.php" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -1647,11 +1647,11 @@
                     <div class="content">
                         <div class="title">
                             <h3>
-                                <a href="https://meetzane.com.au/">AI Mental Wellness Platform</a>
+                                <a href="meetzane.php">AI Mental Wellness Platform</a>
                             </h3>
                             <p>An AI-powered mental wellness companion that provides personalized, judgment-free conversations using evidence-based therapeutic techniques to support emotional well-being and self-growth.</p>
                         </div>
-                        <a href="https://meetzane.com.au/" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="meetzane.php" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

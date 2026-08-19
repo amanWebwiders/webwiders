@@ -3163,7 +3163,7 @@ span {
 
 .header-1 .header-right .main-button .theme-btn,
 .header-1 .header-right .main-button .arrow-btn {
-  background-color: var(--theme2);
+  /* background-color: var(--theme2); */
   color: var(--white);
 }
 
