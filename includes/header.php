@@ -49,6 +49,8 @@ if (!defined('BASE_URL')) {
     <link rel="stylesheet" href="<?php echo asset('/css/responsive.css'); ?>">
     <!-- Make relative URLs resolve correctly -->
     <base href="<?php echo rtrim(BASE_URL, '/'); ?>/">
+    <!-- Canonical SEO URL Tag -->
+    <link rel="canonical" href="<?php echo (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . strtok($_SERVER['REQUEST_URI'], '?'); ?>">
     <script src="https://agentic.fuelsmart.io/widget.js" data-agent-id="AGENT_123" data-agent-name="Lisa"
         data-api-base-url="https://agentic.fuelsmart.io"></script>
 
@@ -74,7 +76,7 @@ if (!defined('BASE_URL')) {
                 <div class="offcanvas__content">
                     <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                         <div class="offcanvas__logo">
-                            <a href="index.php">
+                            <a href="<?= url('/') ?>">
                                 <img src="assets/img/sitelogo-black.png" alt="logo-img">
                             </a>
                         </div>
@@ -162,7 +164,7 @@ if (!defined('BASE_URL')) {
 
                         </div>
                         <div class="main-button">
-                            <a href="contact.html"> <span class="theme-btn"> Get Started </span><span
+                            <a href="<?= url('contact') ?>"> <span class="theme-btn"> Get Started </span><span
                                     class="arrow-btn"><i class="fa-solid fa-turn-up"></i></span></a>
                         </div>
                         <!-- <div class="social-icon d-flex align-items-center">
@@ -184,10 +186,10 @@ if (!defined('BASE_URL')) {
             <div class="mega-menu-wrapper">
                 <div class="header-main">
                     <div class="logo">
-                        <a href="index.php" class="header-logo">
+                        <a href="<?= url('/') ?>" class="header-logo">
                             <img src="assets/img/sitelogo-black.png" alt="logo-img">
                         </a>
-                        <a href="index.php" class="header-logo-2">
+                        <a href="<?= url('/') ?>" class="header-logo-2">
                             <img src="assets/img/sitelogo-black.png" alt="logo-img">
                         </a>
                     </div>
@@ -196,12 +198,12 @@ if (!defined('BASE_URL')) {
                             <nav id="mobile-menu">
                                 <ul>
                                     <li class="active menu-thumb">
-                                        <a href="index.php">
+                                        <a href="<?= url('/') ?>">
                                             Home
                                         </a>
                                     </li>
                                     <li class="">
-                                        <a href="about.php">
+                                        <a href="<?= url('about') ?>">
                                             About Us
                                         </a>
                                     </li>
@@ -209,7 +211,7 @@ if (!defined('BASE_URL')) {
                                     <!-- Desktop start-->
 
                                     <li class="d-none d-lg-inline-block">
-                                        <a href="service.php">
+                                        <a href="<?= url('service') ?>">
                                             Services
                                             <i class="fa-solid fa-chevron-down"></i>
                                         </a>
@@ -340,7 +342,7 @@ if (!defined('BASE_URL')) {
                                             </li>
 
                                             <!-- Normal Submenu Items (Jo nested nahi hain) -->
-                                            <li><a href="on-demand-hire.php">On Demand Hire</a></li>
+                                            <li><a href="<?= url('on-demand-hire') ?>">On Demand Hire</a></li>
 
                                         </ul>
                                     </li>
@@ -356,7 +358,7 @@ if (!defined('BASE_URL')) {
 
                                     <!-- Desktop -->
                                     <!-- <li class="has-dropdown dropdown mega-dropdown d-none d-lg-inline-block">
-                                        <a href="service.php" class="nav-link dropdown-toggle">
+                                        <a href="<?= url('service') ?>" class="nav-link dropdown-toggle">
                                             Services <i class="fas fa-chevron-down"></i>
                                         </a>
 
@@ -489,7 +491,7 @@ if (!defined('BASE_URL')) {
 
                                     <!-- Mobile -->
                                     <li class="has-dropdown d-block d-lg-none">
-                                        <a href="service.php">
+                                        <a href="<?= url('service') ?>">
                                             Services
                                             <i class="fa-solid fa-chevron-down"></i>
                                         </a>
@@ -608,7 +610,7 @@ if (!defined('BASE_URL')) {
                                             </li>
 
                                             <li class="has-dropdown">
-                                                <a href="on-demand-hire.php">
+                                                <a href="<?= url('on-demand-hire') ?>">
                                                     On Demand Hire
                                                 </a>
                                             </li>
@@ -621,23 +623,23 @@ if (!defined('BASE_URL')) {
                                     <!-- Hire Resource Start-->
 
                                     <!-- <li class="has-dropdown">
-                                        <a href="index.php">
+                                        <a href="<?= url('/') ?>">
                                             hire-resources
                                             <i class="fa-solid fa-chevron-down"></i>
                                         </a>
                                         <ul class="submenu">
-                                            <li><a href="hire-resources/hire-android-app-developer.php">hire android app
+                                            <li><a href="<?= url('hire-resources/hire-android-app-developer') ?>">hire android app
                                                     developer</a></li>
                                             <li><a
-                                                    href="hire-resources/hire-cross-platform-developer.php">hire cross-platform developer</a>
+                                                    href="<?= url('hire-resources/hire-cross-platform-developer') ?>">hire cross-platform developer</a>
                                             </li>
                                             <li><a
-                                                    href="hire-resources/hire-magento-developer.php">hire magento developer</a>
+                                                    href="<?= url('hire-resources/hire-magento-developer') ?>">hire magento developer</a>
                                             </li>
-                                            <li><a href="hire-resources/hire-php-developer.php">hire php developer</a>
+                                            <li><a href="<?= url('hire-resources/hire-php-developer') ?>">hire php developer</a>
                                             </li>
                                             <li><a
-                                                    href="hire-resources/hire-wordpress-developer.php">hire wordpress developer</a>
+                                                    href="<?= url('hire-resources/hire-wordpress-developer') ?>">hire wordpress developer</a>
                                             </li>
                                         </ul>
                                     </li> -->
@@ -650,7 +652,7 @@ if (!defined('BASE_URL')) {
 
                                     <!-- Desktop -->
                                     <!-- <li class="has-dropdown dropdown mega-dropdown d-none d-lg-inline-block">
-                                        <a href="service.php" class="nav-link dropdown-toggle">
+                                        <a href="<?= url('service') ?>" class="nav-link dropdown-toggle">
                                             Our Product <i class="fas fa-chevron-down"></i>
                                         </a>
                                         <ul class="submenu">
@@ -687,31 +689,31 @@ if (!defined('BASE_URL')) {
                                     <!-- Our Product start-->
 
                                     <li class="has-dropdown">
-                                        <a href="pricing.php">Pricing</a>
+                                        <a href="<?= url('pricing') ?>">Pricing</a>
                                     </li>
 
                                     <li class="has-dropdown">
-                                        <a href="blog.php">Blog</a>
+                                        <a href="<?= url('blog') ?>">Blog</a>
                                     </li>
 
 
                                     <!-- New Menu Added 05-08-2026 -->
 
                                     <!-- <li>
-                                        <a href="products.php">
+                                        <a href="<?= url('products') ?>">
                                             Our Products
                                             <i class="fa-solid fa-chevron-down"></i>
                                         </a>
                                         <ul class="submenu">
                                             <li><a href="the-vanco.php">The Venco</a></li>
-                                            <li><a href="health-card.php">Health Card</a></li>
-                                            <li><a href="real-estate-crm.php">Real Estate CRM</a></li>
-                                            <li><a href="manufacturing-erp.php">Manufacturing ERP</a></li>
+                                            <li><a href="<?= url('health-card') ?>">Health Card</a></li>
+                                            <li><a href="<?= url('real-estate-crm') ?>">Real Estate CRM</a></li>
+                                            <li><a href="<?= url('manufacturing-erp') ?>">Manufacturing ERP</a></li>
                                         </ul>
                                     </li> -->
 
                                      <!-- <li class="has-dropdown">
-                                        <a href="blog.php">Blog</a>
+                                        <a href="<?= url('blog') ?>">Blog</a>
                                     </li> -->
 
                                     <!-- Our Product end-->
@@ -719,7 +721,7 @@ if (!defined('BASE_URL')) {
                                     <!-- New Menu Added 05-08-2026 -->
 
                                     <li>
-                                        <a href="project.php">
+                                        <a href="<?= url('project') ?>">
                                             Projects
                                         </a>
                                     </li>
@@ -732,7 +734,7 @@ if (!defined('BASE_URL')) {
                         <!-- <a href="#0" class="search-trigger search-icon"><i
                                 class="fa-regular fa-magnifying-glass"></i></a> -->
                         <div class="main-button">
-                            <a href="contact.php"> <span class="theme-btn"> Contact Us </span><span class="arrow-btn"><i
+                            <a href="<?= url('contact') ?>"> <span class="theme-btn"> Contact Us </span><span class="arrow-btn"><i
                                         class="fa-solid fa-turn-up"></i></span></a>
                         </div>
                         <div class="header__hamburger d-xl-none my-auto">

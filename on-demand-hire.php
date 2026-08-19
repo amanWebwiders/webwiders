@@ -245,11 +245,11 @@
                                                 <div class="content">
                                                     <h3 class="content-head">Web Developer</h3>
                                                     <ul class="list-link">
-                                                        <li><a href="service.php" class="box-nav"><span><i class="fa-solid fa-circle me-2"></i></span>Hire A web app Developer</a></li>
-                                                        <li><a href="node-js-development.php" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a Node.js Developer</a></li>
-                                                        <li><a href="service.php" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a React.Js Developer</a></li>
-                                                         <li><a href="wordpress-development.php" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a wordpress Developer</a></li>
-                                                        <!-- <li><a href="service.php" class="box-nav"><i class="fa-solid fa-circle me-2"></i> Hire a python Devloper</a></li> -->
+                                                        <li><a href="<?= url('service') ?>" class="box-nav"><span><i class="fa-solid fa-circle me-2"></i></span>Hire A web app Developer</a></li>
+                                                        <li><a href="<?= url('services/node-js-development') ?>" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a Node.js Developer</a></li>
+                                                        <li><a href="<?= url('service') ?>" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a React.Js Developer</a></li>
+                                                         <li><a href="<?= url('services/wordpress-development') ?>" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a wordpress Developer</a></li>
+                                                        <!-- <li><a href="<?= url('service') ?>" class="box-nav"><i class="fa-solid fa-circle me-2"></i> Hire a python Devloper</a></li> -->
                                                     </ul>
                                                 </div>
                                             </div>
@@ -259,10 +259,10 @@
                                                 <div class="content">
                                                     <h3 class="content-head">Mobile App Developer</h3>
                                                      <ul class="list-link">
-                                                        <li><a href="services/flutter-app-development.php" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a Flutter Developer</a></li>
-                                                        <li><a href="services/native-mobile-app-development.php" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a React native Developer</a></li>
-                                                        <li><a href="services/iphone-app-development.php" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a iOS Developer</a></li>
-                                                        <li><a href="services/android-app-development.php" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire an Android Developer</a></li>
+                                                        <li><a href="<?= url('services/flutter-app-development') ?>" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a Flutter Developer</a></li>
+                                                        <li><a href="<?= url('services/native-mobile-app-development') ?>" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a React native Developer</a></li>
+                                                        <li><a href="<?= url('services/iphone-app-development') ?>" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a iOS Developer</a></li>
+                                                        <li><a href="<?= url('services/android-app-development') ?>" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire an Android Developer</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -272,10 +272,10 @@
                                                 <div class="content">
                                                     <h3 class="content-head">E-Commerce Developer</h3>
                                                      <ul class="list-link">
-                                                        <li><a href="services/ecommerce-website-design.php" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a Ecommerce Developer</a></li>
-                                                        <li><a href="services/bigcommerce-development.php" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a Bigcommerce Developer</a></li>
-                                                        <li><a href="services/shopify-development.php" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a Shopify Developer</a></li>
-                                                        <li><a href="services/woocommerce-development.php" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a woocomeerce Developer</a></li>
+                                                        <li><a href="<?= url('services/ecommerce-website-design') ?>" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a Ecommerce Developer</a></li>
+                                                        <li><a href="<?= url('services/bigcommerce-development') ?>" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a Bigcommerce Developer</a></li>
+                                                        <li><a href="<?= url('services/shopify-development') ?>" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a Shopify Developer</a></li>
+                                                        <li><a href="<?= url('services/woocommerce-development') ?>" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a woocomeerce Developer</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -285,7 +285,7 @@
                                                 <div class="content">
                                                     <h3 class="content-head">Other Development</h3>
                                                      <ul class="list-link">
-                                                        <li><a href="services/html5-development.php" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire UI/UX Developer</a></li>
+                                                        <li><a href="<?= url('services/html5-development') ?>" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire UI/UX Developer</a></li>
                                                         <li><a href="" class="box-nav"><i class="fa-solid fa-circle me-2"></i>Hire a QA and Tester</a></li>
                                                     </ul>
                                                 </div>

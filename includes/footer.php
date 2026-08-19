@@ -18,7 +18,7 @@ if (!defined('ASSETS_URL')) {
                 <div class="col-xl-5 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                     <div class="single-footer-widget">
                         <div class="widget-head">
-                            <a href="index.php">
+                            <a href="<?= url('/') ?>">
                                 <img src="<?php echo asset('img/sitelogo-black.png'); ?>" alt="logo-img">
                             </a>
                             <p>Webwiders is a software development service provider.We provide services that are
@@ -63,25 +63,25 @@ if (!defined('ASSETS_URL')) {
                         </div>
                         <ul class="list-area">
                             <li>
-                                <a href="about.php">
+                                <a href="<?= url('about') ?>">
                                     <i class="fa-solid fa-chevron-right"></i>
                                     About us
                                 </a>
                             </li>
                             <li>
-                                <a href="service.php">
+                                <a href="<?= url('service') ?>">
                                     <i class="fa-solid fa-chevron-right"></i>
                                     Our Services
                                 </a>
                             </li>
                             <li>
-                                <a href="contact.php">
+                                <a href="<?= url('contact') ?>">
                                     <i class="fa-solid fa-chevron-right"></i>
                                     Contact Us
                                 </a>
                             </li>
                             <li>
-                                <a href="career.php">
+                                <a href="<?= url('career') ?>">
                                     <i class="fa-solid fa-chevron-right"></i>
                                     Career
                                 </a>
@@ -249,7 +249,7 @@ if (!defined('ASSETS_URL')) {
                 <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
 
                     <!-- <li>
-                        <a href="contact.html">
+                        <a href="<?= url('contact') ?>">
                             Privacy Policy
                         </a>
                     </li> -->

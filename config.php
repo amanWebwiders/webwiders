@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 
 /**
  * -------------------------------------------------
- * BASE PATH (Filesystem) – for PHP includes
+ * BASE PATH (Filesystem) - for PHP includes
  * Example: G:/xampp/htdocs/webwiders/
  * -------------------------------------------------
  */
@@ -14,12 +14,15 @@ define('BASE_PATH', realpath(__DIR__) . DIRECTORY_SEPARATOR);
 
 /**
  * -------------------------------------------------
- * BASE URL – for browser links
+ * BASE URL - for browser links
  * Example: http://localhost/webwiders/
  * -------------------------------------------------
  */
 define('BASE_URL', (function () {
-    $scheme = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? 'https' : 'http';
+    $isHttps = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
+        || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https')
+        || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443);
+    $scheme = $isHttps ? 'https' : 'http';
     $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
     // Determine the base path (the directory where the app is served).
     $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
@@ -45,8 +48,32 @@ if (!function_exists('asset')) {
         return rtrim(BASE_URL, '/') . '/assets/' . ltrim($path, '/');
     }
 }
+
+/**
+ * -------------------------------------------------
+ * URL helper (SEO Friendly Clean URLs)
+ * Usage: url('about') or url('services/android-app-development')
+ * Output: http://localhost/webwiders/about
+ * -------------------------------------------------
+ */
 if (!function_exists('url')) {
     function url(string $path = ''): string {
-        return rtrim(BASE_URL, '/') . '/' . ltrim($path, '/');
+        $path = ltrim($path, '/');
+        
+        // Handle blog-detail query string conversion
+        if (preg_match('/^blog-detail\.php\?slug=(.+)$/i', $path, $m)) {
+            $path = 'blog-detail/' . $m[1];
+        } else {
+            // Strip .php extension for clean SEO URLs
+            $path = preg_replace('/\.php$/i', '', $path);
+            if ($path === 'index') {
+                $path = '';
+            }
+        }
+        
+        return rtrim(BASE_URL, '/') . ($path !== '' ? '/' . $path : '/');
     }
 }
+
+// Database Connection & Helper Load
+require_once __DIR__ . '/db.php';

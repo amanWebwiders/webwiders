@@ -14,7 +14,7 @@
                         </div>
             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
                                 <li>
-                    <a href="index.php">Home :</a>
+                    <a href="<?= url('/') ?>">Home :</a>
                 </li>
                                 <li>
                     <i class="fa-solid fa-chevron-right"></i>

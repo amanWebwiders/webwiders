@@ -28,7 +28,7 @@
 
 
                         <div class="main-button wow fadeInUp mt-md-4" data-wow-delay=".3s">
-                            <a href="on-demand-hire.php" class="offcanvas-btn hire-btn">
+                            <a href="<?= url('on-demand-hire') ?>" class="offcanvas-btn hire-btn">
                                 <span class="theme-btn">
                                     Check the Live project
                                 </span>
@@ -792,7 +792,7 @@
 
 
                 <div class="main-button wow fadeInUp mt-md-4" data-wow-delay=".3s">
-                    <a href="on-demand-hire.php" class="offcanvas-btn hire-btn">
+                    <a href="<?= url('on-demand-hire') ?>" class="offcanvas-btn hire-btn">
                         <span class="theme-btn">
                             Hire Dedicated Developers
                         </span>
