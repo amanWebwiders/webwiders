@@ -19,7 +19,10 @@ define('BASE_PATH', realpath(__DIR__) . DIRECTORY_SEPARATOR);
  * -------------------------------------------------
  */
 define('BASE_URL', (function () {
-    $scheme = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? 'https' : 'http';
+    $isHttps = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
+        || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https')
+        || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443);
+    $scheme = $isHttps ? 'https' : 'http';
     $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
     // Determine the base path (the directory where the app is served).
     $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
