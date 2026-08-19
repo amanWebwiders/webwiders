@@ -189,8 +189,8 @@ if (isset($pdo) && $pdo) {
 
                                     <?php 
                                         $contentHtml = $blog['content'];
-                                        $adminUrl = env('ADMIN_URL', 'http://localhost/adminwebwider/');
-                                        $storageUrl = env('STORAGE_URL', 'http://localhost/adminwebwider/public/storage/');
+                                        $adminUrl = env('ADMIN_URL', 'http://manage.webwiders.com/');
+                                        $storageUrl = env('STORAGE_URL', 'http://manage.webwiders.com/storage/');
                                         $contentHtml = str_replace(rtrim($adminUrl, '/') . '/storage/', $storageUrl, $contentHtml);
                                         $contentHtml = preg_replace('/src=["\']\/?storage\//i', 'src="' . $storageUrl, $contentHtml);
                                     ?>
