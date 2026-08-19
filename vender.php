@@ -11,7 +11,7 @@
                 <div class="hero-copy wow fadeInLeft" data-wow-delay=".2s">
                     <div class="hero-badge"><i class="fa-solid fa-users"></i> vendor management</div>
                     <h1>VENDOR MANAGEMENT PLATFORM FOR GLOBAL HIRING</h1>
-                    <h4>Smart Vendor Management Platform for Recruitment Teams</h4>
+                    <!-- <h4>Smart Vendor Management Platform for Recruitment Teams</h4> -->
                     <p>
                         TheVenco is a smart vendor management platform that connects hiring teams with verified recruitment vendors, helping businesses streamline vendor collaboration, manage hiring requirements, and reduce the time and effort involved in finding the right recruitment partners.
                     </p>
@@ -22,11 +22,11 @@
                                 <span class="arrow-btn"><i class="fa-solid fa-turn-up"></i></span>
                             </a>
                         </div>
-                        <div class="main-button wow fadeInUp mt-md-4" data-wow-delay=".3s">
+                        <!-- <div class="main-button wow fadeInUp mt-md-4" data-wow-delay=".3s">
                             <a href="on-demand-hire.php" class="offcanvas-btn hire-btn">
                                 <span class="theme-btn">Hire Dedicated Developers</span>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="hero-media wow fadeInRight" data-wow-delay=".3s">
@@ -48,8 +48,8 @@
             <div class="row mt-5 justify-content-center">
                 <div class="col-lg-12">
                     <div class="section-title wow fadeInUp" data-wow-delay=".2s">
-                        <div class="sub-title bg-color-2 wow fadeInUp"><span>PROJECT OVERVIEW</span></div>
-                        <h3 class="mb-4">Project at a Glance</h3>
+                        <div class="sub-title bg-color-2 wow fadeInUp"><span>Project Details</span></div>
+                        <!-- <h3 class="mb-4">Project Details</h3> -->
                     </div>
                     <div class="glance-panel">
                         <div class="glance-row">
@@ -65,24 +65,12 @@
                             <div class="glance-value">Web Application</div>
                         </div>
                         <div class="glance-row">
-                            <div class="glance-label">Users</div>
-                            <div class="glance-value">Job Posters / Hiring Teams, Recruitment Vendors, Platform Admin</div>
-                        </div>
-                        <div class="glance-row">
-                            <div class="glance-label">Core Features</div>
-                            <div class="glance-value">Requirement Management, Vendor Discovery, Candidate Management, Dashboard & Insights</div>
-                        </div>
-                        <div class="glance-row">
-                            <div class="glance-label">Architecture</div>
-                            <div class="glance-value">Centralized, Role-Based & Cloud-Based</div>
-                        </div>
-                        <div class="glance-row">
                             <div class="glance-label">Services</div>
                             <div class="glance-value">Custom Software Development • SaaS Development • Web Application Development • UI/UX Design</div>
                         </div>
-                        <div class="mt-4 pt-3 border-top">
+                        <!-- <div class="mt-4 pt-3 border-top">
                             <p class="text-muted mb-0 small"><em>The platform includes role-specific access for Job Posters, Recruitment Vendors, and Platform Admin.</em></p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -99,8 +87,6 @@
                         <h2 class="mb-4">About TheVenco</h2>
                     </div>
                     <p>TheVenco is a vendor management software platform built to simplify how businesses manage recruitment vendors and hiring requirements. It provides a centralized digital environment where hiring teams can manage their recruitment needs, connect with verified vendors, and streamline communication throughout the hiring process.</p>
-                    <p>Designed for hiring teams, recruitment agencies, and staffing partners, the platform provides role-based access and centralized data management to help different participants collaborate effectively on recruitment requirements.</p>
-
                     <div class="mt-4 pt-4 border-top">
                         <p class="font-weight-bold mb-0 text-muted">
                             Vendor Management | Requirement Tracking | Candidate Management | Dashboard & Insights
@@ -109,6 +95,74 @@
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay=".3s">
                     <img src="assets/img/thevenco.png" alt="TheVenco Dashboard" class="img-fluid rounded shadow-lg w-100" style="min-height: 350px; background-color: #ddd; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE GOAL SECTION -->
+    <section class="section-spacer bg-light-gray" id="venco-goal-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                     <div class="section-title">
+                        <!-- <div class="sub-title bg-color-2 wow fadeInUp"><span>ABOUT THEVENCO</span></div> -->
+                        <h2 class="">THE GOAL</h2>
+                    </div>
+                    <p class="text-muted">The goal was to create an intuitive and scalable platform that makes vendor selection and recruitment collaboration more organized, transparent, and efficient—helping hiring teams spend less time coordinating with multiple vendors and more time finding the right talent.</p>
+                </div>
+            </div>
+
+            <!-- Process Flow Cards -->
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="venco-goal-card">
+                        <span class="venco-goal-number">01</span>
+                        <h5>Post your requirement</h5>
+                        <p>Define role, skills, budget, and timeline in minutes</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="venco-goal-card">
+                        <span class="venco-goal-number">02</span>
+                        <h5>Vendors respond</h5>
+                        <p>Verified vendors submit candidate profiles within hours.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="venco-goal-card">
+                        <span class="venco-goal-number">03</span>
+                        <h5>Shortlisting time from hours to minutes</h5>
+                        <p>AI ranks your best-fit candidates and explains why.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Details -->
+            <div class="row mt-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="venco-goal-details-wrapper">
+                        <div class="venco-goal-info-row">
+                            <div class="venco-goal-info-item">
+                                <span class="venco-goal-info-label">Industry</span>
+                                <span class="venco-goal-info-text">Recruitment & HR</span>
+                            </div>
+                            <div class="venco-goal-info-item">
+                                <span class="venco-goal-info-label">Platform</span>
+                                <span class="venco-goal-info-text">Web Application</span>
+                            </div>
+                        </div>
+                        <div class="venco-goal-info-row">
+                            <div class="venco-goal-info-item">
+                                <span class="venco-goal-info-label">Type</span>
+                                <span class="venco-goal-info-text">Vendor Management SaaS</span>
+                            </div>
+                            <div class="venco-goal-info-item">
+                                <span class="venco-goal-info-label">Focus</span>
+                                <span class="venco-goal-info-text">Recruitment Workflow & Vendor Collaboration</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -159,9 +213,15 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="num-card">
                         <span class="number">05</span>
-                        <h5>Faster Hiring</h5>
+                        <h5>Faster Hiring Requirements</h5>
                         <p>Requirements needed to help organizations reduce unnecessary coordination and move hiring requirements forward more efficiently.</p>
                     </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <p class="text-muted fst-italic">TheVenco was built to bring these fragmented activities into one intuitive vendor management platform.</p>
                 </div>
             </div>
         </div>
@@ -176,7 +236,7 @@
                         <div class="sub-title bg-color-2 wow fadeInUp"><span>OUR SOLUTION</span></div>
                         <h3 class="mb-3">One Platform to Simplify Vendor-Driven Hiring</h3>
                     </div>
-                    <p class="text-muted">TheVenco brings recruitment vendors together in one streamlined digital workflow. The platform helps businesses manage hiring requirements, discover relevant vendors, coordinate recruitment activities, and maintain better visibility throughout the hiring process.</p>
+                    <p class="text-muted">WebWiders developed TheVenco as a centralized vendor management platform that brings hiring teams and recruitment vendors together in one streamlined digital workflow. The platform helps businesses manage hiring requirements, discover relevant vendors, coordinate recruitment activities, and maintain better visibility throughout the hiring process.</p>
                 </div>
             </div>
 
@@ -186,23 +246,23 @@
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay=".5s">
                     <div class="mb-4">
-                        <h6 class="fw-bold text-dark">01 — Centralized Hiring Requirements</h6>
+                        <h6 class="fw-bold text-dark mb-0">01 — Centralized Hiring Requirements</h6>
                         <p class="text-muted small">Create and manage recruitment requirements from a single platform, giving hiring teams better control over their open positions.</p>
                     </div>
                     <div class="mb-4">
-                        <h6 class="fw-bold text-dark">02 — Verified Vendor Network</h6>
+                        <h6 class="fw-bold text-dark mb-0">02 — Verified Vendor Network</h6>
                         <p class="text-muted small">Connect hiring teams with relevant and verified recruitment vendors based on their requirements.</p>
                     </div>
                     <div class="mb-4">
-                        <h6 class="fw-bold text-dark">03 — Simplified Vendor Collaboration</h6>
+                        <h6 class="fw-bold text-dark mb-0">03 — Simplified Vendor Collaboration</h6>
                         <p class="text-muted small">Make it easier for hiring teams and vendors to coordinate around active recruitment requirements.</p>
                     </div>
                     <div class="mb-4">
-                        <h6 class="fw-bold text-dark">04 — Organized Recruitment Workflow</h6>
+                        <h6 class="fw-bold text-dark mb-0">04 — Organized Recruitment Workflow</h6>
                         <p class="text-muted small">Bring requirements, vendor participation, and hiring activities into a structured workflow instead of managing them across disconnected channels.</p>
                     </div>
                     <div class="mb-4">
-                        <h6 class="fw-bold text-dark">05 — Better Hiring Visibility</h6>
+                        <h6 class="fw-bold text-dark mb-0">05 — Better Hiring Visibility</h6>
                         <p class="text-muted small">Give hiring teams a clearer view of vendor activity and recruitment progress, helping them make faster decisions.</p>
                     </div>
                 </div>
@@ -225,7 +285,7 @@
             <div class="row mb-5">
                 <div class="col-lg-8">
                     <div class="section-title">
-                        <div class="sub-title bg-color-2 wow fadeInUp"><span>KEY FEATURES</span></div>
+                        <div class="sub-title bg-color-2 wow fadeInUp"><span>POWERFUL FEATURES</span></div>
                         <h3 class="mb-3">Powerful Features for Smarter Vendor Management</h3>
                     </div>
                     <p class="text-muted">TheVenco brings essential recruitment vendor management capabilities into one intuitive platform, helping hiring teams organize requirements, collaborate with vendors, and maintain greater visibility throughout the hiring workflow.</p>
@@ -254,7 +314,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="info-card bg-light-gray border-0">
                         <h6 class="fw-bold mb-3">04 — Vendor Collaboration</h6>
-                        <p>Enable smoother communication and coordination between hiring teams and recruitment vendors.</p>
+                        <!-- <p>Enable smoother communication and coordination between hiring teams and recruitment vendors.</p> -->
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
@@ -278,8 +338,14 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="info-card bg-light-gray border-0">
                         <h6 class="fw-bold mb-3">08 — User-Friendly Interface</h6>
-                        <p>Intuitive design that simplifies complex vendor management workflows.</p>
+                        <!-- <p>Intuitive design that simplifies complex vendor management workflows.</p> -->
                     </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <p class="text-muted fst-italic">Enable smoother communication and coordination between hiring teams and recruitment vendors.</p>
                 </div>
             </div>
         </div>
@@ -343,6 +409,12 @@
                             <li>Monitor overall platform operations</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <p class="text-muted fst-italic">Hiring teams can monitor vendor participation, candidate submissions, and recruitment progress through the platform.</p>
                 </div>
             </div>
         </div>
@@ -457,6 +529,12 @@
                     </div>
                 </div>
             </div>
+
+             <div class="row mt-5">
+                <div class="col-12">
+                    <p class="text-muted fst-italic">Every screen is designed around a simple goal: helping hiring teams manage recruitment vendors with less complexity and greater visibility.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -503,6 +581,12 @@
                         <h5 class="mb-3">Scalable Recruitment Workflow</h5>
                         <p>Provide a digital foundation that can support growing hiring requirements and vendor networks.</p>
                     </div>
+                </div>
+            </div>
+
+             <div class="row mt-5">
+                <div class="col-12">
+                    <p class="text-muted fst-italic">From finding the right vendor to tracking recruitment activity, TheVenco brings the vendor-driven hiring process into one connected workflow.</p>
                 </div>
             </div>
         </div>
@@ -559,6 +643,12 @@
                     </div>
                 </div>
             </div>
+
+             <div class="row mt-5">
+                <div class="col-12">
+                    <p class="text-muted fst-italic">Have a SaaS idea or need to modernize an existing platform?</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -576,6 +666,9 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 m-auto">
+                     <div class="section-title">
+                        <h3 class="mb-3">Let's Build Something That Works for Your Business</h3>
+                    </div>
                     <p class="text-muted">With 10+ years of experience and 40+ in-house technology experts, we help startups, enterprises, and agencies design, develop, and scale digital products.</p>
                     <div class="d-flex gap-3 justify-content-center flex-wrap mt-4">
                         <div class="main-button wow fadeInUp" data-wow-delay=".3s">

@@ -1,6 +1,9 @@
 <?php include 'includes/header.php'; ?>
 
 
+
+
+
 <!-- Hero Section Start -->
 
 <section class="hero-section fix hero-1 bg-cover" style="background: #f0eeee" id="hero-section">
@@ -66,7 +69,7 @@
                                         </span>
                                     </h1>
 
-                                    <p class="wow fadeInUp" data-wow-delay=".3s">Description -We help startups,
+                                    <p class="wow fadeInUp" data-wow-delay=".3s">We help startups,
                                         enterprises across industries build scalable digital solutions from custom
                                         software, web and mobile apps to AI-powered solutions and dedicated development
                                         teams. With 10+ years of experience and 40+ in-house experts, we deliver
@@ -1590,11 +1593,11 @@
                     <div class="content">
                         <div class="title">
                             <h3>
-                                <a href="https://aliadoai.ai/">AI Productivity Platform</a>
+                                <a href="aliado-ai.php">AI Productivity Platform</a>
                             </h3>
                             <p>An AI-powered SaaS platform that automates scheduling, reminders, payments, invoicing, and client communication, enabling independent professionals to focus on serving their clients.</p>
                         </div>
-                        <a href="https://aliadoai.ai/" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="aliado-ai.php" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -1608,11 +1611,11 @@
                     <div class="content">
                         <div class="title">
                             <h3>
-                                <a href="https://www.inatlantis.com/">Live Language Exchange</a>
+                                <a href="live-language.php">Live Language Exchange</a>
                             </h3>
                             <p>A live language exchange platform that matches learners with native speakers based on language pairs and discussion topics, making language practice interactive and engaging.</p>
                         </div>
-                        <a href="https://www.inatlantis.com/" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="live-language.php" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
