@@ -4269,3 +4269,275 @@ section#about-us-cta .main-button {
             padding: 20px;
         }
     }
+
+
+
+    /* ==========================================
+     START: MISY CASE STUDY SECTION
+     ========================================== */
+
+    #misy-case-study.misy-page {
+        color: #333;
+        font-family: inherit;
+        background-color: #fff;
+    }
+    #misy-case-study.misy-page h1, 
+    #misy-case-study.misy-page h2, 
+    #misy-case-study.misy-page h3, 
+    #misy-case-study.misy-page h4, 
+    #misy-case-study.misy-page h5,
+    #misy-case-study.misy-page h6 {
+        color: #1a1a1a;
+        font-weight: 700;
+    }
+    #misy-case-study.misy-page .section-spacer {
+        padding: 80px 0;
+    }
+    #misy-case-study.misy-page .bg-light-gray {
+        background-color: #f8f9fa;
+    }
+    #misy-case-study.misy-page .theme-text-primary {
+        color: #a5110d; /* Theme Primary Color for this page */
+    }
+    #misy-case-study.misy-page .btn-custom-primary {
+        background-color: #a5110d;
+        color: #fff;
+        padding: 12px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        transition: 0.3s ease;
+        border: 2px solid #a5110d;
+    }
+    #misy-case-study.misy-page .btn-custom-primary:hover {
+        background-color: transparent;
+        color: #a5110d;
+    }
+    #misy-case-study.misy-page .btn-custom-outline {
+        background-color: transparent;
+        color: #1a1a1a;
+        padding: 12px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        transition: 0.3s ease;
+        border: 2px solid #e0e0e0;
+    }
+    #misy-case-study.misy-page .btn-custom-outline:hover {
+        border-color: #a5110d;
+        color: #a5110d;
+    }
+
+    /* Glance Table */
+    #misy-case-study.misy-page .glance-row {
+        display: flex;
+        border-bottom: 1px solid #eaeaea;
+        padding: 15px 0;
+    }
+    #misy-case-study.misy-page .glance-row:last-child {
+        border-bottom: none;
+    }
+    #misy-case-study.misy-page .glance-label {
+        width: 30%;
+        font-weight: 700;
+        color: #1a1a1a;
+    }
+    #misy-case-study.misy-page .glance-value {
+        width: 70%;
+        color: #555;
+    }
+
+    /* Challenge Cards & Numbered Cards */
+    #misy-case-study.misy-page .num-card {
+        background: #fff;
+        border: 1px solid #eaeaea;
+        border-radius: 8px;
+        padding: 30px;
+        height: 100%;
+        transition: 0.3s ease;
+        border-top: 4px solid #a5110d;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    }
+    #misy-case-study.misy-page .num-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    /* Info Cards (Features, Impact) */
+    #misy-case-study.misy-page .info-card {
+        background: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        height: 100%;
+        border: 1px solid #f1f1f1;
+    }
+    #misy-case-study.misy-page .info-card h4, 
+    #misy-case-study.misy-page .info-card h5,
+    #misy-case-study.misy-page .info-card h6 {
+        margin-bottom: 15px;
+    }
+    #misy-case-study.misy-page .info-card p {
+        color: #666;
+        font-size: 0.95rem;
+        margin-bottom: 0;
+    }
+
+    /* Check List */
+    #misy-case-study.misy-page .check-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    #misy-case-study.misy-page .check-list li {
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 15px;
+        color: #444;
+        font-size: 0.95rem;
+    }
+    #misy-case-study.misy-page .check-list li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #a5110d;
+        font-weight: bold;
+    }
+
+    /* Tech Stack Boxes */
+    #misy-case-study.misy-page .tech-box {
+        border: 1px solid #eee;
+        padding: 20px;
+        text-align: center;
+        border-radius: 6px;
+        font-weight: 600;
+        background: #fff;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #misy-case-study.misy-page .tech-box p {
+        font-size: 0.85rem;
+        color: #666;
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-weight: normal;
+    }
+
+    /* Goal Step Box */
+    #misy-case-study.misy-page .goal-step-box {
+        background: #fff;
+        border: 1px solid #eaeaea;
+        padding: 30px;
+        border-radius: 8px;
+        text-align: center;
+        height: 100%;
+        border-top: 4px solid #a5110d;
+    }
+
+    /* About Image Custom Styling */
+    #misy-case-study.misy-page .about-wrapper .about-image {
+        box-shadow: 0px 0px 10px #80808047;
+        border-radius: 25px;
+    }
+    #misy-case-study.misy-page .about-wrapper .about-image img {
+        border-radius: 25px;
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+
+    /* Timeline Icon Colors */
+    #misy-case-study.misy-page .timeline-icon.bg-primary {
+        background-color: #a5110d;
+        color: #fff;
+    }
+
+    /* Solution Cards */
+    #misy-case-study.misy-page .misy-solution-card {
+        background: #fff;
+        border: 1px solid #eaeaea;
+        border-radius: 12px;
+        padding: 35px 30px;
+        height: 100%;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #misy-case-study.misy-page .misy-solution-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #a5110d 0%, #c41e1a 100%);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    #misy-case-study.misy-page .misy-solution-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        border-color: #a5110d;
+    }
+
+    #misy-case-study.misy-page .misy-solution-card:hover::before {
+        transform: scaleX(1);
+    }
+
+    #misy-case-study.misy-page .misy-solution-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 25px;
+        background: linear-gradient(135deg, #a5110d 0%, #c41e1a 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    #misy-case-study.misy-page .misy-solution-card:hover .misy-solution-icon {
+        transform: scale(1.1);
+        box-shadow: 0 10px 25px rgba(165, 17, 13, 0.3);
+    }
+
+    #misy-case-study.misy-page .misy-solution-icon i {
+        color: #fff;
+        font-size: 32px;
+    }
+
+    #misy-case-study.misy-page .misy-solution-card h4 {
+        font-weight: 700;
+        color: #1a1a1a;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    #misy-case-study.misy-page .misy-solution-card p {
+        color: #666;
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        #misy-case-study.misy-page .glance-row {
+            flex-direction: column;
+        }
+        #misy-case-study.misy-page .glance-label, 
+        #misy-case-study.misy-page .glance-value {
+            width: 100%;
+        }
+        #misy-case-study.misy-page .glance-label {
+            margin-bottom: 5px;
+        }
+    }
