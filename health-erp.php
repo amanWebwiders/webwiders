@@ -496,10 +496,10 @@
                 <div class="col-md-3 col-sm-4 col-12 mb-3">
                     <div class="tech-box">Database</div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-12 mb-3">
+                <div class="col-md-3 col-sm-6 col-12 mb-3">
                     <div class="tech-box">Cloud/Infrastructure</div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-12 mb-3">
+                <div class="col-md-3 col-sm-6 col-12 mb-3">
                     <div class="tech-box">APIs & Integrations</div>
                 </div>
             </div>
@@ -507,46 +507,103 @@
     </section>
 
     <!-- 8. EXPLORE GALLERY PLACEHOLDER -->
-    <section class="section-spacer bg-light-gray text-center">
+    <section class="section-spacer bg-light-gray" id="health-erp-gallery">
         <div class="container">
-            <div class="section-title wow fadeInUp" data-wow-delay=".2s">
+            <div class="section-title text-center wow fadeInUp" data-wow-delay=".2s">
                 <div class="sub-title bg-color-2 wow fadeInUp"><span>ERP GALLERY</span></div>
-                <h3 class="mb-5">Explore The Healthcare ERP</h3>
+                <h3 class="mb-4">Explore The Healthcare ERP</h3>
+                <p class="text-muted mb-5" style="max-width: 700px; margin: 0 auto;">
+                    Take a comprehensive look at the key modules and features that power our healthcare ERP system.
+                </p>
             </div>
-            <div class="row g-3 justify-content-center">
-                <!-- Replace with actual gallery/slider plugin from the theme -->
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="bg-white p-3 rounded shadow-sm small fw-bold">Admin Dashboard</div>
+            <div class="row g-3 g-md-4">
+                <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay=".1s">
+                    <div class="health-erp-gallery-card">
+                        <div class="health-erp-gallery-icon">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+                        <h6>Admin Dashboard</h6>
+                    </div>
                 </div>
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="bg-white p-3 rounded shadow-sm small fw-bold">Patient Management</div>
+                <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="health-erp-gallery-card">
+                        <div class="health-erp-gallery-icon">
+                            <i class="fa-solid fa-user-injured"></i>
+                        </div>
+                        <h6>Patient Management</h6>
+                    </div>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="bg-white p-3 rounded shadow-sm small fw-bold">Appointment Mgt</div>
+                <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="health-erp-gallery-card">
+                        <div class="health-erp-gallery-icon">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <h6>Appointment Mgt</h6>
+                    </div>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="bg-white p-3 rounded shadow-sm small fw-bold">Doctor Dashboard</div>
+                <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="health-erp-gallery-card">
+                        <div class="health-erp-gallery-icon">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <h6>Doctor Dashboard</h6>
+                    </div>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="bg-white p-3 rounded shadow-sm small fw-bold">OPD/IPD</div>
+                <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay=".5s">
+                    <div class="health-erp-gallery-card">
+                        <div class="health-erp-gallery-icon">
+                            <i class="fa-solid fa-hospital"></i>
+                        </div>
+                        <h6>OPD/IPD</h6>
+                    </div>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="bg-white p-3 rounded shadow-sm small fw-bold">Pharmacy</div>
+                <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="health-erp-gallery-card">
+                        <div class="health-erp-gallery-icon">
+                            <i class="fa-solid fa-pills"></i>
+                        </div>
+                        <h6>Pharmacy</h6>
+                    </div>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="bg-white p-3 rounded shadow-sm small fw-bold">Laboratory</div>
+                <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay=".7s">
+                    <div class="health-erp-gallery-card">
+                        <div class="health-erp-gallery-icon">
+                            <i class="fa-solid fa-flask"></i>
+                        </div>
+                        <h6>Laboratory</h6>
+                    </div>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="bg-white p-3 rounded shadow-sm small fw-bold">Billing</div>
+                <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay=".8s">
+                    <div class="health-erp-gallery-card">
+                        <div class="health-erp-gallery-icon">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <h6>Billing</h6>
+                    </div>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="bg-white p-3 rounded shadow-sm small fw-bold">Inventory</div>
+                <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay=".9s">
+                    <div class="health-erp-gallery-card">
+                        <div class="health-erp-gallery-icon">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                        </div>
+                        <h6>Inventory</h6>
+                    </div>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="bg-white p-3 rounded shadow-sm small fw-bold">Reports</div>
+                <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="1.0s">
+                    <div class="health-erp-gallery-card">
+                        <div class="health-erp-gallery-icon">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <h6>Reports</h6>
+                    </div>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <div class="bg-white p-3 rounded shadow-sm small fw-bold">Patient Portal</div>
+                <div class="col-6 col-md-4 col-lg-3 wow fadeInUp" data-wow-delay="1.1s">
+                    <div class="health-erp-gallery-card">
+                        <div class="health-erp-gallery-icon">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <h6>Patient Portal</h6>
+                    </div>
                 </div>
             </div>
         </div>

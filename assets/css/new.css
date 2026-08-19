@@ -2270,14 +2270,14 @@ section.product-details-section.section-padding .news-details-wrapper .main-side
 
 .custom-service-icon {
     font-size: 24px;
-    color: var(--theme, #6A47ED);
+    color: var(--theme, #a5110d);
     /* Theme color fallback */
     transition: all 0.4s ease-in-out;
 }
 
 /* Hover effect for the icon */
 .service-card-items:hover .custom-service-icon-wrapper {
-    background: var(--theme, #6A47ED);
+    background: var(--theme, #a5110d);
     transform: translateY(-5px);
 }
 
@@ -2308,7 +2308,7 @@ span#text {
     text-transform: capitalize;
 
     #solution-text {
-        border-right: 2px solid var(--theme, #6A47ED);
+        border-right: 2px solid var(--theme, #a5110d);
         padding-right: 4px;
         animation: blinkCursor 0.75s step-end infinite;
     }
@@ -2321,7 +2321,7 @@ span#text {
         }
 
         50% {
-            border-color: var(--theme, #6A47ED);
+            border-color: var(--theme, #a5110d);
         }
     }
 }
@@ -2352,7 +2352,7 @@ span#text {
 
 .marquee-card-item .icon {
     font-size: 35px;
-    color: var(--theme, #6A47ED);
+    color: var(--theme, #a5110d);
     margin-bottom: 15px;
     display: block;
     margin: auto;
@@ -2548,7 +2548,7 @@ section.news-section.section-padding.custom-our-projects-section .case-studies-c
   
 
 .tech-badge:hover {
-    background-color: var(--theme, #6A47ED);
+    background-color: var(--theme, #a5110d);
     color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(106, 71, 237, 0.25);
@@ -2580,7 +2580,7 @@ section.news-section.section-padding.custom-our-projects-section .case-studies-c
 }
 
 .tech-category-box h4 i {
-    color: var(--theme, #6A47ED);
+    color: var(--theme, #a5110d);
     font-size: 24px;
 }
 
@@ -2737,7 +2737,7 @@ img {
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time>span:first-child {
     font-size: 20px;
     font-weight: bold;
-    color: var(--theme, #6A47ED);
+    color: var(--theme, #a5110d);
 }
 
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
@@ -2757,7 +2757,7 @@ img {
 
 /* Colors for icons */
 .timeline-icon.bg-primary {
-    background-color: #6A47ED;
+    background-color: #a5110d;
     color: #fff;
 }
 
@@ -3361,7 +3361,6 @@ section#about-us-cta .main-button {
     color: var(--theme);
     padding: 0 4px;
     font-size: 1.1rem;
-    transform: rotate(90deg);
 }
 
 #venco-erp-case-study1 .journey-box {
@@ -3616,7 +3615,221 @@ section#about-us-cta .main-button {
     font-size: 0.9rem;
 }
 
+#aliadoai-case-study section.cta-section .main-button {
+    max-width: unset;
+}
+#aliadoai-case-study .about-wrapper .about-image {
+    box-shadow: 0px 0px 10px #80808047;
+    border-radius: 25px;
+}
+#aliadoai-case-study .about-wrapper .about-image img {
+    border-radius: 25px;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+#inatlantis-case-study .about-wrapper .about-image {
+    box-shadow: 0px 0px 10px #80808047;
+    border-radius: 25px;
+}
+#inatlantis-case-study .about-wrapper .about-image img {
+    border-radius: 25px;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+#inatlantis-case-study .inatlantis-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-color: #a5110d;
+}
+
+#aliadoai-case-study .aliadoai-feature-item:hover {
+    transform: translateX(5px);
+}
+
+#aliadoai-case-study .aliadoai-solution-image-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(165, 17, 13, 0.2);
+    transition: all 0.3s ease;
+}
+
+#aliadoai-case-study .aliadoai-objective-wrapper:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(165, 17, 13, 0.2);
+    transition: all 0.3s ease;
+}
+
+#aliadoai-case-study .aliadoai-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-color: #a5110d;
+}
+
+.custom-our-projects-section .case-studies-card-items .content .title {
+    max-width: 380px;
+}
+
+/* =====================================================
+   VENCO GOAL SECTION - Unique Scoped CSS
+   Target: #venco-goal-section
+   ===================================================== */
+#venco-goal-section .venco-goal-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 30px;
+    height: 100%;
+    transition: 0.3s ease;
+    border-top: 4px solid #a5110d;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    position: relative;
+}
+
+#venco-goal-section .venco-goal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+#venco-goal-section .venco-goal-number {
+    display: inline-block;
+    background: #a5110d;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#venco-goal-section .venco-goal-card h5 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+    font-size: 18px;
+}
+
+#venco-goal-section .venco-goal-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#venco-goal-section .venco-goal-details-wrapper {
+    background: #a5110d;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+#venco-goal-section .venco-goal-info-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+#venco-goal-section .venco-goal-info-row:last-child {
+    margin-bottom: 0;
+}
+
+#venco-goal-section .venco-goal-info-item {
+    flex: 1;
+}
+
+#venco-goal-section .venco-goal-info-label {
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+#venco-goal-section .venco-goal-info-text {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* =====================================================
+   HEALTH ERP GALLERY SECTION - Unique Scoped CSS
+   Target: #health-erp-gallery
+   ===================================================== */
+#health-erp-gallery .health-erp-gallery-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+#health-erp-gallery .health-erp-gallery-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #a5110d 0%, #c41e1a 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#health-erp-gallery .health-erp-gallery-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    border-color: #a5110d;
+}
+
+#health-erp-gallery .health-erp-gallery-card:hover::before {
+    transform: scaleX(1);
+}
+
+#health-erp-gallery .health-erp-gallery-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    background: linear-gradient(135deg, #a5110d 0%, #c41e1a 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#health-erp-gallery .health-erp-gallery-card:hover .health-erp-gallery-icon {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(165, 17, 13, 0.3);
+}
+
+#health-erp-gallery .health-erp-gallery-icon i {
+    color: #fff;
+    font-size: 28px;
+}
+
+#health-erp-gallery .health-erp-gallery-card h6 {
+    font-weight: 700;
+    color: #1a1a1a;
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.4;
+}
+
 @media (max-width: 991px) {
+
 
     #value-section .value-box-items .content h3.project-text {
         font-size: 14px;
@@ -3647,6 +3860,15 @@ section#about-us-cta .main-button {
 }
 
 @media (max-width: 767px) {
+
+    
+    #venco-erp-case-study1 .role-arrow-list span.arrow {
+        transform: rotate(90deg);
+    }
+
+    #venco-erp-case-study1 .role-arrow-list {
+        flex-direction: column;
+    }
 
     #value-section .value-box-items .content h3.project-text {
         font-size: 10px;
