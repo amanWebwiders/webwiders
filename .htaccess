@@ -1,0 +1,31 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /webwiders/
+
+    # Explicit default index page
+    DirectoryIndex index.php
+
+    # Route root path to index.php
+    RewriteRule ^$ index.php [L,QSA]
+
+    # Route on-demand-hire folder collision to on-demand-hire.php
+    RewriteRule ^on-demand-hire/?$ on-demand-hire.php [L,QSA]
+
+    # 1. Dynamic Blog Detail URLs: /blog-detail/slug-name
+    RewriteRule ^blog-detail/([a-zA-Z0-9\-_]+)/?$ blog-detail.php?slug=$1 [L,QSA]
+
+    # 2. Dynamic Blog Category & Tag URLs
+    RewriteRule ^blog/category/([a-zA-Z0-9\-_]+)/?$ blog.php?category=$1 [L,QSA]
+    RewriteRule ^blog/tag/([a-zA-Z0-9\-_]+)/?$ blog.php?tag=$1 [L,QSA]
+
+    # 3. Redirect direct .php requests to extensionless URLs (SEO 301 Redirect)
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.*)\.php(\?[^\ ]*)?\ HTTP/ [NC]
+    RewriteCond %{REQUEST_URI} !index\.php$ [NC]
+    RewriteCond %{REQUEST_URI} !blog-detail\.php$ [NC]
+    RewriteRule ^(.*)\.php$ $1 [R=301,L]
+
+    # 4. Internal Rewrite: Map extensionless URLs to existing .php files
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^(.*)$ $1.php [L,QSA]
+</IfModule>
