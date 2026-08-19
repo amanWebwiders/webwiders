@@ -24,16 +24,41 @@ define('BASE_URL', (function () {
         || (isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] == 443);
     $scheme = $isHttps ? 'https' : 'http';
     $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
-    // Determine the base path (the directory where the app is served).
-    $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
-    $dir = str_replace('\\', '/', dirname($scriptName));
-    $dir = rtrim($dir, '/');
-    // If running from document root, $dir may be empty or '/'. Normalize to empty string.
-    if ($dir === '/' || $dir === '.' ) {
+
+    // 1. Compare project root (__DIR__) with webserver DOCUMENT_ROOT
+    $docRoot = !empty($_SERVER['DOCUMENT_ROOT']) ? realpath($_SERVER['DOCUMENT_ROOT']) : false;
+    $appDir  = realpath(__DIR__);
+
+    $dir = '';
+    if ($docRoot && $appDir) {
+        $docRootNorm = rtrim(str_replace('\\', '/', $docRoot), '/');
+        $appDirNorm  = rtrim(str_replace('\\', '/', $appDir), '/');
+
+        if (strncasecmp($appDirNorm, $docRootNorm, strlen($docRootNorm)) === 0) {
+            $dir = substr($appDirNorm, strlen($docRootNorm));
+        }
+    }
+
+    // 2. Fallback using SCRIPT_NAME and SCRIPT_FILENAME relative to __DIR__
+    if ($dir === '' && !empty($_SERVER['SCRIPT_NAME']) && !empty($_SERVER['SCRIPT_FILENAME'])) {
+        $scriptName = str_replace('\\', '/', $_SERVER['SCRIPT_NAME']);
+        $scriptFile = str_replace('\\', '/', realpath($_SERVER['SCRIPT_FILENAME']));
+        $appDirNorm = str_replace('\\', '/', realpath(__DIR__));
+
+        if (strncasecmp($scriptFile, $appDirNorm, strlen($appDirNorm)) === 0) {
+            $relScript = substr($scriptFile, strlen($appDirNorm));
+            if ($relScript !== '' && substr_compare($scriptName, $relScript, -strlen($relScript), strlen($relScript), true) === 0) {
+                $dir = substr($scriptName, 0, -strlen($relScript));
+            }
+        }
+    }
+
+    $dir = '/' . trim($dir, '/');
+    if ($dir === '/') {
         $dir = '';
     }
-    // Build URL: include directory only if non-empty
-    return $scheme . '://' . $host . ($dir !== '' ? $dir : '') . '/';
+
+    return $scheme . '://' . $host . $dir . '/';
 })());
 
 /**

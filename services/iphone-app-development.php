@@ -1,4 +1,4 @@
-<?php require_once __DIR__ . '../../config.php'; require_once __DIR__  . '../../includes/header.php';?>
+<?php require_once dirname(__DIR__) . '/config.php'; require_once BASE_PATH . 'includes/header.php';?>
 
   <!-- iPhone App Development Section -->
     <div class="contain-wrapp paddingbot-clear new_contant-1">	
@@ -62,4 +62,4 @@
         </div>
     </div>
 
-<?php require_once BASE_PATH . './includes/footer.php';?>
+<?php require_once BASE_PATH . 'includes/footer.php';?>

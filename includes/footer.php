@@ -150,7 +150,7 @@ if (!defined('ASSETS_URL')) {
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="platform-card">
                         <!-- Replace src with your image path -->
-                        <img src="./assets/img/google-logo.png" alt="Google" class="platform-logo">
+                        <img src="<?php echo asset('img/google-logo.png'); ?>" alt="Google" class="platform-logo">
                         <div class="stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -165,7 +165,7 @@ if (!defined('ASSETS_URL')) {
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="platform-card">
                         <!-- Replace src with your image path -->
-                        <img src="./assets/img/freelancer-logo.png" alt="reelancer" class="platform-logo">
+                        <img src="<?php echo asset('img/freelancer-logo.png'); ?>" alt="reelancer" class="platform-logo">
                         <div class="stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -180,7 +180,7 @@ if (!defined('ASSETS_URL')) {
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="platform-card">
                         <!-- Replace src with your image path -->
-                        <img src="./assets/img/clutch-logo.png" alt="Clutch" class="platform-logo">
+                        <img src="<?php echo asset('img/clutch-logo.png'); ?>" alt="Clutch" class="platform-logo">
                         <div class="stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -195,7 +195,7 @@ if (!defined('ASSETS_URL')) {
                 <a href="https://www.designrush.com/agency/software-development/in" class="col-6 col-md-4 col-lg-2" target="_blank">
                     <div class="platform-card">
                         <!-- Replace src with your image path -->
-                        <img src="./assets/img/designrush-logo.png" alt="DesignRush" class="platform-logo">
+                        <img src="<?php echo asset('img/designrush-logo.png'); ?>" alt="DesignRush" class="platform-logo">
                         <p>As seen on DesignRush</p>
                         <div class="stars">
                             <i class="fa-solid fa-star"></i>
@@ -211,7 +211,7 @@ if (!defined('ASSETS_URL')) {
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="platform-card">
                         <!-- Replace src with your image path -->
-                        <img src="./assets/img/upwork-logo.png" alt="Upwork" class="platform-logo">
+                        <img src="<?php echo asset('img/upwork-logo.png'); ?>" alt="Upwork" class="platform-logo">
                         <div class="stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -226,7 +226,7 @@ if (!defined('ASSETS_URL')) {
                 <div class="col-6 col-md-4 col-lg-2">
                     <div class="platform-card">
                         <!-- Replace src with your image path -->
-                        <img src="./assets/img/goodfirms-logo.png" alt="GoodFirms" class="platform-logo">
+                        <img src="<?php echo asset('img/goodfirms-logo.png'); ?>" alt="GoodFirms" class="platform-logo">
                         <div class="stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
