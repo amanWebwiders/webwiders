@@ -73,7 +73,7 @@ if (!function_exists('get_blog_image_url')) {
             return $imagePath;
         }
 
-        $storageUrl = env('STORAGE_URL', 'http://localhost/adminwebwider/storage/');
+        $storageUrl = env('STORAGE_URL', 'http://localhost/adminwebwider/public/storage/');
         return rtrim($storageUrl, '/') . '/' . ltrim($imagePath, '/');
     }
 }

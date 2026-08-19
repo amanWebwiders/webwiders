@@ -1087,7 +1087,7 @@
             <!-- United States -->
             <div class="marquee-card-item new-marquee-card-item">
                 <div class="value-box-items">
-                    <div class="icon country-flag"><img src="/assets/images/flag/united_states.png" alt="United States">
+                    <div class="icon country-flag"><img src="<?php echo asset('/images/flag/united_states.png'); ?>" alt="United States">
                     </div>
                     <div class="content">
                         <h3 class="project-text">United States</h3>
@@ -1098,7 +1098,7 @@
             <!-- Canada -->
             <div class="marquee-card-item new-marquee-card-item">
                 <div class="value-box-items">
-                    <div class="icon country-flag"><img src="/assets/images/flag/canada.png" alt="Canada">
+                    <div class="icon country-flag"><img src="<?php echo asset('/images/flag/canada.png'); ?>" alt="Canada">
                     </div>
                     <div class="content">
                         <h3 class="project-text">Canada</h3>
@@ -1109,7 +1109,7 @@
             <!-- United Kingdom -->
             <div class="marquee-card-item new-marquee-card-item">
                 <div class="value-box-items">
-                    <div class="icon country-flag"><img src="/assets/images/flag/united_kingdom.png"
+                    <div class="icon country-flag"><img src="<?php echo asset('/images/flag/united_kingdom.png'); ?>"
                             alt="United Kingdom">
                     </div>
                     <div class="content">
@@ -1121,7 +1121,7 @@
             <!-- Germany -->
             <div class="marquee-card-item new-marquee-card-item">
                 <div class="value-box-items">
-                    <div class="icon country-flag"><img src="/assets/images/flag/germany.png" alt="Germany">
+                    <div class="icon country-flag"><img src="<?php echo asset('/images/flag/germany.png'); ?>" alt="Germany">
                     </div>
                     <div class="content">
                         <h3 class="project-text">Germany</h3>
@@ -1132,7 +1132,7 @@
             <!-- Netherlands -->
             <div class="marquee-card-item new-marquee-card-item">
                 <div class="value-box-items">
-                    <div class="icon country-flag"><img src="/assets/images/flag/netherlands.png" alt="Netherlands">
+                    <div class="icon country-flag"><img src="<?php echo asset('/images/flag/netherlands.png'); ?>" alt="Netherlands">
                     </div>
                     <div class="content">
                         <h3 class="project-text">Netherlands</h3>
@@ -1143,7 +1143,7 @@
             <!-- France -->
             <div class="marquee-card-item new-marquee-card-item">
                 <div class="value-box-items">
-                    <div class="icon country-flag"><img src="/assets/images/flag/france.png" alt="France">
+                    <div class="icon country-flag"><img src="<?php echo asset('/images/flag/france.png'); ?>" alt="France">
                     </div>
                     <div class="content">
                         <h3 class="project-text">France</h3>
@@ -1154,7 +1154,7 @@
             <!-- Switzerland -->
             <div class="marquee-card-item new-marquee-card-item">
                 <div class="value-box-items">
-                    <div class="icon country-flag"><img src="/assets/images/flag/switzerland.png" alt="Switzerland">
+                    <div class="icon country-flag"><img src="<?php echo asset('/images/flag/switzerland.png'); ?>" alt="Switzerland">
                     </div>
                     <div class="content">
                         <h3 class="project-text">Switzerland</h3>
@@ -1165,7 +1165,7 @@
             <!-- Ireland -->
             <div class="marquee-card-item new-marquee-card-item">
                 <div class="value-box-items">
-                    <div class="icon country-flag"><img src="/assets/images/flag/ireland.png" alt="Ireland">
+                    <div class="icon country-flag"><img src="<?php echo asset('/images/flag/ireland.png'); ?>" alt="Ireland">
                     </div>
                     <div class="content">
                         <h3 class="project-text">Ireland</h3>
@@ -1176,7 +1176,7 @@
             <!-- Sweden -->
             <div class="marquee-card-item new-marquee-card-item">
                 <div class="value-box-items">
-                    <div class="icon country-flag"><img src="/assets/images/flag/sweden.png" alt="Sweden">
+                    <div class="icon country-flag"><img src="<?php echo asset('/images/flag/sweden.png'); ?>" alt="Sweden">
                     </div>
                     <div class="content">
                         <h3 class="project-text">Sweden</h3>
@@ -1187,7 +1187,7 @@
             <!-- Australia -->
             <div class="marquee-card-item new-marquee-card-item">
                 <div class="value-box-items">
-                    <div class="icon country-flag"><img src="/assets/images/flag/australia.png" alt="Australia">
+                    <div class="icon country-flag"><img src="<?php echo asset('/images/flag/australia.png'); ?>" alt="Australia">
                     </div>
                     <div class="content">
                         <h3 class="project-text">Australia</h3>
@@ -1198,7 +1198,7 @@
             <!-- New Zealand -->
             <div class="marquee-card-item new-marquee-card-item">
                 <div class="value-box-items">
-                    <div class="icon country-flag"><img src="/assets/images/flag/new-zealand.png" alt="New Zealand">
+                    <div class="icon country-flag"><img src="<?php echo asset('/images/flag/new-zealand.png'); ?>" alt="New Zealand">
                     </div>
                     <div class="content">
                         <h3 class="project-text">New Zealand</h3>
@@ -1209,7 +1209,7 @@
             <!-- United Arab Emirates -->
             <div class="marquee-card-item new-marquee-card-item">
                 <div class="value-box-items">
-                    <div class="icon country-flag"><img src="/assets/images/flag/uae.png" alt="United Arab Emirates">
+                    <div class="icon country-flag"><img src="<?php echo asset('/images/flag/uae.png'); ?>" alt="United Arab Emirates">
                     </div>
                     <div class="content">
                         <h3 class="project-text">United Arab Emirates</h3>
@@ -1220,7 +1220,7 @@
             <!-- Saudi Arabia -->
             <div class="marquee-card-item new-marquee-card-item">
                 <div class="value-box-items">
-                    <div class="icon country-flag"><img src="/assets/images/flag/saudi_arabia.png" alt="Saudi Arabia">
+                    <div class="icon country-flag"><img src="<?php echo asset('/images/flag/saudi_arabia.png'); ?>" alt="Saudi Arabia">
                     </div>
                     <div class="content">
                         <h3 class="project-text">Saudi Arabia</h3>
@@ -1231,7 +1231,7 @@
             <!-- Qatar -->
             <div class="marquee-card-item new-marquee-card-item">
                 <div class="value-box-items">
-                    <div class="icon country-flag"><img src="/assets/images/flag/qatar.png" alt="Qatar">
+                    <div class="icon country-flag"><img src="<?php echo asset('/images/flag/qatar.png'); ?>" alt="Qatar">
                     </div>
                     <div class="content">
                         <h3 class="project-text">Qatar</h3>
@@ -1242,7 +1242,7 @@
             <!-- Kuwait -->
             <div class="marquee-card-item new-marquee-card-item">
                 <div class="value-box-items">
-                    <div class="icon country-flag"><img src="/assets/images/flag/kuwait.png" alt="Kuwait">
+                    <div class="icon country-flag"><img src="<?php echo asset('/images/flag/kuwait.png'); ?>" alt="Kuwait">
                     </div>
                     <div class="content">
                         <h3 class="project-text">Kuwait</h3>
@@ -1287,13 +1287,13 @@
                     <div class="content">
                         <div class="title">
                             <h3>
-                                <a href="https://thevenco.com/">Vendor Management Software </a>
+                                <a href="vender.php">Vendor Management Software </a>
                             </h3>
                             <p>A smart vendor management platform that connects hiring teams with verified vendors,
                                 streamlining recruitment workflows and reducing time-to-hire through an intuitive web
                                 application.</p>
                         </div>
-                        <a href="https://thevenco.com/" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="vender.php" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -1405,7 +1405,7 @@
                                             </p>
                                             <div class="client-info">
                                                 <div class="client-img">
-                                                    <img src="/assets/images/flag/united_states.png" alt="img"
+                                                    <img src="<?php echo asset('/images/flag/united_states.png'); ?>" alt="img"
                                                         class="img-fluid">
                                                 </div>
                                                 <div class="star">
@@ -1417,7 +1417,7 @@
                                                 </div>
                                             </div>
                                             <div class="icon">
-                                                <img src="assets/img/testimonial/icon.png" alt="img">
+                                                <img src="<?php echo asset('/img/testimonial/icon.png'); ?>" alt="img">
                                             </div>
                                         </div>
                                     </div>
@@ -1439,7 +1439,7 @@
                                             </p>
                                             <div class="client-info">
                                                 <div class="client-img">
-                                                    <img src="/assets/images/flag/united_states.png" alt="img"
+                                                    <img src="<?php echo asset('/images/flag/united_states.png'); ?>" alt="img"
                                                         class="img-fluid">
                                                 </div>
                                                 <div class="star">
@@ -1451,7 +1451,7 @@
                                                 </div>
                                             </div>
                                             <div class="icon">
-                                                <img src="assets/img/testimonial/icon.png" alt="img">
+                                                <img src="<?php echo asset('/img/testimonial/icon.png'); ?>" alt="img">
                                             </div>
                                         </div>
                                     </div>
@@ -1474,7 +1474,7 @@
                                             </p>
                                             <div class="client-info">
                                                 <div class="client-img">
-                                                    <img src="/assets/images/flag/united_states.png" alt="img"
+                                                    <img src="<?php echo asset('/images/flag/united_states.png'); ?>" alt="img"
                                                         class="img-fluid">
                                                 </div>
                                                 <div class="star">
@@ -1486,7 +1486,7 @@
                                                 </div>
                                             </div>
                                             <div class="icon">
-                                                <img src="assets/img/testimonial/icon.png" alt="img">
+                                                <img src="<?php echo asset('/img/testimonial/icon.png'); ?>" alt="img">
                                             </div>
                                         </div>
                                     </div>
@@ -1498,7 +1498,7 @@
                                             </p>
                                             <div class="client-info">
                                                 <div class="client-img">
-                                                    <img src="/assets/images/flag/kuwait.png" alt="img"
+                                                    <img src="<?php echo asset('/images/flag/kuwait.png'); ?>" alt="img"
                                                         class="img-fluid">
                                                 </div>
                                                 <div class="star">
@@ -1510,7 +1510,7 @@
                                                 </div>
                                             </div>
                                             <div class="icon">
-                                                <img src="assets/img/testimonial/icon.png" alt="img">
+                                                <img src="<?php echo asset('/img/testimonial/icon.png'); ?>" alt="img">
                                             </div>
                                         </div>
                                     </div>
@@ -1523,7 +1523,7 @@
                                             </p>
                                             <div class="client-info">
                                                 <div class="client-img">
-                                                    <img src="/assets/images/flag/united_states.png" alt="img"
+                                                    <img src="<?php echo asset('/images/flag/united_states.png'); ?>" alt="img"
                                                         class="img-fluid">
                                                 </div>
                                                 <div class="star">
@@ -1535,7 +1535,7 @@
                                                 </div>
                                             </div>
                                             <div class="icon">
-                                                <img src="assets/img/testimonial/icon.png" alt="img">
+                                                <img src="<?php echo asset('/img/testimonial/icon.png'); ?>" alt="img">
                                             </div>
                                         </div>
                                     </div>
@@ -1559,16 +1559,10 @@
 
 
 <!-- Case Study Section Start -->
-<section class="case-study-section fix section-padding" style="background: #fff">
-
-    <div class="left-shape float-bob-x">
-        <img src="assets/img/case-studies/left-shape.png" alt="img">
+<section class="news-section section-padding section-bg bg-white custom-our-projects-section">
+    <div class="left-shape">
+        <img src="assets/img/news/left-shape.png" alt="img">
     </div>
-
-    <div class="right-shape float-bob-x">
-        <img src="assets/img/case-studies/right-shaape.png" alt="img">
-    </div>
-
     <div class="container">
         <div class="section-title-area">
             <div class="section-title">
@@ -1584,99 +1578,97 @@
                             class="fa-solid fa-turn-up"></i></span></a>
             </div> -->
         </div>
-
-        <div class="case-study-wrapper">
-            <div class="row">
-
-                <!-- Left Side: Original Design & Content -->
-                <div class="col-xxl-6 wow fadeInUp">
-                    <div class="case-study-box-items">
-                        <div class="thumb">
-                            <img src="assets/img/case-studies/01.jpg" alt="img">
-                            <h3 class="project-title text-white">
-                                <img src="assets/img/case-studies/icon.png" alt="img">
-                                Our Top Project
+    </div>
+    <div class="container">
+        <div class="row g-4">
+            <!-- Project 1: AI Productivity Platform -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+                <div class="case-studies-card-items mt-0">
+                    <div class="thumb">
+                        <img decoding="async" src="assets/img/case-studies/aliadoai1.png" alt="AI Productivity Platform">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <h3>
+                                <a href="https://aliadoai.ai/">AI Productivity Platform</a>
                             </h3>
-                            <span class="number">01</span>
+                            <p>An AI-powered SaaS platform that automates scheduling, reminders, payments, invoicing, and client communication, enabling independent professionals to focus on serving their clients.</p>
                         </div>
+                        <a href="https://aliadoai.ai/" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
+            </div>
 
-                <!-- Right Side: Accordion with 4 New Projects -->
-                <div class="col-xxl-6">
-                    <div class="main-box">
-
-                        <!-- Project 1 (Active) -->
-                        <div class="box active wow fadeInUp">
-                            <div class="title-items">
-                                <h3><a href="https://aliadoai.ai/">AI Productivity Platform</a></h3>
-                                <span class="number">02</span>
-                            </div>
-                            <span class="number-hover">02</span>
-                            <div class="project-content">
-                                <h3><a href="https://aliadoai.ai/">AI Productivity Platform</a></h3>
-                                <p>
-                                    An AI-powered SaaS platform that automates scheduling, reminders, payments,
-                                    invoicing, and client communication, enabling independent professionals to focus on
-                                    serving their clients.
-                                </p>
-                            </div>
+            <!-- Project 2: Live Language Exchange -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="case-studies-card-items mt-0">
+                    <div class="thumb">
+                        <img decoding="async" src="assets/img/case-studies/inatlantis1.png" alt="Live Language Exchange">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <h3>
+                                <a href="https://www.inatlantis.com/">Live Language Exchange</a>
+                            </h3>
+                            <p>A live language exchange platform that matches learners with native speakers based on language pairs and discussion topics, making language practice interactive and engaging.</p>
                         </div>
-
-                        <!-- Project 2 -->
-                        <div class="box bg-1 wow fadeInUp" data-wow-delay=".2s">
-                            <div class="title-items">
-                                <h3><a href="https://www.inatlantis.com/">Live Language Exchange</a></h3>
-                                <span class="number">03</span>
-                            </div>
-                            <span class="number-hover">03</span>
-                            <div class="project-content">
-                                <h3><a href="https://www.inatlantis.com/">Live Language Exchange</a></h3>
-                                <p>
-                                    A live language exchange platform that matches learners with native speakers based
-                                    on language pairs and discussion topics, making language practice interactive and
-                                    engaging.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Project 3 -->
-                        <div class="box bg-2 wow fadeInUp" data-wow-delay=".4s">
-                            <div class="title-items">
-                                <h3><a href="https://misy.app/en/apps">Smart Taxi Booking</a></h3>
-                                <span class="number">04</span>
-                            </div>
-                            <span class="number-hover">04</span>
-                            <div class="project-content">
-                                <h3><a href="https://misy.app/en/apps">Smart Taxi Booking</a></h3>
-                                <p>
-                                    A feature-rich ride booking app that enables users to book or schedule rides, track
-                                    drivers in real time, choose vehicle types, and make secure payments for a seamless
-                                    travel experience.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Project 4 -->
-                        <div class="box bg-3 wow fadeInUp" data-wow-delay=".6s">
-                            <div class="title-items">
-                                <h3><a href="https://meetzane.com.au/">AI Mental Wellness Platform</a></h3>
-                                <span class="number">05</span>
-                            </div>
-                            <span class="number-hover">05</span>
-                            <div class="project-content">
-                                <h3><a href="https://meetzane.com.au/">AI Mental Wellness Platform</a></h3>
-                                <p style="font-size: 14px;">
-                                    An AI-powered mental wellness companion that provides personalized, judgment-free
-                                    conversations using evidence-based therapeutic techniques to support emotional
-                                    well-being and self-growth.
-                                </p>
-                            </div>
-                        </div>
-
+                        <a href="https://www.inatlantis.com/" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
+            </div>
 
+            <!-- Project 3: Smart Taxi Booking -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                <div class="case-studies-card-items mt-0">
+                    <div class="thumb">
+                        <img decoding="async" src="assets/img/case-studies/misy2.png" alt="Smart Taxi Booking">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <h3>
+                                <a href="https://misy.app/en/apps">Smart Taxi Booking</a>
+                            </h3>
+                            <p>A feature-rich ride booking app that enables users to book or schedule rides, track drivers in real time, choose vehicle types, and make secure payments for a seamless travel experience.</p>
+                        </div>
+                        <a href="https://misy.app/en/apps" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: AI Mental Wellness Platform -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="case-studies-card-items mt-0">
+                    <div class="thumb">
+                        <img decoding="async" src="assets/img/case-studies/meet-zane.png" alt="AI Mental Wellness Platform">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <h3>
+                                <a href="https://meetzane.com.au/">AI Mental Wellness Platform</a>
+                            </h3>
+                            <p>An AI-powered mental wellness companion that provides personalized, judgment-free conversations using evidence-based therapeutic techniques to support emotional well-being and self-growth.</p>
+                        </div>
+                        <a href="https://meetzane.com.au/" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Her stay -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="case-studies-card-items mt-0">
+                    <div class="thumb">
+                        <img decoding="async" src="assets/img/case-studies/her_stay.png" alt="Her-stay">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <h3>
+                                <a href="https://meetzane.com.au/">HerStay — Women-First Travel & Accommodation Platform</a>
+                            </h3>
+                            <p>A women-first travel platform that helps female travelers connect, find stays, match with compatible companions, and explore the world through a trusted community.</p>
+                        </div>
+                        <a href="https://meetzane.com.au/" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

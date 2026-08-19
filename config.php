@@ -21,12 +21,15 @@ define('BASE_PATH', realpath(__DIR__) . DIRECTORY_SEPARATOR);
 define('BASE_URL', (function () {
     $scheme = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? 'https' : 'http';
     $host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+    // Determine the base path (the directory where the app is served).
     $scriptName = $_SERVER['SCRIPT_NAME'] ?? '';
     $dir = str_replace('\\', '/', dirname($scriptName));
     $dir = rtrim($dir, '/');
-    if ($dir === '/' || $dir === '.') {
+    // If running from document root, $dir may be empty or '/'. Normalize to empty string.
+    if ($dir === '/' || $dir === '.' ) {
         $dir = '';
     }
+    // Build URL: include directory only if non-empty
     return $scheme . '://' . $host . ($dir !== '' ? $dir : '') . '/';
 })());
 

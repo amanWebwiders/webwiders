@@ -187,8 +187,15 @@ if (isset($pdo) && $pdo) {
                                         </div>
                                     <?php endif; ?>
 
+                                    <?php 
+                                        $contentHtml = $blog['content'];
+                                        $adminUrl = env('ADMIN_URL', 'http://localhost/adminwebwider/');
+                                        $storageUrl = env('STORAGE_URL', 'http://localhost/adminwebwider/public/storage/');
+                                        $contentHtml = str_replace(rtrim($adminUrl, '/') . '/storage/', $storageUrl, $contentHtml);
+                                        $contentHtml = preg_replace('/src=["\']\/?storage\//i', 'src="' . $storageUrl, $contentHtml);
+                                    ?>
                                     <div class="blog-content-body mt-4">
-                                        <?= $blog['content'] ?>
+                                        <?= $contentHtml ?>
                                     </div>
                                 </div>
                             </div>

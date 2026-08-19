@@ -583,7 +583,7 @@
                 <div class="col-xl-2 col-lg-4">
                     <div class="testimonial-left wow fadeInUp" data-wow-delay=".3s">
                         <div class="client-img">
-                            <img src="assets/img/testimonial/10.png" alt="img">
+                            <img src="<?php echo asset('/img/testimonial/10.png'); ?>" alt="img">
                             <div class="content">
                                 <div class="star">
                                     <i class="fa-solid fa-star"></i>
@@ -607,12 +607,12 @@
                             <div class="swiper-slide">
                                 <div class="testimonial-box-items">
                                     <div class="icon">
-                                        <img src="assets/img/testimonial/icon.png" alt="img">
+                                        <img src="<?php echo asset('/img/testimonial/icon.png'); ?>" alt="img">
                                     </div>
                                     <div class="testimonial-img">
-                                        <img src="assets/img/testimonial/01.png" alt="img">
+                                        <img src="<?php echo asset('/img/testimonial/01.png'); ?>" alt="img">
                                         <div class="shape-img">
-                                            <img src="assets/img/testimonial/shape.png" alt="img">
+                                            <img src="<?php echo asset('/img/testimonial/shape.png'); ?>" alt="img">
                                         </div>
                                     </div>
                                     <div class="content">
@@ -636,12 +636,12 @@
                             <div class="swiper-slide">
                                 <div class="testimonial-box-items">
                                     <div class="icon">
-                                        <img src="assets/img/testimonial/icon.png" alt="img">
+                                        <img src="<?php echo asset('/img/testimonial/icon.png'); ?>" alt="img">
                                     </div>
                                     <div class="testimonial-img">
-                                        <img src="assets/img/testimonial/02.png" alt="img">
+                                        <img src="<?php echo asset('/img/testimonial/02.png'); ?>" alt="img">
                                         <div class="shape-img">
-                                            <img src="assets/img/testimonial/shape.png" alt="img">
+                                            <img src="<?php echo asset('/img/testimonial/shape.png'); ?>" alt="img">
                                         </div>
                                     </div>
                                     <div class="content">
