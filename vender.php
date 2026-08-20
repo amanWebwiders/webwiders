@@ -181,7 +181,7 @@
                 </div>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="num-card">
                         <span class="number">01</span>
@@ -221,7 +221,7 @@
 
             <div class="row mt-5">
                 <div class="col-12">
-                    <p class="text-muted fst-italic">TheVenco was built to bring these fragmented activities into one intuitive vendor management platform.</p>
+                    <p class="text-muted text-center fst-italic">TheVenco was built to bring these fragmented activities into one intuitive vendor management platform.</p>
                 </div>
             </div>
         </div>
@@ -551,7 +551,7 @@
                 </div>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="info-card bg-light-gray border-0 text-center">
                         <h5 class="mb-3">Centralized Hiring Operations</h5>
@@ -586,7 +586,7 @@
 
              <div class="row mt-5">
                 <div class="col-12">
-                    <p class="text-muted fst-italic">From finding the right vendor to tracking recruitment activity, TheVenco brings the vendor-driven hiring process into one connected workflow.</p>
+                    <p class="text-muted fst-italic text-center">From finding the right vendor to tracking recruitment activity, TheVenco brings the vendor-driven hiring process into one connected workflow.</p>
                 </div>
             </div>
         </div>
@@ -605,7 +605,7 @@
                 </div>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <div class="col-md-4">
                     <div class="info-card text-center">
                         <h5 class="mb-3 text-dark">Custom Software Development</h5>
@@ -646,7 +646,7 @@
 
              <div class="row mt-5">
                 <div class="col-12">
-                    <p class="text-muted fst-italic">Have a SaaS idea or need to modernize an existing platform?</p>
+                    <p class="text-muted fst-italic text-center">Have a SaaS idea or need to modernize an existing platform?</p>
                 </div>
             </div>
         </div>

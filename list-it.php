@@ -1,7 +1,113 @@
 <?php include 'includes/header.php'; ?>
 
+<style>
+    /* ---------------------------------------------------------
+       Strictly Scoped CSS Hierarchy for ListIt
+       Target: #listit-case-study.listit-page
+       --------------------------------------------------------- */
+    #listit-case-study.listit-page {
+        /* ListIt Theme Color */
+        --listit-primary: #A5110D;
+        --listit-secondary: #A5110D;
+    }
 
-<div id="herstay-case-study" class="herstay-page">
+    /* App Placeholder Styling */
+    #listit-case-study.listit-page .listit-app-placeholder {
+        border: 2px dashed #e0e0e0;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+
+    /* Objective Wrapper */
+    #listit-case-study.listit-page .listit-objective-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Solution Image Wrapper */
+    #listit-case-study.listit-page .listit-solution-image-wrapper {
+        transition: transform 0.3s ease;
+    }
+
+    #listit-case-study.listit-page .listit-solution-image-wrapper:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Feature Items */
+    #listit-case-study.listit-page .listit-feature-item {
+        transition: all 0.3s ease;
+    }
+
+    #listit-case-study.listit-page .listit-feature-item:hover {
+        transform: translateX(5px);
+    }
+
+    /* Product Cards */
+    #listit-case-study.listit-page .listit-product-card {
+        transition: all 0.3s ease;
+    }
+
+    #listit-case-study.listit-page .listit-product-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(255, 107, 0, 0.15);
+        border-color: var(--listit-primary);
+    }
+
+    #listit-case-study.listit-page .listit-product-card:hover .icon-wrapper {
+        background: var(--listit-secondary);
+    }
+
+    /* Timeline Icon Override for ListIt */
+    #listit-case-study.listit-page .timeline-icon {
+        background: var(--listit-primary) !important;
+    }
+
+    #listit-case-study.listit-page .timeline-icon.bg-info {
+        background: var(--listit-primary) !important;
+    }
+
+    #listit-case-study.listit-page .timeline-icon.bg-warning {
+        background: var(--listit-secondary) !important;
+    }
+
+    #listit-case-study.listit-page .timeline-icon.bg-primary {
+        background: var(--listit-primary) !important;
+    }
+
+    #listit-case-study.listit-page .timeline-icon.bg-secondary {
+        background: #6c757d !important;
+    }
+
+    #listit-case-study.listit-page .timeline-icon.bg-success {
+        background: #28a745 !important;
+    }
+
+    /* Service Card Icon Override */
+    #listit-case-study.listit-page .service-card-items .icon {
+        color: var(--listit-primary) !important;
+    }
+
+    /* Tech Category Box Icon Override */
+    #listit-case-study.listit-page .tech-category-box h4 i {
+        color: var(--listit-primary) !important;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        #listit-case-study.listit-page .listit-objective-wrapper {
+            padding: 30px 20px !important;
+        }
+
+        #listit-case-study.listit-page .listit-objective-content h3 {
+            font-size: 16px !important;
+        }
+
+        #listit-case-study.listit-page .listit-objective-content p {
+            font-size: 16px !important;
+        }
+    }
+</style>
+
+<div id="listit-case-study" class="listit-page">
 
 <!-- Breadcrumb Section Start -->
 <div class="breadcrumb-wrapper bg-cover" style="">
@@ -14,7 +120,7 @@
     <div class="container">
         <div class="page-heading">
             <div class="breadcrumb-sub-title">
-                <h1 class="wow fadeInUp" data-wow-delay=".3s">HerStay</h1>
+                <h1 class="wow fadeInUp" data-wow-delay=".3s">ListIt</h1>
             </div>
             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                 <li>
@@ -26,7 +132,7 @@
                     <i class="fa-solid fa-chevron-right"></i>
                 </li>
                 <li>
-                    HerStay
+                    ListIt
                 </li>
             </ul>
         </div>
@@ -44,10 +150,10 @@
         <div class="section-title-area d-flex flex-wrap justify-content-between align-items-start mb-5">
             <div class="section-title mb-0">
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    WOMEN-FIRST TRAVEL & <br>ACCOMMODATION PLATFORM
+                    ListIt – A Smarter Way to <br>Buy & Sell Online
                 </h2>
                 <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    HerStay is a women-first travel platform designed to help female travelers discover trips, find compatible travel companions, connect with women nearby, and explore the world through a trusted community.
+                    ListIt is a modern online classified marketplace that connects buyers and sellers through an intuitive platform. Users can create and manage listings, discover products and services by category and location, communicate with sellers, and find relevant opportunities through powerful search and filtering.
                 </p>
             </div>
         </div>
@@ -66,23 +172,22 @@
         <div class="about-wrapper">
             <div class="row g-4">
                 <div class="col-lg-6">
-                     <div class="about-image">
-                        <img src="assets/img/case-studies/her_stay.png" alt="Misy" class="wow img-custom-anim-left w-100"
-                            data-wow-duration="1.5s" data-wow-delay="0.3s">
+                    <div class="about-image">
+                       <img src="assets/img/case-studies/list-it.png" alt="" class="w-100">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about-content">
                         <div class="section-title">
                             <div class="sub-title bg-color-2 wow fadeInUp">
-                                <span>ABOUT HERSTAY</span>
+                                <span>ABOUT LISTIT</span>
                             </div>
                             <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                Making Travel More Connected, Social & Comfortable
+                                Making Online Classifieds Faster & Easier to Use
                             </h2>
                         </div>
                         <p class="mt-3 mt-md-0 mb-3 wow fadeInUp" data-wow-delay=".5s">
-                            HerStay was designed around a simple idea: women should have a trusted digital space where they can discover travel opportunities, connect with compatible women, find accommodation options, and build meaningful connections while exploring new destinations.
+                            ListIt was developed as a modern classified marketplace where buyers and sellers can connect through a simple, location-aware digital experience. The platform brings listings, search, communication, and ad management together in one centralized marketplace.
                         </p>
                     </div>
                 </div>
@@ -102,11 +207,11 @@
                     <span>THE CHALLENGE</span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    THE Challenges
+                    Challenges in Building a Modern Marketplace
                 </h2>
-                <!-- <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    Women travelers often face unique challenges when it comes to finding safe, comfortable, and social travel experiences.
-                </p> -->
+                <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
+                    Building a classified marketplace that can handle large volumes of listings while keeping the user experience simple and fast presents several technical and design challenges.
+                </p>
             </div>
         </div>
 
@@ -119,11 +224,11 @@
                         <div class="timeline-entry-inner">
                             <time class="timeline-time"><span>01</span></time>
                             <div class="timeline-icon bg-info">
-                                <i class="fa-solid fa-user-group"></i>
+                                <i class="fa-solid fa-list"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>Finding Compatible Travel Companions</h2>
-                                <p>Solo travelers may want companionship but need a way to discover people with similar travel interests and plans.</p>
+                                <h2>Managing Large Numbers of Listings</h2>
+                                <p>The platform needed to support listings across multiple categories while keeping discovery simple for users.</p>
                             </div>
                         </div>
                     </article>
@@ -133,11 +238,11 @@
                         <div class="timeline-entry-inner">
                             <time class="timeline-time"><span>02</span></time>
                             <div class="timeline-icon bg-warning">
-                                <i class="fa-solid fa-shield-halved"></i>
+                                <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>Building Trusted Connections</h2>
-                                <p>Connecting with other travelers requires profiles, messaging, and community-focused interactions that encourage confidence and trust.</p>
+                                <h2>Finding Relevant Ads Quickly</h2>
+                                <p>Buyers need powerful search, filters, categories, and location-based discovery to find the right listings.</p>
                             </div>
                         </div>
                     </article>
@@ -147,11 +252,11 @@
                         <div class="timeline-entry-inner">
                             <time class="timeline-time"><span>03</span></time>
                             <div class="timeline-icon bg-primary">
-                                <i class="fa-solid fa-search"></i>
+                                <i class="fa-solid fa-comments"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>Discovering Relevant Stays & Trips</h2>
-                                <p>Travelers need an easier way to explore accommodation and travel opportunities that fit their plans.</p>
+                                <h2>Smooth Buyer–Seller Communication</h2>
+                                <p>Users need a convenient way to communicate and interact around listings.</p>
                             </div>
                         </div>
                     </article>
@@ -161,11 +266,11 @@
                         <div class="timeline-entry-inner">
                             <time class="timeline-time"><span>04</span></time>
                             <div class="timeline-icon bg-secondary">
-                                <i class="fa-solid fa-heart"></i>
+                                <i class="fa-solid fa-sliders"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>Traveling Without Feeling Alone</h2>
-                                <p>The platform needed to combine travel discovery with social connection, creating a more engaging experience than a traditional booking platform.</p>
+                                <h2>Easy Ad Management</h2>
+                                <p>Sellers need simple tools to create, update, promote, and manage their advertisements.</p>
                             </div>
                         </div>
                     </article>
@@ -179,7 +284,7 @@
                             </div>
                             <div class="timeline-label">
                                 <h2>Our Objective</h2>
-                                <p>Create a women-first travel ecosystem that connects travelers with compatible companions, accommodation opportunities, and a supportive community all through one intuitive mobile experience.</p>
+                                <p>Build a scalable classified marketplace that makes buying and selling simple while giving users powerful tools to discover, manage, and interact with listings.</p>
                             </div>
                         </div>
                     </article>
@@ -212,123 +317,150 @@
     </div>
 
     <div class="container">
-
+        <!-- Our Objective - Primary Message -->
+        <div class="row mb-5 wow fadeInUp" data-wow-delay=".2s">
+            <div class="col-12">
+                <div class="listit-objective-wrapper text-center"
+                    style="background: linear-gradient(135deg, #A5110D 0%, #A5110D 100%); padding: 40px 30px; border-radius: 16px; position: relative; overflow: hidden;">
+                    <div class="listit-objective-content" style="position: relative; z-index: 2;">
+                        <h3 class="text-white mb-3" style="font-weight: 700; font-size: 18px; letter-spacing: 1px; text-transform: uppercase;">Our Objective</h3>
+                        <p class="text-white mb-0" style="font-size: 20px; line-height: 1.6; font-weight: 500; max-width: 900px; margin: 0 auto;">
+                            Build a scalable classified marketplace that makes buying and selling simple while giving users powerful tools to discover, manage, and interact with listings.
+                        </p>
+                    </div>
+                    <div class="listit-objective-bg"
+                        style="position: absolute; top: -50%; right: -10%; width: 300px; height: 300px; background: rgba(255,255,255,0.1); border-radius: 50%; z-index: 1;"></div>
+                    <div class="listit-objective-bg-2"
+                        style="position: absolute; bottom: -30%; left: -5%; width: 200px; height: 200px; background: rgba(255,255,255,0.08); border-radius: 50%; z-index: 1;"></div>
+                </div>
+            </div>
+        </div>
 
         <div class="row g-5 align-items-center">
             <!-- Left Side: App Image -->
             <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".3s">
-                <div class="about-image">
-                        <img src="assets/img/case-studies/her_stay.png" alt="Misy" class="wow img-custom-anim-left w-100"
-                            data-wow-duration="1.5s" data-wow-delay="0.3s">
-                    </div>
+                <div class="listit-solution-image-wrapper"
+                    style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgb(165 17 13 / 19%);">
+                   <img src="assets/img/case-studies/list-it2.png" alt="" class="w-100">
+                </div>
             </div>
 
             <!-- Right Side: Solution Content -->
             <div class="col-lg-6 wow fadeInRight" data-wow-delay=".4s">
                 <div class="section-title">
-                    <div class="sub-title wow fadeInUp" style="background: #a5110d; color: #fff; display: inline-block; padding: 8px 20px; border-radius: 25px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;">
+                    <div class="sub-title wow fadeInUp" style="background: #A5110D; color: #fff; display: inline-block; padding: 8px 20px; border-radius: 25px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;">
                         <span>OUR SOLUTION</span>
                     </div>
                     <h2 class="wow fadeInUp" data-wow-delay=".3s" style="color: #222;">
-                        A Travel Community Built Around Women
+                        A Complete Marketplace for Buyers & Sellers
                     </h2>
                     <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s" style="color: #666;">
-                        WebWiders developed HerStay as a connected travel platform that brings trip discovery, accommodation, traveler matching, and social interaction into one mobile experience. The platform helps women discover travel opportunities while making it easier to find compatible companions and build trusted connections.
+                        WebWiders developed ListIt as a scalable classified marketplace that brings listing creation, product discovery, communication, and ad management together in one streamlined web platform.
                     </p>
                 </div>
 
                 <!-- Feature Items -->
-                <div class="herstay-solution-features mt-4">
+                <div class="listit-solution-features mt-4">
                     <!-- Feature 1 -->
-                    <div class="herstay-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".5s"
+                    <div class="listit-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".5s"
                         style="transition: all 0.3s ease;">
                         <div class="feature-number me-3"
-                            style="width: 40px; height: 40px; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            style="width: 40px; height: 40px; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                             <span style="color: #fff; font-weight: 700; font-size: 16px;">01</span>
                         </div>
                         <div class="feature-content">
-                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Travel Discovery</h5>
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Easy Ad Posting</h5>
                             <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                                Explore travel opportunities, destinations, and experiences based on personal interests.
+                                Sellers can create listings with images, videos, descriptions, and categories.
                             </p>
                         </div>
                     </div>
 
                     <!-- Feature 2 -->
-                    <div class="herstay-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".6s"
+                    <div class="listit-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".6s"
                         style="transition: all 0.3s ease;">
                         <div class="feature-number me-3"
-                            style="width: 40px; height: 40px; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            style="width: 40px; height: 40px; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                             <span style="color: #fff; font-weight: 700; font-size: 16px;">02</span>
                         </div>
                         <div class="feature-content">
-                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Traveler Profiles</h5>
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Listing Management</h5>
                             <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                                Create profiles that help users understand each other's travel interests, preferences, and plans.
+                                Give sellers centralized tools to create, update, manage, and monitor their advertisements.
                             </p>
                         </div>
                     </div>
 
                     <!-- Feature 3 -->
-                    <div class="herstay-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".7s"
+                    <div class="listit-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".7s"
                         style="transition: all 0.3s ease;">
                         <div class="feature-number me-3"
-                            style="width: 40px; height: 40px; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            style="width: 40px; height: 40px; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                             <span style="color: #fff; font-weight: 700; font-size: 16px;">03</span>
                         </div>
                         <div class="feature-content">
-                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Companion Matching</h5>
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Smart Search & Filters</h5>
                             <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                                Discover compatible travelers based on destinations, travel plans, interests, and preferences.
+                                Buyers can quickly narrow down listings using categories, keywords, and filters.
                             </p>
                         </div>
                     </div>
 
                     <!-- Feature 4 -->
-                    <div class="herstay-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".8s"
+                    <div class="listit-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".8s"
                         style="transition: all 0.3s ease;">
                         <div class="feature-number me-3"
-                            style="width: 40px; height: 40px; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            style="width: 40px; height: 40px; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                             <span style="color: #fff; font-weight: 700; font-size: 16px;">04</span>
                         </div>
                         <div class="feature-content">
-                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Community & Messaging</h5>
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Promotions & Engagement</h5>
                             <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                                Connect privately with other travelers and start conversations before meeting or traveling together.
+                                Support listing promotions along with favorites, ratings, reviews, alerts, and other engagement features.
                             </p>
                         </div>
                     </div>
 
                     <!-- Feature 5 -->
-                    <div class="herstay-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".9s"
+                    <div class="listit-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".9s"
                         style="transition: all 0.3s ease;">
                         <div class="feature-number me-3"
-                            style="width: 40px; height: 40px; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            style="width: 40px; height: 40px; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                             <span style="color: #fff; font-weight: 700; font-size: 16px;">05</span>
                         </div>
                         <div class="feature-content">
-                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Accommodation Discovery</h5>
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Category-Based Discovery</h5>
                             <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                                Find suitable stays while planning trips and connecting with other travelers.
+                                Organize thousands of listings across multiple categories.
                             </p>
                         </div>
                     </div>
 
                     <!-- Feature 6 -->
-                    <div class="herstay-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay="1.0s"
+                    <div class="listit-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay="1.0s"
                         style="transition: all 0.3s ease;">
                         <div class="feature-number me-3"
-                            style="width: 40px; height: 40px; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            style="width: 40px; height: 40px; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                             <span style="color: #fff; font-weight: 700; font-size: 16px;">06</span>
                         </div>
                         <div class="feature-content">
-                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Nearby Travelers</h5>
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Buyer–Seller Messaging</h5>
                             <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                                Discover women traveling or staying nearby and build local connections.
+                                Enable direct communication between buyers and sellers around individual listings.
                             </p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Workflow & Closing Quote -->
+        <div class="row mt-5 text-center wow fadeInUp" data-wow-delay="1.1s">
+            <div class="col-12">
+                <p class="fw-bold mb-4" style="font-size: 1.1rem; color: #A5110D;">
+                    Create Listing <span style="color: #A5110D; margin: 0 10px; font-weight: bold;">&rarr;</span> Publish <span style="color: #A5110D; margin: 0 10px; font-weight: bold;">&rarr;</span> Discover <span style="color: #A5110D; margin: 0 10px; font-weight: bold;">&rarr;</span> Connect <span style="color: #A5110D; margin: 0 10px; font-weight: bold;">&rarr;</span> Buy / Sell
+                </p>
+                <p class="text-muted fst-italic">One platform connecting people, products, services, and opportunities through a smarter classified marketplace</p>
             </div>
         </div>
     </div>
@@ -343,225 +475,110 @@
         <div class="section-title-area d-flex flex-wrap justify-content-between align-items-end mb-5">
             <div class="section-title mb-0">
                 <div class="sub-title bg-color-2 wow fadeInUp">
-                    <span>FEATURES</span>
+                    <span>KEY FEATURES</span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Everything Women Need for a <br>Better Travel Experience
+                    Powerful Features for a <br>Modern Classified Marketplace
                 </h2>
             </div>
         </div>
 
-        <div class="row g-4">
-            <!-- Card 1: Travel & Trip Discovery -->
+        <div class="row g-4 justify-content-center">
+            <!-- Card 1: Easy Ad Posting -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                 <div class="service-card-items h-100">
                     <h3 class="title">
-                        <p>Travel & Trip Discovery</p>
+                        <p>Easy Ad Posting</p>
                     </h3>
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-plane custom-service-icon"></i>
+                        <i class="fa-solid fa-plus custom-service-icon"></i>
                     </div>
                     <div class="content">
                         <p>
-                            Discover destinations, trips, and travel opportunities that match your interests and plans.
+                            Create listings with images, videos, descriptions, categories, and relevant details.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 2: Traveler Profiles -->
+            <!-- Card 2: Real-Time Messaging -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                 <div class="service-card-items h-100">
                     <h3 class="title">
-                        <p>Traveler Profiles</p>
-                    </h3>
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-user custom-service-icon"></i>
-                    </div>
-                    <div class="content">
-                        <p>
-                            Create and explore profiles to understand travel interests, preferences, and upcoming plans.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3: Companion Matching -->
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                <div class="service-card-items h-100">
-                    <h3 class="title">
-                        <p>Companion Matching</p>
-                    </h3>
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-user-group custom-service-icon"></i>
-                    </div>
-                    <div class="content">
-                        <p>
-                            Find compatible women based on travel preferences, destinations, interests, and planned trips.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 4: Private Messaging -->
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                <div class="service-card-items h-100">
-                    <h3 class="title">
-                        <p>Private Messaging</p>
+                        <p>Real-Time Messaging</p>
                     </h3>
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-message custom-service-icon"></i>
                     </div>
                     <div class="content">
                         <p>
-                            Connect directly with other travelers, discuss plans, and build relationships before traveling together.
+                            Allow buyers and sellers to communicate directly and discuss listings conveniently.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 5: Accommodation Discovery -->
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                <div class="service-card-items h-100">
-                    <h3 class="title">
-                        <p>Accommodation Discovery</p>
-                    </h3>
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-hotel custom-service-icon"></i>
-                    </div>
-                    <div class="content">
-                        <p>
-                            Explore suitable stays while planning your journey and connecting with other travelers.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 6: Nearby Traveler Discovery -->
+            <!-- Card 3: Advanced Search & Filters -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                 <div class="service-card-items h-100">
                     <h3 class="title">
-                        <p>Nearby Traveler Discovery</p>
+                        <p>Advanced Search & Filters</p>
+                    </h3>
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-magnifying-glass custom-service-icon"></i>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Find relevant listings quickly using keywords, categories, location, and smart filtering options.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Favorites, Reviews & Ratings -->
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="service-card-items h-100">
+                    <h3 class="title">
+                        <p>Favorites, Reviews & Ratings</p>
+                    </h3>
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-star custom-service-icon"></i>
+                    </div>
+                    <div class="content">
+                        <p>
+                            Save interesting listings and build trust through reviews and seller ratings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Location-Based Discovery -->
+            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="service-card-items h-100">
+                    <h3 class="title">
+                        <p>Location-Based Discovery</p>
                     </h3>
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-location-dot custom-service-icon"></i>
                     </div>
                     <div class="content">
                         <p>
-                            Opportunities for local connections and shared experiences.
+                            Discover nearby listings and opportunities based on the user's preferred location.
                         </p>
                     </div>
                 </div>
             </div>
 
         </div>
+
+        <div class="row mt-5 wow fadeInUp" data-wow-delay=".6s">
+            <div class="col-12 text-center">
+                <p class="fw-bold fst-italic">From creating an advertisement to finding the right buyer or seller, ListIt simplifies every step of the marketplace journey.</p>
+            </div>
+        </div>
     </div>
 </section>
 <!-- Features Section End -->
-
-<!-- How HerStay Works Section -->
-<section class="service-section fix section-padding section-new-padding" style="background: #fff;">
-    <div class="bg-shape-2">
-        <img src="assets/img/service/bg-shape-2.png" alt="img">
-    </div>
-    <div class="container">
-        <div class="section-title-area d-flex flex-wrap justify-content-between align-items-end mb-5">
-            <div class="section-title mb-0">
-                <div class="sub-title bg-color-2 wow fadeInUp">
-                    <span>HOW HERSTAY WORKS</span>
-                </div>
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    A Simple Journey From Planning to Connecting
-                </h2>
-                <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    HerStay makes the travel experience more social and connected by bringing discovery, matching, communication, and travel planning into one intuitive journey.
-                </p>
-            </div>
-        </div>
-
-        <div class="row g-4">
-            <!-- Step 1 -->
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                <div class="herstay-step-card h-100 text-center"
-                    style="background: #fff; padding: 35px 25px; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); transition: all 0.4s ease; border: 2px solid #f0f0f0; position: relative; overflow: hidden;">
-                    <div class="step-number"
-                        style="position: absolute; top: -10px; right: -10px; width: 60px; height: 60px; background: linear-gradient(135deg, #a5110d 0%, #a5110d 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; color: #fff; box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3); transition: all 0.3s ease;">
-                        01
-                    </div>
-                    <div class="step-icon mb-4"
-                        style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #fff5f7 0%, #ffe8ec 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
-                        <i class="fa-solid fa-user-pen" style="font-size: 32px; color: #a5110d; transition: all 0.3s ease;"></i>
-                    </div>
-                    <h4 class="mb-3" style="font-weight: 700; color: #222; font-size: 18px;">Create Your Profile</h4>
-                    <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                        Tell the community about your travel interests, destinations, preferences, and upcoming plans.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Step 2 -->
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                <div class="herstay-step-card h-100 text-center"
-                    style="background: #fff; padding: 35px 25px; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); transition: all 0.4s ease; border: 2px solid #f0f0f0; position: relative; overflow: hidden;">
-                    <div class="step-number"
-                        style="position: absolute; top: -10px; right: -10px; width: 60px; height: 60px; background: linear-gradient(135deg, #a5110d 0%, #a5110d 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; color: #fff; box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3); transition: all 0.3s ease;">
-                        02
-                    </div>
-                    <div class="step-icon mb-4"
-                        style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #fff5f7 0%, #ffe8ec 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
-                        <i class="fa-solid fa-compass" style="font-size: 32px; color: #a5110d; transition: all 0.3s ease;"></i>
-                    </div>
-                    <h4 class="mb-3" style="font-weight: 700; color: #222; font-size: 18px;">Discover Travelers & Trips</h4>
-                    <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                        Explore destinations, travel opportunities, accommodation options, and women with similar travel interests.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                <div class="herstay-step-card h-100 text-center"
-                    style="background: #fff; padding: 35px 25px; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); transition: all 0.4s ease; border: 2px solid #f0f0f0; position: relative; overflow: hidden;">
-                    <div class="step-number"
-                        style="position: absolute; top: -10px; right: -10px; width: 60px; height: 60px; background: linear-gradient(135deg, #a5110d 0%, #a5110d 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; color: #fff; box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3); transition: all 0.3s ease;">
-                        03
-                    </div>
-                    <div class="step-icon mb-4"
-                        style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #fff5f7 0%, #ffe8ec 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
-                        <i class="fa-solid fa-user-check" style="font-size: 32px; color: #a5110d; transition: all 0.3s ease;"></i>
-                    </div>
-                    <h4 class="mb-3" style="font-weight: 700; color: #222; font-size: 18px;">Connect & Match</h4>
-                    <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                        Find compatible travelers, view profiles, and start private conversations to discuss plans and shared interests.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Step 4 -->
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                <div class="herstay-step-card h-100 text-center"
-                    style="background: #fff; padding: 35px 25px; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); transition: all 0.4s ease; border: 2px solid #f0f0f0; position: relative; overflow: hidden;">
-                    <div class="step-number"
-                        style="position: absolute; top: -10px; right: -10px; width: 60px; height: 60px; background: linear-gradient(135deg, #a5110d 0%, #a5110d 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; color: #fff; box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3); transition: all 0.3s ease;">
-                        04
-                    </div>
-                    <div class="step-icon mb-4"
-                        style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #fff5f7 0%, #ffe8ec 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
-                        <i class="fa-solid fa-handshake" style="font-size: 32px; color: #a5110d; transition: all 0.3s ease;"></i>
-                    </div>
-                    <h4 class="mb-3" style="font-weight: 700; color: #222; font-size: 18px;">Travel & Build Connections</h4>
-                    <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                        Plan your journey, discover opportunities nearby, and create meaningful connections with women along the way.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Product Experience Section -->
-<!--   -->
-
 
 <!-- Technology Section Start -->
 <section class="technology-section fix section-padding" style="background: #f0eeee">
@@ -580,11 +597,11 @@
                         </h2>
                         <p class="wow fadeInUp mt-3" data-wow-delay=".4s"
                             style="color: #666; max-width: 90%; line-height: 1.6;">
-                            HerStay was developed with a modern technology stack designed to deliver a responsive, scalable, and engaging mobile travel experience. From the mobile interface to backend services and data management, each layer was built to support a connected travel and social ecosystem.
+                            ListIt was developed using modern web technologies to deliver a responsive marketplace experience with fast listing discovery, smooth navigation, and reliable buyer-seller interactions.
                         </p>
                         <p class="wow fadeInUp mt-3" data-wow-delay=".5s"
                             style="color: #444; max-width: 90%; line-height: 1.6; font-weight: 600;">
-                            Built as a modern mobile-first travel platform.
+                            Built for a Fast, Scalable Marketplace.
                         </p>
                     </div>
                 </div>
@@ -594,81 +611,49 @@
             <div class="col-xl-7">
                 <div class="row g-4">
 
-                    <!-- Front End / Mobile App -->
+                    <!-- Frontend & Backend -->
                     <div class="col-md-6 wow fadeInUp" data-wow-delay=".2s">
                         <div class="tech-category-box h-100"
                             style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                             <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;"><i
-                                    class="fa-solid fa-mobile-screen"
-                                    style="color: #a5110d; margin-right: 8px;"></i> Frontend / Mobile App
+                                    class="fa-solid fa-desktop"
+                                    style="color: #A5110D; margin-right: 8px;"></i> Frontend & Backend
                             </h4>
                             <div class="tech-list">
                                 <p style="color: #666; margin: 0; line-height: 1.6;">
-                                    Flutter • Dart
+                                    React.js • Node.js
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Backend -->
+                    <!-- Architecture & Database -->
                     <div class="col-md-6 wow fadeInUp" data-wow-delay=".3s">
                         <div class="tech-category-box h-100"
                             style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                             <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;"><i
                                     class="fa-solid fa-server"
-                                    style="color: #a5110d; margin-right: 8px;"></i> Backend
+                                    style="color: #A5110D; margin-right: 8px;"></i> Architecture & Database
                             </h4>
                             <div class="tech-list">
                                 <p style="color: #666; margin: 0; line-height: 1.6;">
-                                    Node.js • Express.js
+                                    REST APIs • [Actual Database]
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Database -->
+                    <!-- Media & Real-Time -->
                     <div class="col-md-6 wow fadeInUp" data-wow-delay=".4s">
                         <div class="tech-category-box h-100"
                             style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                             <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;"><i
-                                    class="fa-solid fa-database"
-                                    style="color: #a5110d; margin-right: 8px;"></i> Database
+                                    class="fa-solid fa-photo-film"
+                                    style="color: #A5110D; margin-right: 8px;"></i> Media & Real-Time
                             </h4>
                             <div class="tech-list">
                                 <p style="color: #666; margin: 0; line-height: 1.6;">
-                                    MongoDB
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- APIs & Integrations -->
-                    <div class="col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="tech-category-box h-100"
-                            style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;"><i
-                                    class="fa-solid fa-plug"
-                                    style="color: #a5110d; margin-right: 8px;"></i> APIs & Integrations
-                            </h4>
-                            <div class="tech-list">
-                                <p style="color: #666; margin: 0; line-height: 1.6;">
-                                    REST APIs • Location Services • Third-Party Integrations
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Cloud & Deployment -->
-                    <div class="col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                        <div class="tech-category-box h-100"
-                            style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;"><i
-                                    class="fa-solid fa-cloud"
-                                    style="color: #a5110d; margin-right: 8px;"></i> Cloud & Deployment
-                            </h4>
-                            <div class="tech-list">
-                                <p style="color: #666; margin: 0; line-height: 1.6;">
-                                    AWS • Cloud Services
+                                    Image & Video Mgt • Messaging & Alerts
                                 </p>
                             </div>
                         </div>
@@ -677,6 +662,103 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+</section>
+
+
+<!-- Product Experience Section -->
+<section class="service-section fix section-padding section-new-padding" style="background: #fff;">
+    <div class="bg-shape-2">
+        <img src="assets/img/service/bg-shape-2.png" alt="img">
+    </div>
+    <div class="container">
+        <div class="section-title-area d-flex flex-wrap justify-content-between align-items-end mb-5">
+            <div class="section-title mb-0">
+                <div class="sub-title bg-color-2 wow fadeInUp">
+                    <span>PRODUCT EXPERIENCE</span>
+                </div>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                    Explore The Platform
+                </h2>
+                <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
+                    Take a look at the key features and screens of the ListIt marketplace platform.
+                </p>
+            </div>
+        </div>
+
+        <div class="row g-3 g-md-4">
+            <!-- Gallery Item 1 -->
+            <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay=".1s">
+                <div class="listit-product-card h-100 text-center"
+                    style="background: #f8f9fa; padding: 25px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eaeaea;">
+                    <div class="icon-wrapper mb-3"
+                        style="width: 60px; height: 60px; margin: 0 auto; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-home" style="color: #fff; font-size: 24px;"></i>
+                    </div>
+                    <h6 class="fw-bold mb-0" style="color: #333; font-size: 14px; line-height: 1.4;">
+                        Marketplace Homepage
+                    </h6>
+                </div>
+            </div>
+            <!-- Gallery Item 2 -->
+            <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay=".2s">
+                <div class="listit-product-card h-100 text-center"
+                    style="background: #f8f9fa; padding: 25px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eaeaea;">
+                    <div class="icon-wrapper mb-3"
+                        style="width: 60px; height: 60px; margin: 0 auto; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #fff; font-size: 24px;"></i>
+                    </div>
+                    <h6 class="fw-bold mb-0" style="color: #333; font-size: 14px; line-height: 1.4;">
+                        Search & Advanced Filters
+                    </h6>
+                </div>
+            </div>
+            <!-- Gallery Item 3 -->
+            <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay=".3s">
+                <div class="listit-product-card h-100 text-center"
+                    style="background: #f8f9fa; padding: 25px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eaeaea;">
+                    <div class="icon-wrapper mb-3"
+                        style="width: 60px; height: 60px; margin: 0 auto; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-eye" style="color: #fff; font-size: 24px;"></i>
+                    </div>
+                    <h6 class="fw-bold mb-0" style="color: #333; font-size: 14px; line-height: 1.4;">
+                        Listing Details
+                    </h6>
+                </div>
+            </div>
+            <!-- Gallery Item 4 -->
+            <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay=".4s">
+                <div class="listit-product-card h-100 text-center"
+                    style="background: #f8f9fa; padding: 25px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eaeaea;">
+                    <div class="icon-wrapper mb-3"
+                        style="width: 60px; height: 60px; margin: 0 auto; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-pen-to-square" style="color: #fff; font-size: 24px;"></i>
+                    </div>
+                    <h6 class="fw-bold mb-0" style="color: #333; font-size: 14px; line-height: 1.4;">
+                        Create / Manage Ad
+                    </h6>
+                </div>
+            </div>
+            <!-- Gallery Item 5 -->
+            <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay=".5s">
+                <div class="listit-product-card h-100 text-center"
+                    style="background: #f8f9fa; padding: 25px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eaeaea;">
+                    <div class="icon-wrapper mb-3"
+                        style="width: 60px; height: 60px; margin: 0 auto; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-message" style="color: #fff; font-size: 24px;"></i>
+                    </div>
+                    <h6 class="fw-bold mb-0" style="color: #333; font-size: 14px; line-height: 1.4;">
+                        Buyer–Seller Messaging
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 wow fadeInUp" data-wow-delay=".6s">
+            <div class="col-12 text-center">
+                <p class="fw-bold fst-italic">Modern technology meets a user-focused marketplace experience built for buyers and sellers.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -689,15 +771,15 @@
     <div class="container">
         <div class="section-title-area d-flex flex-wrap justify-content-between align-items-end mb-5">
             <div class="section-title mb-0">
-                <div class="sub-title wow fadeInUp" style="background: #a5110d; color: #fff; display: inline-block; padding: 8px 20px; border-radius: 25px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;">
+                <div class="sub-title wow fadeInUp" style="background: #A5110D; color: #fff; display: inline-block; padding: 8px 20px; border-radius: 25px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;">
                     <span>BUSINESS IMPACT</span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Creating a More <br>Connected Way to Travel
+                    A Better Digital <br>Experience for Buying & Selling
                 </h2>
                 <p class="section-title-desc wow fadeInUp mt-3" data-wow-delay=".4s"
                     style="line-height: 1.6; color: #666; max-width: 700px;">
-                    HerStay brings travel discovery and social connection together in a single women-first experience. The platform helps travelers move beyond traditional trip planning by making it easier to discover opportunities, find compatible companions, connect with women nearby, and create meaningful travel experiences.
+                    ListIt brings buyers and sellers together through a centralized classified marketplace, making it easier to publish advertisements, discover relevant listings, communicate with users, and manage the complete selling journey online.
                 </p>
             </div>
         </div>
@@ -708,15 +790,15 @@
             <div class="col-xl-3 col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".2s">
                 <div class="service-card-items h-100"
                     style="padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 12px; background: #fff;">
-                    <div class="icon mb-3" style="font-size: 24px; color: #a5110d;">
-                        <i class="fa-solid fa-heart"></i>
+                    <div class="icon mb-3" style="font-size: 24px; color: #A5110D;">
+                        <i class="fa-solid fa-bolt"></i>
                     </div>
                     <h3 class="title mb-3" style="font-size: 18px; font-weight: 700; color: #222;">
-                        More Meaningful Connections
+                        Faster Listing Discovery
                     </h3>
                     <div class="content">
                         <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                            Helps women discover travelers with similar interests, destinations, and travel plans.
+                            Powerful search, categories, filters, and location-based discovery help users find relevant ads faster.
                         </p>
                     </div>
                 </div>
@@ -726,15 +808,15 @@
             <div class="col-xl-3 col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".3s">
                 <div class="service-card-items h-100"
                     style="padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 12px; background: #fff;">
-                    <div class="icon mb-3" style="font-size: 24px; color: #a5110d;">
-                        <i class="fa-solid fa-users"></i>
+                    <div class="icon mb-3" style="font-size: 24px; color: #A5110D;">
+                        <i class="fa-solid fa-chart-line"></i>
                     </div>
                     <h3 class="title mb-3" style="font-size: 18px; font-weight: 700; color: #222;">
-                        A Stronger Travel Community
+                        Scalable Marketplace Foundation
                     </h3>
                     <div class="content">
                         <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                            Encourages women to connect, communicate, and build relationships before and during their journeys.
+                            The platform provides a flexible foundation for supporting growing listings, categories, users, and marketplace activity.
                         </p>
                     </div>
                 </div>
@@ -744,15 +826,15 @@
             <div class="col-xl-3 col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
                 <div class="service-card-items h-100"
                     style="padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 12px; background: #fff;">
-                    <div class="icon mb-3" style="font-size: 24px; color: #a5110d;">
-                        <i class="fa-solid fa-compass"></i>
+                    <div class="icon mb-3" style="font-size: 24px; color: #A5110D;">
+                        <i class="fa-solid fa-store"></i>
                     </div>
                     <h3 class="title mb-3" style="font-size: 18px; font-weight: 700; color: #222;">
-                        Simplified Travel Discovery
+                        Simplified Selling
                     </h3>
                     <div class="content">
                         <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                            Brings trips, destinations, accommodation opportunities, and traveler discovery into one connected experience.
+                            Sellers can create, manage, and promote advertisements through an organized platform.
                         </p>
                     </div>
                 </div>
@@ -762,15 +844,15 @@
             <div class="col-xl-3 col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".5s">
                 <div class="service-card-items h-100"
                     style="padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 12px; background: #fff;">
-                    <div class="icon mb-3" style="font-size: 24px; color: #a5110d;">
+                    <div class="icon mb-3" style="font-size: 24px; color: #A5110D;">
                         <i class="fa-solid fa-handshake"></i>
                     </div>
                     <h3 class="title mb-3" style="font-size: 18px; font-weight: 700; color: #222;">
-                        A More Social Travel Experience
+                        Better Buyer-Seller Interaction
                     </h3>
                     <div class="content">
                         <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                            Transforms travel from an individual activity into an opportunity to discover people, share experiences, and build connections.
+                            Direct messaging and engagement features make communication around listings easier.
                         </p>
                     </div>
                 </div>
@@ -782,31 +864,31 @@
 </section>
 
 <!-- Call To Action Section Start -->
-<section class="cta-section section-padding" style="text-align: center;" id="herstay-cta">
+<section class="cta-section section-padding" style="text-align: center;" id="listit-cta">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10">
 
                 <div class="section-title mb-4 wow fadeInUp" data-wow-delay=".2s">
-                    <h2>Ready to Build Your Travel Platform?</h2>
+                    <h2>Ready to Build Your Marketplace?</h2>
                 </div>
 
                 <p class="wow fadeInUp" data-wow-delay=".4s"
                     style="font-size: 18px; color: #555; line-height: 1.6; margin-bottom: 40px;">
-                    HerStay required a mobile experience that could bring travel discovery, accommodation, social interaction, and traveler matching together without making the journey feel complicated. WebWiders focused on creating a simple, intuitive, and scalable platform where women can discover travel opportunities, connect with compatible travelers, communicate with confidence, and build meaningful connections throughout their journeys.
+                    WebWiders develops scalable marketplace platforms, classified websites, and custom web applications designed around real business requirements.
                 </p>
 
                 <div class="d-flex gap-3 justify-content-center flex-wrap">
-                    <div class="main-button wow fadeInUp mt-4" data-wow-delay=".3s" style="max-width:unset;">
+                    <div class="main-button wow fadeInUp mt-4" data-wow-delay=".3s" style="max-width:unset">
 
                         <a href="#" class="offcanvas-btn" data-bs-toggle="offcanvas"
                             data-bs-target="#consultationOffcanvas"> <span class="theme-btn">
-                                Build Your Travel App
+                                Build Your Marketplace
                             </span><span class="arrow-btn"><i class="fa-solid fa-turn-up"></i></span></a>
                     </div>
 
 
-                    <div class="main-button wow fadeInUp mt-md-4" data-wow-delay=".3s" style="max-width:unset;">
+                    <div class="main-button wow fadeInUp mt-md-4" data-wow-delay=".3s" style="max-width:unset">
                         <a href="on-demand-hire.php" class="offcanvas-btn hire-btn">
                             <span class="theme-btn">
                                 Hire Dedicated Developers
@@ -907,8 +989,9 @@
 
 </div>
 <!-- ==========================================
-     END: HERSTAY CASE STUDY SECTION
+     END: LISTIT CASE STUDY SECTION
      ========================================== -->
+
 
 
 <?php include 'includes/footer.php'; ?>
