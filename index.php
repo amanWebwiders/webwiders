@@ -1629,11 +1629,11 @@
                     <div class="content">
                         <div class="title">
                             <h3>
-                                <a href="smart-taxi.php">Smart Taxi Booking</a>
+                                <a href="<?= url('smart-taxi') ?>">Smart Taxi Booking</a>
                             </h3>
                             <p>A feature-rich ride booking app that enables users to book or schedule rides, track drivers in real time, choose vehicle types, and make secure payments for a seamless travel experience.</p>
                         </div>
-                        <a href="smart-taxi.php" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="<?= url('smart-taxi') ?>" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -1647,11 +1647,11 @@
                     <div class="content">
                         <div class="title">
                             <h3>
-                                <a href="meetzane.php">AI Mental Wellness Platform</a>
+                                <a href="<?= url('meetzane') ?>">AI Mental Wellness Platform</a>
                             </h3>
                             <p>An AI-powered mental wellness companion that provides personalized, judgment-free conversations using evidence-based therapeutic techniques to support emotional well-being and self-growth.</p>
                         </div>
-                        <a href="meetzane.php" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="<?= url('meetzane') ?>" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -1665,11 +1665,29 @@
                     <div class="content">
                         <div class="title">
                             <h3>
-                                <a href="https://meetzane.com.au/">HerStay — Women-First Travel & Accommodation Platform</a>
+                                <a href="<?= url('her-stay') ?>">HerStay — Women-First Travel & Accommodation Platform</a>
                             </h3>
                             <p>A women-first travel platform that helps female travelers connect, find stays, match with compatible companions, and explore the world through a trusted community.</p>
                         </div>
-                        <a href="https://meetzane.com.au/" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="<?= url('her-stay') ?>" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Project 6: Her stay -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="case-studies-card-items mt-0">
+                    <div class="thumb">
+                        <img decoding="async" src="assets/img/case-studies/list-it.png" alt="Her-stay">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <h3>
+                                <a href="<?= url('list-it') ?>">ListIt – A Smarter Way to Buy & Sell Online</a>
+                            </h3>
+                            <p>ListIt is a modern online classified marketplace that connects buyers and sellers through an intuitive platform. Users can create and manage listings, discover products and services by category and location, communicate with sellers, and find relevant opportunities through powerful search and filtering.</p>
+                        </div>
+                        <a href="<?= url('list-it') ?>" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

@@ -2874,7 +2874,27 @@ section#about-us-cta .main-button {
 }
 
 #hero-section {
-    min-height: 80vh;
+    min-height: 100vh;
+}
+
+#hero-section.hero-1 .hero-content p {
+    font-size: 18px;
+}
+
+#hero-section.hero-1 .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 24px;
+}
+
+#hero-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -4539,5 +4559,155 @@ section#about-us-cta .main-button {
         }
         #misy-case-study.misy-page .glance-label {
             margin-bottom: 5px;
+        }
+    }
+
+
+     /* ---------------------------------------------------------
+       Strictly Scoped CSS Hierarchy for HerStay
+       Target: #herstay-case-study.herstay-page
+       --------------------------------------------------------- */
+    #herstay-case-study.herstay-page {
+        /* HerStay Theme Color */
+        --herstay-primary: #a5110d;
+        --herstay-secondary: #a5110d;
+    }
+
+    /* App Placeholder Styling */
+    #herstay-case-study.herstay-page .herstay-app-placeholder {
+        border: 2px dashed #e0e0e0;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+
+    /* Objective Wrapper */
+    #herstay-case-study.herstay-page .herstay-objective-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Solution Image Wrapper */
+    #herstay-case-study.herstay-page .herstay-solution-image-wrapper {
+        transition: transform 0.3s ease;
+    }
+
+    #herstay-case-study.herstay-page .herstay-solution-image-wrapper:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Feature Items */
+    #herstay-case-study.herstay-page .herstay-feature-item {
+        transition: all 0.3s ease;
+    }
+
+    #herstay-case-study.herstay-page .herstay-feature-item:hover {
+        transform: translateX(5px);
+    }
+
+    /* Product Cards */
+    #herstay-case-study.herstay-page .herstay-product-card {
+        transition: all 0.3s ease;
+    }
+
+    #herstay-case-study.herstay-page .herstay-product-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(255, 77, 109, 0.15);
+        border-color: var(--herstay-primary);
+    }
+
+    #herstay-case-study.herstay-page .herstay-product-card:hover .icon-wrapper {
+        background: var(--herstay-secondary);
+    }
+
+    /* Step Cards */
+    #herstay-case-study.herstay-page .herstay-step-card {
+        transition: all 0.4s ease;
+    }
+
+    #herstay-case-study.herstay-page .herstay-step-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(255, 77, 109, 0.2);
+        border-color: var(--herstay-primary);
+    }
+
+    #herstay-case-study.herstay-page .herstay-step-card:hover .step-icon {
+        background: linear-gradient(135deg, #a5110d 0%, #a5110d 100%) !important;
+    }
+
+    #herstay-case-study.herstay-page .herstay-step-card:hover .step-icon i {
+        color: #fff !important;
+    }
+
+    #herstay-case-study.herstay-page .herstay-step-card:hover .step-number {
+        transform: scale(1.1) rotate(5deg);
+    }
+
+    /* Timeline Icon Override for HerStay */
+    #herstay-case-study.herstay-page .timeline-icon {
+        background: var(--herstay-primary) !important;
+    }
+
+    #herstay-case-study.herstay-page .timeline-icon.bg-info {
+        background: var(--herstay-primary) !important;
+    }
+
+    #herstay-case-study.herstay-page .timeline-icon.bg-warning {
+        background: var(--herstay-secondary) !important;
+    }
+
+    #herstay-case-study.herstay-page .timeline-icon.bg-primary {
+        background: var(--herstay-primary) !important;
+    }
+
+    #herstay-case-study.herstay-page .timeline-icon.bg-secondary {
+        background: #6c757d !important;
+    }
+
+    #herstay-case-study.herstay-page .timeline-icon.bg-success {
+        background: #28a745 !important;
+    }
+
+    /* Service Card Icon Override */
+    #herstay-case-study.herstay-page .service-card-items .icon {
+        color: var(--herstay-primary) !important;
+    }
+
+    /* Tech Category Box Icon Override */
+    #herstay-case-study.herstay-page .tech-category-box h4 i {
+        color: var(--herstay-primary) !important;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        #herstay-case-study.herstay-page .herstay-objective-wrapper {
+            padding: 30px 20px !important;
+        }
+
+        #herstay-case-study.herstay-page .herstay-objective-content h3 {
+            font-size: 16px !important;
+        }
+
+        #herstay-case-study.herstay-page .herstay-objective-content p {
+            font-size: 16px !important;
+        }
+
+        #herstay-case-study.herstay-page .herstay-step-card {
+            padding: 25px 20px !important;
+        }
+
+        #herstay-case-study.herstay-page .herstay-step-card .step-icon {
+            width: 60px !important;
+            height: 60px !important;
+        }
+
+        #herstay-case-study.herstay-page .herstay-step-card .step-icon i {
+            font-size: 24px !important;
+        }
+
+        #herstay-case-study.herstay-page .herstay-step-card .step-number {
+            width: 50px !important;
+            height: 50px !important;
+            font-size: 20px !important;
+            top: -10px !important;
+            right: -10px !important;
         }
     }

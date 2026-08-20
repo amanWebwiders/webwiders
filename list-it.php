@@ -1,8 +1,113 @@
 <?php include 'includes/header.php'; ?>
 
+<style>
+    /* ---------------------------------------------------------
+       Strictly Scoped CSS Hierarchy for ListIt
+       Target: #listit-case-study.listit-page
+       --------------------------------------------------------- */
+    #listit-case-study.listit-page {
+        /* ListIt Theme Color */
+        --listit-primary: #A5110D;
+        --listit-secondary: #A5110D;
+    }
 
+    /* App Placeholder Styling */
+    #listit-case-study.listit-page .listit-app-placeholder {
+        border: 2px dashed #e0e0e0;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
 
-<div id="aliadoai-case-study" class="aliadoai-page">
+    /* Objective Wrapper */
+    #listit-case-study.listit-page .listit-objective-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Solution Image Wrapper */
+    #listit-case-study.listit-page .listit-solution-image-wrapper {
+        transition: transform 0.3s ease;
+    }
+
+    #listit-case-study.listit-page .listit-solution-image-wrapper:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Feature Items */
+    #listit-case-study.listit-page .listit-feature-item {
+        transition: all 0.3s ease;
+    }
+
+    #listit-case-study.listit-page .listit-feature-item:hover {
+        transform: translateX(5px);
+    }
+
+    /* Product Cards */
+    #listit-case-study.listit-page .listit-product-card {
+        transition: all 0.3s ease;
+    }
+
+    #listit-case-study.listit-page .listit-product-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(255, 107, 0, 0.15);
+        border-color: var(--listit-primary);
+    }
+
+    #listit-case-study.listit-page .listit-product-card:hover .icon-wrapper {
+        background: var(--listit-secondary);
+    }
+
+    /* Timeline Icon Override for ListIt */
+    #listit-case-study.listit-page .timeline-icon {
+        background: var(--listit-primary) !important;
+    }
+
+    #listit-case-study.listit-page .timeline-icon.bg-info {
+        background: var(--listit-primary) !important;
+    }
+
+    #listit-case-study.listit-page .timeline-icon.bg-warning {
+        background: var(--listit-secondary) !important;
+    }
+
+    #listit-case-study.listit-page .timeline-icon.bg-primary {
+        background: var(--listit-primary) !important;
+    }
+
+    #listit-case-study.listit-page .timeline-icon.bg-secondary {
+        background: #6c757d !important;
+    }
+
+    #listit-case-study.listit-page .timeline-icon.bg-success {
+        background: #28a745 !important;
+    }
+
+    /* Service Card Icon Override */
+    #listit-case-study.listit-page .service-card-items .icon {
+        color: var(--listit-primary) !important;
+    }
+
+    /* Tech Category Box Icon Override */
+    #listit-case-study.listit-page .tech-category-box h4 i {
+        color: var(--listit-primary) !important;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        #listit-case-study.listit-page .listit-objective-wrapper {
+            padding: 30px 20px !important;
+        }
+
+        #listit-case-study.listit-page .listit-objective-content h3 {
+            font-size: 16px !important;
+        }
+
+        #listit-case-study.listit-page .listit-objective-content p {
+            font-size: 16px !important;
+        }
+    }
+</style>
+
+<div id="listit-case-study" class="listit-page">
 
 <!-- Breadcrumb Section Start -->
 <div class="breadcrumb-wrapper bg-cover" style="">
@@ -15,11 +120,11 @@
     <div class="container">
         <div class="page-heading">
             <div class="breadcrumb-sub-title">
-                <h1 class="wow fadeInUp" data-wow-delay=".3s">AliadoAI</h1>
+                <h1 class="wow fadeInUp" data-wow-delay=".3s">ListIt</h1>
             </div>
             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                 <li>
-                    <a href="<?= url('/') ?>">
+                    <a href="index.php">
                         Home
                     </a>
                 </li>
@@ -27,7 +132,7 @@
                     <i class="fa-solid fa-chevron-right"></i>
                 </li>
                 <li>
-                    AliadoAI
+                    ListIt
                 </li>
             </ul>
         </div>
@@ -45,10 +150,10 @@
         <div class="section-title-area d-flex flex-wrap justify-content-between align-items-start mb-5">
             <div class="section-title mb-0">
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    AliadoAI – AI Assistant for <br>Independent Professionals
+                    ListIt – A Smarter Way to <br>Buy & Sell Online
                 </h2>
                 <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    AliadoAI is an AI-powered SaaS platform that automates scheduling, reminders, payments, invoicing, and client communication, helping independent professionals reduce administrative work and focus more on their clients and business growth.
+                    ListIt is a modern online classified marketplace that connects buyers and sellers through an intuitive platform. Users can create and manage listings, discover products and services by category and location, communicate with sellers, and find relevant opportunities through powerful search and filtering.
                 </p>
             </div>
         </div>
@@ -57,8 +162,7 @@
 
 
 </section>
-
-
+    
 <!-- About Section Start -->
 <section class="about-section fix section-padding mt-0" style="background: #fff">
     <div class="left-shape float-bob-y">
@@ -69,22 +173,21 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="about-image">
-                        <img src="assets/img/case-studies/aliadoai1.png" alt="AliadoAI" class="wow img-custom-anim-left"
-                            data-wow-duration="1.5s" data-wow-delay="0.3s">
+                       <img src="assets/img/case-studies/list-it.png" alt="" class="w-100">
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about-content">
                         <div class="section-title">
                             <div class="sub-title bg-color-2 wow fadeInUp">
-                                <span>ABOUT ALIADOAI</span>
+                                <span>ABOUT LISTIT</span>
                             </div>
                             <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                Simplifying the Business Side of Independent Practice
+                                Making Online Classifieds Faster & Easier to Use
                             </h2>
                         </div>
                         <p class="mt-3 mt-md-0 mb-3 wow fadeInUp" data-wow-delay=".5s">
-                            Independent professionals often spend valuable time managing appointments, reminders, payments, invoices, client communication, and other administrative tasks. AliadoAI was created to bring these activities together and automate repetitive work through an AI-powered platform.
+                            ListIt was developed as a modern classified marketplace where buyers and sellers can connect through a simple, location-aware digital experience. The platform brings listings, search, communication, and ad management together in one centralized marketplace.
                         </p>
                     </div>
                 </div>
@@ -104,10 +207,10 @@
                     <span>THE CHALLENGE</span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Challenges Independent Professionals Face
+                    Challenges in Building a Modern Marketplace
                 </h2>
                 <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    Managing a practice requires juggling multiple tasks across different tools, often taking time away from client work and business growth.
+                    Building a classified marketplace that can handle large volumes of listings while keeping the user experience simple and fast presents several technical and design challenges.
                 </p>
             </div>
         </div>
@@ -121,11 +224,11 @@
                         <div class="timeline-entry-inner">
                             <time class="timeline-time"><span>01</span></time>
                             <div class="timeline-icon bg-info">
-                                <i class="fa-solid fa-clock"></i>
+                                <i class="fa-solid fa-list"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>Too much administration</h2>
-                                <p> Routine business tasks can take time away from client work.</p>
+                                <h2>Managing Large Numbers of Listings</h2>
+                                <p>The platform needed to support listings across multiple categories while keeping discovery simple for users.</p>
                             </div>
                         </div>
                     </article>
@@ -135,11 +238,11 @@
                         <div class="timeline-entry-inner">
                             <time class="timeline-time"><span>02</span></time>
                             <div class="timeline-icon bg-warning">
-                                <i class="fa-solid fa-gears"></i>
+                                <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>Scattered workflows</h2>
-                                <p>Scheduling, payments, invoicing, and communication are often managed through different tools.</p>
+                                <h2>Finding Relevant Ads Quickly</h2>
+                                <p>Buyers need powerful search, filters, categories, and location-based discovery to find the right listings.</p>
                             </div>
                         </div>
                     </article>
@@ -149,11 +252,11 @@
                         <div class="timeline-entry-inner">
                             <time class="timeline-time"><span>03</span></time>
                             <div class="timeline-icon bg-primary">
-                                <i class="fa-solid fa-bell"></i>
+                                <i class="fa-solid fa-comments"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>Manual follow-ups</h2>
-                                <p>Reminders and client interactions can require repeated manual effort.</p>
+                                <h2>Smooth Buyer–Seller Communication</h2>
+                                <p>Users need a convenient way to communicate and interact around listings.</p>
                             </div>
                         </div>
                     </article>
@@ -163,11 +266,25 @@
                         <div class="timeline-entry-inner">
                             <time class="timeline-time"><span>04</span></time>
                             <div class="timeline-icon bg-secondary">
-                                <i class="fa-solid fa-chart-line"></i>
+                                <i class="fa-solid fa-sliders"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>Limited time for growth</h2>
-                                <p>Independent professionals need to focus on their clients while still managing their business efficiently.<p>
+                                <h2>Easy Ad Management</h2>
+                                <p>Sellers need simple tools to create, update, promote, and manage their advertisements.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Objective -->
+                    <article class="timeline-entry wow fadeInUp" data-wow-delay=".6s">
+                        <div class="timeline-entry-inner">
+                            <time class="timeline-time"><span>05</span></time>
+                            <div class="timeline-icon bg-success">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2>Our Objective</h2>
+                                <p>Build a scalable classified marketplace that makes buying and selling simple while giving users powerful tools to discover, manage, and interact with listings.</p>
                             </div>
                         </div>
                     </article>
@@ -187,7 +304,6 @@
     </div>
 </section>
 
-
 <!-- Our Solution Section -->
 <section class="service-section fix section-padding" style="background: #fff;">
     <div class="left-shape float-bob-y">
@@ -204,17 +320,17 @@
         <!-- Our Objective - Primary Message -->
         <div class="row mb-5 wow fadeInUp" data-wow-delay=".2s">
             <div class="col-12">
-                <div class="aliadoai-objective-wrapper text-center"
-                    style="background: linear-gradient(135deg, #a5110d 0%, #c41e1a 100%); padding: 40px 30px; border-radius: 16px; position: relative; overflow: hidden;">
-                    <div class="aliadoai-objective-content" style="position: relative; z-index: 2;">
+                <div class="listit-objective-wrapper text-center"
+                    style="background: linear-gradient(135deg, #A5110D 0%, #A5110D 100%); padding: 40px 30px; border-radius: 16px; position: relative; overflow: hidden;">
+                    <div class="listit-objective-content" style="position: relative; z-index: 2;">
                         <h3 class="text-white mb-3" style="font-weight: 700; font-size: 18px; letter-spacing: 1px; text-transform: uppercase;">Our Objective</h3>
                         <p class="text-white mb-0" style="font-size: 20px; line-height: 1.6; font-weight: 500; max-width: 900px; margin: 0 auto;">
-                            Build an intelligent digital assistant that handles everyday business operations, allowing professionals to spend more time serving clients and growing their practice.
+                            Build a scalable classified marketplace that makes buying and selling simple while giving users powerful tools to discover, manage, and interact with listings.
                         </p>
                     </div>
-                    <div class="aliadoai-objective-bg"
+                    <div class="listit-objective-bg"
                         style="position: absolute; top: -50%; right: -10%; width: 300px; height: 300px; background: rgba(255,255,255,0.1); border-radius: 50%; z-index: 1;"></div>
-                    <div class="aliadoai-objective-bg-2"
+                    <div class="listit-objective-bg-2"
                         style="position: absolute; bottom: -30%; left: -5%; width: 200px; height: 200px; background: rgba(255,255,255,0.08); border-radius: 50%; z-index: 1;"></div>
                 </div>
             </div>
@@ -223,111 +339,132 @@
         <div class="row g-5 align-items-center">
             <!-- Left Side: App Image -->
             <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".3s">
-                <div class="aliadoai-solution-image-wrapper"
-                    style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(165, 17, 13, 0.15);">
-                    <img src="assets/img/case-studies/aliado-about.png" alt="AliadoAI App" class="img-fluid" style="width: 100%;height: 400px;object-fit: cover;border-radius: 20px;">
+                <div class="listit-solution-image-wrapper"
+                    style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgb(165 17 13 / 19%);">
+                   <img src="assets/img/case-studies/list-it2.png" alt="" class="w-100">
                 </div>
             </div>
 
             <!-- Right Side: Solution Content -->
             <div class="col-lg-6 wow fadeInRight" data-wow-delay=".4s">
                 <div class="section-title">
-                    <div class="sub-title wow fadeInUp" style="background: #a5110d; color: #fff; display: inline-block; padding: 8px 20px; border-radius: 25px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;">
+                    <div class="sub-title wow fadeInUp" style="background: #A5110D; color: #fff; display: inline-block; padding: 8px 20px; border-radius: 25px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;">
                         <span>OUR SOLUTION</span>
                     </div>
                     <h2 class="wow fadeInUp" data-wow-delay=".3s" style="color: #222;">
-                        Our AI-Powered Solution
+                        A Complete Marketplace for Buyers & Sellers
                     </h2>
                     <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s" style="color: #666;">
-                        An AI Assistant That Handles the Business Behind the Practice
-                    </p>
-                    <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s" style="color: #666;">
-                        WebWiders developed AliadoAI as an intelligent SaaS platform that automates repetitive administrative tasks for independent professionals. The solution brings essential business workflows into one platform, helping users manage their practice with less manual effort.
+                        WebWiders developed ListIt as a scalable classified marketplace that brings listing creation, product discovery, communication, and ad management together in one streamlined web platform.
                     </p>
                 </div>
 
                 <!-- Feature Items -->
-                <div class="aliadoai-solution-features mt-4">
+                <div class="listit-solution-features mt-4">
                     <!-- Feature 1 -->
-                    <div class="aliadoai-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".5s"
+                    <div class="listit-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".5s"
                         style="transition: all 0.3s ease;">
                         <div class="feature-number me-3"
-                            style="width: 40px; height: 40px; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            style="width: 40px; height: 40px; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                             <span style="color: #fff; font-weight: 700; font-size: 16px;">01</span>
                         </div>
                         <div class="feature-content">
-                            <h5 class="mb-2" style="font-weight: 700; color: #222;">AI-Powered Assistance</h5>
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Easy Ad Posting</h5>
                             <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                                Helps professionals manage everyday operational tasks through an intelligent digital assistant.
+                                Sellers can create listings with images, videos, descriptions, and categories.
                             </p>
                         </div>
                     </div>
 
                     <!-- Feature 2 -->
-                    <div class="aliadoai-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".6s"
+                    <div class="listit-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".6s"
                         style="transition: all 0.3s ease;">
                         <div class="feature-number me-3"
-                            style="width: 40px; height: 40px; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            style="width: 40px; height: 40px; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                             <span style="color: #fff; font-weight: 700; font-size: 16px;">02</span>
                         </div>
                         <div class="feature-content">
-                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Automated Scheduling</h5>
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Listing Management</h5>
                             <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                                Simplifies appointment management and helps keep schedules organized.
+                                Give sellers centralized tools to create, update, manage, and monitor their advertisements.
                             </p>
                         </div>
                     </div>
 
                     <!-- Feature 3 -->
-                    <div class="aliadoai-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".7s"
+                    <div class="listit-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".7s"
                         style="transition: all 0.3s ease;">
                         <div class="feature-number me-3"
-                            style="width: 40px; height: 40px; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            style="width: 40px; height: 40px; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                             <span style="color: #fff; font-weight: 700; font-size: 16px;">03</span>
                         </div>
                         <div class="feature-content">
-                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Client Communication</h5>
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Smart Search & Filters</h5>
                             <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                                Supports timely communication and automated reminders throughout the client journey.
+                                Buyers can quickly narrow down listings using categories, keywords, and filters.
                             </p>
                         </div>
                     </div>
 
                     <!-- Feature 4 -->
-                    <div class="aliadoai-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".8s"
+                    <div class="listit-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".8s"
                         style="transition: all 0.3s ease;">
                         <div class="feature-number me-3"
-                            style="width: 40px; height: 40px; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            style="width: 40px; height: 40px; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                             <span style="color: #fff; font-weight: 700; font-size: 16px;">04</span>
                         </div>
                         <div class="feature-content">
-                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Payments & Invoicing</h5>
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Promotions & Engagement</h5>
                             <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                                Brings payment collection and invoicing into the same business workflow.
+                                Support listing promotions along with favorites, ratings, reviews, alerts, and other engagement features.
                             </p>
                         </div>
                     </div>
 
                     <!-- Feature 5 -->
-                    <div class="aliadoai-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".9s"
+                    <div class="listit-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".9s"
                         style="transition: all 0.3s ease;">
                         <div class="feature-number me-3"
-                            style="width: 40px; height: 40px; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            style="width: 40px; height: 40px; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                             <span style="color: #fff; font-weight: 700; font-size: 16px;">05</span>
                         </div>
                         <div class="feature-content">
-                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Centralized Practice Management</h5>
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Category-Based Discovery</h5>
                             <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                                Provides a single platform to manage essential administrative activities.
+                                Organize thousands of listings across multiple categories.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="listit-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay="1.0s"
+                        style="transition: all 0.3s ease;">
+                        <div class="feature-number me-3"
+                            style="width: 40px; height: 40px; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <span style="color: #fff; font-weight: 700; font-size: 16px;">06</span>
+                        </div>
+                        <div class="feature-content">
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Buyer–Seller Messaging</h5>
+                            <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
+                                Enable direct communication between buyers and sellers around individual listings.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Workflow & Closing Quote -->
+        <div class="row mt-5 text-center wow fadeInUp" data-wow-delay="1.1s">
+            <div class="col-12">
+                <p class="fw-bold mb-4" style="font-size: 1.1rem; color: #A5110D;">
+                    Create Listing <span style="color: #A5110D; margin: 0 10px; font-weight: bold;">&rarr;</span> Publish <span style="color: #A5110D; margin: 0 10px; font-weight: bold;">&rarr;</span> Discover <span style="color: #A5110D; margin: 0 10px; font-weight: bold;">&rarr;</span> Connect <span style="color: #A5110D; margin: 0 10px; font-weight: bold;">&rarr;</span> Buy / Sell
+                </p>
+                <p class="text-muted fst-italic">One platform connecting people, products, services, and opportunities through a smarter classified marketplace</p>
+            </div>
+        </div>
     </div>
 </section>
-
 
 <!-- Features Section Start -->
 <section class="service-section fix section-padding section-new-padding" style="background: #f0eeee">
@@ -338,125 +475,110 @@
         <div class="section-title-area d-flex flex-wrap justify-content-between align-items-end mb-5">
             <div class="section-title mb-0">
                 <div class="sub-title bg-color-2 wow fadeInUp">
-                    <span>FEATURES</span>
+                    <span>KEY FEATURES</span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Everything Independent Professionals <br>Need to Run Their Practice
+                    Powerful Features for a <br>Modern Classified Marketplace
                 </h2>
             </div>
         </div>
 
-        <div class="row g-4">
-            <!-- Card 1: AI Business Assistant -->
+        <div class="row g-4 justify-content-center">
+            <!-- Card 1: Easy Ad Posting -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                 <div class="service-card-items h-100">
                     <h3 class="title">
-                        <p>AI Business Assistant</p>
+                        <p>Easy Ad Posting</p>
                     </h3>
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-robot custom-service-icon"></i>
+                        <i class="fa-solid fa-plus custom-service-icon"></i>
                     </div>
                     <div class="content">
                         <p>
-                            Automates routine administrative tasks and helps professionals manage their day-to-day operations.
+                            Create listings with images, videos, descriptions, categories, and relevant details.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 2: Smart Scheduling -->
+            <!-- Card 2: Real-Time Messaging -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                 <div class="service-card-items h-100">
                     <h3 class="title">
-                        <p>Smart Scheduling</p>
+                        <p>Real-Time Messaging</p>
                     </h3>
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-calendar-check custom-service-icon"></i>
+                        <i class="fa-solid fa-message custom-service-icon"></i>
                     </div>
                     <div class="content">
                         <p>
-                            Manage appointments and keep schedules organized without constant manual coordination.
+                            Allow buyers and sellers to communicate directly and discuss listings conveniently.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 3: Automated Reminders -->
+            <!-- Card 3: Advanced Search & Filters -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                 <div class="service-card-items h-100">
                     <h3 class="title">
-                        <p>Automated Reminders</p>
+                        <p>Advanced Search & Filters</p>
                     </h3>
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-bell custom-service-icon"></i>
+                        <i class="fa-solid fa-magnifying-glass custom-service-icon"></i>
                     </div>
                     <div class="content">
                         <p>
-                            Send timely appointment and client reminders to reduce follow-ups and missed interactions.
+                            Find relevant listings quickly using keywords, categories, location, and smart filtering options.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 4: Payments & Invoicing -->
+            <!-- Card 4: Favorites, Reviews & Ratings -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                 <div class="service-card-items h-100">
                     <h3 class="title">
-                        <p>Payments & Invoicing</p>
+                        <p>Favorites, Reviews & Ratings</p>
                     </h3>
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-file-invoice-dollar custom-service-icon"></i>
+                        <i class="fa-solid fa-star custom-service-icon"></i>
                     </div>
                     <div class="content">
                         <p>
-                            Simplify payment collection and invoice management within the same platform.
+                            Save interesting listings and build trust through reviews and seller ratings.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 5: Client Communication -->
+            <!-- Card 5: Location-Based Discovery -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                 <div class="service-card-items h-100">
                     <h3 class="title">
-                        <p>Client Communication</p>
+                        <p>Location-Based Discovery</p>
                     </h3>
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-comments custom-service-icon"></i>
+                        <i class="fa-solid fa-location-dot custom-service-icon"></i>
                     </div>
                     <div class="content">
                         <p>
-                            Keep client conversations and important interactions organized through a centralized system.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 6: Content & Professional Presence -->
-            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                <div class="service-card-items h-100">
-                    <h3 class="title">
-                        <p>Content & Professional Presence</p>
-                    </h3>
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-pen-nib custom-service-icon"></i>
-                    </div>
-                    <div class="content">
-                        <p>
-                            Support professionals with content creation and tools to maintain their digital presence and engage with clients.
+                            Discover nearby listings and opportunities based on the user's preferred location.
                         </p>
                     </div>
                 </div>
             </div>
 
         </div>
+
+        <div class="row mt-5 wow fadeInUp" data-wow-delay=".6s">
+            <div class="col-12 text-center">
+                <p class="fw-bold fst-italic">From creating an advertisement to finding the right buyer or seller, ListIt simplifies every step of the marketplace journey.</p>
+            </div>
+        </div>
     </div>
-     <p class="mb-0 mt-5" style="font-size: 16px; font-weight: 600; letter-spacing: 0.5px; text-align: center;">
-                One intelligent platform. Less administration. More time for clients.
-            </p>
 </section>
 <!-- Features Section End -->
-
 
 <!-- Technology Section Start -->
 <section class="technology-section fix section-padding" style="background: #f0eeee">
@@ -468,22 +590,18 @@
                 <div class="pricing-content">
                     <div class="section-title">
                         <div class="sub-title bg-color-2 wow fadeInUp">
-                            <span>TECHNOLOGY & PRODUCT EXPERIENCE</span>
+                            <span>TECHNOLOGY</span>
                         </div>
                         <h2 class="wow fadeInUp" data-wow-delay=".3s">
                             Technology <br> Stack
                         </h2>
                         <p class="wow fadeInUp mt-3" data-wow-delay=".4s"
                             style="color: #666; max-width: 90%; line-height: 1.6;">
-                            AliadoAI combines AI capabilities with modern web application technologies to deliver an intuitive platform for managing everyday business operations.
-                        </p>
-                        <p class="wow fadeInUp mt-3" data-wow-delay=".4s"
-                            style="color: #666; max-width: 90%; line-height: 1.6;">
-                            Use the actual technologies used by WebWiders for AliadoAI here. I don't want to guess the stack.
+                            ListIt was developed using modern web technologies to deliver a responsive marketplace experience with fast listing discovery, smooth navigation, and reliable buyer-seller interactions.
                         </p>
                         <p class="wow fadeInUp mt-3" data-wow-delay=".5s"
                             style="color: #444; max-width: 90%; line-height: 1.6; font-weight: 600;">
-                            Built as a modern AI-powered SaaS platform.
+                            Built for a Fast, Scalable Marketplace.
                         </p>
                     </div>
                 </div>
@@ -493,81 +611,49 @@
             <div class="col-xl-7">
                 <div class="row g-4">
 
-                    <!-- Front End -->
+                    <!-- Frontend & Backend -->
                     <div class="col-md-6 wow fadeInUp" data-wow-delay=".2s">
                         <div class="tech-category-box h-100"
                             style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                             <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;"><i
                                     class="fa-solid fa-desktop"
-                                    style="color: #a5110d; margin-right: 8px;"></i> Frontend Technologies
+                                    style="color: #A5110D; margin-right: 8px;"></i> Frontend & Backend
                             </h4>
                             <div class="tech-list">
                                 <p style="color: #666; margin: 0; line-height: 1.6;">
-                                    React.js • Next.js • TypeScript • HTML5 • CSS3 • Tailwind CSS
+                                    React.js • Node.js
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Back End -->
+                    <!-- Architecture & Database -->
                     <div class="col-md-6 wow fadeInUp" data-wow-delay=".3s">
                         <div class="tech-category-box h-100"
                             style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                             <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;"><i
                                     class="fa-solid fa-server"
-                                    style="color: #a5110d; margin-right: 8px;"></i> Backend Technologies
+                                    style="color: #A5110D; margin-right: 8px;"></i> Architecture & Database
                             </h4>
                             <div class="tech-list">
                                 <p style="color: #666; margin: 0; line-height: 1.6;">
-                                    Node.js • Express.js • API Development
+                                    REST APIs • [Actual Database]
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- AI & Automation -->
+                    <!-- Media & Real-Time -->
                     <div class="col-md-6 wow fadeInUp" data-wow-delay=".4s">
                         <div class="tech-category-box h-100"
                             style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                             <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;"><i
-                                    class="fa-solid fa-robot"
-                                    style="color: #a5110d; margin-right: 8px;"></i> AI & Automation
+                                    class="fa-solid fa-photo-film"
+                                    style="color: #A5110D; margin-right: 8px;"></i> Media & Real-Time
                             </h4>
                             <div class="tech-list">
                                 <p style="color: #666; margin: 0; line-height: 1.6;">
-                                    OpenAI • AI Agents • Intelligent Automation • Machine Learning
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Cloud & DevOps -->
-                    <div class="col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="tech-category-box h-100"
-                            style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;"><i
-                                    class="fa-solid fa-cloud"
-                                    style="color: #a5110d; margin-right: 8px;"></i> Cloud & DevOps
-                            </h4>
-                            <div class="tech-list">
-                                <p style="color: #666; margin: 0; line-height: 1.6;">
-                                    AWS • Cloud Infrastructure • CI/CD Pipelines
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Databases -->
-                    <div class="col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                        <div class="tech-category-box h-100"
-                            style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
-                            <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;"><i
-                                    class="fa-solid fa-database"
-                                    style="color: #a5110d; margin-right: 8px;"></i> Databases
-                            </h4>
-                            <div class="tech-list">
-                                <p style="color: #666; margin: 0; line-height: 1.6;">
-                                    MongoDB • PostgreSQL • Redis
+                                    Image & Video Mgt • Messaging & Alerts
                                 </p>
                             </div>
                         </div>
@@ -593,99 +679,91 @@
                     <span>PRODUCT EXPERIENCE</span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    PRODUCT EXPERIENCE
+                    Explore The Platform
                 </h2>
-                <!-- <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    Take a look at the key features and screens of the AliadoAI platform.
-                </p> -->
+                <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
+                    Take a look at the key features and screens of the ListIt marketplace platform.
+                </p>
             </div>
         </div>
 
         <div class="row g-3 g-md-4">
             <!-- Gallery Item 1 -->
             <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay=".1s">
-                <div class="aliadoai-product-card h-100 text-center"
+                <div class="listit-product-card h-100 text-center"
                     style="background: #f8f9fa; padding: 25px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eaeaea;">
                     <div class="icon-wrapper mb-3"
-                        style="width: 60px; height: 60px; margin: 0 auto; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-robot" style="color: #fff; font-size: 24px;"></i>
+                        style="width: 60px; height: 60px; margin: 0 auto; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-home" style="color: #fff; font-size: 24px;"></i>
                     </div>
                     <h6 class="fw-bold mb-0" style="color: #333; font-size: 14px; line-height: 1.4;">
-                        AI Assistant/Chat
+                        Marketplace Homepage
                     </h6>
                 </div>
             </div>
             <!-- Gallery Item 2 -->
             <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay=".2s">
-                <div class="aliadoai-product-card h-100 text-center"
+                <div class="listit-product-card h-100 text-center"
                     style="background: #f8f9fa; padding: 25px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eaeaea;">
                     <div class="icon-wrapper mb-3"
-                        style="width: 60px; height: 60px; margin: 0 auto; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-gauge-high" style="color: #fff; font-size: 24px;"></i>
+                        style="width: 60px; height: 60px; margin: 0 auto; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #fff; font-size: 24px;"></i>
                     </div>
                     <h6 class="fw-bold mb-0" style="color: #333; font-size: 14px; line-height: 1.4;">
-                        Main Dashboard
+                        Search & Advanced Filters
                     </h6>
                 </div>
             </div>
             <!-- Gallery Item 3 -->
             <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay=".3s">
-                <div class="aliadoai-product-card h-100 text-center"
+                <div class="listit-product-card h-100 text-center"
                     style="background: #f8f9fa; padding: 25px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eaeaea;">
                     <div class="icon-wrapper mb-3"
-                        style="width: 60px; height: 60px; margin: 0 auto; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-calendar-check" style="color: #fff; font-size: 24px;"></i>
+                        style="width: 60px; height: 60px; margin: 0 auto; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-eye" style="color: #fff; font-size: 24px;"></i>
                     </div>
                     <h6 class="fw-bold mb-0" style="color: #333; font-size: 14px; line-height: 1.4;">
-                        Appointment Scheduling
+                        Listing Details
                     </h6>
                 </div>
             </div>
             <!-- Gallery Item 4 -->
             <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay=".4s">
-                <div class="aliadoai-product-card h-100 text-center"
+                <div class="listit-product-card h-100 text-center"
                     style="background: #f8f9fa; padding: 25px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eaeaea;">
                     <div class="icon-wrapper mb-3"
-                        style="width: 60px; height: 60px; margin: 0 auto; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-file-invoice-dollar" style="color: #fff; font-size: 24px;"></i>
+                        style="width: 60px; height: 60px; margin: 0 auto; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-pen-to-square" style="color: #fff; font-size: 24px;"></i>
                     </div>
                     <h6 class="fw-bold mb-0" style="color: #333; font-size: 14px; line-height: 1.4;">
-                        Invoicing/Payments
+                        Create / Manage Ad
                     </h6>
                 </div>
             </div>
             <!-- Gallery Item 5 -->
             <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay=".5s">
-                <div class="aliadoai-product-card h-100 text-center"
+                <div class="listit-product-card h-100 text-center"
                     style="background: #f8f9fa; padding: 25px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eaeaea;">
                     <div class="icon-wrapper mb-3"
-                        style="width: 60px; height: 60px; margin: 0 auto; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-users" style="color: #fff; font-size: 24px;"></i>
+                        style="width: 60px; height: 60px; margin: 0 auto; background: #A5110D; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-message" style="color: #fff; font-size: 24px;"></i>
                     </div>
                     <h6 class="fw-bold mb-0" style="color: #333; font-size: 14px; line-height: 1.4;">
-                        Client Management
+                        Buyer–Seller Messaging
                     </h6>
                 </div>
             </div>
-            <!-- Gallery Item 6 -->
-            <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay=".6s">
-                <div class="aliadoai-product-card h-100 text-center"
-                    style="background: #f8f9fa; padding: 25px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eaeaea;">
-                    <div class="icon-wrapper mb-3"
-                        style="width: 60px; height: 60px; margin: 0 auto; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-user-tie" style="color: #fff; font-size: 24px;"></i>
-                    </div>
-                    <h6 class="fw-bold mb-0" style="color: #333; font-size: 14px; line-height: 1.4;">
-                        Professional Profile/Content
-                    </h6>
-                </div>
+        </div>
+
+        <div class="row mt-5 wow fadeInUp" data-wow-delay=".6s">
+            <div class="col-12 text-center">
+                <p class="fw-bold fst-italic">Modern technology meets a user-focused marketplace experience built for buyers and sellers.</p>
             </div>
         </div>
     </div>
 </section>
 
-
-<!-- Less Administration Section -->
+<!-- Business Impact Section -->
 <section class="service-section fix section-padding section-new-padding" style="background: #f0eeee;">
     <div class="bg-shape-2">
         <img src="assets/img/service/bg-shape-2.png" alt="img">
@@ -693,15 +771,15 @@
     <div class="container">
         <div class="section-title-area d-flex flex-wrap justify-content-between align-items-end mb-5">
             <div class="section-title mb-0">
-                <div class="sub-title wow fadeInUp" style="background: #a5110d; color: #fff; display: inline-block; padding: 8px 20px; border-radius: 25px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;">
+                <div class="sub-title wow fadeInUp" style="background: #A5110D; color: #fff; display: inline-block; padding: 8px 20px; border-radius: 25px; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;">
                     <span>BUSINESS IMPACT</span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Less Administration. <br>More Time for What Matters.
+                    A Better Digital <br>Experience for Buying & Selling
                 </h2>
                 <p class="section-title-desc wow fadeInUp mt-3" data-wow-delay=".4s"
                     style="line-height: 1.6; color: #666; max-width: 700px;">
-                    AliadoAI brings essential business operations into one intelligent platform, helping independent professionals reduce repetitive administrative work and stay focused on their clients.
+                    ListIt brings buyers and sellers together through a centralized classified marketplace, making it easier to publish advertisements, discover relevant listings, communicate with users, and manage the complete selling journey online.
                 </p>
             </div>
         </div>
@@ -712,15 +790,15 @@
             <div class="col-xl-3 col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".2s">
                 <div class="service-card-items h-100"
                     style="padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 12px; background: #fff;">
-                    <div class="icon mb-3" style="font-size: 24px; color: #a5110d;">
-                        <i class="fa-solid fa-cogs"></i>
+                    <div class="icon mb-3" style="font-size: 24px; color: #A5110D;">
+                        <i class="fa-solid fa-bolt"></i>
                     </div>
                     <h3 class="title mb-3" style="font-size: 18px; font-weight: 700; color: #222;">
-                        Simplified Operations
+                        Faster Listing Discovery
                     </h3>
                     <div class="content">
                         <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                            Manage scheduling, reminders, payments, invoicing, and communication from one platform.
+                            Powerful search, categories, filters, and location-based discovery help users find relevant ads faster.
                         </p>
                     </div>
                 </div>
@@ -730,15 +808,15 @@
             <div class="col-xl-3 col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".3s">
                 <div class="service-card-items h-100"
                     style="padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 12px; background: #fff;">
-                    <div class="icon mb-3" style="font-size: 24px; color: #a5110d;">
-                        <i class="fa-solid fa-bolt"></i>
+                    <div class="icon mb-3" style="font-size: 24px; color: #A5110D;">
+                        <i class="fa-solid fa-chart-line"></i>
                     </div>
                     <h3 class="title mb-3" style="font-size: 18px; font-weight: 700; color: #222;">
-                        Greater Efficiency
+                        Scalable Marketplace Foundation
                     </h3>
                     <div class="content">
                         <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                            Automate repetitive tasks that would otherwise require ongoing manual effort.
+                            The platform provides a flexible foundation for supporting growing listings, categories, users, and marketplace activity.
                         </p>
                     </div>
                 </div>
@@ -748,15 +826,15 @@
             <div class="col-xl-3 col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
                 <div class="service-card-items h-100"
                     style="padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 12px; background: #fff;">
-                    <div class="icon mb-3" style="font-size: 24px; color: #a5110d;">
-                        <i class="fa-solid fa-heart"></i>
+                    <div class="icon mb-3" style="font-size: 24px; color: #A5110D;">
+                        <i class="fa-solid fa-store"></i>
                     </div>
                     <h3 class="title mb-3" style="font-size: 18px; font-weight: 700; color: #222;">
-                        Better Client Experience
+                        Simplified Selling
                     </h3>
                     <div class="content">
                         <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                            Support timely communication, appointment management, and smoother interactions with clients.
+                            Sellers can create, manage, and promote advertisements through an organized platform.
                         </p>
                     </div>
                 </div>
@@ -766,15 +844,15 @@
             <div class="col-xl-3 col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".5s">
                 <div class="service-card-items h-100"
                     style="padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 12px; background: #fff;">
-                    <div class="icon mb-3" style="font-size: 24px; color: #a5110d;">
-                        <i class="fa-solid fa-chart-line"></i>
+                    <div class="icon mb-3" style="font-size: 24px; color: #A5110D;">
+                        <i class="fa-solid fa-handshake"></i>
                     </div>
                     <h3 class="title mb-3" style="font-size: 18px; font-weight: 700; color: #222;">
-                        Built for Growth
+                        Better Buyer-Seller Interaction
                     </h3>
                     <div class="content">
                         <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                            Give independent professionals a scalable digital platform that can evolve as their practice grows.
+                            Direct messaging and engagement features make communication around listings easier.
                         </p>
                     </div>
                 </div>
@@ -785,36 +863,35 @@
     </div>
 </section>
 
-
 <!-- Call To Action Section Start -->
-<section class="cta-section section-padding" style="text-align: center;" id="aliadoai-cta">
+<section class="cta-section section-padding" style="text-align: center;" id="listit-cta">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10">
 
                 <div class="section-title mb-4 wow fadeInUp" data-wow-delay=".2s">
-                    <h2>Ready to Build Your AI-Powered Solution?</h2>
+                    <h2>Ready to Build Your Marketplace?</h2>
                 </div>
 
                 <p class="wow fadeInUp" data-wow-delay=".4s"
                     style="font-size: 18px; color: #555; line-height: 1.6; margin-bottom: 40px;">
-                    From AI assistants and SaaS platforms to custom automation solutions, WebWiders helps businesses turn ideas into practical, scalable digital products.
+                    WebWiders develops scalable marketplace platforms, classified websites, and custom web applications designed around real business requirements.
                 </p>
 
                 <div class="d-flex gap-3 justify-content-center flex-wrap">
-                    <div class="main-button wow fadeInUp mt-4" data-wow-delay=".3s">
+                    <div class="main-button wow fadeInUp mt-4" data-wow-delay=".3s" style="max-width:unset">
 
                         <a href="#" class="offcanvas-btn" data-bs-toggle="offcanvas"
                             data-bs-target="#consultationOffcanvas"> <span class="theme-btn">
-                                Start Your AI Project
+                                Build Your Marketplace
                             </span><span class="arrow-btn"><i class="fa-solid fa-turn-up"></i></span></a>
                     </div>
 
 
-                    <div class="main-button wow fadeInUp mt-md-4" data-wow-delay=".3s">
-                        <a href="<?= url('on-demand-hire') ?>" class="offcanvas-btn hire-btn">
+                    <div class="main-button wow fadeInUp mt-md-4" data-wow-delay=".3s" style="max-width:unset">
+                        <a href="on-demand-hire.php" class="offcanvas-btn hire-btn">
                             <span class="theme-btn">
-                                Hire Dedicated Developers 
+                                Hire Dedicated Developers
                             </span>
                         </a>
                     </div>
@@ -912,8 +989,9 @@
 
 </div>
 <!-- ==========================================
-     END: ALIADOAI CASE STUDY SECTION
+     END: LISTIT CASE STUDY SECTION
      ========================================== -->
+
 
 
 <?php include 'includes/footer.php'; ?>
