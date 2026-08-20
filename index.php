@@ -1290,13 +1290,13 @@
                     <div class="content">
                         <div class="title">
                             <h3>
-                                <a href="vender.php">Vendor Management Software </a>
+                                <a href="<?= url('vender') ?>">Vendor Management Software </a>
                             </h3>
                             <p>A smart vendor management platform that connects hiring teams with verified vendors,
                                 streamlining recruitment workflows and reducing time-to-hire through an intuitive web
                                 application.</p>
                         </div>
-                        <a href="vender.php" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="<?= url('vender') ?>" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -1593,11 +1593,11 @@
                     <div class="content">
                         <div class="title">
                             <h3>
-                                <a href="aliado-ai.php">AI Productivity Platform</a>
+                                <a href="<?= url('aliado-ai') ?>">AI Productivity Platform</a>
                             </h3>
                             <p>An AI-powered SaaS platform that automates scheduling, reminders, payments, invoicing, and client communication, enabling independent professionals to focus on serving their clients.</p>
                         </div>
-                        <a href="aliado-ai.php" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="<?= url('aliado-ai') ?>" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -1611,11 +1611,11 @@
                     <div class="content">
                         <div class="title">
                             <h3>
-                                <a href="live-language.php">Live Language Exchange</a>
+                                <a href="<?= url('live-language') ?>">Live Language Exchange</a>
                             </h3>
                             <p>A live language exchange platform that matches learners with native speakers based on language pairs and discussion topics, making language practice interactive and engaging.</p>
                         </div>
-                        <a href="live-language.php" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="<?= url('live-language') ?>" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

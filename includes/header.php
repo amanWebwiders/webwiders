@@ -77,7 +77,7 @@ if (!defined('BASE_URL')) {
                     <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                         <div class="offcanvas__logo">
                             <a href="<?= url('/') ?>">
-                                <img src="assets/img/sitelogo-black.png" alt="logo-img">
+                                <img src="<?php echo asset('img/sitelogo-black.png'); ?>" alt="logo-img">
                             </a>
                         </div>
                         <div class="offcanvas__close">
@@ -187,10 +187,10 @@ if (!defined('BASE_URL')) {
                 <div class="header-main">
                     <div class="logo">
                         <a href="<?= url('/') ?>" class="header-logo">
-                            <img src="assets/img/sitelogo-black.png" alt="logo-img">
+                            <img src="<?php echo asset('img/sitelogo-black.png'); ?>" alt="logo-img">
                         </a>
                         <a href="<?= url('/') ?>" class="header-logo-2">
-                            <img src="assets/img/sitelogo-black.png" alt="logo-img">
+                            <img src="<?php echo asset('img/sitelogo-black.png'); ?>" alt="logo-img">
                         </a>
                     </div>
                     <div class="mean__menu-wrapper">

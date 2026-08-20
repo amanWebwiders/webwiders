@@ -19,7 +19,7 @@
             </div>
             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                 <li>
-                    <a href="index.php">
+                    <a href="<?= url('/') ?>">
                         Home
                     </a>
                 </li>
@@ -812,7 +812,7 @@
 
 
                     <div class="main-button wow fadeInUp mt-md-4" data-wow-delay=".3s">
-                        <a href="on-demand-hire.php" class="offcanvas-btn hire-btn">
+                        <a href="<?= url('on-demand-hire') ?>" class="offcanvas-btn hire-btn">
                             <span class="theme-btn">
                                 Hire Dedicated Developers 
                             </span>
