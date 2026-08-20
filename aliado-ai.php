@@ -225,7 +225,7 @@
             <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".3s">
                 <div class="aliadoai-solution-image-wrapper"
                     style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(165, 17, 13, 0.15);">
-                    <img src="assets/img/case-studies/aliadoai1.png" alt="AliadoAI App" class="img-fluid" style="width: 100%;height: 400px;object-fit: cover;border-radius: 20px;">
+                    <img src="assets/img/case-studies/aliado-about.png" alt="AliadoAI App" class="img-fluid" style="width: 100%;height: 400px;object-fit: cover;border-radius: 20px;">
                 </div>
             </div>
 

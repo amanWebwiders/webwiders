@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay=".3s">
-                    <img src="assets/img/thevenco.png" alt="TheVenco Dashboard" class="img-fluid rounded shadow-lg w-100" style="min-height: 350px; background-color: #ddd; object-fit: cover;">
+                    <img src="assets/img/case-studies/vender-about.png" alt="TheVenco Dashboard" class="img-fluid rounded shadow-lg w-100" style="min-height: 350px; background-color: #ddd; object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -242,7 +242,7 @@
 
             <div class="row align-items-center g-5">
                 <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".4s">
-                    <img src="assets/img/thevenco.png" alt="TheVenco Platform Features" class="img-fluid rounded shadow-lg w-100" style="min-height: 400px; background-color: #ddd; object-fit: cover;">
+                    <img src="assets/img/case-studies/vender-about2.png" alt="TheVenco Platform Features" class="img-fluid rounded shadow-lg w-100" style="min-height: 400px; background-color: #ddd; object-fit: cover;">
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay=".5s">
                     <div class="mb-4">

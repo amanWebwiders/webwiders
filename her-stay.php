@@ -218,7 +218,7 @@
             <!-- Left Side: App Image -->
             <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".3s">
                 <div class="about-image">
-                        <img src="assets/img/case-studies/her_stay.png" alt="Misy" class="wow img-custom-anim-left w-100"
+                        <img src="assets/img/case-studies/her-stay2.png" alt="Misy" class="wow img-custom-anim-left w-100"
                             data-wow-duration="1.5s" data-wow-delay="0.3s">
                     </div>
             </div>

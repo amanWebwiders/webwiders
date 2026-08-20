@@ -2874,7 +2874,27 @@ section#about-us-cta .main-button {
 }
 
 #hero-section {
-    min-height: 80vh;
+    min-height: 100vh;
+}
+
+#hero-section.hero-1 .hero-content p {
+    font-size: 18px;
+}
+
+#hero-section.hero-1 .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 24px;
+}
+
+#hero-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
