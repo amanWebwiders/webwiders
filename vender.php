@@ -9,7 +9,7 @@
         <div class="container">
             <div class="hero-shell">
                 <div class="hero-copy wow fadeInLeft" data-wow-delay=".2s">
-                    <div class="hero-badge"><i class="fa-solid fa-users"></i> vendor management</div>
+                    <div class="hero-badge"><i class="fa-solid fa-users"></i> <span>vendor management</span> </div>
                     <h1>VENDOR MANAGEMENT PLATFORM FOR GLOBAL HIRING</h1>
                     <!-- <h4>Smart Vendor Management Platform for Recruitment Teams</h4> -->
                     <p>
@@ -34,7 +34,7 @@
                         <span>Platform</span>
                         <strong>Vendor Management</strong>
                     </div>
-                    <div class="hero-visual-card">
+                    <div class="hero-visual-card img-frame">
                         <img src="assets/img/thevenco.png" alt="TheVenco Vendor Management Dashboard" />
                     </div>
                     <div class="floating-card">
@@ -94,7 +94,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay=".3s">
-                    <img src="assets/img/case-studies/vender-about.png" alt="TheVenco Dashboard" class="img-fluid rounded shadow-lg w-100" style="min-height: 350px; background-color: #ddd; object-fit: cover;">
+                      <div class="img-frame">
+                          <img src="assets/img/case-studies/vender-about.png" alt="TheVenco Dashboard" class="img-fluid rounded shadow-lg w-100" style="min-height: 350px; background-color: #ddd; object-fit: cover;">
+                        </div>
                 </div>
             </div>
         </div>
@@ -242,7 +244,9 @@
 
             <div class="row align-items-center g-5">
                 <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".4s">
-                    <img src="assets/img/case-studies/vender-about2.png" alt="TheVenco Platform Features" class="img-fluid rounded shadow-lg w-100" style="min-height: 400px; background-color: #ddd; object-fit: cover;">
+                      <div class="img-frame">
+                          <img src="assets/img/case-studies/vender-about2.png" alt="TheVenco Platform Features" class="img-fluid rounded shadow-lg w-100" style="min-height: 400px; background-color: #ddd; object-fit: cover;">
+                        </div>
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay=".5s">
                     <div class="mb-4">

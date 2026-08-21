@@ -1555,8 +1555,8 @@ img.freelancer-svg {
 
 
 .client-img img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
     object-fit: cover;
 }
@@ -1567,11 +1567,12 @@ img.freelancer-svg {
 
 .testimonial-wrapper-2 .testimonial-slider-3 .testimonial-card-items p {
     display: -webkit-box;
-    -webkit-line-clamp: 3;
-    /* Yahan aap lines ki limit set kar sakte hain (jaise 3 ya 4) */
+    -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
     overflow: hidden;
-
+    min-height: 160px;
+    font-size: 14px;
+    line-height: 180%;
 }
 
 .testimonial-wrapper-2 .testimonial-slider-3 .testimonial-card-items {
@@ -3639,7 +3640,7 @@ section#about-us-cta .main-button {
     max-width: unset;
 }
 #aliadoai-case-study .about-wrapper .about-image {
-    box-shadow: 0px 0px 10px #80808047;
+    /* box-shadow: 0px 0px 10px #80808047; */
     border-radius: 25px;
 }
 #aliadoai-case-study .about-wrapper .about-image img {
@@ -3650,8 +3651,9 @@ section#about-us-cta .main-button {
 }
 
 #inatlantis-case-study .about-wrapper .about-image {
-    box-shadow: 0px 0px 10px #80808047;
+    /* box-shadow: 0px 0px 10px #80808047; */
     border-radius: 25px;
+    text-align: -webkit-center;
 }
 #inatlantis-case-study .about-wrapper .about-image img {
     border-radius: 25px;
@@ -3846,6 +3848,12 @@ section#about-us-cta .main-button {
     font-size: 15px;
     margin: 0;
     line-height: 1.4;
+}
+
+.testimonial-wrapper-2 .testimonial-content .icon img{
+    width: 60px;
+    height: 60px;
+    opacity:0.7;
 }
 
 @media (max-width: 991px) {
@@ -4158,15 +4166,30 @@ section#about-us-cta .main-button {
         flex: 1;
         position: relative;
     }
-    #thevenco-case-study.thevenco-vendor-page .hero-badge {
-        display: inline-block;
-        background: #a5110d;
-        color: #fff;
-        padding: 8px 16px;
-        border-radius: 20px;
+   #thevenco-case-study.thevenco-vendor-page .hero-badge{
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 16px 8px 10px;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(178, 13, 13, 0.14);
+      border-radius: 50px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06),
+            inset 0 1px 0 rgba(255, 255, 255, 0.9);
+      position: relative;
+      overflow: hidden;
+      color: #a5110d;
+      margin-bottom: 20px;
+    }
+
+    #thevenco-case-study.thevenco-vendor-page .hero-badge span {
+        color: #8e0808;
         font-size: 14px;
-        font-weight: 600;
-        margin-bottom: 20px;
+        font-weight: 700;
+        letter-spacing: 1.8px;
+        line-height: 1;
+        text-transform: uppercase;
+        -webkit-text-fill-color: unset;
     }
     #thevenco-case-study.thevenco-vendor-page .hero-copy h1 {
         font-size: 3rem;
@@ -4249,6 +4272,7 @@ section#about-us-cta .main-button {
         box-shadow: 0 5px 20px rgba(0,0,0,0.05);
     }
 
+  
     /* Responsive adjustments */
     @media (max-width: 991px) {
         #thevenco-case-study.thevenco-vendor-page .hero-shell {
@@ -4461,8 +4485,11 @@ section#about-us-cta .main-button {
 
     /* About Image Custom Styling */
     #misy-case-study.misy-page .about-wrapper .about-image {
-        box-shadow: 0px 0px 10px #80808047;
+        /* box-shadow: 0px 0px 10px #80808047; */
         border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     #misy-case-study.misy-page .about-wrapper .about-image img {
         border-radius: 25px;
@@ -4710,4 +4737,400 @@ section#about-us-cta .main-button {
             top: -10px !important;
             right: -10px !important;
         }
+    }
+
+
+    /* ==========================================
+     START: MEET ZANE CASE STUDY SECTION
+     ========================================== */
+   
+    #meetzane-case-study.meetzane-page {
+        color: #333;
+        font-family: inherit;
+        background-color: #fff;
+    }
+    #meetzane-case-study.meetzane-page h1, 
+    #meetzane-case-study.meetzane-page h2, 
+    #meetzane-case-study.meetzane-page h3, 
+    #meetzane-case-study.meetzane-page h4, 
+    #meetzane-case-study.meetzane-page h5,
+    #meetzane-case-study.meetzane-page h6 {
+        color: #1a1a1a;
+        font-weight: 700;
+    }
+    #meetzane-case-study.meetzane-page .section-spacer {
+        padding: 80px 0;
+    }
+    #meetzane-case-study.meetzane-page .bg-light-gray {
+        background-color: #f8f9fa;
+    }
+    #meetzane-case-study.meetzane-page .theme-text-primary {
+        color: #a5110d; /* Theme Primary Color for this page */
+    }
+    #meetzane-case-study.meetzane-page .btn-custom-primary {
+        background-color: #a5110d;
+        color: #fff;
+        padding: 12px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        transition: 0.3s ease;
+        border: 2px solid #a5110d;
+    }
+    #meetzane-case-study.meetzane-page .btn-custom-primary:hover {
+        background-color: transparent;
+        color: #a5110d;
+    }
+    #meetzane-case-study.meetzane-page .btn-custom-outline {
+        background-color: transparent;
+        color: #1a1a1a;
+        padding: 12px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        transition: 0.3s ease;
+        border: 2px solid #e0e0e0;
+    }
+    #meetzane-case-study.meetzane-page .btn-custom-outline:hover {
+        border-color: #a5110d;
+        color: #a5110d;
+    }
+
+    /* Glance Table */
+    #meetzane-case-study.meetzane-page .glance-row {
+        display: flex;
+        border-bottom: 1px solid #eaeaea;
+        padding: 15px 0;
+    }
+    #meetzane-case-study.meetzane-page .glance-row:last-child {
+        border-bottom: none;
+    }
+    #meetzane-case-study.meetzane-page .glance-label {
+        width: 30%;
+        font-weight: 700;
+        color: #1a1a1a;
+    }
+    #meetzane-case-study.meetzane-page .glance-value {
+        width: 70%;
+        color: #555;
+    }
+
+    /* Challenge Cards & Numbered Cards */
+    #meetzane-case-study.meetzane-page .num-card {
+        background: #fff;
+        border: 1px solid #eaeaea;
+        border-radius: 8px;
+        padding: 30px;
+        height: 100%;
+        transition: 0.3s ease;
+        border-top: 4px solid #a5110d;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    }
+    #meetzane-case-study.meetzane-page .num-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    /* Info Cards (Features, Impact) */
+    #meetzane-case-study.meetzane-page .info-card {
+        background: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        height: 100%;
+        border: 1px solid #f1f1f1;
+    }
+    #meetzane-case-study.meetzane-page .info-card h4, 
+    #meetzane-case-study.meetzane-page .info-card h5,
+    #meetzane-case-study.meetzane-page .info-card h6 {
+        margin-bottom: 15px;
+    }
+    #meetzane-case-study.meetzane-page .info-card p {
+        color: #666;
+        font-size: 0.95rem;
+        margin-bottom: 0;
+    }
+
+    /* Check List */
+    #meetzane-case-study.meetzane-page .check-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    #meetzane-case-study.meetzane-page .check-list li {
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 20px;
+        color: #444;
+        font-size: 0.95rem;
+    }
+    #meetzane-case-study.meetzane-page .check-list li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #a5110d;
+        font-weight: bold;
+    }
+
+    /* Tech Stack Boxes */
+    #meetzane-case-study.meetzane-page .tech-box {
+        border: 1px solid #eee;
+        padding: 20px;
+        text-align: center;
+        border-radius: 6px;
+        font-weight: 600;
+        background: #fff;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #meetzane-case-study.meetzane-page .tech-box p {
+        font-size: 0.85rem;
+        color: #666;
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-weight: normal;
+    }
+
+    /* Goal Step Box */
+    #meetzane-case-study.meetzane-page .goal-step-box {
+        background: #fff;
+        border: 1px solid #eaeaea;
+        padding: 30px;
+        border-radius: 8px;
+        text-align: center;
+        height: 100%;
+        border-top: 4px solid #a5110d;
+    }
+
+    /* About Image Custom Styling */
+   #meetzane-case-study.meetzane-page .about-wrapper .about-image {
+        /* box-shadow: 0px 0px 10px #80808047; */
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    #meetzane-case-study.meetzane-page .about-wrapper .about-image img {
+        border-radius: 25px;
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+
+    /* Timeline Icon Colors */
+    #meetzane-case-study.meetzane-page .timeline-icon.bg-primary {
+        background-color: #a5110d;
+        color: #fff;
+    }
+
+    /* Solution Cards */
+    #meetzane-case-study.meetzane-page .meetzane-solution-card {
+        background: #fff;
+        border: 1px solid #eaeaea;
+        border-radius: 12px;
+        padding: 35px 30px;
+        height: 100%;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #meetzane-case-study.meetzane-page .meetzane-solution-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #a5110d 0%, #c41e1a 100%);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    #meetzane-case-study.meetzane-page .meetzane-solution-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        border-color: #a5110d;
+    }
+
+    #meetzane-case-study.meetzane-page .meetzane-solution-card:hover::before {
+        transform: scaleX(1);
+    }
+
+    #meetzane-case-study.meetzane-page .meetzane-solution-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 25px;
+        background: linear-gradient(135deg, #a5110d 0%, #c41e1a 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    #meetzane-case-study.meetzane-page .meetzane-solution-card:hover .meetzane-solution-icon {
+        transform: scale(1.1);
+        box-shadow: 0 10px 25px rgba(165, 17, 13, 0.3);
+    }
+
+    #meetzane-case-study.meetzane-page .meetzane-solution-icon i {
+        color: #fff;
+        font-size: 32px;
+    }
+
+    #meetzane-case-study.meetzane-page .meetzane-solution-card h4 {
+        font-weight: 700;
+        color: #1a1a1a;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    #meetzane-case-study.meetzane-page .meetzane-solution-card p {
+        color: #666;
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        #meetzane-case-study.meetzane-page .glance-row {
+            flex-direction: column;
+        }
+        #meetzane-case-study.meetzane-page .glance-label, 
+        #meetzane-case-study.meetzane-page .glance-value {
+            width: 100%;
+        }
+        #meetzane-case-study.meetzane-page .glance-label {
+            margin-bottom: 5px;
+        }
+    }
+
+
+
+
+    /* ---------------------------------------------------------
+       Strictly Scoped CSS Hierarchy for ListIt
+       Target: #listit-case-study.listit-page
+       --------------------------------------------------------- */
+    #listit-case-study.listit-page {
+        /* ListIt Theme Color */
+        --listit-primary: #A5110D;
+        --listit-secondary: #A5110D;
+    }
+
+    /* App Placeholder Styling */
+    #listit-case-study.listit-page .listit-app-placeholder {
+        border: 2px dashed #e0e0e0;
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+
+    /* Objective Wrapper */
+    #listit-case-study.listit-page .listit-objective-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Solution Image Wrapper */
+    #listit-case-study.listit-page .listit-solution-image-wrapper {
+        transition: transform 0.3s ease;
+    }
+
+    #listit-case-study.listit-page .listit-solution-image-wrapper:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Feature Items */
+    #listit-case-study.listit-page .listit-feature-item {
+        transition: all 0.3s ease;
+    }
+
+    #listit-case-study.listit-page .listit-feature-item:hover {
+        transform: translateX(5px);
+    }
+
+    /* Product Cards */
+    #listit-case-study.listit-page .listit-product-card {
+        transition: all 0.3s ease;
+    }
+
+    #listit-case-study.listit-page .listit-product-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(255, 107, 0, 0.15);
+        border-color: var(--listit-primary);
+    }
+
+    #listit-case-study.listit-page .listit-product-card:hover .icon-wrapper {
+        background: var(--listit-secondary);
+    }
+
+    /* Timeline Icon Override for ListIt */
+    #listit-case-study.listit-page .timeline-icon {
+        background: var(--listit-primary) !important;
+    }
+
+    #listit-case-study.listit-page .timeline-icon.bg-info {
+        background: var(--listit-primary) !important;
+    }
+
+    #listit-case-study.listit-page .timeline-icon.bg-warning {
+        background: var(--listit-secondary) !important;
+    }
+
+    #listit-case-study.listit-page .timeline-icon.bg-primary {
+        background: var(--listit-primary) !important;
+    }
+
+    #listit-case-study.listit-page .timeline-icon.bg-secondary {
+        background: #6c757d !important;
+    }
+
+    #listit-case-study.listit-page .timeline-icon.bg-success {
+        background: #28a745 !important;
+    }
+
+    /* Service Card Icon Override */
+    #listit-case-study.listit-page .service-card-items .icon {
+        color: var(--listit-primary) !important;
+    }
+
+    /* Tech Category Box Icon Override */
+    #listit-case-study.listit-page .tech-category-box h4 i {
+        color: var(--listit-primary) !important;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        #listit-case-study.listit-page .listit-objective-wrapper {
+            padding: 30px 20px !important;
+        }
+
+        #listit-case-study.listit-page .listit-objective-content h3 {
+            font-size: 16px !important;
+        }
+
+        #listit-case-study.listit-page .listit-objective-content p {
+            font-size: 16px !important;
+        }
+    }
+
+      .img-frame {
+        position: relative;
+        /* width: min(100%, 560px); */
+        padding: 12px;
+        border-radius: 30px;
+        background: linear-gradient(135deg, #ffffff 0%, #fff5f4 100%);
+        border: 1px solid rgba(165, 17, 13, 0.08);
+        box-shadow: 0 30px 70px rgba(17, 17, 17, 0.12);
+        overflow: hidden;
+    }
+
+    .img-frame img{
+        border-radius: 30px !important;
     }

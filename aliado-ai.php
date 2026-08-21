@@ -69,8 +69,10 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="about-image">
+                          <div class="img-frame">
                         <img src="assets/img/case-studies/aliadoai1.png" alt="AliadoAI" class="wow img-custom-anim-left"
                             data-wow-duration="1.5s" data-wow-delay="0.3s">
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -224,8 +226,10 @@
             <!-- Left Side: App Image -->
             <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".3s">
                 <div class="aliadoai-solution-image-wrapper"
-                    style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(165, 17, 13, 0.15);">
-                    <img src="assets/img/case-studies/aliado-about.png" alt="AliadoAI App" class="img-fluid" style="width: 100%;height: 400px;object-fit: cover;border-radius: 20px;">
+                    style="position: relative; border-radius: 20px; overflow: hidden;">
+                      <div class="img-frame">
+                          <img src="assets/img/case-studies/aliado-about.png" alt="AliadoAI App" class="img-fluid" style="width: 100%;height: 400px;object-fit: cover;border-radius: 20px;">
+                        </div>
                 </div>
             </div>
 
