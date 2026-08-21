@@ -62,6 +62,7 @@
 <!-- About Section Start -->
 <section class="about-section fix section-padding mt-0" style="background: #fff">
     <div class="left-shape float-bob-y">
+        
         <img src="assets/img/about/left-shape.png" alt="img">
     </div>
     <div class="container">
@@ -69,8 +70,10 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="about-image">
+                        <div class="img-frame">
                         <img src="assets/img/case-studies/inatlantis1.png" alt="Live Language Exchange" class="wow img-custom-anim-left"
                             data-wow-duration="1.5s" data-wow-delay="0.3s">
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">

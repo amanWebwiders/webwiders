@@ -126,10 +126,12 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay=".3s">
-                    <!-- Placeholder for the large ERP dashboard screenshot -->
+                   <div class="img-frame">
+                     <!-- Placeholder for the large ERP dashboard screenshot -->
                     <img src="assets/img/case-studies/health-erp-about.png" alt="Healthcare ERP Dashboard"
                         class="img-fluid rounded shadow-lg w-100"
                         style="min-height: 350px; background-color: #ddd; object-fit: cover;">
+                   </div>
                 </div>
             </div>
         </div>

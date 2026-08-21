@@ -1,111 +1,5 @@
 <?php include 'includes/header.php'; ?>
 
-<style>
-    /* ---------------------------------------------------------
-       Strictly Scoped CSS Hierarchy for ListIt
-       Target: #listit-case-study.listit-page
-       --------------------------------------------------------- */
-    #listit-case-study.listit-page {
-        /* ListIt Theme Color */
-        --listit-primary: #A5110D;
-        --listit-secondary: #A5110D;
-    }
-
-    /* App Placeholder Styling */
-    #listit-case-study.listit-page .listit-app-placeholder {
-        border: 2px dashed #e0e0e0;
-        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    }
-
-    /* Objective Wrapper */
-    #listit-case-study.listit-page .listit-objective-wrapper {
-        position: relative;
-        overflow: hidden;
-    }
-
-    /* Solution Image Wrapper */
-    #listit-case-study.listit-page .listit-solution-image-wrapper {
-        transition: transform 0.3s ease;
-    }
-
-    #listit-case-study.listit-page .listit-solution-image-wrapper:hover {
-        transform: translateY(-5px);
-    }
-
-    /* Feature Items */
-    #listit-case-study.listit-page .listit-feature-item {
-        transition: all 0.3s ease;
-    }
-
-    #listit-case-study.listit-page .listit-feature-item:hover {
-        transform: translateX(5px);
-    }
-
-    /* Product Cards */
-    #listit-case-study.listit-page .listit-product-card {
-        transition: all 0.3s ease;
-    }
-
-    #listit-case-study.listit-page .listit-product-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 30px rgba(255, 107, 0, 0.15);
-        border-color: var(--listit-primary);
-    }
-
-    #listit-case-study.listit-page .listit-product-card:hover .icon-wrapper {
-        background: var(--listit-secondary);
-    }
-
-    /* Timeline Icon Override for ListIt */
-    #listit-case-study.listit-page .timeline-icon {
-        background: var(--listit-primary) !important;
-    }
-
-    #listit-case-study.listit-page .timeline-icon.bg-info {
-        background: var(--listit-primary) !important;
-    }
-
-    #listit-case-study.listit-page .timeline-icon.bg-warning {
-        background: var(--listit-secondary) !important;
-    }
-
-    #listit-case-study.listit-page .timeline-icon.bg-primary {
-        background: var(--listit-primary) !important;
-    }
-
-    #listit-case-study.listit-page .timeline-icon.bg-secondary {
-        background: #6c757d !important;
-    }
-
-    #listit-case-study.listit-page .timeline-icon.bg-success {
-        background: #28a745 !important;
-    }
-
-    /* Service Card Icon Override */
-    #listit-case-study.listit-page .service-card-items .icon {
-        color: var(--listit-primary) !important;
-    }
-
-    /* Tech Category Box Icon Override */
-    #listit-case-study.listit-page .tech-category-box h4 i {
-        color: var(--listit-primary) !important;
-    }
-
-    /* Responsive Adjustments */
-    @media (max-width: 768px) {
-        #listit-case-study.listit-page .listit-objective-wrapper {
-            padding: 30px 20px !important;
-        }
-
-        #listit-case-study.listit-page .listit-objective-content h3 {
-            font-size: 16px !important;
-        }
-
-        #listit-case-study.listit-page .listit-objective-content p {
-            font-size: 16px !important;
-        }
-    }
-</style>
 
 <div id="listit-case-study" class="listit-page">
 
@@ -120,7 +14,7 @@
     <div class="container">
         <div class="page-heading">
             <div class="breadcrumb-sub-title">
-                <h1 class="wow fadeInUp" data-wow-delay=".3s">ListIt</h1>
+                <h1 class="wow fadeInUp" data-wow-delay=".3s">List-It</h1>
             </div>
             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                 <li>
@@ -173,7 +67,9 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="about-image">
-                       <img src="assets/img/case-studies/list-it.png" alt="" class="w-100">
+                        <div class="img-frame">
+                            <img src="assets/img/case-studies/list-it.png" alt="" class="w-100">
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -341,7 +237,9 @@
             <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".3s">
                 <div class="listit-solution-image-wrapper"
                     style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgb(165 17 13 / 19%);">
-                   <img src="assets/img/case-studies/list-it2.png" alt="" class="w-100">
+                    <div class="img-frame">
+                        <img src="assets/img/case-studies/list-it2.png" alt="" class="w-100">
+                    </div>
                 </div>
             </div>
 
