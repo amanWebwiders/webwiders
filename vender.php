@@ -610,37 +610,37 @@
             </div>
 
             <div class="row g-4 justify-content-center">
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="info-card text-center">
                         <h5 class="mb-3 text-dark">Custom Software Development</h5>
                         <p>Build tailored software platforms designed around your unique business processes and workflows.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="info-card text-center">
                         <h5 class="mb-3 text-dark">UI/UX Design</h5>
                         <p>Design intuitive user experiences that simplify complex workflows and make your digital products easier to use.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="info-card text-center">
                         <h5 class="mb-3 text-dark">SaaS Development</h5>
                         <p>Create scalable SaaS products with intuitive interfaces, robust architecture, and features designed for growing businesses.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="info-card text-center">
                         <h5 class="mb-3 text-dark">API & Backend Development</h5>
                         <p>Build reliable backend systems and APIs that connect your application, data, users, and business workflows.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="info-card text-center">
                         <h5 class="mb-3 text-dark">Web Application Development</h5>
                         <p>Develop secure, responsive, and high-performance web applications for complex business requirements.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="info-card text-center">
                         <h5 class="mb-3 text-dark">IT Staff Augmentation</h5>
                         <p>Extend your development capabilities with experienced in-house developers available on flexible contract-to-contract engagements.</p>

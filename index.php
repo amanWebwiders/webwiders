@@ -1870,7 +1870,7 @@
                                             </p>
                                             <div class="client-info">
                                                 <div class="client-img">
-                                                    <img src="<?php echo asset('/images/flag/italy.png'); ?>" alt="img"
+                                                    <img src="<?php echo asset('/images/flag/Italy.png'); ?>" alt="img"
                                                         class="img-fluid">
                                                 </div>
                                                <div>
@@ -1959,7 +1959,7 @@
                                             </p>
                                             <div class="client-info">
                                                 <div class="client-img">
-                                                    <img src="<?php echo asset('/images/flag/morway.png'); ?>" alt="img"
+                                                    <img src="<?php echo asset('/images/flag/norway.png'); ?>" alt="img"
                                                         class="img-fluid">
                                                 </div>
                                                <div>
