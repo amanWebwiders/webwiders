@@ -240,6 +240,9 @@ if (!defined('BASE_URL')) {
                                                     <li><a
                                                             href="<?php echo url('/services/bootstrap-development.php'); ?>">Bootstrap
                                                             Development</a></li>
+                                                    <li><a
+                                                            href="<?php echo url('/services/game-dev.php'); ?>">Game
+                                                            Development</a></li>
                                                 </ul>
                                             </li>
 

@@ -218,7 +218,7 @@
     <div class="container">
         <!-- Section Title Area -->
         <div class="section-title-area justify-content-start">
-            <div class="section-title col-6">
+            <div class="section-title col-lg-6">
                 <div class="sub-title wow fadeInUp">
                     <span>OUR SOLUTION</span>
                 </div>

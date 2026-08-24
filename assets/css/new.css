@@ -5134,3 +5134,269 @@ section#about-us-cta .main-button {
     .img-frame img{
         border-radius: 30px !important;
     }
+
+
+
+   
+    /* ---------------------------------------------------------
+       Strictly Scoped CSS Hierarchy 
+       Target: #gamedev-case-study.gamedev-page 
+       --------------------------------------------------------- */
+    #gamedev-case-study.gamedev-page {
+        color: #333;
+        background-color: #fff;
+    }
+    
+    #gamedev-case-study.gamedev-page h1, 
+    #gamedev-case-study.gamedev-page h2, 
+    #gamedev-case-study.gamedev-page h3, 
+    #gamedev-case-study.gamedev-page h4, 
+    #gamedev-case-study.gamedev-page h5,
+    #gamedev-case-study.gamedev-page h6 {
+        color: #1a1a1a;
+        font-weight: 700;
+    }
+
+     #gamedev-case-study.gamedev-page .about-image .img-frame img.img-custom-anim-left {
+        width: 100%;
+        object-fit: cover;
+        height: 450px;
+    }
+    
+    #gamedev-case-study.gamedev-page .section-spacer {
+        padding: 80px 0;
+    }
+    
+    #gamedev-case-study.gamedev-page .bg-light-gray {
+        background-color: #f8f9fa;
+    }
+    
+    #gamedev-case-study.gamedev-page .theme-text-primary {
+        color: #a5110d;
+    }
+    
+    /* Buttons - Using existing button styles */
+    #gamedev-case-study.gamedev-page .btn-custom-primary {
+        background-color: #a5110d;
+        color: #fff;
+        padding: 12px 30px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        transition: 0.3s ease;
+        border: 2px solid #a5110d;
+    }
+    #gamedev-case-study.gamedev-page .btn-custom-primary:hover {
+        background-color: transparent;
+        color: #a5110d;
+    }
+    #gamedev-case-study.gamedev-page .btn-custom-outline {
+        background-color: transparent;
+        color: #1a1a1a;
+        padding: 12px 30px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        transition: 0.3s ease;
+        border: 2px solid #e0e0e0;
+    }
+    #gamedev-case-study.gamedev-page .btn-custom-outline:hover {
+        border-color: #a5110d;
+        color: #a5110d;
+    }
+
+    /* Service Card Icon Override */
+    #gamedev-case-study.gamedev-page .service-card-items .icon {
+        color: #a5110d ;
+    }
+
+    /* Timeline Icon Override */
+    #gamedev-case-study.gamedev-page .timeline-icon {
+        background: #a5110d ;
+    }
+
+    #gamedev-case-study.gamedev-page .timeline-icon.bg-info {
+        background: #a5110d ;
+    }
+
+    #gamedev-case-study.gamedev-page .timeline-icon.bg-warning {
+        background: #a5110d ;
+    }
+
+    #gamedev-case-study.gamedev-page .timeline-icon.bg-primary {
+        background: #a5110d ;
+    }
+
+    #gamedev-case-study.gamedev-page .timeline-icon.bg-secondary {
+        background: #6c757d ;
+    }
+
+    #gamedev-case-study.gamedev-page .timeline-icon.bg-success {
+        background: #28a745 ;
+    }
+
+    /* Platform Cards - Alternative Design */
+    #gamedev-case-study.gamedev-page .platform-card {
+        background: #fff;
+        border: 2px solid #f0f0f0;
+        border-radius: 16px;
+        padding: 40px 30px;
+        text-align: center;
+        height: 100%;
+        transition: 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    /* #gamedev-case-study.gamedev-page .platform-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: #a5110d;
+        transform: scaleX(0);
+        transition: 0.3s ease;
+    } */
+    #gamedev-case-study.gamedev-page .platform-card:hover {
+        border-color:  #a5110d;
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px rgba(255, 0, 0, 0.15);
+    }
+    #gamedev-case-study.gamedev-page .platform-card:hover::before {
+        transform: scaleX(1);
+    }
+    #gamedev-case-study.gamedev-page .platform-card .platform-icon {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, rgba(255, 0, 0, 0.1) 0%, rgba(255, 0, 0, 0.05) 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 25px;
+        transition: 0.3s ease;
+    }
+    #gamedev-case-study.gamedev-page .platform-card:hover .platform-icon {
+        background: #a5110d;
+        transform: scale(1.1);
+    }
+    #gamedev-case-study.gamedev-page .platform-card .platform-icon i {
+        font-size: 36px;
+        color: #a5110d !important;
+        transition: 0.3s ease;
+    }
+    #gamedev-case-study.gamedev-page .platform-card:hover .platform-icon i {
+        color: #fff !important;
+    }
+    #gamedev-case-study.gamedev-page .platform-card h6 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin-bottom: 15px;
+        transition: 0.3s ease;
+    }
+    #gamedev-case-study.gamedev-page .platform-card:hover h6 {
+        color: #a5110d;
+    }
+    #gamedev-case-study.gamedev-page .platform-card p {
+        font-size: 0.95rem;
+        color: #666;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* Tech Stack Badges */
+    #gamedev-case-study.gamedev-page .tech-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        margin-top: 24px;
+    }
+
+    #gamedev-case-study.gamedev-page .tech-badge {
+        background: #a5110d;
+        color: #ffffff;
+        padding: 0px 20px;
+        border-radius: 50px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        border: 2px solid #a5110d;
+        transition: 0.3s ease;
+    }
+
+    #gamedev-case-study.gamedev-page .tech-badge:hover {
+        transform: none;
+        box-shadow: none;
+    }
+ 
+
+    /* Portfolio Cards */
+    #gamedev-case-study.gamedev-page .portfolio-card {
+        background: #fff;
+        border: 1px solid #eaeaea;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 100%;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        transition: 0.3s ease;
+    }
+    #gamedev-case-study.gamedev-page .portfolio-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    #gamedev-case-study.gamedev-page .portfolio-img {
+        width: 100%;
+        height: 200px;
+        background-color: #ddd;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #888;
+        font-size: 0.9rem;
+    }
+    #gamedev-case-study.gamedev-page .portfolio-content {
+        padding: 20px;
+    }
+    #gamedev-case-study.gamedev-page .portfolio-content h6 {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+    #gamedev-case-study.gamedev-page .portfolio-content p {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 15px;
+    }
+    #gamedev-case-study.gamedev-page .portfolio-link {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #a5110d;
+        text-decoration: none;
+    }
+    #gamedev-case-study.gamedev-page .portfolio-link:hover {
+        text-decoration: underline;
+    }
+
+    #gamedev-case-study.gamedev-page .service-card-items {
+        height:100%;
+    }
+
+    #gamedev-case-study.gamedev-page .custom-service-icon-wrapper {
+        font-size: 24px;
+    }
+
+    #gamedev-case-study.gamedev-page .service-card-items:hover .icon {
+        color: white;
+    }
+
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        #gamedev-case-study.gamedev-page .section-spacer {
+            padding: 60px 0;
+        }
+    }

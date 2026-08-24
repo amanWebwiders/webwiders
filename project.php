@@ -30,15 +30,15 @@
     </div>
 </div>
 
-<section class="news-section section-padding fix" id="portfolio">
+<section class="news-section section-padding fix pt-3" id="portfolio">
     <div class="container">
-        <div class="filters pb-5" id="portfolioFilters">
+        <!-- <div class="filters pb-5" id="portfolioFilters">
             <a href="javascript:void(0)" class="filters-btns active" data-filter="all">All Projects</a>
             <a href="javascript:void(0)" class="filters-btns" data-filter="mobile">Mobile Apps</a>
             <a href="javascript:void(0)" class="filters-btns" data-filter="web">Web Development</a>
             <a href="javascript:void(0)" class="filters-btns" data-filter="ecommerce">E-Commerce</a>
             <a href="javascript:void(0)" class="filters-btns" data-filter="design">Web Design</a>
-        </div>
+        </div> -->
 
         <div class="row g-4">
             <!-- 1. Misy -->
