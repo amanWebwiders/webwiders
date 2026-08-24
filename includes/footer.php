@@ -259,6 +259,8 @@ if (!defined('ASSETS_URL')) {
     </div>
 </section>
 
+<?php include __DIR__ . '/consultation-offcanvas.php'; ?>
+
 <!--<< All JS Plugins >>-->
 <script src="<?php echo asset('js/jquery-3.7.1.min.js'); ?>"></script>
 <!-- Fancybox JS -->
@@ -285,6 +287,8 @@ if (!defined('ASSETS_URL')) {
 <script src="<?php echo asset('js/circle-progress.js'); ?>"></script>
 <!--<< Main.js >>-->
 <script src="<?php echo asset('js/main.js'); ?>"></script>
+<!--<< Ajax Mail.js >>-->
+<script src="<?php echo asset('js/ajax-mail.js'); ?>"></script>
 
 
 <script>

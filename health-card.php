@@ -157,7 +157,8 @@
                                 <h3>Book a Free Demo</h3>
                                 <p class="mb-4">Fill out the form below and our ERP expert will contact you to schedule
                                     a personalized walkthrough.</p>
-                                <form action="#" id="demo-form" method="POST">
+                                <form action="<?= url('process-demo') ?>" id="demo-form" method="POST">
+                                    <input type="hidden" name="product_name" value="Smart Health Card ERP">
                                     <div class="row g-4">
                                         <div class="col-lg-6">
                                             <div class="form-clt">
@@ -196,6 +197,9 @@
                                             <button type="submit" class="theme-btn w-100 justify-content-center">
                                                 Request Demo <i class="fa-solid fa-arrow-right-long"></i>
                                             </button>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-message mt-3"></div>
                                         </div>
                                     </div>
                                 </form>

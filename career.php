@@ -12,7 +12,7 @@
             </div>
 
             <form method="post" id="career-form" enctype="multipart/form-data"
-                action="https://www.webwiders.com/careermail.php">
+                action="<?= url('process-career') ?>">
                 <input type="hidden" name="action" value="careerform">
 
                 <div class="row form-row">
@@ -43,7 +43,7 @@
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="">
                             <label for="designation">Apply for Position <span class="text-danger">*</span></label>
-                              <select class="form-control" required>
+                              <select name="designation" id="designation" class="form-control" required>
                                     <option value="">Select Designation</option>
                                     <option value="Accountant">Accountant</option>
                                     <option value="Android Developer">Android Developer</option>
@@ -89,7 +89,7 @@
                 <div class="row form-row">
                     <div class="col-md-6 col-sm-6 col-xs-12">
                          <label for="experience">Experience <span class="text-danger">*</span></label>
-                        <select class="form-control" required>
+                        <select name="experience" id="experience" class="form-control" required>
                             <option value="">Select Experience</option>
                             <option value="Fresher">Fresher</option>
                             <option value="6 month - 1 year">6 month - 1 year</option>
@@ -98,16 +98,13 @@
                             <option value="More then 3 year">More than 3 years</option>
                         </select>
                     </div>
-                    <!-- Optional Resume Upload Field (Uncomment if needed) -->
-                    <!--
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="form-group">
-                                <label for="resume">Upload Resume</label>
-                                <input type="file" name="resume" id="resume" class="form-control" accept=".pdf,.doc,.docx">
-                                <small class="text-muted">Supported formats: PDF, DOC, DOCX (Max 5MB)</small>
-                            </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <label for="resume">Upload Resume <span class="text-danger">*</span></label>
+                            <input type="file" name="resume" id="resume" class="form-control" accept=".pdf,.doc,.docx" required>
+                            <small class="text-muted">Supported formats: PDF, DOC, DOCX (Max 5MB)</small>
                         </div>
-                        -->
+                    </div>
                 </div>
 
                 <div class="row mt-4">
@@ -117,6 +114,7 @@
                                 <i class="fa fa-paper-plane me-2"></i>Submit Application
                             </button>
                         </div>
+                        <div class="form-message mt-3"></div>
                     </div>
                 </div>
             </form>
