@@ -8159,14 +8159,14 @@ input.main-search-input::placeholder {
 }
 
 .testimonial-wrapper-2 .testimonial-card-items {
-  margin-top: 30px;
-  background-color: var(--white);
-  border-radius: 16px;
-  border: 1px solid #DDE0E9;
-  padding: 40px 30px;
-  margin-top: 40px;
-  max-width: 585px;
-  position: relative;
+    margin-top: 30px;
+    background-color: var(--white);
+    border-radius: 16px;
+    border: 1px solid #DDE0E9;
+    padding: 30px;
+    margin-top: 40px;
+    max-width: 585px;
+    position: relative;
 }
 
 .testimonial-wrapper-2 .testimonial-card-items .client-info {
@@ -8184,7 +8184,7 @@ input.main-search-input::placeholder {
 .testimonial-wrapper-2 .testimonial-card-items .icon {
   position: absolute;
   right: 30px;
-  bottom: 40px;
+  bottom: 20px;
 }
 
 .testimonial-wrapper-2 .testimonial-content {

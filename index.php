@@ -1396,31 +1396,219 @@
                                     <div class="swiper-slide">
                                         <div class="testimonial-card-items">
                                             <p>
-                                                The team did an outstanding job on my project from start to finish.
-                                                Their technical expertise is exceptional, and they consistently
-                                                demonstrated a deep understanding of the project requirements while
-                                                delivering a high-quality solution. Communication was clear and
-                                                professional throughout the entire project. The team was responsive to
-                                                feedback, proactive in addressing challenges, and completed the work
-                                                with confidence and attention to detail.
-                                                I am extremely satisfied with the results and would absolutely work with
-                                                this team again on future projects. Highly recommended!
+                                                I had an excellent experience working with Webwiders. Their team is highly professional, skilled, reliable, and attentive to detail. They understood our requirements clearly, communicated effectively, and remained responsive and committed throughout the project. I truly appreciate their dedication to delivering high-quality work and would strongly recommend Webwiders to anyone looking for a trustworthy and capable technology partner.
+
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="<?php echo asset('/images/flag/canada.png'); ?>" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                               <div>
+                                                <h6>Ayma</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>
+                                                Webwiders did an outstanding job on my project from start to finish. Their technical expertise is exceptional, and the team demonstrated a deep understanding of our requirements while delivering a high-quality solution. They communicated clearly throughout the project, were responsive to feedback, and approached every challenge with professionalism and confidence. I truly appreciated their dedication and commitment to excellence. I would definitely work with Webwiders again on future projects and highly recommend them to anyone looking for a reliable and skilled technology partner.
                                             </p>
                                             <div class="client-info">
                                                 <div class="client-img">
                                                     <img src="<?php echo asset('/images/flag/united_states.png'); ?>" alt="img"
                                                         class="img-fluid">
                                                 </div>
-                                                <div class="star">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
+                                               <div>
+                                                <h6>August</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
                                             </div>
                                             <div class="icon">
-                                                <img src="<?php echo asset('/img/testimonial/icon.png'); ?>" alt="img">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>
+                                                I would highly recommend the team for website development. The team has a depth of knowledge, skills, and abilities that make them subject matter experts when it comes to developing a website to protect sensitive patient data. Each request I made, they responded quickly and addressed my concerns. 5-Star website development team!
+
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="<?php echo asset('/images/flag/united_states.png'); ?>" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                               <div>
+                                                <h6>Shawn</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>
+                                                The team exceeded my expectations! They were professional, patient, and took the time to educate me throughout the entire process. Their communication was excellent, and they worked diligently to create a fantastic Dallas Vibez app and website. Their attention to detail and commitment to quality were outstanding. I highly recommend the team to anyone looking for a talented, reliable development team. Thank you for bringing my vision to life!
+
+
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="<?php echo asset('/images/flag/united_states.png'); ?>" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                               <div>
+                                                <h6>Nita</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>
+                                                The team is an amazing professional, always delivering the task at hand. They are committed to customer service and will make as many changes as needed to make a customer happy.
+
+
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="<?php echo asset('/images/flag/united_states.png'); ?>" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                               <div>
+                                                <h6>Edison Luiz</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>
+                                                My company needed a refactor of the mobile designs to export them for desktop. Shweta and her team took this job very professionally and within 2 weeks and some rounds of iteration they were able to do the job on record timelines and quality. The quality of the designs was good, the communication was good, and the team really took the feedback of each iteration very seriously and mindfully. I'll work again in the future with the team.
+
+
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="<?php echo asset('/images/flag/spain.png'); ?>" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                               <div>
+                                                <h6>Delfin</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>
+                                                The team has become an integral part of our process for web and app development. We've been working together for three years now and I appreciate the promptness and high competence of their responses. Our website and app have become increasingly sophisticated during this time and we rely on the team to make it all work.
+
+
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="<?php echo asset('/images/flag/united_states.png'); ?>" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                               <div>
+                                                <h6>Sanford</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
                                             </div>
                                         </div>
                                     </div>
@@ -1429,32 +1617,31 @@
                                     <div class="swiper-slide">
                                         <div class="testimonial-card-items">
                                             <p>
-                                                I would highly recommend this team for website development. Their depth
-                                                of knowledge, technical skills, and expertise made them true subject
-                                                matter experts, especially when it came to developing a secure website
-                                                capable of protecting sensitive patient data.
-                                                The team responded promptly to every request, addressed all of my
-                                                concerns with professionalism, and ensured the project was completed to
-                                                a high standard. Their communication, attention to detail, and
-                                                commitment to quality made the entire process smooth and efficient.
-                                                A true 5-star website development team! I look forward to working with
-                                                them again in the future.
+                                                Highly recommended! The team delivered exactly what I envisioned for my website. They handled everything from SEO optimization to layout design with high professionalism. Communication was seamless, and they were always willing to go the extra mile to fix even the smallest details. As a beginner, I really appreciated their patience—they even recorded screen instructions to help me manage the backend. They were very helpful in guiding me through the WordPress backend.
+
+
                                             </p>
                                             <div class="client-info">
                                                 <div class="client-img">
                                                     <img src="<?php echo asset('/images/flag/united_states.png'); ?>" alt="img"
                                                         class="img-fluid">
                                                 </div>
-                                                <div class="star">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
+                                               <div>
+                                                <h6>Wenji</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
                                             </div>
                                             <div class="icon">
-                                                <img src="<?php echo asset('/img/testimonial/icon.png'); ?>" alt="img">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
                                             </div>
                                         </div>
                                     </div>
@@ -1462,86 +1649,339 @@
                                     <div class="swiper-slide">
                                         <div class="testimonial-card-items">
                                             <p>
-                                                The team exceeded my expectations! From the very beginning, they were
-                                                professional, patient, and took the time to guide me through every step
-                                                of the development process. Their communication was outstanding, keeping
-                                                me informed and ensuring all my requirements were met.
-                                                The team worked diligently to develop an exceptional Dallas Vibez app
-                                                and website, paying close attention to every detail while maintaining
-                                                the highest standards of quality. Their technical expertise,
-                                                problem-solving abilities, and commitment to delivering a polished final
-                                                product truly set them apart.
-                                                I highly recommend this team to anyone looking for a talented, reliable,
-                                                and dedicated development partner. Thank you for bringing my vision to
-                                                life—I look forward to working with you again on future projects!
+                                                We had a very satisfactory experience working with the team. The project was delivered on time and met all our expectations in terms of quality and execution. Communication throughout the process was excellent. They were responsive, clear, and proactive in addressing questions and providing updates. Their professionalism and organization made the collaboration smooth and efficient from start to finish.
+
+
+
                                             </p>
                                             <div class="client-info">
                                                 <div class="client-img">
-                                                    <img src="<?php echo asset('/images/flag/united_states.png'); ?>" alt="img"
+                                                    <img src="<?php echo asset('/images/flag/spain.png'); ?>" alt="img"
                                                         class="img-fluid">
                                                 </div>
-                                                <div class="star">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
+                                               <div>
+                                                <h6>Jose Maria</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
                                             </div>
                                             <div class="icon">
-                                                <img src="<?php echo asset('/img/testimonial/icon.png'); ?>" alt="img">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
                                         <div class="testimonial-card-items">
-                                            <p>
-                                                The team was very cooparative and did the task as requested
+                                            <p>Outstanding experience from start to finish. The team delivered the website exactly according to the brief, with excellent attention to detail and a clean, professional design. Communication was clear and proactive throughout the project, and all revisions were handled quickly and efficiently. The project was completed on time and exceeded expectations. I would highly recommend their services and look forward to working with the team again.
+
                                             </p>
                                             <div class="client-info">
                                                 <div class="client-img">
-                                                    <img src="<?php echo asset('/images/flag/kuwait.png'); ?>" alt="img"
+                                                    <img src="<?php echo asset('/images/flag/south-africa.png'); ?>" alt="img"
                                                         class="img-fluid">
                                                 </div>
-                                                <div class="star">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
+                                               <div>
+                                                <h6>Mikovhe</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
                                             </div>
                                             <div class="icon">
-                                                <img src="<?php echo asset('/img/testimonial/icon.png'); ?>" alt="img">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
                                             </div>
                                         </div>
                                     </div>
-
 
                                     <div class="swiper-slide">
                                         <div class="testimonial-card-items">
-                                            <p>
-                                                Excellent works full recommended.
+                                            <p>The team completed the project successfully. But more importantly, they explained how things would work, how to correct things, and how to navigate, and they went above and beyond. They explain everything in detail, and if you don’t understand, they find a way to help you understand. They are very responsive to changes and communication. I will 100% be requesting work from the team in the future. They aren’t just freelancers looking for work; they actually care about the purpose and the client.
+
+
                                             </p>
                                             <div class="client-info">
                                                 <div class="client-img">
-                                                    <img src="<?php echo asset('/images/flag/united_states.png'); ?>" alt="img"
+                                                    <img src="<?php echo asset('/images/flag/united_kingdom.png'); ?>" alt="img"
                                                         class="img-fluid">
                                                 </div>
-                                                <div class="star">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
+                                               <div>
+                                                <h6>Darry</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
                                             </div>
                                             <div class="icon">
-                                                <img src="<?php echo asset('/img/testimonial/icon.png'); ?>" alt="img">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
                                             </div>
                                         </div>
                                     </div>
+
+                                     <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>The team has been a pleasure to work with throughout our app development journey. They are responsive, reliable, and always willing to implement changes and improvements, even when our requirements evolved during the project. Communication has been smooth, and they always made sure to understand our ideas before implementing them. We are still working together, and I truly appreciate their commitment and professionalism. I highly recommend the team.
+
+
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="<?php echo asset('/images/flag/switzerland.png'); ?>" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                               <div>
+                                                <h6>Jelena</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>My project was complex, and my expectations were high. After a long process, marked by both successes and a few challenging moments, I can say that the team made a real contribution to my product development and business progress. They have shown innovation, solid skills, and fair, transparent pricing.
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="<?php echo asset('/images/flag/israel.png'); ?>" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                               <div>
+                                                <h6>Avsha</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>The team has been a pleasure to work with throughout our app development journey. They are responsive, reliable, and always willing to implement changes and improvements, even when our requirements evolved during the project. Communication has been smooth, and they always made sure to understand our ideas before implementing them. We are still working together, and I truly appreciate their commitment and professionalism. I highly recommend the team.
+
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="<?php echo asset('/images/flag/switzerland.png'); ?>" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                               <div>
+                                                <h6>Jelena</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>Working with the team on my project was a great experience. Communication was clear and professional, and they were always responsive to feedback and revisions. The final website looks clean, modern, and functional. They handled a complex project well and showed good attention to detail throughout the process. I would recommend working with the team.
+
+
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="<?php echo asset('/images/flag/colombia.png'); ?>" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                               <div>
+                                                <h6>Angie Paola</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>The quality of the team's work is excellent, both in terms of technical skills and design. They managed to develop a smooth, user-friendly app and handled every challenge quickly and efficiently. Communication was always clear and timely, which made the whole process incredibly easy and stress-free. I am extremely satisfied with the final result, and I definitely plan to work with the team again for future projects.
+
+
+
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="<?php echo asset('/images/flag/Italy.png'); ?>" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                               <div>
+                                                <h6>Luca</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                      <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>Working with the team on my art website was an absolute pleasure. They took the time to truly understand my vision and carefully translated that concept into a beautiful, functional reality. Their attention to detail, creativity, and professionalism were evident in every step of the process. The final website exceeded my expectations — it’s not just visually stunning, but also perfectly aligned with the soul and purpose of my gallery. I would highly recommend the team.
+
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="<?php echo asset('/images/flag/new-zealand.png'); ?>" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                               <div>
+                                                <h6>Kumbirayi Kennedy</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>I had an incredible experience working with the team. They took their time to understand our vision and translated it into a beautifully designed, fully functional website. Their communication was prompt, creativity was impressive, and they delivered everything on time. I highly recommend the team to anyone looking for a reliable and talented web design team.
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="<?php echo asset('/images/flag/new-zealand.png'); ?>" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                               <div>
+                                                <h6>Mwashuhwa</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                     <div class="swiper-slide">
+                                        <div class="testimonial-card-items">
+                                            <p>We are very pleased with the results of the work performed by the team. Everything was within the budget and specifications. We had very quick and good communication throughout the project, and everything went great. We thank the team very much for the good work and will recommend them to everyone.
+                                            </p>
+                                            <div class="client-info">
+                                                <div class="client-img">
+                                                    <img src="<?php echo asset('/images/flag/norway.png'); ?>" alt="img"
+                                                        class="img-fluid">
+                                                </div>
+                                               <div>
+                                                <h6>Bjørn</h6>
+                                                <div class="d-flex align-items-center gap-2">
+                                                     <div class="star">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <span class="fw-bold">5.0</span>
+                                                 </div>
+                                               </div>
+                                            </div>
+                                            <div class="icon">
+                                                <img src="<?php echo asset('/img/testimonial/quote.png'); ?>" alt="img">
+                                            </div>
+                                        </div>
+                                    </div>
+
 
                                 </div>
                             </div>
@@ -1629,11 +2069,11 @@
                     <div class="content">
                         <div class="title">
                             <h3>
-                                <a href="smart-taxi.php">Smart Taxi Booking</a>
+                                <a href="<?= url('smart-taxi') ?>">Smart Taxi Booking</a>
                             </h3>
                             <p>A feature-rich ride booking app that enables users to book or schedule rides, track drivers in real time, choose vehicle types, and make secure payments for a seamless travel experience.</p>
                         </div>
-                        <a href="smart-taxi.php" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="<?= url('smart-taxi') ?>" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -1647,11 +2087,11 @@
                     <div class="content">
                         <div class="title">
                             <h3>
-                                <a href="meetzane.php">AI Mental Wellness Platform</a>
+                                <a href="<?= url('meetzane') ?>">AI Mental Wellness Platform</a>
                             </h3>
                             <p>An AI-powered mental wellness companion that provides personalized, judgment-free conversations using evidence-based therapeutic techniques to support emotional well-being and self-growth.</p>
                         </div>
-                        <a href="meetzane.php" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="<?= url('meetzane') ?>" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -1665,11 +2105,29 @@
                     <div class="content">
                         <div class="title">
                             <h3>
-                                <a href="https://meetzane.com.au/">HerStay — Women-First Travel & Accommodation Platform</a>
+                                <a href="<?= url('her-stay') ?>">HerStay — Women-First Travel & Accommodation Platform</a>
                             </h3>
                             <p>A women-first travel platform that helps female travelers connect, find stays, match with compatible companions, and explore the world through a trusted community.</p>
                         </div>
-                        <a href="https://meetzane.com.au/" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="<?= url('her-stay') ?>" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Project 6: Her stay -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="case-studies-card-items mt-0">
+                    <div class="thumb">
+                        <img decoding="async" src="assets/img/case-studies/list-it.png" alt="Her-stay">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <h3>
+                                <a href="<?= url('list-it') ?>">ListIt – A Smarter Way to Buy & Sell Online</a>
+                            </h3>
+                            <p>ListIt is a modern online classified marketplace that connects buyers and sellers through an intuitive platform. Users can create and manage listings, discover products and services by category and location, communicate with sellers, and find relevant opportunities through powerful search and filtering.</p>
+                        </div>
+                        <a href="<?= url('list-it') ?>" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>

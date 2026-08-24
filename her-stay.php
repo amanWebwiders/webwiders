@@ -1,8 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
 
-
-<div id="aliadoai-case-study" class="aliadoai-page">
+<div id="herstay-case-study" class="herstay-page">
 
 <!-- Breadcrumb Section Start -->
 <div class="breadcrumb-wrapper bg-cover" style="">
@@ -15,11 +14,11 @@
     <div class="container">
         <div class="page-heading">
             <div class="breadcrumb-sub-title">
-                <h1 class="wow fadeInUp" data-wow-delay=".3s">AliadoAI</h1>
+                <h1 class="wow fadeInUp" data-wow-delay=".3s">HerStay</h1>
             </div>
             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                 <li>
-                    <a href="<?= url('/') ?>">
+                    <a href="index.php">
                         Home
                     </a>
                 </li>
@@ -27,7 +26,7 @@
                     <i class="fa-solid fa-chevron-right"></i>
                 </li>
                 <li>
-                    AliadoAI
+                    HerStay
                 </li>
             </ul>
         </div>
@@ -45,10 +44,10 @@
         <div class="section-title-area d-flex flex-wrap justify-content-between align-items-start mb-5">
             <div class="section-title mb-0">
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    AliadoAI – AI Assistant for <br>Independent Professionals
+                    WOMEN-FIRST TRAVEL & <br>ACCOMMODATION PLATFORM
                 </h2>
                 <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    AliadoAI is an AI-powered SaaS platform that automates scheduling, reminders, payments, invoicing, and client communication, helping independent professionals reduce administrative work and focus more on their clients and business growth.
+                    HerStay is a women-first travel platform designed to help female travelers discover trips, find compatible travel companions, connect with women nearby, and explore the world through a trusted community.
                 </p>
             </div>
         </div>
@@ -57,8 +56,7 @@
 
 
 </section>
-
-
+    
 <!-- About Section Start -->
 <section class="about-section fix section-padding mt-0" style="background: #fff">
     <div class="left-shape float-bob-y">
@@ -68,9 +66,9 @@
         <div class="about-wrapper">
             <div class="row g-4">
                 <div class="col-lg-6">
-                    <div class="about-image">
-                          <div class="img-frame">
-                        <img src="assets/img/case-studies/aliadoai1.png" alt="AliadoAI" class="wow img-custom-anim-left"
+                     <div class="about-image">
+                        <div class="img-frame">
+                        <img src="assets/img/case-studies/her_stay.png" alt="Misy" class="wow img-custom-anim-left w-100"
                             data-wow-duration="1.5s" data-wow-delay="0.3s">
                         </div>
                     </div>
@@ -79,14 +77,14 @@
                     <div class="about-content">
                         <div class="section-title">
                             <div class="sub-title bg-color-2 wow fadeInUp">
-                                <span>ABOUT ALIADOAI</span>
+                                <span>ABOUT HERSTAY</span>
                             </div>
                             <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                Simplifying the Business Side of Independent Practice
+                                Making Travel More Connected, Social & Comfortable
                             </h2>
                         </div>
                         <p class="mt-3 mt-md-0 mb-3 wow fadeInUp" data-wow-delay=".5s">
-                            Independent professionals often spend valuable time managing appointments, reminders, payments, invoices, client communication, and other administrative tasks. AliadoAI was created to bring these activities together and automate repetitive work through an AI-powered platform.
+                            HerStay was designed around a simple idea: women should have a trusted digital space where they can discover travel opportunities, connect with compatible women, find accommodation options, and build meaningful connections while exploring new destinations.
                         </p>
                     </div>
                 </div>
@@ -106,11 +104,11 @@
                     <span>THE CHALLENGE</span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Challenges Independent Professionals Face
+                    THE Challenges
                 </h2>
-                <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    Managing a practice requires juggling multiple tasks across different tools, often taking time away from client work and business growth.
-                </p>
+                <!-- <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
+                    Women travelers often face unique challenges when it comes to finding safe, comfortable, and social travel experiences.
+                </p> -->
             </div>
         </div>
 
@@ -123,11 +121,11 @@
                         <div class="timeline-entry-inner">
                             <time class="timeline-time"><span>01</span></time>
                             <div class="timeline-icon bg-info">
-                                <i class="fa-solid fa-clock"></i>
+                                <i class="fa-solid fa-user-group"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>Too much administration</h2>
-                                <p> Routine business tasks can take time away from client work.</p>
+                                <h2>Finding Compatible Travel Companions</h2>
+                                <p>Solo travelers may want companionship but need a way to discover people with similar travel interests and plans.</p>
                             </div>
                         </div>
                     </article>
@@ -137,11 +135,11 @@
                         <div class="timeline-entry-inner">
                             <time class="timeline-time"><span>02</span></time>
                             <div class="timeline-icon bg-warning">
-                                <i class="fa-solid fa-gears"></i>
+                                <i class="fa-solid fa-shield-halved"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>Scattered workflows</h2>
-                                <p>Scheduling, payments, invoicing, and communication are often managed through different tools.</p>
+                                <h2>Building Trusted Connections</h2>
+                                <p>Connecting with other travelers requires profiles, messaging, and community-focused interactions that encourage confidence and trust.</p>
                             </div>
                         </div>
                     </article>
@@ -151,11 +149,11 @@
                         <div class="timeline-entry-inner">
                             <time class="timeline-time"><span>03</span></time>
                             <div class="timeline-icon bg-primary">
-                                <i class="fa-solid fa-bell"></i>
+                                <i class="fa-solid fa-search"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>Manual follow-ups</h2>
-                                <p>Reminders and client interactions can require repeated manual effort.</p>
+                                <h2>Discovering Relevant Stays & Trips</h2>
+                                <p>Travelers need an easier way to explore accommodation and travel opportunities that fit their plans.</p>
                             </div>
                         </div>
                     </article>
@@ -165,11 +163,25 @@
                         <div class="timeline-entry-inner">
                             <time class="timeline-time"><span>04</span></time>
                             <div class="timeline-icon bg-secondary">
-                                <i class="fa-solid fa-chart-line"></i>
+                                <i class="fa-solid fa-heart"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>Limited time for growth</h2>
-                                <p>Independent professionals need to focus on their clients while still managing their business efficiently.<p>
+                                <h2>Traveling Without Feeling Alone</h2>
+                                <p>The platform needed to combine travel discovery with social connection, creating a more engaging experience than a traditional booking platform.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Objective -->
+                    <article class="timeline-entry wow fadeInUp" data-wow-delay=".6s">
+                        <div class="timeline-entry-inner">
+                            <time class="timeline-time"><span>05</span></time>
+                            <div class="timeline-icon bg-success">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2>Our Objective</h2>
+                                <p>Create a women-first travel ecosystem that connects travelers with compatible companions, accommodation opportunities, and a supportive community all through one intuitive mobile experience.</p>
                             </div>
                         </div>
                     </article>
@@ -189,7 +201,6 @@
     </div>
 </section>
 
-
 <!-- Our Solution Section -->
 <section class="service-section fix section-padding" style="background: #fff;">
     <div class="left-shape float-bob-y">
@@ -203,33 +214,16 @@
     </div>
 
     <div class="container">
-        <!-- Our Objective - Primary Message -->
-        <div class="row mb-5 wow fadeInUp" data-wow-delay=".2s">
-            <div class="col-12">
-                <div class="aliadoai-objective-wrapper text-center"
-                    style="background: linear-gradient(135deg, #a5110d 0%, #c41e1a 100%); padding: 40px 30px; border-radius: 16px; position: relative; overflow: hidden;">
-                    <div class="aliadoai-objective-content" style="position: relative; z-index: 2;">
-                        <h3 class="text-white mb-3" style="font-weight: 700; font-size: 18px; letter-spacing: 1px; text-transform: uppercase;">Our Objective</h3>
-                        <p class="text-white mb-0" style="font-size: 20px; line-height: 1.6; font-weight: 500; max-width: 900px; margin: 0 auto;">
-                            Build an intelligent digital assistant that handles everyday business operations, allowing professionals to spend more time serving clients and growing their practice.
-                        </p>
-                    </div>
-                    <div class="aliadoai-objective-bg"
-                        style="position: absolute; top: -50%; right: -10%; width: 300px; height: 300px; background: rgba(255,255,255,0.1); border-radius: 50%; z-index: 1;"></div>
-                    <div class="aliadoai-objective-bg-2"
-                        style="position: absolute; bottom: -30%; left: -5%; width: 200px; height: 200px; background: rgba(255,255,255,0.08); border-radius: 50%; z-index: 1;"></div>
-                </div>
-            </div>
-        </div>
+
 
         <div class="row g-5 align-items-center">
             <!-- Left Side: App Image -->
             <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".3s">
-                <div class="aliadoai-solution-image-wrapper"
-                    style="position: relative; border-radius: 20px; overflow: hidden;">
-                      <div class="img-frame">
-                          <img src="assets/img/case-studies/aliado-about.png" alt="AliadoAI App" class="img-fluid" style="width: 100%;height: 400px;object-fit: cover;border-radius: 20px;">
-                        </div>
+                <div class="about-image">
+                    <div class="img-frame">
+                        <img src="assets/img/case-studies/her-stay2.png" alt="Misy" class="wow img-custom-anim-left w-100"
+                            data-wow-duration="1.5s" data-wow-delay="0.3s">
+                    </div>
                 </div>
             </div>
 
@@ -240,89 +234,101 @@
                         <span>OUR SOLUTION</span>
                     </div>
                     <h2 class="wow fadeInUp" data-wow-delay=".3s" style="color: #222;">
-                        Our AI-Powered Solution
+                        A Travel Community Built Around Women
                     </h2>
                     <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s" style="color: #666;">
-                        An AI Assistant That Handles the Business Behind the Practice
-                    </p>
-                    <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s" style="color: #666;">
-                        WebWiders developed AliadoAI as an intelligent SaaS platform that automates repetitive administrative tasks for independent professionals. The solution brings essential business workflows into one platform, helping users manage their practice with less manual effort.
+                        WebWiders developed HerStay as a connected travel platform that brings trip discovery, accommodation, traveler matching, and social interaction into one mobile experience. The platform helps women discover travel opportunities while making it easier to find compatible companions and build trusted connections.
                     </p>
                 </div>
 
                 <!-- Feature Items -->
-                <div class="aliadoai-solution-features mt-4">
+                <div class="herstay-solution-features mt-4">
                     <!-- Feature 1 -->
-                    <div class="aliadoai-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".5s"
+                    <div class="herstay-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".5s"
                         style="transition: all 0.3s ease;">
                         <div class="feature-number me-3"
                             style="width: 40px; height: 40px; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                             <span style="color: #fff; font-weight: 700; font-size: 16px;">01</span>
                         </div>
                         <div class="feature-content">
-                            <h5 class="mb-2" style="font-weight: 700; color: #222;">AI-Powered Assistance</h5>
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Travel Discovery</h5>
                             <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                                Helps professionals manage everyday operational tasks through an intelligent digital assistant.
+                                Explore travel opportunities, destinations, and experiences based on personal interests.
                             </p>
                         </div>
                     </div>
 
                     <!-- Feature 2 -->
-                    <div class="aliadoai-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".6s"
+                    <div class="herstay-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".6s"
                         style="transition: all 0.3s ease;">
                         <div class="feature-number me-3"
                             style="width: 40px; height: 40px; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                             <span style="color: #fff; font-weight: 700; font-size: 16px;">02</span>
                         </div>
                         <div class="feature-content">
-                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Automated Scheduling</h5>
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Traveler Profiles</h5>
                             <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                                Simplifies appointment management and helps keep schedules organized.
+                                Create profiles that help users understand each other's travel interests, preferences, and plans.
                             </p>
                         </div>
                     </div>
 
                     <!-- Feature 3 -->
-                    <div class="aliadoai-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".7s"
+                    <div class="herstay-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".7s"
                         style="transition: all 0.3s ease;">
                         <div class="feature-number me-3"
                             style="width: 40px; height: 40px; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                             <span style="color: #fff; font-weight: 700; font-size: 16px;">03</span>
                         </div>
                         <div class="feature-content">
-                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Client Communication</h5>
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Companion Matching</h5>
                             <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                                Supports timely communication and automated reminders throughout the client journey.
+                                Discover compatible travelers based on destinations, travel plans, interests, and preferences.
                             </p>
                         </div>
                     </div>
 
                     <!-- Feature 4 -->
-                    <div class="aliadoai-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".8s"
+                    <div class="herstay-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".8s"
                         style="transition: all 0.3s ease;">
                         <div class="feature-number me-3"
                             style="width: 40px; height: 40px; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                             <span style="color: #fff; font-weight: 700; font-size: 16px;">04</span>
                         </div>
                         <div class="feature-content">
-                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Payments & Invoicing</h5>
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Community & Messaging</h5>
                             <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                                Brings payment collection and invoicing into the same business workflow.
+                                Connect privately with other travelers and start conversations before meeting or traveling together.
                             </p>
                         </div>
                     </div>
 
                     <!-- Feature 5 -->
-                    <div class="aliadoai-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".9s"
+                    <div class="herstay-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay=".9s"
                         style="transition: all 0.3s ease;">
                         <div class="feature-number me-3"
                             style="width: 40px; height: 40px; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                             <span style="color: #fff; font-weight: 700; font-size: 16px;">05</span>
                         </div>
                         <div class="feature-content">
-                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Centralized Practice Management</h5>
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Accommodation Discovery</h5>
                             <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                                Provides a single platform to manage essential administrative activities.
+                                Find suitable stays while planning trips and connecting with other travelers.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Feature 6 -->
+                    <div class="herstay-feature-item d-flex align-items-start mb-4 wow fadeInUp" data-wow-delay="1.0s"
+                        style="transition: all 0.3s ease;">
+                        <div class="feature-number me-3"
+                            style="width: 40px; height: 40px; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <span style="color: #fff; font-weight: 700; font-size: 16px;">06</span>
+                        </div>
+                        <div class="feature-content">
+                            <h5 class="mb-2" style="font-weight: 700; color: #222;">Nearby Travelers</h5>
+                            <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
+                                Discover women traveling or staying nearby and build local connections.
                             </p>
                         </div>
                     </div>
@@ -331,7 +337,6 @@
         </div>
     </div>
 </section>
-
 
 <!-- Features Section Start -->
 <section class="service-section fix section-padding section-new-padding" style="background: #f0eeee">
@@ -345,109 +350,109 @@
                     <span>FEATURES</span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Everything Independent Professionals <br>Need to Run Their Practice
+                    Everything Women Need for a <br>Better Travel Experience
                 </h2>
             </div>
         </div>
 
         <div class="row g-4">
-            <!-- Card 1: AI Business Assistant -->
+            <!-- Card 1: Travel & Trip Discovery -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                 <div class="service-card-items h-100">
                     <h3 class="title">
-                        <p>AI Business Assistant</p>
+                        <p>Travel & Trip Discovery</p>
                     </h3>
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-robot custom-service-icon"></i>
+                        <i class="fa-solid fa-plane custom-service-icon"></i>
                     </div>
                     <div class="content">
                         <p>
-                            Automates routine administrative tasks and helps professionals manage their day-to-day operations.
+                            Discover destinations, trips, and travel opportunities that match your interests and plans.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 2: Smart Scheduling -->
+            <!-- Card 2: Traveler Profiles -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                 <div class="service-card-items h-100">
                     <h3 class="title">
-                        <p>Smart Scheduling</p>
+                        <p>Traveler Profiles</p>
                     </h3>
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-calendar-check custom-service-icon"></i>
+                        <i class="fa-solid fa-user custom-service-icon"></i>
                     </div>
                     <div class="content">
                         <p>
-                            Manage appointments and keep schedules organized without constant manual coordination.
+                            Create and explore profiles to understand travel interests, preferences, and upcoming plans.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 3: Automated Reminders -->
+            <!-- Card 3: Companion Matching -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                 <div class="service-card-items h-100">
                     <h3 class="title">
-                        <p>Automated Reminders</p>
+                        <p>Companion Matching</p>
                     </h3>
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-bell custom-service-icon"></i>
+                        <i class="fa-solid fa-user-group custom-service-icon"></i>
                     </div>
                     <div class="content">
                         <p>
-                            Send timely appointment and client reminders to reduce follow-ups and missed interactions.
+                            Find compatible women based on travel preferences, destinations, interests, and planned trips.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 4: Payments & Invoicing -->
+            <!-- Card 4: Private Messaging -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                 <div class="service-card-items h-100">
                     <h3 class="title">
-                        <p>Payments & Invoicing</p>
+                        <p>Private Messaging</p>
                     </h3>
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-file-invoice-dollar custom-service-icon"></i>
+                        <i class="fa-solid fa-message custom-service-icon"></i>
                     </div>
                     <div class="content">
                         <p>
-                            Simplify payment collection and invoice management within the same platform.
+                            Connect directly with other travelers, discuss plans, and build relationships before traveling together.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 5: Client Communication -->
+            <!-- Card 5: Accommodation Discovery -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                 <div class="service-card-items h-100">
                     <h3 class="title">
-                        <p>Client Communication</p>
+                        <p>Accommodation Discovery</p>
                     </h3>
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-comments custom-service-icon"></i>
+                        <i class="fa-solid fa-hotel custom-service-icon"></i>
                     </div>
                     <div class="content">
                         <p>
-                            Keep client conversations and important interactions organized through a centralized system.
+                            Explore suitable stays while planning your journey and connecting with other travelers.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 6: Content & Professional Presence -->
+            <!-- Card 6: Nearby Traveler Discovery -->
             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                 <div class="service-card-items h-100">
                     <h3 class="title">
-                        <p>Content & Professional Presence</p>
+                        <p>Nearby Traveler Discovery</p>
                     </h3>
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-pen-nib custom-service-icon"></i>
+                        <i class="fa-solid fa-location-dot custom-service-icon"></i>
                     </div>
                     <div class="content">
                         <p>
-                            Support professionals with content creation and tools to maintain their digital presence and engage with clients.
+                            Opportunities for local connections and shared experiences.
                         </p>
                     </div>
                 </div>
@@ -455,11 +460,111 @@
 
         </div>
     </div>
-     <p class="mb-0 mt-5" style="font-size: 16px; font-weight: 600; letter-spacing: 0.5px; text-align: center;">
-                One intelligent platform. Less administration. More time for clients.
-            </p>
 </section>
 <!-- Features Section End -->
+
+<!-- How HerStay Works Section -->
+<section class="service-section fix section-padding section-new-padding" style="background: #fff;">
+    <div class="bg-shape-2">
+        <img src="assets/img/service/bg-shape-2.png" alt="img">
+    </div>
+    <div class="container">
+        <div class="section-title-area d-flex flex-wrap justify-content-between align-items-end mb-5">
+            <div class="section-title mb-0">
+                <div class="sub-title bg-color-2 wow fadeInUp">
+                    <span>HOW HERSTAY WORKS</span>
+                </div>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                    A Simple Journey From Planning to Connecting
+                </h2>
+                <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
+                    HerStay makes the travel experience more social and connected by bringing discovery, matching, communication, and travel planning into one intuitive journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- Step 1 -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="herstay-step-card h-100 text-center"
+                    style="background: #fff; padding: 35px 25px; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); transition: all 0.4s ease; border: 2px solid #f0f0f0; position: relative; overflow: hidden;">
+                    <div class="step-number"
+                        style="position: absolute; top: -10px; right: -10px; width: 60px; height: 60px; background: linear-gradient(135deg, #a5110d 0%, #a5110d 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; color: #fff; box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3); transition: all 0.3s ease;">
+                        01
+                    </div>
+                    <div class="step-icon mb-4"
+                        style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #fff5f7 0%, #ffe8ec 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                        <i class="fa-solid fa-user-pen" style="font-size: 32px; color: #a5110d; transition: all 0.3s ease;"></i>
+                    </div>
+                    <h4 class="mb-3" style="font-weight: 700; color: #222; font-size: 18px;">Create Your Profile</h4>
+                    <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
+                        Tell the community about your travel interests, destinations, preferences, and upcoming plans.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                <div class="herstay-step-card h-100 text-center"
+                    style="background: #fff; padding: 35px 25px; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); transition: all 0.4s ease; border: 2px solid #f0f0f0; position: relative; overflow: hidden;">
+                    <div class="step-number"
+                        style="position: absolute; top: -10px; right: -10px; width: 60px; height: 60px; background: linear-gradient(135deg, #a5110d 0%, #a5110d 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; color: #fff; box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3); transition: all 0.3s ease;">
+                        02
+                    </div>
+                    <div class="step-icon mb-4"
+                        style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #fff5f7 0%, #ffe8ec 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                        <i class="fa-solid fa-compass" style="font-size: 32px; color: #a5110d; transition: all 0.3s ease;"></i>
+                    </div>
+                    <h4 class="mb-3" style="font-weight: 700; color: #222; font-size: 18px;">Discover Travelers & Trips</h4>
+                    <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
+                        Explore destinations, travel opportunities, accommodation options, and women with similar travel interests.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="herstay-step-card h-100 text-center"
+                    style="background: #fff; padding: 35px 25px; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); transition: all 0.4s ease; border: 2px solid #f0f0f0; position: relative; overflow: hidden;">
+                    <div class="step-number"
+                        style="position: absolute; top: -10px; right: -10px; width: 60px; height: 60px; background: linear-gradient(135deg, #a5110d 0%, #a5110d 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; color: #fff; box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3); transition: all 0.3s ease;">
+                        03
+                    </div>
+                    <div class="step-icon mb-4"
+                        style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #fff5f7 0%, #ffe8ec 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                        <i class="fa-solid fa-user-check" style="font-size: 32px; color: #a5110d; transition: all 0.3s ease;"></i>
+                    </div>
+                    <h4 class="mb-3" style="font-weight: 700; color: #222; font-size: 18px;">Connect & Match</h4>
+                    <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
+                        Find compatible travelers, view profiles, and start private conversations to discuss plans and shared interests.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                <div class="herstay-step-card h-100 text-center"
+                    style="background: #fff; padding: 35px 25px; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); transition: all 0.4s ease; border: 2px solid #f0f0f0; position: relative; overflow: hidden;">
+                    <div class="step-number"
+                        style="position: absolute; top: -10px; right: -10px; width: 60px; height: 60px; background: linear-gradient(135deg, #a5110d 0%, #a5110d 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; color: #fff; box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3); transition: all 0.3s ease;">
+                        04
+                    </div>
+                    <div class="step-icon mb-4"
+                        style="width: 80px; height: 80px; margin: 0 auto; background: linear-gradient(135deg, #fff5f7 0%, #ffe8ec 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">
+                        <i class="fa-solid fa-handshake" style="font-size: 32px; color: #a5110d; transition: all 0.3s ease;"></i>
+                    </div>
+                    <h4 class="mb-3" style="font-weight: 700; color: #222; font-size: 18px;">Travel & Build Connections</h4>
+                    <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
+                        Plan your journey, discover opportunities nearby, and create meaningful connections with women along the way.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Experience Section -->
+<!--   -->
 
 
 <!-- Technology Section Start -->
@@ -472,22 +577,18 @@
                 <div class="pricing-content">
                     <div class="section-title">
                         <div class="sub-title bg-color-2 wow fadeInUp">
-                            <span>TECHNOLOGY & PRODUCT EXPERIENCE</span>
+                            <span>TECHNOLOGY</span>
                         </div>
                         <h2 class="wow fadeInUp" data-wow-delay=".3s">
                             Technology <br> Stack
                         </h2>
                         <p class="wow fadeInUp mt-3" data-wow-delay=".4s"
                             style="color: #666; max-width: 90%; line-height: 1.6;">
-                            AliadoAI combines AI capabilities with modern web application technologies to deliver an intuitive platform for managing everyday business operations.
-                        </p>
-                        <p class="wow fadeInUp mt-3" data-wow-delay=".4s"
-                            style="color: #666; max-width: 90%; line-height: 1.6;">
-                            Use the actual technologies used by WebWiders for AliadoAI here. I don't want to guess the stack.
+                            HerStay was developed with a modern technology stack designed to deliver a responsive, scalable, and engaging mobile travel experience. From the mobile interface to backend services and data management, each layer was built to support a connected travel and social ecosystem.
                         </p>
                         <p class="wow fadeInUp mt-3" data-wow-delay=".5s"
                             style="color: #444; max-width: 90%; line-height: 1.6; font-weight: 600;">
-                            Built as a modern AI-powered SaaS platform.
+                            Built as a modern mobile-first travel platform.
                         </p>
                     </div>
                 </div>
@@ -497,81 +598,81 @@
             <div class="col-xl-7">
                 <div class="row g-4">
 
-                    <!-- Front End -->
+                    <!-- Front End / Mobile App -->
                     <div class="col-md-6 wow fadeInUp" data-wow-delay=".2s">
                         <div class="tech-category-box h-100"
                             style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                             <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;"><i
-                                    class="fa-solid fa-desktop"
-                                    style="color: #a5110d; margin-right: 8px;"></i> Frontend Technologies
+                                    class="fa-solid fa-mobile-screen"
+                                    style="color: #a5110d; margin-right: 8px;"></i> Frontend / Mobile App
                             </h4>
                             <div class="tech-list">
                                 <p style="color: #666; margin: 0; line-height: 1.6;">
-                                    React.js • Next.js • TypeScript • HTML5 • CSS3 • Tailwind CSS
+                                    Flutter • Dart
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Back End -->
+                    <!-- Backend -->
                     <div class="col-md-6 wow fadeInUp" data-wow-delay=".3s">
                         <div class="tech-category-box h-100"
                             style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                             <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;"><i
                                     class="fa-solid fa-server"
-                                    style="color: #a5110d; margin-right: 8px;"></i> Backend Technologies
+                                    style="color: #a5110d; margin-right: 8px;"></i> Backend
                             </h4>
                             <div class="tech-list">
                                 <p style="color: #666; margin: 0; line-height: 1.6;">
-                                    Node.js • Express.js • API Development
+                                    Node.js • Express.js
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- AI & Automation -->
+                    <!-- Database -->
                     <div class="col-md-6 wow fadeInUp" data-wow-delay=".4s">
                         <div class="tech-category-box h-100"
                             style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                             <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;"><i
-                                    class="fa-solid fa-robot"
-                                    style="color: #a5110d; margin-right: 8px;"></i> AI & Automation
+                                    class="fa-solid fa-database"
+                                    style="color: #a5110d; margin-right: 8px;"></i> Database
                             </h4>
                             <div class="tech-list">
                                 <p style="color: #666; margin: 0; line-height: 1.6;">
-                                    OpenAI • AI Agents • Intelligent Automation • Machine Learning
+                                    MongoDB
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Cloud & DevOps -->
+                    <!-- APIs & Integrations -->
                     <div class="col-md-6 wow fadeInUp" data-wow-delay=".5s">
                         <div class="tech-category-box h-100"
                             style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                             <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;"><i
-                                    class="fa-solid fa-cloud"
-                                    style="color: #a5110d; margin-right: 8px;"></i> Cloud & DevOps
+                                    class="fa-solid fa-plug"
+                                    style="color: #a5110d; margin-right: 8px;"></i> APIs & Integrations
                             </h4>
                             <div class="tech-list">
                                 <p style="color: #666; margin: 0; line-height: 1.6;">
-                                    AWS • Cloud Infrastructure • CI/CD Pipelines
+                                    REST APIs • Location Services • Third-Party Integrations
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Databases -->
+                    <!-- Cloud & Deployment -->
                     <div class="col-md-6 wow fadeInUp" data-wow-delay=".6s">
                         <div class="tech-category-box h-100"
                             style="background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
                             <h4 style="font-size: 20px; font-weight: 700; margin-bottom: 15px;"><i
-                                    class="fa-solid fa-database"
-                                    style="color: #a5110d; margin-right: 8px;"></i> Databases
+                                    class="fa-solid fa-cloud"
+                                    style="color: #a5110d; margin-right: 8px;"></i> Cloud & Deployment
                             </h4>
                             <div class="tech-list">
                                 <p style="color: #666; margin: 0; line-height: 1.6;">
-                                    MongoDB • PostgreSQL • Redis
+                                    AWS • Cloud Services
                                 </p>
                             </div>
                         </div>
@@ -584,112 +685,7 @@
     </div>
 </section>
 
-
-<!-- Product Experience Section -->
-<section class="service-section fix section-padding section-new-padding" style="background: #fff;">
-    <div class="bg-shape-2">
-        <img src="assets/img/service/bg-shape-2.png" alt="img">
-    </div>
-    <div class="container">
-        <div class="section-title-area d-flex flex-wrap justify-content-between align-items-end mb-5">
-            <div class="section-title mb-0">
-                <div class="sub-title bg-color-2 wow fadeInUp">
-                    <span>PRODUCT EXPERIENCE</span>
-                </div>
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    PRODUCT EXPERIENCE
-                </h2>
-                <!-- <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    Take a look at the key features and screens of the AliadoAI platform.
-                </p> -->
-            </div>
-        </div>
-
-        <div class="row g-3 g-md-4">
-            <!-- Gallery Item 1 -->
-            <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay=".1s">
-                <div class="aliadoai-product-card h-100 text-center"
-                    style="background: #f8f9fa; padding: 25px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eaeaea;">
-                    <div class="icon-wrapper mb-3"
-                        style="width: 60px; height: 60px; margin: 0 auto; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-robot" style="color: #fff; font-size: 24px;"></i>
-                    </div>
-                    <h6 class="fw-bold mb-0" style="color: #333; font-size: 14px; line-height: 1.4;">
-                        AI Assistant/Chat
-                    </h6>
-                </div>
-            </div>
-            <!-- Gallery Item 2 -->
-            <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay=".2s">
-                <div class="aliadoai-product-card h-100 text-center"
-                    style="background: #f8f9fa; padding: 25px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eaeaea;">
-                    <div class="icon-wrapper mb-3"
-                        style="width: 60px; height: 60px; margin: 0 auto; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-gauge-high" style="color: #fff; font-size: 24px;"></i>
-                    </div>
-                    <h6 class="fw-bold mb-0" style="color: #333; font-size: 14px; line-height: 1.4;">
-                        Main Dashboard
-                    </h6>
-                </div>
-            </div>
-            <!-- Gallery Item 3 -->
-            <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay=".3s">
-                <div class="aliadoai-product-card h-100 text-center"
-                    style="background: #f8f9fa; padding: 25px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eaeaea;">
-                    <div class="icon-wrapper mb-3"
-                        style="width: 60px; height: 60px; margin: 0 auto; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-calendar-check" style="color: #fff; font-size: 24px;"></i>
-                    </div>
-                    <h6 class="fw-bold mb-0" style="color: #333; font-size: 14px; line-height: 1.4;">
-                        Appointment Scheduling
-                    </h6>
-                </div>
-            </div>
-            <!-- Gallery Item 4 -->
-            <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay=".4s">
-                <div class="aliadoai-product-card h-100 text-center"
-                    style="background: #f8f9fa; padding: 25px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eaeaea;">
-                    <div class="icon-wrapper mb-3"
-                        style="width: 60px; height: 60px; margin: 0 auto; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-file-invoice-dollar" style="color: #fff; font-size: 24px;"></i>
-                    </div>
-                    <h6 class="fw-bold mb-0" style="color: #333; font-size: 14px; line-height: 1.4;">
-                        Invoicing/Payments
-                    </h6>
-                </div>
-            </div>
-            <!-- Gallery Item 5 -->
-            <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay=".5s">
-                <div class="aliadoai-product-card h-100 text-center"
-                    style="background: #f8f9fa; padding: 25px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eaeaea;">
-                    <div class="icon-wrapper mb-3"
-                        style="width: 60px; height: 60px; margin: 0 auto; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-users" style="color: #fff; font-size: 24px;"></i>
-                    </div>
-                    <h6 class="fw-bold mb-0" style="color: #333; font-size: 14px; line-height: 1.4;">
-                        Client Management
-                    </h6>
-                </div>
-            </div>
-            <!-- Gallery Item 6 -->
-            <div class="col-6 col-md-4 col-lg-2 wow fadeInUp" data-wow-delay=".6s">
-                <div class="aliadoai-product-card h-100 text-center"
-                    style="background: #f8f9fa; padding: 25px 15px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s ease; border: 1px solid #eaeaea;">
-                    <div class="icon-wrapper mb-3"
-                        style="width: 60px; height: 60px; margin: 0 auto; background: #a5110d; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="fa-solid fa-user-tie" style="color: #fff; font-size: 24px;"></i>
-                    </div>
-                    <h6 class="fw-bold mb-0" style="color: #333; font-size: 14px; line-height: 1.4;">
-                        Professional Profile/Content
-                    </h6>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- Less Administration Section -->
+<!-- Business Impact Section -->
 <section class="service-section fix section-padding section-new-padding" style="background: #f0eeee;">
     <div class="bg-shape-2">
         <img src="assets/img/service/bg-shape-2.png" alt="img">
@@ -701,11 +697,11 @@
                     <span>BUSINESS IMPACT</span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Less Administration. <br>More Time for What Matters.
+                    Creating a More <br>Connected Way to Travel
                 </h2>
                 <p class="section-title-desc wow fadeInUp mt-3" data-wow-delay=".4s"
                     style="line-height: 1.6; color: #666; max-width: 700px;">
-                    AliadoAI brings essential business operations into one intelligent platform, helping independent professionals reduce repetitive administrative work and stay focused on their clients.
+                    HerStay brings travel discovery and social connection together in a single women-first experience. The platform helps travelers move beyond traditional trip planning by making it easier to discover opportunities, find compatible companions, connect with women nearby, and create meaningful travel experiences.
                 </p>
             </div>
         </div>
@@ -717,14 +713,14 @@
                 <div class="service-card-items h-100"
                     style="padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 12px; background: #fff;">
                     <div class="icon mb-3" style="font-size: 24px; color: #a5110d;">
-                        <i class="fa-solid fa-cogs"></i>
+                        <i class="fa-solid fa-heart"></i>
                     </div>
                     <h3 class="title mb-3" style="font-size: 18px; font-weight: 700; color: #222;">
-                        Simplified Operations
+                        More Meaningful Connections
                     </h3>
                     <div class="content">
                         <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                            Manage scheduling, reminders, payments, invoicing, and communication from one platform.
+                            Helps women discover travelers with similar interests, destinations, and travel plans.
                         </p>
                     </div>
                 </div>
@@ -735,14 +731,14 @@
                 <div class="service-card-items h-100"
                     style="padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 12px; background: #fff;">
                     <div class="icon mb-3" style="font-size: 24px; color: #a5110d;">
-                        <i class="fa-solid fa-bolt"></i>
+                        <i class="fa-solid fa-users"></i>
                     </div>
                     <h3 class="title mb-3" style="font-size: 18px; font-weight: 700; color: #222;">
-                        Greater Efficiency
+                        A Stronger Travel Community
                     </h3>
                     <div class="content">
                         <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                            Automate repetitive tasks that would otherwise require ongoing manual effort.
+                            Encourages women to connect, communicate, and build relationships before and during their journeys.
                         </p>
                     </div>
                 </div>
@@ -753,14 +749,14 @@
                 <div class="service-card-items h-100"
                     style="padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 12px; background: #fff;">
                     <div class="icon mb-3" style="font-size: 24px; color: #a5110d;">
-                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-compass"></i>
                     </div>
                     <h3 class="title mb-3" style="font-size: 18px; font-weight: 700; color: #222;">
-                        Better Client Experience
+                        Simplified Travel Discovery
                     </h3>
                     <div class="content">
                         <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                            Support timely communication, appointment management, and smoother interactions with clients.
+                            Brings trips, destinations, accommodation opportunities, and traveler discovery into one connected experience.
                         </p>
                     </div>
                 </div>
@@ -771,14 +767,14 @@
                 <div class="service-card-items h-100"
                     style="padding: 25px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-radius: 12px; background: #fff;">
                     <div class="icon mb-3" style="font-size: 24px; color: #a5110d;">
-                        <i class="fa-solid fa-chart-line"></i>
+                        <i class="fa-solid fa-handshake"></i>
                     </div>
                     <h3 class="title mb-3" style="font-size: 18px; font-weight: 700; color: #222;">
-                        Built for Growth
+                        A More Social Travel Experience
                     </h3>
                     <div class="content">
                         <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">
-                            Give independent professionals a scalable digital platform that can evolve as their practice grows.
+                            Transforms travel from an individual activity into an opportunity to discover people, share experiences, and build connections.
                         </p>
                     </div>
                 </div>
@@ -789,36 +785,35 @@
     </div>
 </section>
 
-
 <!-- Call To Action Section Start -->
-<section class="cta-section section-padding" style="text-align: center;" id="aliadoai-cta">
+<section class="cta-section section-padding" style="text-align: center;" id="herstay-cta">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10">
 
                 <div class="section-title mb-4 wow fadeInUp" data-wow-delay=".2s">
-                    <h2>Ready to Build Your AI-Powered Solution?</h2>
+                    <h2>Ready to Build Your Travel Platform?</h2>
                 </div>
 
                 <p class="wow fadeInUp" data-wow-delay=".4s"
                     style="font-size: 18px; color: #555; line-height: 1.6; margin-bottom: 40px;">
-                    From AI assistants and SaaS platforms to custom automation solutions, WebWiders helps businesses turn ideas into practical, scalable digital products.
+                    HerStay required a mobile experience that could bring travel discovery, accommodation, social interaction, and traveler matching together without making the journey feel complicated. WebWiders focused on creating a simple, intuitive, and scalable platform where women can discover travel opportunities, connect with compatible travelers, communicate with confidence, and build meaningful connections throughout their journeys.
                 </p>
 
                 <div class="d-flex gap-3 justify-content-center flex-wrap">
-                    <div class="main-button wow fadeInUp mt-4" data-wow-delay=".3s">
+                    <div class="main-button wow fadeInUp mt-4" data-wow-delay=".3s" style="max-width:unset;">
 
                         <a href="#" class="offcanvas-btn" data-bs-toggle="offcanvas"
                             data-bs-target="#consultationOffcanvas"> <span class="theme-btn">
-                                Start Your AI Project
+                                Build Your Travel App
                             </span><span class="arrow-btn"><i class="fa-solid fa-turn-up"></i></span></a>
                     </div>
 
 
-                    <div class="main-button wow fadeInUp mt-md-4" data-wow-delay=".3s">
-                        <a href="<?= url('on-demand-hire') ?>" class="offcanvas-btn hire-btn">
+                    <div class="main-button wow fadeInUp mt-md-4" data-wow-delay=".3s" style="max-width:unset;">
+                        <a href="on-demand-hire.php" class="offcanvas-btn hire-btn">
                             <span class="theme-btn">
-                                Hire Dedicated Developers 
+                                Hire Dedicated Developers
                             </span>
                         </a>
                     </div>
@@ -916,7 +911,7 @@
 
 </div>
 <!-- ==========================================
-     END: ALIADOAI CASE STUDY SECTION
+     END: HERSTAY CASE STUDY SECTION
      ========================================== -->
 
 

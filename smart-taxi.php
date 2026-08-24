@@ -70,8 +70,10 @@
             <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="about-image">
+                        <div class="img-frame">
                         <img src="assets/img/case-studies/misy2.png" alt="Misy" class="wow img-custom-anim-left"
                             data-wow-duration="1.5s" data-wow-delay="0.3s">
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">

@@ -126,10 +126,12 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay=".3s">
-                    <!-- Placeholder for the large ERP dashboard screenshot -->
-                    <img src="assets/img/healthcare.png" alt="Healthcare ERP Dashboard"
+                   <div class="img-frame">
+                     <!-- Placeholder for the large ERP dashboard screenshot -->
+                    <img src="assets/img/case-studies/health-erp-about.png" alt="Healthcare ERP Dashboard"
                         class="img-fluid rounded shadow-lg w-100"
                         style="min-height: 350px; background-color: #ddd; object-fit: cover;">
+                   </div>
                 </div>
             </div>
         </div>
@@ -151,7 +153,7 @@
                 </div>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="num-card">
                         <span class="number">01</span>
@@ -483,7 +485,7 @@
                 product's live site.</p>
 
             <!-- Technologies -->
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-12 text-center mb-4">
                     <h4>Technologies Behind the Healthcare ERP</h4>
                 </div>
@@ -618,7 +620,7 @@
                     <div class="sub-title bg-color-2 wow fadeInUp"><span>BUSINESS IMPACT</span></div>
                     <h3 class="mb-4">Making Healthcare Operations More Connected</h3>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4 justify-content-center">
                     <div class="col-md-6 col-lg-4 impact-item wow fadeInUp" data-wow-delay=".1s">
                         <div class="info-card">
                             <h5 class="mb-3"><i class="fa-solid fa-sitemap me-2"
@@ -893,11 +895,6 @@
 <!-- ==========================================
      END: HEALTHCARE ERP CASE STUDY SECTION
      ========================================== -->
-
-
-
-
-
 
 
 

@@ -1,3 +1,53 @@
+.sub-title {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+        padding: 8px 16px 8px 10px !important;
+        background: rgba(255, 255, 255, 0.9) !important;
+        border: 1px solid rgba(178, 13, 13, 0.14) !important;
+        border-radius: 50px !important;
+        box-shadow:
+            0 4px 14px rgba(0, 0, 0, 0.06),
+            inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+.sub-title::before {
+    content: "" !important;
+    width: 8px !important;
+    height: 8px !important;
+    min-width: 8px !important;
+    background: linear-gradient(135deg, #d71919, #8e0808) !important;
+    border-radius: 50% !important;
+    box-shadow: 0 0 0 4px rgba(178, 13, 13, 0.08) !important;
+    display: block !important;
+}
+
+.sub-title span {
+    color: #8e0808 !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.8px !important;
+    line-height: 1 !important;
+    text-transform: uppercase !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+.section-title .sub-title span {
+    /* background: var(--white); */
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: unset;
+    font-size: 14px;
+}
+
+
+
+
 @media screen and (min-width:1400px) {
     .contact-section::before {
         right: 0px;
@@ -65,6 +115,14 @@
         padding: 40px 0;
     }
 
+     .custom-our-projects-section .case-studies-card-items .content .title {
+        max-width: 250px;
+    }
+
+    .section-title-area {
+        margin-bottom: 16px;
+    }
+
 
 }
 
@@ -130,6 +188,22 @@
         margin-right: 50px;
         display: block;
         white-space: nowrap;
+    }
+
+        .marquee-card-item.new-marquee-card-item .value-box-items {
+        min-width: 200px;
+    }
+
+    .custom-our-projects-section .case-studies-card-items .content .title {
+        max-width: 297px;
+    }
+
+    .service-box-items .icon img {
+        width: 60px;
+    }
+
+    .service-box-items {
+        padding: 20px;
     }
 }
 
@@ -255,4 +329,40 @@
     section#hero-section.hero-1 {
         padding: 120px 0 24px;
     }
+
+
+     .comm:has(.marquee-card-item.new-marquee-card-item) {
+        justify-content: center;
+    }
+
+    section.news-section.section-padding .case-studies-card-items .content .title {
+        max-width: 290px;
+    }
+
+    .about-wrapper .about-image {
+        max-width: 100%;
+    }
+
+    #aliadoai-case-study .about-wrapper .about-image img {
+        height: 100%;
+    }
+
+    #inatlantis-case-study .about-wrapper .about-image img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #misy-case-study.misy-page .about-wrapper .about-image img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #meetzane-case-study.meetzane-page .about-wrapper .about-image img {
+        height: 100%;
+        object-fit: cover;
+    }
 }
+
+
+
+

@@ -9,7 +9,7 @@
         <div class="container">
             <div class="hero-shell">
                 <div class="hero-copy wow fadeInLeft" data-wow-delay=".2s">
-                    <div class="hero-badge"><i class="fa-solid fa-users"></i> vendor management</div>
+                    <div class="hero-badge"><i class="fa-solid fa-users"></i> <span>vendor management</span> </div>
                     <h1>VENDOR MANAGEMENT PLATFORM FOR GLOBAL HIRING</h1>
                     <!-- <h4>Smart Vendor Management Platform for Recruitment Teams</h4> -->
                     <p>
@@ -34,7 +34,7 @@
                         <span>Platform</span>
                         <strong>Vendor Management</strong>
                     </div>
-                    <div class="hero-visual-card">
+                    <div class="hero-visual-card img-frame">
                         <img src="assets/img/thevenco.png" alt="TheVenco Vendor Management Dashboard" />
                     </div>
                     <div class="floating-card">
@@ -94,7 +94,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay=".3s">
-                    <img src="assets/img/thevenco.png" alt="TheVenco Dashboard" class="img-fluid rounded shadow-lg w-100" style="min-height: 350px; background-color: #ddd; object-fit: cover;">
+                      <div class="img-frame">
+                          <img src="assets/img/case-studies/vender-about.png" alt="TheVenco Dashboard" class="img-fluid rounded shadow-lg w-100" style="min-height: 350px; background-color: #ddd; object-fit: cover;">
+                        </div>
                 </div>
             </div>
         </div>
@@ -181,7 +183,7 @@
                 </div>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="num-card">
                         <span class="number">01</span>
@@ -221,7 +223,7 @@
 
             <div class="row mt-5">
                 <div class="col-12">
-                    <p class="text-muted fst-italic">TheVenco was built to bring these fragmented activities into one intuitive vendor management platform.</p>
+                    <p class="text-muted text-center fst-italic">TheVenco was built to bring these fragmented activities into one intuitive vendor management platform.</p>
                 </div>
             </div>
         </div>
@@ -242,7 +244,9 @@
 
             <div class="row align-items-center g-5">
                 <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".4s">
-                    <img src="assets/img/thevenco.png" alt="TheVenco Platform Features" class="img-fluid rounded shadow-lg w-100" style="min-height: 400px; background-color: #ddd; object-fit: cover;">
+                      <div class="img-frame">
+                          <img src="assets/img/case-studies/vender-about2.png" alt="TheVenco Platform Features" class="img-fluid rounded shadow-lg w-100" style="min-height: 400px; background-color: #ddd; object-fit: cover;">
+                        </div>
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay=".5s">
                     <div class="mb-4">
@@ -551,7 +555,7 @@
                 </div>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4 justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="info-card bg-light-gray border-0 text-center">
                         <h5 class="mb-3">Centralized Hiring Operations</h5>
@@ -586,7 +590,7 @@
 
              <div class="row mt-5">
                 <div class="col-12">
-                    <p class="text-muted fst-italic">From finding the right vendor to tracking recruitment activity, TheVenco brings the vendor-driven hiring process into one connected workflow.</p>
+                    <p class="text-muted fst-italic text-center">From finding the right vendor to tracking recruitment activity, TheVenco brings the vendor-driven hiring process into one connected workflow.</p>
                 </div>
             </div>
         </div>
@@ -605,38 +609,38 @@
                 </div>
             </div>
 
-            <div class="row g-4">
-                <div class="col-md-4">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
                     <div class="info-card text-center">
                         <h5 class="mb-3 text-dark">Custom Software Development</h5>
                         <p>Build tailored software platforms designed around your unique business processes and workflows.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="info-card text-center">
                         <h5 class="mb-3 text-dark">UI/UX Design</h5>
                         <p>Design intuitive user experiences that simplify complex workflows and make your digital products easier to use.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="info-card text-center">
                         <h5 class="mb-3 text-dark">SaaS Development</h5>
                         <p>Create scalable SaaS products with intuitive interfaces, robust architecture, and features designed for growing businesses.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="info-card text-center">
                         <h5 class="mb-3 text-dark">API & Backend Development</h5>
                         <p>Build reliable backend systems and APIs that connect your application, data, users, and business workflows.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="info-card text-center">
                         <h5 class="mb-3 text-dark">Web Application Development</h5>
                         <p>Develop secure, responsive, and high-performance web applications for complex business requirements.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4">
                     <div class="info-card text-center">
                         <h5 class="mb-3 text-dark">IT Staff Augmentation</h5>
                         <p>Extend your development capabilities with experienced in-house developers available on flexible contract-to-contract engagements.</p>
@@ -646,7 +650,7 @@
 
              <div class="row mt-5">
                 <div class="col-12">
-                    <p class="text-muted fst-italic">Have a SaaS idea or need to modernize an existing platform?</p>
+                    <p class="text-muted fst-italic text-center">Have a SaaS idea or need to modernize an existing platform?</p>
                 </div>
             </div>
         </div>
