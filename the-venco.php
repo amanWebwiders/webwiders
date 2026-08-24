@@ -163,7 +163,8 @@
                             <div class="comment-form-wrap">
                                 <h3>Ready to streamline your vendor hiring?</h3>
                                 <p class="mb-4">Fill out the form below to get started or request a walkthrough.</p>
-                                <form action="#" id="demo-form" method="POST">
+                                <form action="<?= url('process-demo') ?>" id="demo-form" method="POST">
+                                    <input type="hidden" name="product_name" value="The Venco Vendor Hiring Platform">
                                     <div class="row g-4">
                                         <div class="col-lg-6">
                                             <div class="form-clt">
@@ -204,8 +205,11 @@
                                         </div>
                                         <div class="col-lg-12">
                                             <button type="submit" class="theme-btn w-100 justify-content-center">
-                                                Get Started <i class="fa-solid fa-arrow-right-long"></i>
+                                                Request Demo <i class="fa-solid fa-arrow-right-long"></i>
                                             </button>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-message mt-3"></div>
                                         </div>
                                     </div>
                                 </form>
