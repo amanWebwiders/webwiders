@@ -13,13 +13,13 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // 1. Capture Form Inputs
-$name        = isset($_POST['name']) ? trim($_POST['name']) : '';
+$name        = isset($_POST['name']) ? trim($_POST['name']) : (isset($_POST['first_name']) ? trim($_POST['first_name'] . ' ' . ($_POST['last_name'] ?? '')) : '');
 $email       = isset($_POST['email']) ? trim($_POST['email']) : '';
-$phone       = isset($_POST['phone']) ? trim($_POST['phone']) : '';
+$phone       = isset($_POST['phone']) ? trim($_POST['phone']) : (isset($_POST['number']) ? trim($_POST['number']) : '');
 $company     = isset($_POST['company']) ? trim($_POST['company']) : (isset($_POST['hospital']) ? trim($_POST['hospital']) : 'N/A');
 $role        = isset($_POST['role']) ? trim($_POST['role']) : 'N/A';
 $message     = isset($_POST['message']) ? trim($_POST['message']) : '';
-$productName = isset($_POST['product_name']) ? trim($_POST['product_name']) : 'Software Product';
+$productName = isset($_POST['product_name']) ? trim($_POST['product_name']) : 'Software Solution';
 
 // 2. Validation
 if (empty($name) || empty($email) || empty($phone)) {
@@ -53,13 +53,15 @@ if ($role !== 'N/A') {
     $messageContent .= "User Role: " . ucfirst($role) . "\n";
 }
 
-$messageContent .= "Module Requirements / Notes:\n" . ($message !== '' ? $message : 'None provided.');
+$messageContent .= "\nModule Requirements / Notes:\n" . ($message !== '' ? $message : 'None provided.');
 
 $payload = [
-    'name'    => $name,
-    'email'   => $email,
-    'number'  => $phone,
-    'message' => $messageContent
+    'name'         => $name,
+    'email'        => $email,
+    'number'       => $phone,
+    'phone'        => $phone,
+    'product_name' => $productName,
+    'message'      => $messageContent
 ];
 
 $adminUrl  = rtrim(env('ADMIN_URL', 'http://localhost/adminwebwider/'), '/');

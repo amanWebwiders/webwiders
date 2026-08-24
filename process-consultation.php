@@ -12,12 +12,17 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-// 1. Capture Form Inputs
-$firstName     = isset($_POST['first_name']) ? trim($_POST['first_name']) : '';
-$lastName      = isset($_POST['last_name']) ? trim($_POST['last_name']) : '';
+// 1. Capture Form Inputs with robust fallbacks
+$firstName     = isset($_POST['first_name']) ? trim($_POST['first_name']) : (isset($_POST['first-name']) ? trim($_POST['first-name']) : (isset($_POST['fname']) ? trim($_POST['fname']) : ''));
+$lastName      = isset($_POST['last_name']) ? trim($_POST['last_name']) : (isset($_POST['last-name']) ? trim($_POST['last-name']) : (isset($_POST['lname']) ? trim($_POST['lname']) : ''));
 $fullName      = trim($firstName . ' ' . $lastName);
+
+if (empty($fullName) && isset($_POST['name'])) {
+    $fullName  = trim($_POST['name']);
+}
+
 $email         = isset($_POST['email']) ? trim($_POST['email']) : '';
-$phone         = isset($_POST['phone']) ? trim($_POST['phone']) : '';
+$phone         = isset($_POST['phone']) ? trim($_POST['phone']) : (isset($_POST['number']) ? trim($_POST['number']) : (isset($_POST['contact']) ? trim($_POST['contact']) : ''));
 $company       = isset($_POST['company']) ? trim($_POST['company']) : 'N/A';
 $primaryGoal   = isset($_POST['primary_goal']) ? trim($_POST['primary_goal']) : 'N/A';
 $preferredDate = isset($_POST['preferred_date']) ? trim($_POST['preferred_date']) : 'N/A';
@@ -52,13 +57,14 @@ $messageContent = "CONSULTATION CALL BOOKING DETAILS:\n"
     . "Company Name: " . $company . "\n"
     . "Primary Goal: " . $primaryGoal . "\n"
     . "Preferred Date: " . $preferredDate . "\n"
-    . "Preferred Time Slot: " . $preferredTime . "\n"
+    . "Preferred Time Slot: " . $preferredTime . "\n\n"
     . "Discussion Notes / Message:\n" . ($message !== '' ? $message : 'None provided.');
 
 $payload = [
     'name'    => $fullName,
     'email'   => $email,
     'number'  => $phone,
+    'phone'   => $phone,
     'message' => $messageContent
 ];
 
