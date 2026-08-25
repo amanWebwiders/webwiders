@@ -30,7 +30,7 @@
     </div>
 </div>
 
-<section class="news-section section-padding fix pt-3" id="portfolio">
+<section class="news-section section-padding fix pt-3 " id="portfolio">
     <div class="container">
         <!-- <div class="filters pb-5" id="portfolioFilters">
             <a href="javascript:void(0)" class="filters-btns active" data-filter="all">All Projects</a>
@@ -240,7 +240,7 @@
             </div>
 
             <!-- 11. Multi Service Delivery -->
-            <div class="col-xl-4 col-lg-6 col-md-6" id="filter-wrapper" data-category="mobile">
+            <!-- <div class="col-xl-4 col-lg-6 col-md-6" id="filter-wrapper" data-category="mobile">
                 <div class="news-box-items mt-0">
                     <div class="news-image wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.6s">
                         <a href="javascript:void(0);" class="open-project-details" data-bs-toggle="offcanvas"
@@ -256,7 +256,7 @@
                         <h5>Multi Service Delivery Mobile App</h5>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- 12. BodaBoda Taxi App -->
             <div class="col-xl-4 col-lg-6 col-md-6" id="filter-wrapper" data-category="mobile">
