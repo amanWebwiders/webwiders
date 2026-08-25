@@ -19,11 +19,11 @@
                 <div class="col-xl-8 m-auto">
                     <div class="contact-form-area">
                         <h3>Get in Touch</h3>
-                        <form action="#" id="contact-form" method="POST">
+                        <form action="<?= url('process-contact') ?>" id="contact-form" method="POST">
                             <div class="row g-4">
                                 <div class="col-lg-6">
                                     <div class="form-clt">
-                                        <input type="text" name="first-name" id="first-name" placeholder="Full Name">
+                                        <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
                                     </div>
                                 </div>
                                   <div class="col-lg-6">
@@ -33,32 +33,27 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-clt">
-                                        <input type="text" name="email" id="email" placeholder="Email Address">
+                                        <input type="email" name="email" id="email" placeholder="Email Address" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-clt">
-                                        <input type="number" name="number" id="number" placeholder="Phone Number">
+                                        <input type="text" name="number" id="number" placeholder="Phone Number">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-clt">
-                                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                                        <textarea name="message" id="message" placeholder="Message" required></textarea>
                                     </div>
                                 </div>
-                                <!-- <div class="col-12">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            Collaboratively formulate principle capital. Progressively evolve user
-                                        </label>
-                                    </div>
-                                </div> -->
                                 <div class="col-lg-12">
                                     <button type="submit" class="theme-btn">
                                         Submit Now
                                         <i class="fa-solid fa-arrow-right ms-1"></i>
                                     </button>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-message mt-3"></div>
                                 </div>
                             </div>
                         </form>

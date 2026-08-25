@@ -709,70 +709,63 @@
                 help your business grow.
             </p>
 
-            <form class="text-start">
+            <form action="<?= url('process-consultation') ?>" id="consultation-form" method="POST" class="text-start">
                 <div class="row g-3">
                     <!-- Name -->
                     <div class="col-md-6">
-                        <input type="text" class="form-control bg-white py-2" placeholder="First Name*" required>
+                        <input type="text" name="first_name" class="form-control bg-white py-2" placeholder="First Name*" required>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" class="form-control bg-white py-2" placeholder="Last Name*" required>
+                        <input type="text" name="last_name" class="form-control bg-white py-2" placeholder="Last Name*" required>
                     </div>
 
                     <!-- Contact & Company -->
                     <div class="col-md-6">
-                        <input type="email" class="form-control bg-white py-2" placeholder="Work Email*" required>
+                        <input type="email" name="email" class="form-control bg-white py-2" placeholder="Work Email*" required>
                     </div>
                     <div class="col-md-6">
-                        <input type="tel" class="form-control bg-white py-2" placeholder="Phone Number*" required>
+                        <input type="tel" name="phone" class="form-control bg-white py-2" placeholder="Phone Number*" required>
                     </div>
 
                     <div class="col-12">
-                        <input type="text" class="form-control bg-white py-2" placeholder="Company Name*" required>
+                        <input type="text" name="company" class="form-control bg-white py-2" placeholder="Company Name*" required>
                     </div>
 
                     <!-- Consultation Specifics -->
                     <div class="col-12">
-                        <select class="form-select bg-white text-muted py-2" required>
+                        <select name="primary_goal" class="form-select bg-white text-muted py-2" required>
                             <option value="" selected disabled>What is your primary goal?*</option>
-                            <option value="optimize">Optimize current operations</option>
-                            <option value="implementation">New software implementation</option>
-                            <option value="integration">System integration & APIs</option>
-                            <option value="other">Other</option>
+                            <option value="Optimize current operations">Optimize current operations</option>
+                            <option value="New software implementation">New software implementation</option>
+                            <option value="System integration & APIs">System integration & APIs</option>
+                            <option value="Other">Other</option>
                         </select>
                     </div>
 
                     <!-- Date & Time Picker -->
                     <div class="col-md-6">
-                        <!-- Date input gives a native calendar popup -->
-                        <input type="date" class="form-control bg-white py-2 text-muted" required
-                            title="Preferred Date">
+                        <input type="date" name="preferred_date" class="form-control bg-white py-2 text-muted" required title="Preferred Date">
                     </div>
                     <div class="col-md-6">
-                        <select class="form-select bg-white text-muted py-2" required>
+                        <select name="preferred_time" class="form-select bg-white text-muted py-2" required>
                             <option value="" selected disabled>Preferred Time*</option>
-                            <option value="morning">Morning (9 AM - 12 PM)</option>
-                            <option value="afternoon">Afternoon (1 PM - 5 PM)</option>
+                            <option value="Morning (9 AM - 12 PM)">Morning (9 AM - 12 PM)</option>
+                            <option value="Afternoon (1 PM - 5 PM)">Afternoon (1 PM - 5 PM)</option>
                         </select>
                     </div>
 
                     <!-- Message -->
                     <div class="col-12">
-                        <textarea class="form-control bg-white" rows="3"
-                            placeholder="Briefly describe what you'd like to discuss..."></textarea>
+                        <textarea name="message" class="form-control bg-white" rows="3" placeholder="Briefly describe what you'd like to discuss..."></textarea>
                     </div>
 
                     <!-- Submit Button -->
                     <div class="col-12 text-center mt-4">
-                        <button type="submit" class="btn fw-bold px-5 py-2 w-100"
-                            style="background-color: var(--primary-red, #ff0000); color: white; border-radius: 25px;">BOOK
-                            MY SESSION</button>
+                        <button type="submit" class="btn fw-bold px-5 py-2 w-100" style="background-color: var(--primary-red, #ff0000); color: white; border-radius: 25px;">BOOK MY SESSION</button>
                     </div>
 
-                    <!-- Footer Text -->
-                    <div class="col-12 text-center mt-2">
-                        <small class="text-muted" style="font-size: 0.75rem;">This site is protected by
-                            reCAPTCHA.</small>
+                    <div class="col-12">
+                        <div class="form-message mt-3"></div>
                     </div>
                 </div>
             </form>
