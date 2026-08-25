@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/includes/captcha-helper.php';
 
 header('Content-Type: application/json; charset=utf-8');
 
@@ -8,6 +9,19 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     echo json_encode([
         'success' => false,
         'message' => 'Method Not Allowed. Please submit the form.'
+    ]);
+    exit;
+}
+
+// 0. CAPTCHA Validation
+$captchaAnswer = $_POST['captcha_answer'] ?? null;
+$captchaToken  = $_POST['captcha_token'] ?? null;
+
+if (!verify_captcha($captchaAnswer, $captchaToken)) {
+    http_response_code(400);
+    echo json_encode([
+        'success' => false,
+        'message' => 'Security verification failed. Please enter the correct answer for the security code.'
     ]);
     exit;
 }
@@ -39,15 +53,40 @@ if (empty($message)) {
     exit;
 }
 
+$productName = isset($_POST['product_name']) && !empty(trim($_POST['product_name'])) ? trim($_POST['product_name']) : (isset($_POST['subject']) ? trim($_POST['subject']) : '');
+
+if (empty($productName) && isset($_SERVER['HTTP_REFERER'])) {
+    $refererPath = parse_url($_SERVER['HTTP_REFERER'], PHP_URL_PATH);
+    $pageName = basename($refererPath, '.php');
+    if (!empty($pageName) && $pageName !== 'index') {
+        $productName = ucwords(str_replace(['-', '_'], ' ', $pageName));
+    }
+}
+
+if (!empty($productName)) {
+    $formattedMessage = "CONTACT INQUIRY FOR: " . $productName . "\n"
+        . "------------------------------------\n"
+        . "Client Name: " . $fullName . "\n"
+        . "Email: " . $email . "\n"
+        . "Phone: " . ($phone !== '' ? $phone : 'N/A') . "\n\n"
+        . "Message:\n" . $message;
+} else {
+    $formattedMessage = $message;
+}
+
 // 3. Prepare Payload
 $payload = [
-    'name'    => $fullName,
-    'email'   => $email,
-    'number'  => $phone,
-    'message' => $message
+    'name'         => $fullName,
+    'email'        => $email,
+    'number'       => $phone,
+    'phone'        => $phone,
+    'product_name' => !empty($productName) ? $productName : 'General Contact Form',
+    'message'      => $formattedMessage
 ];
 
-$adminUrl  = rtrim(env('ADMIN_URL', 'http://localhost/adminwebwider/'), '/');
+$isLocal = (in_array($_SERVER['REMOTE_ADDR'] ?? '', ['127.0.0.1', '::1']) || strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') !== false);
+$defaultAdminUrl = $isLocal ? 'http://localhost/adminwebwider/' : 'https://manage.webwiders.com/';
+$adminUrl  = rtrim(env('ADMIN_URL', $defaultAdminUrl), '/');
 $apiUrl    = env('ADMIN_MAIL_API_URL', $adminUrl . '/api/send-contact-email');
 $secretKey = env('CONTACT_FORM_SECRET_KEY', 'webwiders_secure_api_token_2026_x9z');
 
@@ -63,8 +102,6 @@ $requestError = null;
 
 // 4. Dual Transport Handler (cURL with fallback to file_get_contents)
 if (function_exists('curl_init')) {
-    $isLocal = (in_array($_SERVER['REMOTE_ADDR'] ?? '', ['127.0.0.1', '::1']) || strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') !== false);
-    
     $ch = curl_init();
     curl_setopt_array($ch, [
         CURLOPT_URL            => $apiUrl,
@@ -72,7 +109,8 @@ if (function_exists('curl_init')) {
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_HTTPHEADER     => $headers,
         CURLOPT_POSTFIELDS     => json_encode($payload),
-        CURLOPT_TIMEOUT        => 15,
+        CURLOPT_TIMEOUT        => 20,
+        CURLOPT_FOLLOWLOCATION => true,
         CURLOPT_SSL_VERIFYPEER => !$isLocal,
         CURLOPT_SSL_VERIFYHOST => $isLocal ? 0 : 2
     ]);

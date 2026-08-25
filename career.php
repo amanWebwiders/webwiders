@@ -89,7 +89,7 @@
                 <div class="row form-row">
                     <div class="col-md-6 col-sm-6 col-xs-12">
                          <label for="experience">Experience <span class="text-danger">*</span></label>
-                        <select name="experience" id="experience" class="form-control" required>
+                        <select name="experience" id="experience" class="form-control">
                             <option value="">Select Experience</option>
                             <option value="Fresher">Fresher</option>
                             <option value="6 month - 1 year">6 month - 1 year</option>
@@ -106,6 +106,8 @@
                         </div>
                     </div>
                 </div>
+
+                <?php require_once __DIR__ . '/includes/captcha-helper.php'; render_captcha_html(); ?>
 
                 <div class="row mt-4">
                     <div class="col-md-12 text-center">

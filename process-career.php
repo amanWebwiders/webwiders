@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/includes/captcha-helper.php';
 
 header('Content-Type: application/json; charset=utf-8');
 
@@ -8,6 +9,19 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     echo json_encode([
         'success' => false,
         'message' => 'Method Not Allowed. Please submit the application form.'
+    ]);
+    exit;
+}
+
+// 0. CAPTCHA Validation
+$captchaAnswer = $_POST['captcha_answer'] ?? null;
+$captchaToken  = $_POST['captcha_token'] ?? null;
+
+if (!verify_captcha($captchaAnswer, $captchaToken)) {
+    http_response_code(400);
+    echo json_encode([
+        'success' => false,
+        'message' => 'Security verification failed. Please enter the correct answer for the security code.'
     ]);
     exit;
 }
@@ -100,7 +114,9 @@ $payload = [
 ];
 
 // Determine Laravel API URL & Secret Key
-$adminUrl  = rtrim(env('ADMIN_URL', 'http://localhost/adminwebwider/'), '/');
+$isLocal = (in_array($_SERVER['REMOTE_ADDR'] ?? '', ['127.0.0.1', '::1']) || strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') !== false);
+$defaultAdminUrl = $isLocal ? 'http://localhost/adminwebwider/' : 'https://manage.webwiders.com/';
+$adminUrl  = rtrim(env('ADMIN_URL', $defaultAdminUrl), '/');
 $apiUrl    = env('ADMIN_MAIL_API_URL', $adminUrl . '/api/send-contact-email');
 $secretKey = env('CONTACT_FORM_SECRET_KEY', 'webwiders_secure_api_token_2026_x9z');
 
@@ -115,8 +131,6 @@ $httpCode     = 500;
 $requestError = null;
 
 if (function_exists('curl_init')) {
-    $isLocal = (in_array($_SERVER['REMOTE_ADDR'] ?? '', ['127.0.0.1', '::1']) || strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') !== false);
-    
     $ch = curl_init();
     curl_setopt_array($ch, [
         CURLOPT_URL            => $apiUrl,
@@ -125,6 +139,7 @@ if (function_exists('curl_init')) {
         CURLOPT_HTTPHEADER     => $headers,
         CURLOPT_POSTFIELDS     => json_encode($payload),
         CURLOPT_TIMEOUT        => 20,
+        CURLOPT_FOLLOWLOCATION => true,
         CURLOPT_SSL_VERIFYPEER => !$isLocal,
         CURLOPT_SSL_VERIFYHOST => $isLocal ? 0 : 2
     ]);
