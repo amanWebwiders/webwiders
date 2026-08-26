@@ -49,7 +49,7 @@
 
                 <!-- Date & Time Picker -->
                 <div class="col-md-6">
-                    <input type="date" name="preferred_date" class="form-control bg-white py-2 text-muted" required title="Preferred Date">
+                    <input type="date" name="preferred_date" class="form-control bg-white py-2 text-muted" required min="<?= date('Y-m-d') ?>" title="Preferred Date">
                 </div>
                 <div class="col-md-6">
                     <select name="preferred_time" class="form-select bg-white text-muted py-2">

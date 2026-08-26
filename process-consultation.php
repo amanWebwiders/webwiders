@@ -84,6 +84,20 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
+// 2.0.1 Validate Back Date (Past Date Restricted)
+if (!empty($preferredDate) && $preferredDate !== 'N/A') {
+    $selectedTime = strtotime($preferredDate);
+    $todayTime    = strtotime(date('Y-m-d'));
+    if ($selectedTime !== false && $selectedTime < $todayTime) {
+        http_response_code(400);
+        echo json_encode([
+            'success' => false,
+            'message' => 'Please select today or a future date for your consultation call.'
+        ]);
+        exit;
+    }
+}
+
 // 2.1 Spam Link / Cyrillic Bot Filtering
 if (is_spam_content($fullName . ' ' . $message . ' ' . $email . ' ' . $company)) {
     http_response_code(400);

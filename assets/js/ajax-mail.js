@@ -1,5 +1,9 @@
 $(function() {
 
+    // Automatically restrict past dates for all date pickers across the site
+    var todayStr = new Date().toISOString().split('T')[0];
+    $('input[type="date"]').attr('min', todayStr);
+
     // Generic AJAX Form Handler for all forms (#contact-form, #career-form, #demo-form, #consultation-form, form[action*="process-"])
     $(document).on('submit', '#contact-form, #career-form, #demo-form, #consultation-form, form[action*="process-"]', function(e) {
         e.preventDefault();
