@@ -13,6 +13,16 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
+// 0. Invisible Honeypot Trap Check (Silent Drop for AI Bots)
+if (!empty($_POST['website_url_check'])) {
+    http_response_code(200);
+    echo json_encode([
+        'success' => true,
+        'message' => 'Thank you! Your 30-minute consultation call session has been booked successfully.'
+    ]);
+    exit;
+}
+
 // 0. CAPTCHA Validation
 $captchaAnswer = $_POST['captcha_answer'] ?? null;
 $captchaToken  = $_POST['captcha_token'] ?? null;
@@ -74,6 +84,16 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
+// 2.1 Spam Link / Cyrillic Bot Filtering
+if (is_spam_content($fullName . ' ' . $message . ' ' . $email . ' ' . $company)) {
+    http_response_code(400);
+    echo json_encode([
+        'success' => false,
+        'message' => 'Your submission contained invalid content or links and could not be sent.'
+    ]);
+    exit;
+}
+
 // 3. Construct Payload
 $messageContent = "CONSULTATION CALL BOOKING DETAILS:\n"
     . "------------------------------------\n"
@@ -87,13 +107,18 @@ $messageContent = "CONSULTATION CALL BOOKING DETAILS:\n"
     . "Preferred Time Slot: " . $preferredTime . "\n\n"
     . "Discussion Notes / Message:\n" . ($message !== '' ? $message : 'None provided.');
 
+// Extract Real Client IP (Fixes 192.185.129.5 cPanel IP issue)
+$clientIp = get_real_client_ip();
+
 $payload = [
     'name'         => $fullName,
     'email'        => $email,
     'number'       => $phone,
     'phone'        => $phone,
     'product_name' => $productName,
-    'message'      => $messageContent
+    'message'      => $messageContent,
+    'user_ip'      => $clientIp,
+    'client_ip'    => $clientIp
 ];
 
 $isLocal = (in_array($_SERVER['REMOTE_ADDR'] ?? '', ['127.0.0.1', '::1']) || strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') !== false);
@@ -102,10 +127,19 @@ $adminUrl  = rtrim(env('ADMIN_URL', $defaultAdminUrl), '/');
 $apiUrl    = env('ADMIN_MAIL_API_URL', $adminUrl . '/api/send-contact-email');
 $secretKey = env('CONTACT_FORM_SECRET_KEY', 'webwiders_secure_api_token_2026_x9z');
 
+// Time-based HMAC SHA-256 Payload Signature
+$rawBody   = json_encode($payload);
+$timestamp = (string)time();
+$nonce     = bin2hex(random_bytes(16));
+$signature = hash_hmac('sha256', $timestamp . '.' . $nonce . '.' . $rawBody, $secretKey);
+
 $headers = [
     'Content-Type: application/json',
     'Accept: application/json',
-    'X-API-KEY: ' . $secretKey
+    'X-API-KEY: ' . $secretKey,
+    'X-Timestamp: ' . $timestamp,
+    'X-Nonce: ' . $nonce,
+    'X-Signature: ' . $signature
 ];
 
 $responseJson = null;
@@ -119,7 +153,7 @@ if (function_exists('curl_init')) {
         CURLOPT_POST           => true,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_HTTPHEADER     => $headers,
-        CURLOPT_POSTFIELDS     => json_encode($payload),
+        CURLOPT_POSTFIELDS     => $rawBody,
         CURLOPT_TIMEOUT        => 20,
         CURLOPT_FOLLOWLOCATION => true,
         CURLOPT_SSL_VERIFYPEER => !$isLocal,
@@ -135,7 +169,7 @@ if (function_exists('curl_init')) {
         'http' => [
             'method'  => 'POST',
             'header'  => implode("\r\n", $headers),
-            'content' => json_encode($payload),
+            'content' => $rawBody,
             'timeout' => 15,
             'ignore_errors' => true
         ],

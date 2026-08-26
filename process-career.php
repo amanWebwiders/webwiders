@@ -13,6 +13,16 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
+// 0. Invisible Honeypot Trap Check (Silent Drop for AI Bots)
+if (!empty($_POST['website_url_check'])) {
+    http_response_code(200);
+    echo json_encode([
+        'success' => true,
+        'message' => 'Thank you! Your career application has been submitted successfully.'
+    ]);
+    exit;
+}
+
 // 0. CAPTCHA Validation
 $captchaAnswer = $_POST['captcha_answer'] ?? null;
 $captchaToken  = $_POST['captcha_token'] ?? null;
@@ -50,6 +60,16 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     echo json_encode([
         'success' => false,
         'message' => 'Please provide a valid email address.'
+    ]);
+    exit;
+}
+
+// 2.1 Spam Link / Cyrillic Bot Filtering
+if (is_spam_content($fullName . ' ' . $designation . ' ' . $email)) {
+    http_response_code(400);
+    echo json_encode([
+        'success' => false,
+        'message' => 'Your application contained invalid content or links and could not be sent.'
     ]);
     exit;
 }
@@ -105,12 +125,18 @@ if ($resumeAttachment) {
     $messageContent .= "Resume Attached: No\n";
 }
 
+// Extract Real Client IP (Fixes 192.185.129.5 cPanel IP issue)
+$clientIp = get_real_client_ip();
+
 $payload = [
     'name'       => $fullName,
     'email'      => $email,
     'number'     => $contact,
+    'phone'      => $contact,
     'message'    => $messageContent,
-    'attachment' => $resumeAttachment
+    'attachment' => $resumeAttachment,
+    'user_ip'    => $clientIp,
+    'client_ip'  => $clientIp
 ];
 
 // Determine Laravel API URL & Secret Key
@@ -120,10 +146,19 @@ $adminUrl  = rtrim(env('ADMIN_URL', $defaultAdminUrl), '/');
 $apiUrl    = env('ADMIN_MAIL_API_URL', $adminUrl . '/api/send-contact-email');
 $secretKey = env('CONTACT_FORM_SECRET_KEY', 'webwiders_secure_api_token_2026_x9z');
 
+// Time-based HMAC SHA-256 Payload Signature
+$rawBody   = json_encode($payload);
+$timestamp = (string)time();
+$nonce     = bin2hex(random_bytes(16));
+$signature = hash_hmac('sha256', $timestamp . '.' . $nonce . '.' . $rawBody, $secretKey);
+
 $headers = [
     'Content-Type: application/json',
     'Accept: application/json',
-    'X-API-KEY: ' . $secretKey
+    'X-API-KEY: ' . $secretKey,
+    'X-Timestamp: ' . $timestamp,
+    'X-Nonce: ' . $nonce,
+    'X-Signature: ' . $signature
 ];
 
 $responseJson = null;
@@ -137,8 +172,8 @@ if (function_exists('curl_init')) {
         CURLOPT_POST           => true,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_HTTPHEADER     => $headers,
-        CURLOPT_POSTFIELDS     => json_encode($payload),
-        CURLOPT_TIMEOUT        => 20,
+        CURLOPT_POSTFIELDS     => $rawBody,
+        CURLOPT_TIMEOUT        => 25,
         CURLOPT_FOLLOWLOCATION => true,
         CURLOPT_SSL_VERIFYPEER => !$isLocal,
         CURLOPT_SSL_VERIFYHOST => $isLocal ? 0 : 2
@@ -153,7 +188,7 @@ if (function_exists('curl_init')) {
         'http' => [
             'method'  => 'POST',
             'header'  => implode("\r\n", $headers),
-            'content' => json_encode($payload),
+            'content' => $rawBody,
             'timeout' => 20,
             'ignore_errors' => true
         ],
@@ -191,7 +226,7 @@ if ($httpCode >= 200 && $httpCode < 300 && isset($responseData['success']) && $r
     http_response_code(200);
     echo json_encode([
         'success' => true,
-        'message' => 'Thank you! Your job application has been submitted successfully. Our HR team will contact you.'
+        'message' => 'Thank you! Your resume application has been submitted successfully.'
     ]);
 } else {
     http_response_code($httpCode >= 400 ? $httpCode : 500);
