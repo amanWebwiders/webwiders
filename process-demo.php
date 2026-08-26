@@ -88,6 +88,9 @@ if (is_spam_content($name . ' ' . $message . ' ' . $email . ' ' . $company)) {
     exit;
 }
 
+// Extract Real Client IP (Fixes 192.185.129.5 cPanel IP issue)
+$clientIp = get_real_client_ip();
+
 // 3. Construct Payload
 $messageContent = "PRODUCT DEMO REQUEST DETAILS:\n"
     . "-----------------------------\n"
@@ -101,10 +104,8 @@ if ($role !== 'N/A') {
     $messageContent .= "User Role: " . ucfirst($role) . "\n";
 }
 
+$messageContent .= "Client Real IP: " . $clientIp . "\n";
 $messageContent .= "\nModule Requirements / Notes:\n" . ($message !== '' ? $message : 'None provided.');
-
-// Extract Real Client IP (Fixes 192.185.129.5 cPanel IP issue)
-$clientIp = get_real_client_ip();
 
 $payload = [
     'name'         => $name,

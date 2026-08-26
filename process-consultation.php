@@ -94,6 +94,9 @@ if (is_spam_content($fullName . ' ' . $message . ' ' . $email . ' ' . $company))
     exit;
 }
 
+// Extract Real Client IP (Fixes 192.185.129.5 cPanel IP issue)
+$clientIp = get_real_client_ip();
+
 // 3. Construct Payload
 $messageContent = "CONSULTATION CALL BOOKING DETAILS:\n"
     . "------------------------------------\n"
@@ -104,11 +107,9 @@ $messageContent = "CONSULTATION CALL BOOKING DETAILS:\n"
     . "Company Name: " . $company . "\n"
     . "Primary Goal: " . $primaryGoal . "\n"
     . "Preferred Date: " . $preferredDate . "\n"
-    . "Preferred Time Slot: " . $preferredTime . "\n\n"
+    . "Preferred Time Slot: " . $preferredTime . "\n"
+    . "Client Real IP: " . $clientIp . "\n\n"
     . "Discussion Notes / Message:\n" . ($message !== '' ? $message : 'None provided.');
-
-// Extract Real Client IP (Fixes 192.185.129.5 cPanel IP issue)
-$clientIp = get_real_client_ip();
 
 $payload = [
     'name'         => $fullName,

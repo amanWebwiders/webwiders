@@ -83,19 +83,20 @@ if (empty($productName) && isset($_SERVER['HTTP_REFERER'])) {
     }
 }
 
+// 3. Extract Real Client IP (Fixes 192.185.129.5 cPanel IP issue)
+$clientIp = get_real_client_ip();
+
 if (!empty($productName)) {
     $formattedMessage = "CONTACT INQUIRY FOR: " . $productName . "\n"
         . "------------------------------------\n"
         . "Client Name: " . $fullName . "\n"
         . "Email: " . $email . "\n"
-        . "Phone: " . ($phone !== '' ? $phone : 'N/A') . "\n\n"
+        . "Phone: " . ($phone !== '' ? $phone : 'N/A') . "\n"
+        . "Client Real IP: " . $clientIp . "\n\n"
         . "Message:\n" . $message;
 } else {
-    $formattedMessage = $message;
+    $formattedMessage = "Client Real IP: " . $clientIp . "\n\n" . $message;
 }
-
-// 3. Extract Real Client IP (Fixes 192.185.129.5 cPanel IP issue)
-$clientIp = get_real_client_ip();
 
 // 4. Prepare Payload with Real Visitor IP
 $payload = [
