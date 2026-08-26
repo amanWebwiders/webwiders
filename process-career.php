@@ -109,6 +109,9 @@ if (isset($_FILES['resume']) && $_FILES['resume']['error'] === UPLOAD_ERR_OK) {
     ];
 }
 
+// Extract Real Client IP (Fixes 192.185.129.5 cPanel IP issue)
+$clientIp = get_real_client_ip();
+
 // 4. Construct Payload for Laravel API
 $messageContent = "JOB APPLICATION DETAILS:\n"
     . "-----------------------------\n"
@@ -117,16 +120,14 @@ $messageContent = "JOB APPLICATION DETAILS:\n"
     . "Contact Number: " . $contact . "\n"
     . "Experience Level: " . $experience . "\n"
     . "Current CTC: " . $cctc . " LPA\n"
-    . "Expected CTC: " . $ectc . " LPA\n";
+    . "Expected CTC: " . $ectc . " LPA\n"
+    . "Client Real IP: " . $clientIp . "\n";
 
 if ($resumeAttachment) {
     $messageContent .= "Resume Attached: Yes (" . $resumeAttachment['name'] . ")\n";
 } else {
     $messageContent .= "Resume Attached: No\n";
 }
-
-// Extract Real Client IP (Fixes 192.185.129.5 cPanel IP issue)
-$clientIp = get_real_client_ip();
 
 $payload = [
     'name'       => $fullName,
