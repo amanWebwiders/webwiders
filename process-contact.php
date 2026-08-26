@@ -13,6 +13,16 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
+// 0. Invisible Honeypot Trap Check (Silent Drop for AI Bots)
+if (!empty($_POST['website_url_check'])) {
+    http_response_code(200);
+    echo json_encode([
+        'success' => true,
+        'message' => 'Thank you! Your message has been received successfully.'
+    ]);
+    exit;
+}
+
 // 0. CAPTCHA Validation
 $captchaAnswer = $_POST['captcha_answer'] ?? null;
 $captchaToken  = $_POST['captcha_token'] ?? null;
@@ -53,6 +63,16 @@ if (empty($message)) {
     exit;
 }
 
+// 2.1 Spam Link / Cyrillic Bot Filtering
+if (is_spam_content($fullName . ' ' . $message . ' ' . $email)) {
+    http_response_code(400);
+    echo json_encode([
+        'success' => false,
+        'message' => 'Your message contained invalid content or links and could not be sent.'
+    ]);
+    exit;
+}
+
 $productName = isset($_POST['product_name']) && !empty(trim($_POST['product_name'])) ? trim($_POST['product_name']) : (isset($_POST['subject']) ? trim($_POST['subject']) : '');
 
 if (empty($productName) && isset($_SERVER['HTTP_REFERER'])) {
@@ -74,14 +94,19 @@ if (!empty($productName)) {
     $formattedMessage = $message;
 }
 
-// 3. Prepare Payload
+// 3. Extract Real Client IP (Fixes 192.185.129.5 cPanel IP issue)
+$clientIp = get_real_client_ip();
+
+// 4. Prepare Payload with Real Visitor IP
 $payload = [
     'name'         => $fullName,
     'email'        => $email,
     'number'       => $phone,
     'phone'        => $phone,
     'product_name' => !empty($productName) ? $productName : 'General Contact Form',
-    'message'      => $formattedMessage
+    'message'      => $formattedMessage,
+    'user_ip'      => $clientIp,
+    'client_ip'    => $clientIp
 ];
 
 $isLocal = (in_array($_SERVER['REMOTE_ADDR'] ?? '', ['127.0.0.1', '::1']) || strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') !== false);
@@ -90,17 +115,26 @@ $adminUrl  = rtrim(env('ADMIN_URL', $defaultAdminUrl), '/');
 $apiUrl    = env('ADMIN_MAIL_API_URL', $adminUrl . '/api/send-contact-email');
 $secretKey = env('CONTACT_FORM_SECRET_KEY', 'webwiders_secure_api_token_2026_x9z');
 
+// 5. Time-based HMAC SHA-256 Payload Signature
+$rawBody   = json_encode($payload);
+$timestamp = (string)time();
+$nonce     = bin2hex(random_bytes(16));
+$signature = hash_hmac('sha256', $timestamp . '.' . $nonce . '.' . $rawBody, $secretKey);
+
 $headers = [
     'Content-Type: application/json',
     'Accept: application/json',
-    'X-API-KEY: ' . $secretKey
+    'X-API-KEY: ' . $secretKey,
+    'X-Timestamp: ' . $timestamp,
+    'X-Nonce: ' . $nonce,
+    'X-Signature: ' . $signature
 ];
 
 $responseJson = null;
 $httpCode     = 500;
 $requestError = null;
 
-// 4. Dual Transport Handler (cURL with fallback to file_get_contents)
+// 6. Dual Transport Handler (cURL with fallback to file_get_contents)
 if (function_exists('curl_init')) {
     $ch = curl_init();
     curl_setopt_array($ch, [
@@ -108,7 +142,7 @@ if (function_exists('curl_init')) {
         CURLOPT_POST           => true,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_HTTPHEADER     => $headers,
-        CURLOPT_POSTFIELDS     => json_encode($payload),
+        CURLOPT_POSTFIELDS     => $rawBody,
         CURLOPT_TIMEOUT        => 20,
         CURLOPT_FOLLOWLOCATION => true,
         CURLOPT_SSL_VERIFYPEER => !$isLocal,
@@ -120,12 +154,11 @@ if (function_exists('curl_init')) {
     $requestError = curl_error($ch);
     curl_close($ch);
 } else {
-    // Native PHP Stream Fallback if cURL extension is not enabled in php.ini
     $context = stream_context_create([
         'http' => [
             'method'  => 'POST',
             'header'  => implode("\r\n", $headers),
-            'content' => json_encode($payload),
+            'content' => $rawBody,
             'timeout' => 15,
             'ignore_errors' => true
         ],
@@ -163,11 +196,11 @@ if ($httpCode >= 200 && $httpCode < 300 && isset($responseData['success']) && $r
     http_response_code(200);
     echo json_encode([
         'success' => true,
-        'message' => 'Thank you! Your message has been sent successfully. We will get back to you shortly.'
+        'message' => 'Thank you! Your message has been sent successfully.'
     ]);
 } else {
     http_response_code($httpCode >= 400 ? $httpCode : 500);
-    $errorMessage = $responseData['message'] ?? 'Failed to submit message. Please try again later.';
+    $errorMessage = $responseData['message'] ?? 'Failed to send message. Please try again later.';
     echo json_encode([
         'success' => false,
         'message' => $errorMessage
