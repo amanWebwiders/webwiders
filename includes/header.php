@@ -272,6 +272,9 @@ if (!defined('BASE_URL')) {
                                                     <li><a
                                                             href="<?php echo url('/services/drupal-development.php'); ?>">Drupal</a>
                                                     </li>
+                                                     <li><a
+                                                            href="<?php echo url('/services/custom-web-development.php'); ?>">Custom Web Development </a>
+                                                    </li>
                                                 </ul>
                                             </li>
 
@@ -522,6 +525,10 @@ if (!defined('BASE_URL')) {
                                                     <li><a
                                                             href="<?php echo url('/services/bootstrap-development.php'); ?>">Bootstrap
                                                             Development</a></li>
+
+                                                              <li><a
+                                                            href="<?php echo url('/services/game-dev.php'); ?>">Game
+                                                            Development</a></li>
                                                 </ul>
                                             </li>
 
@@ -548,6 +555,9 @@ if (!defined('BASE_URL')) {
                                                     </li>
                                                     <li><a
                                                             href="<?php echo url('/services/drupal-development.php'); ?>">Drupal</a>
+                                                    </li>
+                                                     <li><a
+                                                            href="<?php echo url('/services/custom-web-development.php'); ?>">Custom Web Development </a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -725,7 +735,7 @@ if (!defined('BASE_URL')) {
 
                                     <li>
                                         <a href="<?= url('project') ?>">
-                                            Projects
+                                            Portfolio
                                         </a>
                                     </li>
 

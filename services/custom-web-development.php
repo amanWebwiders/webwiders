@@ -1,8 +1,8 @@
 <?php require_once __DIR__ . '../../config.php';
-require_once __DIR__  . '../../includes/header.php'; ?>
+require_once __DIR__ . '../../includes/header.php'; ?>
 
 
-<div id="customsoftware-case-study" class="customsoftware-page">
+<div id="customwebapp-case-study" class="customwebapp-page">
 
 <!-- Breadcrumb Section Start -->
 <div class="breadcrumb-wrapper bg-cover" style="">
@@ -15,7 +15,7 @@ require_once __DIR__  . '../../includes/header.php'; ?>
     <div class="container">
         <div class="page-heading">
             <div class="breadcrumb-sub-title">
-                <h1 class="wow fadeInUp" data-wow-delay=".3s">Custom Software Development</h1>
+                <h1 class="wow fadeInUp" data-wow-delay=".3s">Custom Web Application Development</h1>
             </div>
             <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
                 <li>
@@ -27,7 +27,7 @@ require_once __DIR__  . '../../includes/header.php'; ?>
                     <i class="fa-solid fa-chevron-right"></i>
                 </li>
                 <li>
-                    Custom Software Development
+                    Custom Web Application Development
                 </li>
             </ul>
         </div>
@@ -45,10 +45,10 @@ require_once __DIR__  . '../../includes/header.php'; ?>
         <div class="section-title-area d-flex flex-wrap justify-content-between align-items-start mb-5">
             <div class="section-title mb-0">
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Custom Software <br>Development Services
+                    Custom Web Application <br>Development Services
                 </h2>
                 <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    Build software designed specifically around your business processes, users, and goals. We develop scalable, secure, and user-focused custom software solutions that streamline operations, automate workflows, connect systems, and support long-term business growth.
+                    Build powerful, scalable, and secure web applications tailored to your unique business requirements. From customer-facing platforms to complex business systems, we create custom web solutions designed around your workflows, users, and growth goals.
                 </p>
             </div>
         </div>
@@ -68,7 +68,7 @@ require_once __DIR__  . '../../includes/header.php'; ?>
                 <div class="col-lg-6">
                     <div class="about-image">
                         <div class="img-frame">
-                            <img src="assets/img/case-studies/aliadoai1.png" alt="Custom Software Development" class="wow img-custom-anim-left"
+                            <img src="assets/img/case-studies/aliadoai1.png" alt="Custom Web Application Development" class="wow img-custom-anim-left"
                                 data-wow-duration="1.5s" data-wow-delay="0.3s">
                         </div>
                     </div>
@@ -77,22 +77,22 @@ require_once __DIR__  . '../../includes/header.php'; ?>
                     <div class="about-content">
                         <div class="section-title">
                             <div class="sub-title bg-color-2 wow fadeInUp">
-                                <span>SOFTWARE BUILT AROUND YOUR BUSINESS</span>
+                                <span>WHY CUSTOM WEB APPLICATIONS</span>
                             </div>
                             <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                                Software Built Around the Way Your Business Works
+                                Web Applications Built Around Your Business
                             </h2>
                         </div>
                         <p class="mt-3 mt-md-0 mb-3 wow fadeInUp" data-wow-delay=".5s">
-                            Off-the-shelf software may not always fit your processes, users, or operational requirements. Our custom software development services help businesses build purpose-driven solutions that work the way they need to.
+                            Your business processes are unique, and your software should be too. We build custom web applications that are designed around your specific workflows, users, operational requirements, and business goals.
                         </p>
                         <p class="mb-3 wow fadeInUp" data-wow-delay=".6s">
-                            We analyze your business requirements and develop software around your workflows, from internal management systems and automation platforms to enterprise solutions and connected business applications.
+                            Whether you need a customer portal, internal business system, SaaS platform, marketplace, or enterprise web application, our solutions combine intuitive interfaces with robust backend architecture to deliver a reliable digital experience.
                         </p>
-                        <div class="d-flex gap-3 justify-content-start flex-wrap mt-4">
+                         <div class="d-flex gap-3 justify-content-start flex-wrap mt-4">
                             <div class="main-button wow fadeInUp" data-wow-delay=".3s">
                                 <a href="#" class="offcanvas-btn" data-bs-toggle="offcanvas" data-bs-target="#demoOffcanvas"> 
-                                    <span class="theme-btn">Start Your Project</span>
+                                    <span class="theme-btn">Build Your Web Application</span>
                                     <span class="arrow-btn"><i class="fa-solid fa-turn-up"></i></span>
                                 </a>
                             </div>
@@ -119,63 +119,63 @@ require_once __DIR__  . '../../includes/header.php'; ?>
         <div class="section-title-area d-flex flex-wrap justify-content-between align-items-end mb-5">
             <div class="section-title mb-0">
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Turn Complex Business Processes Into Simpler Digital Workflows
+                    From Business Requirements to <br>Powerful Web Solutions
                 </h2>
                 <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    Our focus is on creating software that helps businesses reduce manual work, connect operations, improve productivity, and deliver better experiences to employees and customers.
+                    We focus on creating applications that do more than look good. Our web solutions are built to simplify processes, improve productivity, connect business operations, and provide a foundation for long-term growth.
                 </p>
             </div>
         </div>
         <div class="row g-4 justify-content-center">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".1s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-cogs icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Built for Your Business</h3>
+                        <h3>Custom-Built</h3>
                     </div>
                     <div class="content">
-                        <p>Custom functionality designed around your specific processes, requirements, and business objectives.</p>
+                        <p>Developed around your exact business requirements rather than generic templates.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".2s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-link icon"></i>
+                        <i class="fa-solid fa-users icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Connected Systems</h3>
+                        <h3>User-Focused</h3>
                     </div>
                     <div class="content">
-                        <p>Integrate your software with existing platforms, APIs, databases, payment systems, and third-party services.</p>
+                        <p>Intuitive interfaces that make complex workflows simple and efficient.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".3s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-robot icon"></i>
+                        <i class="fa-solid fa-chart-line icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Workflow Automation</h3>
+                        <h3>Scalable</h3>
                     </div>
                     <div class="content">
-                        <p>Reduce repetitive manual tasks and streamline processes through intelligent digital workflows.</p>
+                        <p>Designed to support growing users, data, features, and business operations.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".4s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-layer-group icon"></i>
+                        <i class="fa-solid fa-bolt icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Ready to Scale</h3>
+                        <h3>Performance-Driven</h3>
                     </div>
                     <div class="content">
-                        <p>Build a flexible software foundation that can evolve as your users, operations, and business requirements grow.</p>
+                        <p>Optimized for speed, reliability, security, and consistent application performance.</p>
                     </div>
                 </div>
             </div>
@@ -185,7 +185,7 @@ require_once __DIR__  . '../../includes/header.php'; ?>
 <!-- From Business Requirements Section End -->
 
 <!-- Service Section Start -->
-<section class="service-section fix section-padding" style="background: #fff;">
+<section class="service-section fix section-padding" style="background: #f0eeee;">
     <div class="bg-shape-2">
         <img src="assets/img/service/bg-shape-2.png" alt="img">
     </div>
@@ -196,115 +196,115 @@ require_once __DIR__  . '../../includes/header.php'; ?>
                     <span>OUR SERVICES</span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    End-to-End Custom <br>Software Development Services
+                    Complete Custom Web <br>Application Development Services
                 </h2>
                 <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    From software planning and architecture to development, integration, deployment, and ongoing support, we build custom software solutions around your business requirements and operational goals.
+                    From initial product planning to development, integration, and ongoing improvements, we provide end-to-end web application development services tailored to your business needs.
                 </p>
             </div>
         </div>
         <div class="row g-4 justify-content-center">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".1s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-code icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Custom Software Development</h3>
+                        <h3>Custom Web Application Development</h3>
                     </div>
                     <div class="content">
-                        <p>Develop purpose-built software with features, workflows, and functionality tailored to your business processes.</p>
+                        <p>Build feature-rich web applications from the ground up with architecture and functionality designed specifically around your business requirements.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                <div class="service-card-items">
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-arrows-rotate icon"></i>
-                    </div>
-                    <div class="title">
-                        <h3>Legacy Software Modernization</h3>
-                    </div>
-                    <div class="content">
-                        <p>Modernize outdated software with improved architecture, updated technologies, better performance, and enhanced usability.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                <div class="service-card-items">
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-building icon"></i>
-                    </div>
-                    <div class="title">
-                        <h3>Enterprise Software Development</h3>
-                    </div>
-                    <div class="content">
-                        <p>Build robust enterprise solutions that connect departments, manage complex operations, and support large-scale business requirements.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                <div class="service-card-items">
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-briefcase icon"></i>
-                    </div>
-                    <div class="title">
-                        <h3>Custom Management Systems</h3>
-                    </div>
-                    <div class="content">
-                        <p>Develop centralized systems for managing employees, customers, inventory, projects, operations, reporting, and other business activities.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                <div class="service-card-items">
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-gears icon"></i>
-                    </div>
-                    <div class="title">
-                        <h3>Business Process Automation</h3>
-                    </div>
-                    <div class="content">
-                        <p>Automate repetitive tasks, approvals, data movement, notifications, and workflows to improve operational efficiency.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                <div class="service-card-items">
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-cloud icon"></i>
-                    </div>
-                    <div class="title">
-                        <h3>Cloud Software Development</h3>
-                    </div>
-                    <div class="content">
-                        <p>Build cloud-ready software solutions with scalable infrastructure, secure access, centralized data, and flexible deployment options.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".2s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-plug icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Software Integration & APIs</h3>
+                        <h3>API & Third-Party Integration</h3>
                     </div>
                     <div class="content">
-                        <p>Connect your software with CRM, ERP, payment gateways, communication tools, third-party APIs, and existing business systems.</p>
+                        <p>Connect your web application with payment gateways, CRMs, ERPs, maps, communication platforms, cloud services, and other business systems.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".3s">
+                <div class="service-card-items">
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-cloud icon"></i>
+                    </div>
+                    <div class="title">
+                        <h3>SaaS Application Development</h3>
+                    </div>
+                    <div class="content">
+                        <p>Develop scalable SaaS platforms with multi-user environments, subscriptions, dashboards, and business-focused workflows.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".4s">
+                <div class="service-card-items">
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-palette icon"></i>
+                    </div>
+                    <div class="title">
+                        <h3>Web Application UI/UX Development</h3>
+                    </div>
+                    <div class="content">
+                        <p>Design and develop intuitive interfaces that make complex applications easier to navigate and more engaging for users.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".5s">
+                <div class="service-card-items">
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-building icon"></i>
+                    </div>
+                    <div class="title">
+                        <h3>Enterprise Web Application Development</h3>
+                    </div>
+                    <div class="content">
+                        <p>Create secure and scalable enterprise applications that streamline complex operations, connect departments, and improve productivity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".6s">
+                <div class="service-card-items">
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-arrows-rotate icon"></i>
+                    </div>
+                    <div class="title">
+                        <h3>Migration & Modernization</h3>
+                    </div>
+                    <div class="content">
+                        <p>Upgrade legacy applications with modern technologies, improved architecture, better performance, and enhanced user experiences.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".7s">
+                <div class="service-card-items">
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-door-open icon"></i>
+                    </div>
+                    <div class="title">
+                        <h3>Web Portal Development</h3>
+                    </div>
+                    <div class="content">
+                        <p>Build customer, partner, employee, vendor, and member portals with personalized dashboards and role-based access.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".8s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-screwdriver-wrench icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Software Maintenance & Support</h3>
+                        <h3>Maintenance & Support</h3>
                     </div>
                     <div class="content">
-                        <p>Keep your software secure, optimized, updated, and aligned with changing business and technology requirements.</p>
+                        <p>Keep your application secure, optimized, updated, and ready to adapt as your business and user requirements evolve.</p>
                     </div>
                 </div>
             </div>
@@ -313,8 +313,8 @@ require_once __DIR__  . '../../includes/header.php'; ?>
 </section>
 <!-- Service Section End -->
 
-<!-- Software Types Section Start -->
-<section class="service-section fix section-padding" style="background: #f0eeee;">
+<!-- Web App Types Section Start -->
+<section class="service-section fix section-padding" style="background: #fff;">
     <div class="bg-shape-2">
         <img src="assets/img/service/bg-shape-2.png" alt="img">
     </div>
@@ -322,128 +322,128 @@ require_once __DIR__  . '../../includes/header.php'; ?>
         <div class="section-title-area d-flex flex-wrap justify-content-between align-items-end mb-5">
             <div class="section-title mb-0">
                 <div class="sub-title bg-color-2 wow fadeInUp">
-                    <span>SOFTWARE TYPES</span>
+                    <span>WEB APPLICATION TYPES</span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Software Solutions for <br>Every Business Requirement
+                    Web Applications for <br>Different Business Needs
                 </h2>
                 <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    Every organization operates differently. We develop custom software solutions that are tailored to specific business models, operational workflows, user requirements, and industry needs.
+                    Whether you're launching a new digital product or improving an existing business process, we build custom web applications for different users, industries, and operational requirements.
                 </p>
             </div>
         </div>
         <div class="row g-4 justify-content-center">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".1s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-building-columns icon"></i>
+                        <i class="fa-solid fa-briefcase icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Enterprise Business Software</h3>
+                        <h3>Business Management Applications</h3>
                     </div>
                     <div class="content">
-                        <p>Centralize complex business operations with software built for departments, teams, processes, reporting, and organizational workflows.</p>
+                        <p>Centralize business operations, workflows, data, reporting, and internal processes through custom management systems.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".2s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-cloud-arrow-up icon"></i>
+                        <i class="fa-solid fa-calendar-check icon"></i>
                     </div>
                     <div class="title">
-                        <h3>SaaS Software Products</h3>
+                        <h3>Booking & Reservation Platforms</h3>
                     </div>
                     <div class="content">
-                        <p>Build scalable software products with user accounts, subscriptions, billing, permissions, dashboards, and multi-tenant capabilities.</p>
+                        <p>Develop platforms for scheduling appointments, booking services, reserving resources, and managing availability in real time.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                <div class="service-card-items">
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-chart-pie icon"></i>
-                    </div>
-                    <div class="title">
-                        <h3>ERP & Management Systems</h3>
-                    </div>
-                    <div class="content">
-                        <p>Connect core business functions such as operations, inventory, finance, employees, customers, and reporting through one centralized system.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                <div class="service-card-items">
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-store icon"></i>
-                    </div>
-                    <div class="title">
-                        <h3>Marketplace & Platform Software</h3>
-                    </div>
-                    <div class="content">
-                        <p>Develop platforms that connect multiple user groups, manage listings, transactions, communication, bookings, and platform operations.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".3s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-users icon"></i>
                     </div>
                     <div class="title">
-                        <h3>CRM & Customer Management</h3>
+                        <h3>Customer Portals</h3>
                     </div>
                     <div class="content">
-                        <p>Manage customer information, interactions, sales processes, communication, and relationship workflows through customized CRM solutions.</p>
+                        <p>Give customers secure access to accounts, services, orders, documents, support, and personalized information.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".4s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-chart-line icon"></i>
+                        <i class="fa-solid fa-cart-shopping icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Data & Analytics Solutions</h3>
+                        <h3>Ecommerce Applications</h3>
                     </div>
                     <div class="content">
-                        <p>Create centralized reporting and analytics systems that transform business data into actionable insights and performance visibility.</p>
+                        <p>Build tailored ecommerce experiences with product management, shopping carts, payments, orders, customer accounts, and integrations.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".5s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-wand-magic-sparkles icon"></i>
+                        <i class="fa-solid fa-cloud-arrow-up icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Workflow & Automation Software</h3>
+                        <h3>SaaS Platforms</h3>
                     </div>
                     <div class="content">
-                        <p>Digitize manual processes and automate approvals, notifications, task assignments, data processing, and repetitive operations.</p>
+                        <p>Build subscription-based software products with user management, dashboards, billing, permissions, and scalable architecture.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".6s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-industry icon"></i>
+                        <i class="fa-solid fa-heart-pulse icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Industry-Specific Software</h3>
+                        <h3>Healthcare & Education Platforms</h3>
                     </div>
                     <div class="content">
-                        <p>Develop specialized solutions around the workflows, compliance requirements, users, and operational needs of specific industries.</p>
+                        <p>Develop specialized applications for patient management, healthcare workflows, online learning, student management, assessments, and institutional operations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".7s">
+                <div class="service-card-items">
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-store icon"></i>
+                    </div>
+                    <div class="title">
+                        <h3>Marketplaces</h3>
+                    </div>
+                    <div class="content">
+                        <p>Create multi-vendor platforms that connect buyers and sellers with listings, search, transactions, communication, and management tools.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".8s">
+                <div class="service-card-items">
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-comments icon"></i>
+                    </div>
+                    <div class="title">
+                        <h3>Social & Community Platforms</h3>
+                    </div>
+                    <div class="content">
+                        <p>Create interactive platforms with user profiles, messaging, content sharing, notifications, groups, and community-focused features.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- Software Types Section End -->
+<!-- Web App Types Section End -->
 
 <!-- Features Section Start -->
-<section class="service-section fix section-padding" style="background: #fff;">
+<section class="service-section fix section-padding" style="background: #f0eeee;">
     <div class="bg-shape-2">
         <img src="assets/img/service/bg-shape-2.png" alt="img">
     </div>
@@ -454,15 +454,15 @@ require_once __DIR__  . '../../includes/header.php'; ?>
                     <span>KEY FEATURES</span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Powerful Capabilities for <br>Custom Business Software
+                    Powerful Features for <br>Modern Web Applications
                 </h2>
                 <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    We build custom software with the functionality businesses need to manage operations, automate processes, connect systems, and make better decisions. Features are selected and developed around your specific requirements.
+                    We develop web applications with the features businesses need to manage operations, serve customers, automate workflows, and deliver seamless digital experiences.
                 </p>
             </div>
         </div>
         <div class="row g-4 justify-content-center">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".1s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-user-shield icon"></i>
@@ -471,111 +471,111 @@ require_once __DIR__  . '../../includes/header.php'; ?>
                         <h3>User & Role Management</h3>
                     </div>
                     <div class="content">
-                        <p>Manage users, teams, departments, permissions, and access levels with role-based controls.</p>
+                        <p>Create secure user accounts with role-based permissions and personalized access levels.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".2s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-bell icon"></i>
+                        <i class="fa-solid fa-credit-card icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Real-Time Notifications & Communication</h3>
+                        <h3>Payment & Subscription Management</h3>
                     </div>
                     <div class="content">
-                        <p>Enable alerts, messages, status updates, email, SMS, and other real-time communication workflows.</p>
+                        <p>Integrate secure payment gateways, recurring billing, subscriptions, invoices, and transaction management.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                <div class="service-card-items">
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-robot icon"></i>
-                    </div>
-                    <div class="title">
-                        <h3>Business Workflow Automation</h3>
-                    </div>
-                    <div class="content">
-                        <p>Automate tasks, approvals, notifications, assignments, and repetitive processes to reduce manual effort.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                <div class="service-card-items">
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-shield-halved icon"></i>
-                    </div>
-                    <div class="title">
-                        <h3>Security & Access Control</h3>
-                    </div>
-                    <div class="content">
-                        <p>Protect business data with authentication, authorization, secure APIs, permissions, and appropriate security practices.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                <div class="service-card-items">
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-database icon"></i>
-                    </div>
-                    <div class="title">
-                        <h3>Centralized Data Management</h3>
-                    </div>
-                    <div class="content">
-                        <p>Bring business information into a structured system for easier access, management, reporting, and collaboration.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                <div class="service-card-items">
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-layer-group icon"></i>
-                    </div>
-                    <div class="title">
-                        <h3>Scalable Architecture</h3>
-                    </div>
-                    <div class="content">
-                        <p>Build software that can support increasing users, data, integrations, features, and operational requirements.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-gauge-high icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Dashboards & Reporting</h3>
+                        <h3>Admin Dashboards</h3>
                     </div>
                     <div class="content">
-                        <p>Monitor business performance with custom dashboards, reports, metrics, and data visualization.</p>
+                        <p>Manage users, content, transactions, reports, settings, and business operations from centralized dashboards.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".4s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-desktop-mobile icon"></i>
+                        <i class="fa-solid fa-magnifying-glass icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Multi-Platform Accessibility</h3>
+                        <h3>Search & Advanced Filtering</h3>
                     </div>
                     <div class="content">
-                        <p>Provide access across web, mobile, and other required platforms depending on your business needs.</p>
+                        <p>Help users quickly find relevant products, services, records, content, or other information.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mx-auto wow fadeInUp" data-wow-delay=".9s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
+                <div class="service-card-items">
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-robot icon"></i>
+                    </div>
+                    <div class="title">
+                        <h3>Workflow Automation</h3>
+                    </div>
+                    <div class="content">
+                        <p>Automate repetitive processes, approvals, notifications, and business workflows to improve efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".6s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-plug-circle-bolt icon"></i>
                     </div>
                     <div class="title">
-                        <h3>API & System Integrations</h3>
+                        <h3>Third-Party Integrations</h3>
                     </div>
                     <div class="content">
-                        <p>Connect your software with CRMs, ERPs, payment gateways, cloud platforms, communication tools, and third-party services.</p>
+                        <p>Connect your application with CRM, ERP, payment, communication, mapping, analytics, and other external platforms.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".7s">
+                <div class="service-card-items">
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-comments-dollar icon"></i>
+                    </div>
+                    <div class="title">
+                        <h3>Real-Time Communication</h3>
+                    </div>
+                    <div class="content">
+                        <p>Enable real-time messaging, alerts, notifications, status updates, and user interactions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".8s">
+                <div class="service-card-items">
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-shield-halved icon"></i>
+                    </div>
+                    <div class="title">
+                        <h3>Security & Data Protection</h3>
+                    </div>
+                    <div class="content">
+                        <p>Implement authentication, authorization, secure APIs, data protection, and application security practices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".9s">
+                <div class="service-card-items">
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-chart-line icon"></i>
+                    </div>
+                    <div class="title">
+                        <h3>Analytics & Reporting</h3>
+                    </div>
+                    <div class="content">
+                        <p>Turn application data into useful insights through dashboards, reports, metrics, and performance tracking.</p>
                     </div>
                 </div>
             </div>
@@ -585,7 +585,7 @@ require_once __DIR__  . '../../includes/header.php'; ?>
 <!-- Features Section End -->
 
 <!-- Process Section Start -->
-<section class="journey-section fix section-padding" style="background: #f0eeee;">
+<section class="journey-section fix section-padding" style="background: #fff;">
     <div class="container">
         <div class="section-title-area d-flex flex-wrap justify-content-between align-items-start mb-5">
             <div class="section-title col-lg-6">
@@ -593,10 +593,10 @@ require_once __DIR__  . '../../includes/header.php'; ?>
                     <span>OUR PROCESS</span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    A Structured Approach to <br>Building Better Software
+                    From Idea to Scalable <br>Web Application
                 </h2>
                 <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    We follow a clear and collaborative development process to transform your business requirements into reliable custom software. From initial discovery to deployment and ongoing improvements, every stage is focused on delivering a solution that fits your business.
+                    We follow a structured development process to turn your business requirements into a reliable, user-friendly, and scalable web application. Our approach keeps planning, design, development, testing, and deployment aligned with your goals.
                 </p>
             </div>
         </div>
@@ -611,8 +611,8 @@ require_once __DIR__  . '../../includes/header.php'; ?>
                                 <i class="fa-solid fa-lightbulb"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>Discovery & Business Analysis</h2>
-                                <p>We understand your business processes, challenges, users, goals, and software requirements to define the right solution.</p>
+                                <h2>Discovery & Requirements</h2>
+                                <p>We understand your business objectives, target users, workflows, technical requirements, and application scope.</p>
                             </div>
                         </div>
                     </article>
@@ -624,8 +624,8 @@ require_once __DIR__  . '../../includes/header.php'; ?>
                                 <i class="fa-solid fa-pen-ruler"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>Planning & Architecture</h2>
-                                <p>We plan the application structure, technology stack, integrations, database, security, and development roadmap.</p>
+                                <h2>UI/UX Design & Prototyping</h2>
+                                <p>We create intuitive user flows, wireframes, and high-fidelity interfaces that make the application easy to use.</p>
                             </div>
                         </div>
                     </article>
@@ -634,11 +634,11 @@ require_once __DIR__  . '../../includes/header.php'; ?>
                         <div class="timeline-entry-inner">
                             <time class="timeline-time"><span>03</span></time>
                             <div class="timeline-icon">
-                                <i class="fa-solid fa-palette"></i>
+                                <i class="fa-solid fa-code"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>UI/UX Design</h2>
-                                <p>We create intuitive user flows, wireframes, and interfaces designed around your users and business workflows.</p>
+                                <h2>Architecture & Development</h2>
+                                <p>Our developers build the frontend, backend, APIs, database, and core functionality using technologies suited to your application.</p>
                             </div>
                         </div>
                     </article>
@@ -647,11 +647,11 @@ require_once __DIR__  . '../../includes/header.php'; ?>
                         <div class="timeline-entry-inner">
                             <time class="timeline-time"><span>04</span></time>
                             <div class="timeline-icon">
-                                <i class="fa-solid fa-code"></i>
+                                <i class="fa-solid fa-vial"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>Software Development</h2>
-                                <p>Our developers build the frontend, backend, APIs, database, integrations, and core software functionality.</p>
+                                <h2>Integration & Testing</h2>
+                                <p>We integrate required third-party services and thoroughly test functionality, performance, security, responsiveness, and usability.</p>
                             </div>
                         </div>
                     </article>
@@ -660,11 +660,11 @@ require_once __DIR__  . '../../includes/header.php'; ?>
                         <div class="timeline-entry-inner">
                             <time class="timeline-time"><span>05</span></time>
                             <div class="timeline-icon">
-                                <i class="fa-solid fa-vial"></i>
+                                <i class="fa-solid fa-rocket"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>Testing & Quality Assurance</h2>
-                                <p>We test functionality, performance, security, integrations, usability, and compatibility to ensure the software works reliably.</p>
+                                <h2>Deployment</h2>
+                                <p>Once the application is ready, we deploy it to the required cloud or hosting environment and configure the production setup.</p>
                             </div>
                         </div>
                     </article>
@@ -673,24 +673,11 @@ require_once __DIR__  . '../../includes/header.php'; ?>
                         <div class="timeline-entry-inner">
                             <time class="timeline-time"><span>06</span></time>
                             <div class="timeline-icon">
-                                <i class="fa-solid fa-rocket"></i>
-                            </div>
-                            <div class="timeline-label">
-                                <h2>Deployment & Integration</h2>
-                                <p>We deploy the software to the required environment and connect it with your existing systems and business infrastructure.</p>
-                            </div>
-                        </div>
-                    </article>
-                    <!-- Step 7 -->
-                    <article class="timeline-entry wow fadeInUp" data-wow-delay=".8s">
-                        <div class="timeline-entry-inner">
-                            <time class="timeline-time"><span>07</span></time>
-                            <div class="timeline-icon">
                                 <i class="fa-solid fa-headset"></i>
                             </div>
                             <div class="timeline-label">
-                                <h2>Support & Optimization</h2>
-                                <p>After launch, we provide maintenance, performance improvements, security updates, and feature enhancements as your needs evolve.</p>
+                                <h2>Support & Continuous Improvement</h2>
+                                <p>We provide ongoing maintenance, optimization, updates, and feature enhancements as your application evolves.</p>
                             </div>
                         </div>
                     </article>
@@ -702,7 +689,7 @@ require_once __DIR__  . '../../includes/header.php'; ?>
 <!-- Process Section End -->
 
 <!-- Technology Stack Section Start -->
-<section class="service-section fix section-padding" style="background: #fff;">
+<section class="service-section fix section-padding" style="background: #f0eeee;">
     <div class="bg-shape-2">
         <img src="assets/img/service/bg-shape-2.png" alt="img">
     </div>
@@ -713,54 +700,54 @@ require_once __DIR__  . '../../includes/header.php'; ?>
                     <span>TECHNOLOGY STACK</span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Modern Technology for <br>Powerful Custom Software
+                    Modern Technologies for <br>Scalable Web Applications
                 </h2>
                 <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    We use modern, reliable technologies to build custom software that is secure, scalable, maintainable, and ready to adapt as your business grows. The technology stack is selected based on your software requirements, users, integrations, and long-term objectives.
+                    We use proven and modern technologies to build custom web applications that deliver strong performance, scalability, security, and flexibility. The technology stack is selected based on your application's requirements, complexity, and long-term goals.
                 </p>
             </div>
         </div>
         <div class="row g-4 justify-content-center">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".1s">
                 <div class="platform-card">
                     <h6>Frontend Development</h6>
                     <span class="tech-tags">React.js • Next.js • Angular • Vue.js</span>
-                    <p>Build responsive and intuitive interfaces for business users, customers, administrators, and other application users.</p>
+                    <p>Build responsive, interactive, and high-performance user interfaces with modern frontend frameworks.</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".2s">
                 <div class="platform-card">
                     <h6>Backend Development</h6>
                     <span class="tech-tags">Node.js • Express.js • Python • FastAPI • Flask • PHP • Laravel</span>
-                    <p>Develop robust business logic, APIs, integrations, authentication, and backend services.</p>
+                    <p>Develop secure and scalable backend systems, APIs, business logic, and application services.</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
                 <div class="platform-card">
-                    <h6>Mobile Development</h6>
-                    <span class="tech-tags">Flutter • React Native • Kotlin • Swift</span>
-                    <p>Extend your custom software ecosystem to mobile devices when your business requires dedicated mobile applications.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                <div class="platform-card">
-                    <h6>Database & Data Management</h6>
+                    <h6>Database</h6>
                     <span class="tech-tags">MongoDB • MySQL • PostgreSQL • Firebase</span>
-                    <p>Manage structured and unstructured business data with database solutions selected according to application requirements.</p>
+                    <p>Choose the right database architecture to manage application data efficiently and support future growth.</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".4s">
                 <div class="platform-card">
                     <h6>API & Integrations</h6>
                     <span class="tech-tags">REST APIs • GraphQL • Third-Party APIs</span>
-                    <p>Connect custom software with CRM, ERP, payment gateways, communication platforms, cloud services, and other business systems.</p>
+                    <p>Connect your web application with payment gateways, CRMs, ERPs, communication tools, maps, analytics, and other platforms.</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
                 <div class="platform-card">
                     <h6>Cloud & DevOps</h6>
                     <span class="tech-tags">AWS • Google Cloud • Microsoft Azure • CI/CD</span>
-                    <p>Deploy and manage software using scalable cloud infrastructure, automated deployment workflows, and reliable development environments.</p>
+                    <p>Deploy and manage applications with scalable cloud infrastructure, automated deployments, monitoring, and reliable environments.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".6s">
+                <div class="platform-card">
+                    <h6>Security & Performance</h6>
+                    <span class="tech-tags">Authentication • Authorization • API Security • Performance Optimization</span>
+                    <p>Implement modern security and optimization practices to help protect application data and deliver a reliable user experience.</p>
                 </div>
             </div>
         </div>
@@ -769,7 +756,7 @@ require_once __DIR__  . '../../includes/header.php'; ?>
 <!-- Technology Stack Section End -->
 
 <!-- Why Choose Us Section Start -->
-<section class="service-section fix section-padding" style="background: #f0eeee;">
+<section class="service-section fix section-padding" style="background: #fff;">
     <div class="bg-shape-2">
         <img src="assets/img/service/bg-shape-2.png" alt="img">
     </div>
@@ -780,89 +767,89 @@ require_once __DIR__  . '../../includes/header.php'; ?>
                     <span>WHY CHOOSE WEBWIDERS</span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Why Businesses Choose <br>WebWiders for Custom Software
+                    Why Businesses Choose <br>WebWiders
                 </h2>
                 <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    Custom software is a long-term business investment. We combine technical expertise with a practical understanding of business processes to build solutions that are useful, scalable, and aligned with your goals.
+                    Building a custom web application requires more than development skills. It requires a clear understanding of business processes, user expectations, technology, scalability, and long-term product goals. We combine these areas to deliver web applications built for real-world business needs.
                 </p>
             </div>
         </div>
         <div class="row g-4 justify-content-center">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".1s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-calendar-days icon"></i>
                     </div>
                     <div class="title">
-                        <h3>10+ Years of Experience</h3>
+                        <p>10+ Years of Experience</p>
                     </div>
                     <div class="content">
-                        <p>Our team brings extensive experience in developing custom digital solutions for businesses across different markets and industries.</p>
+                        <p>Our experienced team has been delivering custom digital solutions for businesses across different markets and industries.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                <div class="service-card-items">
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-arrows-spin icon"></i>
-                    </div>
-                    <div class="title">
-                        <h3>End-to-End Development</h3>
-                    </div>
-                    <div class="content">
-                        <p>From discovery and UI/UX to development, integrations, deployment, and ongoing support, we can manage the complete software lifecycle.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                <div class="service-card-items">
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-users-gear icon"></i>
-                    </div>
-                    <div class="title">
-                        <h3>40+ In-House Experts</h3>
-                    </div>
-                    <div class="content">
-                        <p>Work with an experienced team of developers, designers, and technology specialists collaborating throughout your project.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                <div class="service-card-items">
-                    <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-handshake icon"></i>
-                    </div>
-                    <div class="title">
-                        <h3>Flexible Engagement Models</h3>
-                    </div>
-                    <div class="content">
-                        <p>Choose an engagement approach that fits your requirements, whether you need a complete development team or specific technical expertise.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".2s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-briefcase icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Business-Focused Approach</h3>
+                        <p>Business-Focused Development</p>
                     </div>
                     <div class="content">
-                        <p>We start with your business processes and objectives to ensure the software solves real operational challenges.</p>
+                        <p>We focus on solving business problems, improving workflows, and creating applications that provide practical value.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-layer-group icon"></i>
+                        <i class="fa-solid fa-users-gear icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Scalable Solutions</h3>
+                        <p>40+ In-House Experts</p>
                     </div>
                     <div class="content">
-                        <p>We build software with future growth in mind, allowing you to add users, features, integrations, and capabilities as your business evolves.</p>
+                        <p>Work with an experienced team of developers, designers, and technology professionals working together under one roof.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".4s">
+                <div class="service-card-items">
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-handshake icon"></i>
+                    </div>
+                    <div class="title">
+                        <p>Flexible Engagement</p>
+                    </div>
+                    <div class="content">
+                        <p>Choose an engagement model that fits your project, whether you need a complete development team or specific technical expertise.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
+                <div class="service-card-items">
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-laptop-code icon"></i>
+                    </div>
+                    <div class="title">
+                        <p>100+ Web Applications</p>
+                    </div>
+                    <div class="content">
+                        <p>Our experience across diverse web application projects helps us understand different business models, workflows, and technical requirements.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".6s">
+                <div class="service-card-items">
+                    <div class="custom-service-icon-wrapper">
+                        <i class="fa-solid fa-handshake-angle icon"></i>
+                    </div>
+                    <div class="title">
+                        <p>Long-Term Partnership</p>
+                    </div>
+                    <div class="content">
+                        <p>Our involvement can continue beyond launch with maintenance, optimization, enhancements, and ongoing technical support.</p>
                     </div>
                 </div>
             </div>
@@ -872,7 +859,7 @@ require_once __DIR__  . '../../includes/header.php'; ?>
 <!-- Why Choose Us Section End -->
 
 <!-- Industries Section Start -->
-<section class="service-section fix section-padding" style="background: #fff;">
+<section class="service-section fix section-padding" style="background: #f0eeee;">
     <div class="bg-shape-2">
         <img src="assets/img/service/bg-shape-2.png" alt="img">
     </div>
@@ -883,115 +870,115 @@ require_once __DIR__  . '../../includes/header.php'; ?>
                     <span>INDUSTRIES WE SERVE</span>
                 </div>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Custom Software for <br>Industry-Specific Needs
+                    Custom Web Applications <br>Across Industries
                 </h2>
                 <p class="section-title-desc wow fadeInUp" data-wow-delay=".4s">
-                    Different industries operate with different processes, users, data, and operational challenges. We develop custom software solutions that adapt to your industry's requirements while supporting efficiency, automation, and business growth.
+                    Every industry has unique workflows, users, regulations, and business challenges. We build custom web applications that adapt to specific industry requirements and help businesses improve digital operations, customer experiences, and efficiency.
                 </p>
             </div>
         </div>
         <div class="row g-4 justify-content-center">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".1s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-heart-pulse icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Healthcare</h3>
+                        <p>Healthcare</p>
                     </div>
                     <div class="content">
-                        <p>Patient management, medical workflows, healthcare portals, appointment systems, and administrative software.</p>
+                        <p>Patient management, healthcare portals, appointment systems, medical workflows, and administrative applications.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".2s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-truck icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Logistics & Transportation</h3>
+                        <p>Logistics & Transportation</p>
                     </div>
                     <div class="content">
-                        <p>Fleet management, shipment tracking, delivery systems, logistics dashboards, and operational software.</p>
+                        <p>Fleet management, shipment tracking, logistics dashboards, delivery management, and operational platforms.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".3s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-graduation-cap icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Education</h3>
+                        <p>Education</p>
                     </div>
                     <div class="content">
-                        <p>Learning management systems, student portals, course platforms, assessments, and education management software.</p>
+                        <p>Learning platforms, student portals, course management, assessments, and education management systems.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".4s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-film icon"></i>
+                        <i class="fa-solid fa-coins icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Media & Entertainment</h3>
+                        <p>Finance & Business Services</p>
                     </div>
                     <div class="content">
-                        <p>Content management, streaming platforms, subscription systems, community platforms, and digital media solutions.</p>
+                        <p>Customer portals, financial workflows, reporting systems, business dashboards, and secure management applications.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".5s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-shop icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Ecommerce & Retail</h3>
+                        <p>Ecommerce & Retail</p>
                     </div>
                     <div class="content">
-                        <p>Inventory systems, order management, customer platforms, marketplaces, and custom commerce solutions.</p>
+                        <p>Online stores, marketplaces, product management systems, customer portals, and commerce platforms.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".6s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
-                        <i class="fa-solid fa-spa icon"></i>
+                        <i class="fa-solid fa-film icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Beauty & Wellness</h3>
+                        <p>Media & Entertainment</p>
                     </div>
                     <div class="content">
-                        <p>Appointment management, customer platforms, service booking, staff management, and business management software.</p>
+                        <p>Content platforms, streaming solutions, community applications, subscription systems, and digital media portals.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".7s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-plane icon"></i>
                     </div>
                     <div class="title">
-                        <h3>Travel & Hospitality</h3>
+                        <p>Travel & Hospitality</p>
                     </div>
                     <div class="content">
-                        <p>Booking systems, accommodation platforms, travel management, customer portals, and hospitality solutions.</p>
+                        <p>Booking platforms, accommodation systems, travel portals, service management, and customer-facing applications.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay=".8s">
                 <div class="service-card-items">
                     <div class="custom-service-icon-wrapper">
                         <i class="fa-solid fa-building-columns icon"></i>
                     </div>
                     <div class="title">
-                        <h3>B2B & Enterprise</h3>
+                        <p>B2B & Enterprise</p>
                     </div>
                     <div class="content">
-                        <p>ERP, CRM, workflow automation, employee management, reporting, and other enterprise-focused software solutions.</p>
+                        <p>Business portals, workflow management, CRM-connected applications, internal systems, and enterprise platforms.</p>
                     </div>
                 </div>
             </div>
@@ -1000,34 +987,35 @@ require_once __DIR__  . '../../includes/header.php'; ?>
 </section>
 <!-- Industries Section End -->
 
+
 <!-- Call To Action Section Start -->
-<section class="cta-section section-padding" style="text-align: center; background: #f0eeee;" id="aliadoai-cta" >
+<section class="cta-section section-padding" style="text-align: center;" id="aliadoai-cta">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10">
 
                 <div class="section-title mb-4 wow fadeInUp" data-wow-delay=".2s">
-                    <h2> Have a Business Challenge to Solve?</h2>
+                    <h2>Have a Custom Web Application Idea?</h2>
                 </div>
 
                 <p class="wow fadeInUp" data-wow-delay=".4s"
                     style="font-size: 18px; color: #555; line-height: 1.6; margin-bottom: 40px;">
-                    Turn your business processes, operational challenges, or software idea into a purpose-built digital solution. Our team can help you plan, design, develop, integrate, and scale custom software around your business requirements.
+                    Turn your business requirements into a powerful web application built around your users, workflows, and growth goals. From initial planning to development and ongoing support, our team can help you build a solution that is ready to scale.
                 </p>
 
                  <div class="section-title mb-4 wow fadeInUp" data-wow-delay=".5s">
-                    <h4>Let's Build Your Custom Software</h4>
+                    <h4>Let's Build Your Web Application</h4>
                 </div>
 
                 <p class="wow fadeInUp" data-wow-delay=".6s"
                     style="font-size: 18px; color: #555; line-height: 1.6; margin-bottom: 40px;">
-                    Share your requirements with us and let's explore the right technology, architecture, and development approach for your project.
+                    Tell us about your idea, requirements, or existing application, and let's discuss the right technology and development approach for your project.
                 </p>
 
                 <div class="d-flex gap-3 justify-content-center flex-wrap mt-4">
                     <div class="main-button wow fadeInUp" data-wow-delay=".3s">
                         <a href="#" class="offcanvas-btn" data-bs-toggle="offcanvas" data-bs-target="#demoOffcanvas"> 
-                            <span class="theme-btn">Start Your Project</span>
+                            <span class="theme-btn">Build Your Web Application</span>
                             <span class="arrow-btn"><i class="fa-solid fa-turn-up"></i></span>
                         </a>
                     </div>
@@ -1043,6 +1031,7 @@ require_once __DIR__  . '../../includes/header.php'; ?>
     </div>
 </section>
 <!-- Call To Action Section End -->
+
 
 
 
@@ -1210,12 +1199,11 @@ require_once __DIR__  . '../../includes/header.php'; ?>
     </div>
 </div>
 
-
 </div>
 <!-- ==========================================
-     END: CUSTOM SOFTWARE DEVELOPMENT SECTION
+     END: CUSTOM WEB APP DEVELOPMENT SECTION
      ========================================== -->
 
 
 
-<?php require_once BASE_PATH . './includes/footer.php'; ?>
+<?php require_once __DIR__ . '../../includes/footer.php'; ?>
