@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/includes/captcha-helper.php';
 
 header('Content-Type: application/json; charset=utf-8');
 
@@ -8,6 +9,29 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     echo json_encode([
         'success' => false,
         'message' => 'Method Not Allowed. Please submit the consultation booking form.'
+    ]);
+    exit;
+}
+
+// 0. Invisible Honeypot Trap Check (Silent Drop for AI Bots)
+if (!empty($_POST['website_url_check'])) {
+    http_response_code(200);
+    echo json_encode([
+        'success' => true,
+        'message' => 'Thank you! Your 30-minute consultation call session has been booked successfully.'
+    ]);
+    exit;
+}
+
+// 0. CAPTCHA Validation
+$captchaAnswer = $_POST['captcha_answer'] ?? null;
+$captchaToken  = $_POST['captcha_token'] ?? null;
+
+if (!verify_captcha($captchaAnswer, $captchaToken)) {
+    http_response_code(400);
+    echo json_encode([
+        'success' => false,
+        'message' => 'Security verification failed. Please enter the correct answer for the security code.'
     ]);
     exit;
 }
@@ -28,6 +52,18 @@ $primaryGoal   = isset($_POST['primary_goal']) ? trim($_POST['primary_goal']) : 
 $preferredDate = isset($_POST['preferred_date']) ? trim($_POST['preferred_date']) : 'N/A';
 $preferredTime = isset($_POST['preferred_time']) ? trim($_POST['preferred_time']) : 'N/A';
 $message       = isset($_POST['message']) ? trim($_POST['message']) : '';
+$productName   = isset($_POST['product_name']) && !empty(trim($_POST['product_name'])) ? trim($_POST['product_name']) : (isset($_POST['product']) ? trim($_POST['product']) : '');
+
+if (empty($productName) && isset($_SERVER['HTTP_REFERER'])) {
+    $refererPath = parse_url($_SERVER['HTTP_REFERER'], PHP_URL_PATH);
+    $pageName = basename($refererPath, '.php');
+    if (!empty($pageName) && $pageName !== 'index') {
+        $productName = ucwords(str_replace(['-', '_'], ' ', $pageName));
+    }
+}
+if (empty($productName)) {
+    $productName = 'General Consultation';
+}
 
 // 2. Validation
 if (empty($fullName) || empty($email) || empty($phone)) {
@@ -48,34 +84,77 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
+// 2.0.1 Validate Back Date (Past Date Restricted)
+if (!empty($preferredDate) && $preferredDate !== 'N/A') {
+    $selectedTime = strtotime($preferredDate);
+    $todayTime    = strtotime(date('Y-m-d'));
+    if ($selectedTime !== false && $selectedTime < $todayTime) {
+        http_response_code(400);
+        echo json_encode([
+            'success' => false,
+            'message' => 'Please select today or a future date for your consultation call.'
+        ]);
+        exit;
+    }
+}
+
+// 2.1 Spam Link / Cyrillic Bot Filtering
+if (is_spam_content($fullName . ' ' . $message . ' ' . $email . ' ' . $company)) {
+    http_response_code(400);
+    echo json_encode([
+        'success' => false,
+        'message' => 'Your submission contained invalid content or links and could not be sent.'
+    ]);
+    exit;
+}
+
+// Extract Real Client IP (Fixes 192.185.129.5 cPanel IP issue)
+$clientIp = get_real_client_ip();
+
 // 3. Construct Payload
 $messageContent = "CONSULTATION CALL BOOKING DETAILS:\n"
     . "------------------------------------\n"
+    . "Product / Service: " . $productName . "\n"
     . "Client Name: " . $fullName . "\n"
     . "Work Email: " . $email . "\n"
     . "Phone Number: " . $phone . "\n"
     . "Company Name: " . $company . "\n"
     . "Primary Goal: " . $primaryGoal . "\n"
     . "Preferred Date: " . $preferredDate . "\n"
-    . "Preferred Time Slot: " . $preferredTime . "\n\n"
+    . "Preferred Time Slot: " . $preferredTime . "\n"
+    . "Client Real IP: " . $clientIp . "\n\n"
     . "Discussion Notes / Message:\n" . ($message !== '' ? $message : 'None provided.');
 
 $payload = [
-    'name'    => $fullName,
-    'email'   => $email,
-    'number'  => $phone,
-    'phone'   => $phone,
-    'message' => $messageContent
+    'name'         => $fullName,
+    'email'        => $email,
+    'number'       => $phone,
+    'phone'        => $phone,
+    'product_name' => $productName,
+    'message'      => $messageContent,
+    'user_ip'      => $clientIp,
+    'client_ip'    => $clientIp
 ];
 
-$adminUrl  = rtrim(env('ADMIN_URL', 'http://localhost/adminwebwider/'), '/');
+$isLocal = (in_array($_SERVER['REMOTE_ADDR'] ?? '', ['127.0.0.1', '::1']) || strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') !== false);
+$defaultAdminUrl = $isLocal ? 'http://localhost/adminwebwider/' : 'https://manage.webwiders.com/';
+$adminUrl  = rtrim(env('ADMIN_URL', $defaultAdminUrl), '/');
 $apiUrl    = env('ADMIN_MAIL_API_URL', $adminUrl . '/api/send-contact-email');
 $secretKey = env('CONTACT_FORM_SECRET_KEY', 'webwiders_secure_api_token_2026_x9z');
+
+// Time-based HMAC SHA-256 Payload Signature
+$rawBody   = json_encode($payload);
+$timestamp = (string)time();
+$nonce     = bin2hex(random_bytes(16));
+$signature = hash_hmac('sha256', $timestamp . '.' . $nonce . '.' . $rawBody, $secretKey);
 
 $headers = [
     'Content-Type: application/json',
     'Accept: application/json',
-    'X-API-KEY: ' . $secretKey
+    'X-API-KEY: ' . $secretKey,
+    'X-Timestamp: ' . $timestamp,
+    'X-Nonce: ' . $nonce,
+    'X-Signature: ' . $signature
 ];
 
 $responseJson = null;
@@ -83,16 +162,15 @@ $httpCode     = 500;
 $requestError = null;
 
 if (function_exists('curl_init')) {
-    $isLocal = (in_array($_SERVER['REMOTE_ADDR'] ?? '', ['127.0.0.1', '::1']) || strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') !== false);
-    
     $ch = curl_init();
     curl_setopt_array($ch, [
         CURLOPT_URL            => $apiUrl,
         CURLOPT_POST           => true,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_HTTPHEADER     => $headers,
-        CURLOPT_POSTFIELDS     => json_encode($payload),
-        CURLOPT_TIMEOUT        => 15,
+        CURLOPT_POSTFIELDS     => $rawBody,
+        CURLOPT_TIMEOUT        => 20,
+        CURLOPT_FOLLOWLOCATION => true,
         CURLOPT_SSL_VERIFYPEER => !$isLocal,
         CURLOPT_SSL_VERIFYHOST => $isLocal ? 0 : 2
     ]);
@@ -106,7 +184,7 @@ if (function_exists('curl_init')) {
         'http' => [
             'method'  => 'POST',
             'header'  => implode("\r\n", $headers),
-            'content' => json_encode($payload),
+            'content' => $rawBody,
             'timeout' => 15,
             'ignore_errors' => true
         ],

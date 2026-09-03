@@ -193,6 +193,7 @@
                                                     placeholder="Tell us about your specific module requirements..."></textarea>
                                             </div>
                                         </div>
+                                        <?php require_once __DIR__ . '/includes/captcha-helper.php'; render_captcha_html(); ?>
                                         <div class="col-lg-12">
                                             <button type="submit" class="theme-btn w-100 justify-content-center">
                                                 Request Demo <i class="fa-solid fa-arrow-right-long"></i>

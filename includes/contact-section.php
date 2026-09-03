@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/captcha-helper.php'; ?>
 <!-- Contact Section Start -->
 <section class="contact-section fix section-padding">
     <div class="container">
@@ -46,6 +47,7 @@
                                         <textarea name="message" id="message" placeholder="Message" required></textarea>
                                     </div>
                                 </div>
+                                <?php render_captcha_html(); ?>
                                 <div class="col-lg-12">
                                     <button type="submit" class="theme-btn">
                                         Submit Now

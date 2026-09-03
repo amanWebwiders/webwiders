@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/includes/captcha-helper.php';
 
 header('Content-Type: application/json; charset=utf-8');
 
@@ -12,21 +13,58 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-// 1. Capture Form Inputs
-$name        = isset($_POST['name']) ? trim($_POST['name']) : (isset($_POST['first_name']) ? trim($_POST['first_name'] . ' ' . ($_POST['last_name'] ?? '')) : '');
-$email       = isset($_POST['email']) ? trim($_POST['email']) : '';
-$phone       = isset($_POST['phone']) ? trim($_POST['phone']) : (isset($_POST['number']) ? trim($_POST['number']) : '');
-$company     = isset($_POST['company']) ? trim($_POST['company']) : (isset($_POST['hospital']) ? trim($_POST['hospital']) : 'N/A');
-$role        = isset($_POST['role']) ? trim($_POST['role']) : 'N/A';
-$message     = isset($_POST['message']) ? trim($_POST['message']) : '';
-$productName = isset($_POST['product_name']) ? trim($_POST['product_name']) : 'Software Solution';
+// 0. Invisible Honeypot Trap Check (Silent Drop for AI Bots)
+if (!empty($_POST['website_url_check'])) {
+    http_response_code(200);
+    echo json_encode([
+        'success' => true,
+        'message' => 'Thank you! Your product demo request has been submitted successfully.'
+    ]);
+    exit;
+}
 
-// 2. Validation
-if (empty($name) || empty($email) || empty($phone)) {
+// 0. CAPTCHA Validation
+$captchaAnswer = $_POST['captcha_answer'] ?? null;
+$captchaToken  = $_POST['captcha_token'] ?? null;
+
+if (!verify_captcha($captchaAnswer, $captchaToken)) {
     http_response_code(400);
     echo json_encode([
         'success' => false,
-        'message' => 'Please fill in all required fields (Name, Email, Phone).'
+        'message' => 'Security verification failed. Please enter the correct answer for the security code.'
+    ]);
+    exit;
+}
+
+// 1. Capture Form Inputs
+$name        = isset($_POST['name']) ? trim($_POST['name']) : (isset($_POST['first_name']) ? trim($_POST['first_name'] . ' ' . ($_POST['last_name'] ?? '')) : '');
+$email       = isset($_POST['email']) ? trim($_POST['email']) : '';
+$phone       = isset($_POST['phone']) ? trim($_POST['phone']) : (isset($_POST['number']) ? trim($_POST['number']) : (isset($_POST['contact']) ? trim($_POST['contact']) : ''));
+if (empty($phone)) {
+    $phone = 'N/A';
+}
+$company     = isset($_POST['company']) ? trim($_POST['company']) : (isset($_POST['hospital']) ? trim($_POST['hospital']) : 'N/A');
+$role        = isset($_POST['role']) ? trim($_POST['role']) : 'N/A';
+$message     = isset($_POST['message']) ? trim($_POST['message']) : '';
+$productName = isset($_POST['product_name']) && !empty(trim($_POST['product_name'])) ? trim($_POST['product_name']) : '';
+
+if (empty($productName) && isset($_SERVER['HTTP_REFERER'])) {
+    $refererPath = parse_url($_SERVER['HTTP_REFERER'], PHP_URL_PATH);
+    $pageName = basename($refererPath, '.php');
+    if (!empty($pageName) && $pageName !== 'index') {
+        $productName = ucwords(str_replace(['-', '_'], ' ', $pageName));
+    }
+}
+if (empty($productName)) {
+    $productName = 'Software Solution';
+}
+
+// 2. Validation
+if (empty($name) || empty($email)) {
+    http_response_code(400);
+    echo json_encode([
+        'success' => false,
+        'message' => 'Please fill in all required fields (Name, Email).'
     ]);
     exit;
 }
@@ -39,6 +77,19 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     ]);
     exit;
 }
+
+// 2.1 Spam Link / Cyrillic Bot Filtering
+if (is_spam_content($name . ' ' . $message . ' ' . $email . ' ' . $company)) {
+    http_response_code(400);
+    echo json_encode([
+        'success' => false,
+        'message' => 'Your request contained invalid content or links and could not be sent.'
+    ]);
+    exit;
+}
+
+// Extract Real Client IP (Fixes 192.185.129.5 cPanel IP issue)
+$clientIp = get_real_client_ip();
 
 // 3. Construct Payload
 $messageContent = "PRODUCT DEMO REQUEST DETAILS:\n"
@@ -53,6 +104,7 @@ if ($role !== 'N/A') {
     $messageContent .= "User Role: " . ucfirst($role) . "\n";
 }
 
+$messageContent .= "Client Real IP: " . $clientIp . "\n";
 $messageContent .= "\nModule Requirements / Notes:\n" . ($message !== '' ? $message : 'None provided.');
 
 $payload = [
@@ -61,17 +113,30 @@ $payload = [
     'number'       => $phone,
     'phone'        => $phone,
     'product_name' => $productName,
-    'message'      => $messageContent
+    'message'      => $messageContent,
+    'user_ip'      => $clientIp,
+    'client_ip'    => $clientIp
 ];
 
-$adminUrl  = rtrim(env('ADMIN_URL', 'http://localhost/adminwebwider/'), '/');
+$isLocal = (in_array($_SERVER['REMOTE_ADDR'] ?? '', ['127.0.0.1', '::1']) || strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') !== false);
+$defaultAdminUrl = $isLocal ? 'http://localhost/adminwebwider/' : 'https://manage.webwiders.com/';
+$adminUrl  = rtrim(env('ADMIN_URL', $defaultAdminUrl), '/');
 $apiUrl    = env('ADMIN_MAIL_API_URL', $adminUrl . '/api/send-contact-email');
 $secretKey = env('CONTACT_FORM_SECRET_KEY', 'webwiders_secure_api_token_2026_x9z');
+
+// Time-based HMAC SHA-256 Payload Signature
+$rawBody   = json_encode($payload);
+$timestamp = (string)time();
+$nonce     = bin2hex(random_bytes(16));
+$signature = hash_hmac('sha256', $timestamp . '.' . $nonce . '.' . $rawBody, $secretKey);
 
 $headers = [
     'Content-Type: application/json',
     'Accept: application/json',
-    'X-API-KEY: ' . $secretKey
+    'X-API-KEY: ' . $secretKey,
+    'X-Timestamp: ' . $timestamp,
+    'X-Nonce: ' . $nonce,
+    'X-Signature: ' . $signature
 ];
 
 $responseJson = null;
@@ -79,16 +144,15 @@ $httpCode     = 500;
 $requestError = null;
 
 if (function_exists('curl_init')) {
-    $isLocal = (in_array($_SERVER['REMOTE_ADDR'] ?? '', ['127.0.0.1', '::1']) || strpos($_SERVER['HTTP_HOST'] ?? '', 'localhost') !== false);
-    
     $ch = curl_init();
     curl_setopt_array($ch, [
         CURLOPT_URL            => $apiUrl,
         CURLOPT_POST           => true,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_HTTPHEADER     => $headers,
-        CURLOPT_POSTFIELDS     => json_encode($payload),
-        CURLOPT_TIMEOUT        => 15,
+        CURLOPT_POSTFIELDS     => $rawBody,
+        CURLOPT_TIMEOUT        => 20,
+        CURLOPT_FOLLOWLOCATION => true,
         CURLOPT_SSL_VERIFYPEER => !$isLocal,
         CURLOPT_SSL_VERIFYHOST => $isLocal ? 0 : 2
     ]);
@@ -102,7 +166,7 @@ if (function_exists('curl_init')) {
         'http' => [
             'method'  => 'POST',
             'header'  => implode("\r\n", $headers),
-            'content' => json_encode($payload),
+            'content' => $rawBody,
             'timeout' => 15,
             'ignore_errors' => true
         ],
@@ -140,7 +204,7 @@ if ($httpCode >= 200 && $httpCode < 300 && isset($responseData['success']) && $r
     http_response_code(200);
     echo json_encode([
         'success' => true,
-        'message' => 'Thank you! Your demo request for ' . htmlspecialchars($productName) . ' has been received. Our expert will contact you shortly.'
+        'message' => 'Thank you! Your product demo request has been submitted successfully. Our team will contact you shortly.'
     ]);
 } else {
     http_response_code($httpCode >= 400 ? $httpCode : 500);

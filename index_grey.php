@@ -691,7 +691,7 @@
                 <div class="col-xl-6">
                     <div class="contact-form-area">
                         <h3>Get in Touch</h3>
-                        <form action="#" id="contact-form" method="POST">
+                        <form action="<?= url('process-contact') ?>" id="contact-form" method="POST">
                             <div class="row g-4">
                                 <div class="col-lg-6">
                                     <div class="form-clt">
@@ -725,6 +725,7 @@
                                         <textarea name="message" id="message" placeholder="Messages"></textarea>
                                     </div>
                                 </div>
+                                <?php require_once __DIR__ . '/includes/captcha-helper.php'; render_captcha_html(); ?>
                                 <!-- <div class="col-12">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
