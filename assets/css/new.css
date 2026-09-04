@@ -5770,3 +5770,198 @@ section#about-us-cta .main-button {
         font-size: 20px;
         margin-top: 24px;
     }
+
+    .img-frame img {
+        min-height: 400px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 30px !important;
+    }
+
+    h1,h2,h3,h4,h5{
+        font-weight: 700;
+    }
+    
+
+    .section-spacer {
+        padding: 80px 0;
+    }
+    
+    .bg-light-gray {
+        background-color: #f8f9fa;
+    }
+    
+    .theme-text-primary {
+        color: var(--primary-red, #ff0000);
+    }
+    
+    /* Buttons - Using existing button styles */
+    .btn-custom-primary {
+        background-color: var(--primary-red, #ff0000);
+        color: #fff;
+        padding: 12px 30px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        transition: 0.3s ease;
+        border: 2px solid var(--primary-red, #ff0000);
+    }
+  .btn-custom-primary:hover {
+        background-color: transparent;
+        color: var(--primary-red, #ff0000);
+    }
+   .btn-custom-outline {
+        background-color: transparent;
+        color: #1a1a1a;
+        padding: 12px 30px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        transition: 0.3s ease;
+        border: 2px solid #e0e0e0;
+    }
+.btn-custom-outline:hover {
+        border-color: var(--primary-red, #ff0000);
+        color: var(--primary-red, #ff0000);
+    }
+
+    /* Service Card Icon Override */
+    .service-card-items .icon {
+        color: var(--primary-red, #ff0000) ;
+    }
+
+   .service-card-items:hover .icon {
+        color: white;
+    }
+
+    /* Timeline Icon Override */
+    #ai-chatbot-case-study.ai-chatbot-page .timeline-icon {
+        background: var(--primary-red, #ff0000) ;
+    }
+
+    #ai-chatbot-case-study.ai-chatbot-page .timeline-icon.bg-info {
+        background: var(--primary-red, #ff0000) ;
+    }
+
+    #ai-chatbot-case-study.ai-chatbot-page .timeline-icon.bg-warning {
+        background: var(--primary-red, #ff0000) ;
+    }
+
+    #ai-chatbot-case-study.ai-chatbot-page .timeline-icon.bg-primary {
+        background: var(--primary-red, #ff0000) ;
+    }
+
+    #ai-chatbot-case-study.ai-chatbot-page .timeline-icon.bg-secondary {
+        background: #6c757d ;
+    }
+
+    #ai-chatbot-case-study.ai-chatbot-page .timeline-icon.bg-success {
+        background: #28a745 ;
+    }
+
+    /* Platform Cards - Alternative Design */
+    .platform-card {
+        background: #fff;
+        border: 2px solid #f0f0f0;
+        border-radius: 16px;
+        padding: 40px 30px;
+        text-align: left;
+        height: 100%;
+        transition: 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    .platform-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: var(--primary-red, #ff0000);
+        transform: scaleX(0);
+        transition: 0.3s ease;
+    }
+    .platform-card:hover {
+        border-color: var(--primary-red, #ff0000);
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px rgba(255, 0, 0, 0.15);
+    }
+    .platform-card:hover::before {
+        transform: scaleX(1);
+    }
+  .platform-card h6 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin-bottom: 15px;
+        transition: 0.3s ease;
+    }
+    #ai-chatbot-case-study.ai-chatbot-page .platform-card:hover h6 {
+        color: var(--primary-red, #ff0000);
+    }
+    #ai-chatbot-case-study.ai-chatbot-page .platform-card .tech-tags {
+        color: var(--primary-red, #ff0000);
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+        display: block;
+    }
+    #ai-chatbot-case-study.ai-chatbot-page .platform-card p {
+        font-size: 0.95rem;
+        color: #666;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        #ai-chatbot-case-study.ai-chatbot-page .section-spacer {
+            padding: 60px 0;
+        }
+    }
+
+     #native-mobile-dev-page.native-mobile-app-page .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+        background: #a5110d;
+    
+    }
+ 
+
+    #native-mobile-dev-page.native-mobile-app-page .timeline-icon.bg-info {
+        background: var(--primary-red, #ff0000) ;
+    }
+
+    #native-mobile-dev-page.native-mobile-app-page .timeline-icon.bg-warning {
+        background: var(--primary-red, #ff0000) ;
+    }
+
+    #native-mobile-dev-page.native-mobile-app-page .timeline-icon.bg-primary {
+        background: var(--primary-red, #ff0000) ;
+    }
+
+    #native-mobile-dev-page.native-mobile-app-page .timeline-icon.bg-secondary {
+        background: #6c757d ;
+    }
+
+    #native-mobile-dev-page.native-mobile-app-page .timeline-icon.bg-success {
+        background: #28a745 ;
+    }
+
+    #native-mobile-dev-page.native-mobile-app-page .platform-card:hover h6 {
+        color: var(--primary-red, #ff0000);
+    }
+    #native-mobile-dev-page.native-mobile-app-page .platform-card p {
+        font-size: 0.95rem;
+        color: #666;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        #native-mobile-dev-page.native-mobile-app-page .section-spacer {
+            padding: 60px 0;
+        }
+    }

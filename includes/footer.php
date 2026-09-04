@@ -259,7 +259,7 @@ if (!defined('ASSETS_URL')) {
     </div>
 </section>
 
-<?php include __DIR__ . '/consultation-offcanvas.php'; ?>
+<?php include_once __DIR__ . '/consultation-offcanvas.php'; ?>
 
 <!--<< All JS Plugins >>-->
 <script src="<?php echo asset('js/jquery-3.7.1.min.js'); ?>"></script>

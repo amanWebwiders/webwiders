@@ -327,6 +327,16 @@ if (!defined('BASE_URL')) {
                                                 </ul>
                                             </li>
 
+                                             <!-- 2. Ai Chat Bot -->
+                                            <li class="has-nested-menu">
+                                                <a href="#">AI Chatbot Development <i
+                                                        class="fa-solid fa-chevron-right arrow-right"></i></a>
+                                                <ul class="nested-submenu">
+                                                    <li><a
+                                                            href="<?php echo url('/services/ai-chatbot.php'); ?>">AI Chatbot Development</a></li>
+                                                </ul>
+                                            </li>
+
                                             <!-- 5. Online Marketing -->
                                             <li class="has-nested-menu">
                                                 <a href="#">Online Marketing <i
@@ -601,6 +611,16 @@ if (!defined('BASE_URL')) {
                                                     <li><a
                                                             href="<?php echo url('/services/responsive-web-design.php'); ?>">Responsive
                                                             Design</a></li>
+                                                </ul>
+                                            </li>
+
+
+
+                                            
+                                            <li class="has-dropdown">
+                                                <a href="javascript:void(0);">AI Development</a>
+                                                <ul class="submenu">
+                                                    <li><a href="<?php echo url('/services/ai-chatbot.php'); ?>">AI Chatbot Development</a></li>
                                                 </ul>
                                             </li>
 
