@@ -7193,6 +7193,7 @@ input.main-search-input::placeholder {
   text-align: center;
   position: relative;
   z-index: 99;
+  height:100%;
 }
 
 .service-card-items .title {
