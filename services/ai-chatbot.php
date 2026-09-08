@@ -66,7 +66,7 @@ require_once __DIR__ . '../../includes/header.php'; ?>
                 <div class="col-lg-6">
                     <div class="about-image">
                         <div class="img-frame">
-                            <img src="assets/img/case-studies/aliadoai1.png" alt="AI Chatbot Development" class="wow img-custom-anim-left"
+                            <img src="assets/img/about/Chatbot-ai.png" alt="AI Chatbot Development" class="wow img-custom-anim-left"
                                 data-wow-duration="1.5s" data-wow-delay="0.3s">
                         </div>
                     </div>
