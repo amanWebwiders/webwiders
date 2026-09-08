@@ -6577,3 +6577,8 @@ div#customsoftware-case-study .timeline-centered .timeline-entry .timeline-entry
 div#customsoftware-case-study .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
     border-color: transparent #fff transparent transparent;
 }
+
+
+.text-danger {
+    color: #a5110d !important;
+}
