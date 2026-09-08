@@ -816,7 +816,7 @@ require_once __DIR__ . '../../includes/header.php'; ?>
             <!-- Custom CRM Software Column -->
             <div class="col-lg-6 wow fadeInUp" data-wow-delay=".1s">
                 <div class="p-4 bg-white rounded-3 border h-100">
-                    <h3 class="fw-bold text-center mb-4" style="color: #a5110d;">Custom CRM Software</h3>
+                    <h3 class="fw-bold  mb-4" style="color: #a5110d;">Custom CRM Software</h3>
                     
                     <div class="mb-4">
                         <h5 class="fw-bold mb-1">Built Around Your Workflow</h5>
@@ -844,7 +844,7 @@ require_once __DIR__ . '../../includes/header.php'; ?>
             <!-- Ready-Made CRM Column -->
             <div class="col-lg-6 wow fadeInUp" data-wow-delay=".2s">
                 <div class="p-4 bg-white rounded-3 border h-100">
-                    <h3 class="fw-bold text-center mb-4" style="color: #a5110d;">Ready-Made CRM</h3>
+                    <h3 class="fw-bold  mb-4" style="color: #a5110d;">Ready-Made CRM</h3>
                     
                     <div class="mb-4">
                         <h5 class="fw-bold mb-1">Pre-Built Features</h5>
@@ -871,7 +871,7 @@ require_once __DIR__ . '../../includes/header.php'; ?>
         </div>
 
         <!-- When Custom CRM Makes Sense -->
-        <div class="web-app-callout-box wow fadeInUp mt-5 text-start text-md-center" data-wow-delay=".3s">
+        <div class="web-app-callout-box wow fadeInUp mt-5 text-start " data-wow-delay=".3s">
             <h5 class="mb-3">When Custom CRM Makes Sense</h5>
             <p class="mb-3">Custom CRM development can be a strong choice when you have:</p>
             <div class="d-inline-block text-start">

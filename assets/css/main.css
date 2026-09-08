@@ -6983,7 +6983,7 @@ input.main-search-input::placeholder {
 
 .section-title {
   position: relative;
-  z-index: 99;
+  z-index: 9;
   margin-bottom: 30px;
   margin-top: -1px;
 }
