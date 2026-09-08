@@ -1598,9 +1598,9 @@ img.freelancer-svg {
     justify-content: end;
 }
 
-section.cta-section .main-button {
+/* section.cta-section .main-button {
     max-width: 250px;
-}
+} */
 
 
 @media screen and (max-width:576px) {
@@ -2177,7 +2177,7 @@ demo off canvas Offcanvas
         background: var(--black);
         padding: 20px 0;
         border-radius: 1.5rem;
-        z-index: 999999;
+        z-index: 999999999;
         visibility: hidden;
         opacity: 0;
         transform: translateY(10px);
@@ -2515,11 +2515,11 @@ section.news-section.section-padding.custom-our-projects-section .case-studies-c
     .custom-our-projects-section .case-studies-card-items .thumb {
         height: 160px;
     }
-    
+
     .custom-our-projects-section .case-studies-card-items .content .title h3 {
         font-size: 16px;
     }
-    
+
     .custom-our-projects-section .case-studies-card-items .content p {
         font-size: 13px;
         -webkit-line-clamp: 2;
@@ -2530,23 +2530,23 @@ section.news-section.section-padding.custom-our-projects-section .case-studies-c
     .custom-our-projects-section .case-studies-card-items .thumb {
         height: 140px;
     }
-    
+
     .custom-our-projects-section .case-studies-card-items .content .title h3 {
         font-size: 15px;
     }
-    
+
     .custom-our-projects-section .case-studies-card-items .content p {
         font-size: 12px;
         -webkit-line-clamp: 2;
     }
-    
+
     .custom-our-projects-section .case-studies-card-items .content .icon {
         width: 45px;
         height: 45px;
         line-height: 45px;
     }
 }
-  
+
 
 .tech-badge:hover {
     background-color: var(--theme, #a5110d);
@@ -3639,10 +3639,12 @@ section#about-us-cta .main-button {
 #aliadoai-case-study section.cta-section .main-button {
     max-width: unset;
 }
+
 #aliadoai-case-study .about-wrapper .about-image {
     /* box-shadow: 0px 0px 10px #80808047; */
     border-radius: 25px;
 }
+
 #aliadoai-case-study .about-wrapper .about-image img {
     border-radius: 25px;
     width: 100%;
@@ -3655,6 +3657,7 @@ section#about-us-cta .main-button {
     border-radius: 25px;
     text-align: -webkit-center;
 }
+
 #inatlantis-case-study .about-wrapper .about-image img {
     border-radius: 25px;
     width: 100%;
@@ -3664,7 +3667,7 @@ section#about-us-cta .main-button {
 
 #inatlantis-case-study .inatlantis-product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     border-color: #a5110d;
 }
 
@@ -3686,7 +3689,7 @@ section#about-us-cta .main-button {
 
 #aliadoai-case-study .aliadoai-product-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     border-color: #a5110d;
 }
 
@@ -3706,13 +3709,13 @@ section#about-us-cta .main-button {
     height: 100%;
     transition: 0.3s ease;
     border-top: 4px solid #a5110d;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
     position: relative;
 }
 
 #venco-goal-section .venco-goal-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 #venco-goal-section .venco-goal-number {
@@ -3793,7 +3796,7 @@ section#about-us-cta .main-button {
     text-align: center;
     height: 100%;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     position: relative;
     overflow: hidden;
 }
@@ -3812,7 +3815,7 @@ section#about-us-cta .main-button {
 
 #health-erp-gallery .health-erp-gallery-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     border-color: #a5110d;
 }
 
@@ -3850,10 +3853,10 @@ section#about-us-cta .main-button {
     line-height: 1.4;
 }
 
-.testimonial-wrapper-2 .testimonial-content .icon img{
+.testimonial-wrapper-2 .testimonial-content .icon img {
     width: 60px;
     height: 60px;
-    opacity:0.7;
+    opacity: 0.7;
 }
 
 @media (max-width: 991px) {
@@ -3889,7 +3892,7 @@ section#about-us-cta .main-button {
 
 @media (max-width: 767px) {
 
-    
+
     #venco-erp-case-study1 .role-arrow-list span.arrow {
         transform: rotate(90deg);
     }
@@ -3934,11 +3937,11 @@ section#about-us-cta .main-button {
     }
 
     #venco-erp-case-study1 .role-arrow-list span {
-    width: calc(50% - 10px);
-    justify-content: center;
-    padding: 10px 12px;
-    white-space: nowrap;
-}
+        width: calc(50% - 10px);
+        justify-content: center;
+        padding: 10px 12px;
+        white-space: nowrap;
+    }
 
     #venco-erp-case-study1 .hero-actions {
         flex-direction: column;
@@ -3955,1300 +3958,1387 @@ section#about-us-cta .main-button {
      START: THEVENCO CASE STUDY SECTION
      ========================================== */
 
-    #thevenco-case-study.thevenco-vendor-page {
-        color: #333;
-        background-color: #fff;
-    }
-    #thevenco-case-study.thevenco-vendor-page h1, 
-    #thevenco-case-study.thevenco-vendor-page h2, 
-    #thevenco-case-study.thevenco-vendor-page h3, 
-    #thevenco-case-study.thevenco-vendor-page h4, 
-    #thevenco-case-study.thevenco-vendor-page h5,
-    #thevenco-case-study.thevenco-vendor-page h6 {
-        color: #1a1a1a;
-        font-weight: 700;
-        margin-bottom: 12px;
-    }
-    #thevenco-case-study.thevenco-vendor-page .section-spacer {
-        padding: 80px 0;
-    }
-    #thevenco-case-study.thevenco-vendor-page .bg-light-gray {
-        background-color: #f8f9fa;
-    }
-    #thevenco-case-study.thevenco-vendor-page .theme-text-primary {
-        color: #a5110d;
-    }
-    #thevenco-case-study.thevenco-vendor-page .btn-custom-primary {
-        background-color: #a5110d;
-        color: #fff;
-        padding: 12px 30px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-block;
-        transition: 0.3s ease;
-        border: 2px solid #a5110d;
-    }
-    #thevenco-case-study.thevenco-vendor-page .btn-custom-primary:hover {
-        background-color: transparent;
-        color: #a5110d;
-    }
-    #thevenco-case-study.thevenco-vendor-page .btn-custom-outline {
-        background-color: transparent;
-        color: #1a1a1a;
-        padding: 12px 30px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-block;
-        transition: 0.3s ease;
-        border: 2px solid #e0e0e0;
-    }
-    #thevenco-case-study.thevenco-vendor-page .btn-custom-outline:hover {
-        border-color: #a5110d;
-        color: #a5110d;
-    }
+#thevenco-case-study.thevenco-vendor-page {
+    color: #333;
+    background-color: #fff;
+}
 
-    /* Glance Table */
+#thevenco-case-study.thevenco-vendor-page h1,
+#thevenco-case-study.thevenco-vendor-page h2,
+#thevenco-case-study.thevenco-vendor-page h3,
+#thevenco-case-study.thevenco-vendor-page h4,
+#thevenco-case-study.thevenco-vendor-page h5,
+#thevenco-case-study.thevenco-vendor-page h6 {
+    color: #1a1a1a;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+#thevenco-case-study.thevenco-vendor-page .section-spacer {
+    padding: 80px 0;
+}
+
+#thevenco-case-study.thevenco-vendor-page .bg-light-gray {
+    background-color: #f8f9fa;
+}
+
+#thevenco-case-study.thevenco-vendor-page .theme-text-primary {
+    color: #a5110d;
+}
+
+#thevenco-case-study.thevenco-vendor-page .btn-custom-primary {
+    background-color: #a5110d;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease;
+    border: 2px solid #a5110d;
+}
+
+#thevenco-case-study.thevenco-vendor-page .btn-custom-primary:hover {
+    background-color: transparent;
+    color: #a5110d;
+}
+
+#thevenco-case-study.thevenco-vendor-page .btn-custom-outline {
+    background-color: transparent;
+    color: #1a1a1a;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease;
+    border: 2px solid #e0e0e0;
+}
+
+#thevenco-case-study.thevenco-vendor-page .btn-custom-outline:hover {
+    border-color: #a5110d;
+    color: #a5110d;
+}
+
+/* Glance Table */
+#thevenco-case-study.thevenco-vendor-page .glance-row {
+    display: flex;
+    border-bottom: 1px solid #eaeaea;
+    padding: 15px 0;
+}
+
+#thevenco-case-study.thevenco-vendor-page .glance-row:last-child {
+    border-bottom: none;
+}
+
+#thevenco-case-study.thevenco-vendor-page .glance-label {
+    width: 25%;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+#thevenco-case-study.thevenco-vendor-page .glance-value {
+    width: 75%;
+    color: #555;
+}
+
+/* Challenge Cards & Numbered Cards */
+#thevenco-case-study.thevenco-vendor-page .num-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 18px;
+    padding: 30px;
+    height: 100%;
+    transition: 0.3s ease;
+    border-top: 4px solid var(--theme);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+
+#thevenco-case-study.thevenco-vendor-page .num-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+#thevenco-case-study.thevenco-vendor-page .num-card .number {
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: rgba(165, 17, 13, 0.12);
+    margin-bottom: 18px;
+    display: block;
+}
+
+/* Info Cards (Modules, Impact, Features) */
+#thevenco-case-study.thevenco-vendor-page .info-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    border: 1px solid #f1f1f1;
+}
+
+#thevenco-case-study.thevenco-vendor-page .info-card h4,
+#thevenco-case-study.thevenco-vendor-page .info-card h5 {
+    margin-bottom: 15px;
+}
+
+#thevenco-case-study.thevenco-vendor-page .info-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* Role Cards */
+#thevenco-case-study.thevenco-vendor-page .role-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    border-top: 4px solid #a5110d;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+#thevenco-case-study.thevenco-vendor-page .check-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#thevenco-case-study.thevenco-vendor-page .check-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+#thevenco-case-study.thevenco-vendor-page .check-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #a5110d;
+    font-weight: bold;
+}
+
+/* Tech Stack Logos */
+#thevenco-case-study.thevenco-vendor-page .tech-box {
+    border: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: 600;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+#thevenco-case-study.thevenco-vendor-page .tech-box p {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+/* Goal Step Box */
+#thevenco-case-study.thevenco-vendor-page .goal-step-box {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    height: 100%;
+}
+
+/* Arrow Flow */
+#thevenco-case-study.thevenco-vendor-page .workflow-arrow {
+    color: #a5110d;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
     #thevenco-case-study.thevenco-vendor-page .glance-row {
-        display: flex;
-        border-bottom: 1px solid #eaeaea;
-        padding: 15px 0;
-    }
-    #thevenco-case-study.thevenco-vendor-page .glance-row:last-child {
-        border-bottom: none;
-    }
-    #thevenco-case-study.thevenco-vendor-page .glance-label {
-        width: 25%;
-        font-weight: 700;
-        color: #1a1a1a;
-    }
-    #thevenco-case-study.thevenco-vendor-page .glance-value {
-        width: 75%;
-        color: #555;
-    }
-
-    /* Challenge Cards & Numbered Cards */
-    #thevenco-case-study.thevenco-vendor-page .num-card {
-        background: #fff;
-        border: 1px solid #eaeaea;
-        border-radius: 18px;
-        padding: 30px;
-        height: 100%;
-        transition: 0.3s ease;
-        border-top: 4px solid var(--theme);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.03);
-    }
-    #thevenco-case-study.thevenco-vendor-page .num-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    }
-    #thevenco-case-study.thevenco-vendor-page .num-card .number {
-        font-size: 2.6rem;
-        font-weight: 800;
-        color: rgba(165, 17, 13, 0.12);
-        margin-bottom: 18px;
-        display: block;
-    }
-
-    /* Info Cards (Modules, Impact, Features) */
-    #thevenco-case-study.thevenco-vendor-page .info-card {
-        background: #fff;
-        padding: 30px;
-        border-radius: 8px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        height: 100%;
-        border: 1px solid #f1f1f1;
-    }
-    #thevenco-case-study.thevenco-vendor-page .info-card h4, 
-    #thevenco-case-study.thevenco-vendor-page .info-card h5 {
-        margin-bottom: 15px;
-    }
-    #thevenco-case-study.thevenco-vendor-page .info-card p {
-        color: #666;
-        font-size: 0.95rem;
-        margin-bottom: 0;
-    }
-
-    /* Role Cards */
-    #thevenco-case-study.thevenco-vendor-page .role-card {
-        background: #fff;
-        padding: 30px;
-        border-radius: 8px;
-        border-top: 4px solid #a5110d;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        height: 100%;
-    }
-    #thevenco-case-study.thevenco-vendor-page .check-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    #thevenco-case-study.thevenco-vendor-page .check-list li {
-        position: relative;
-        padding-left: 25px;
-        margin-bottom: 10px;
-        color: #444;
-        font-size: 0.95rem;
-    }
-    #thevenco-case-study.thevenco-vendor-page .check-list li::before {
-        content: '✓';
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: #a5110d;
-        font-weight: bold;
-    }
-
-    /* Tech Stack Logos */
-    #thevenco-case-study.thevenco-vendor-page .tech-box {
-        border: 1px solid #eee;
-        padding: 20px;
-        text-align: center;
-        border-radius: 6px;
-        font-weight: 600;
-        background: #fff;
-        height: 100%;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    }
-    #thevenco-case-study.thevenco-vendor-page .tech-box p {
-        font-size: 0.85rem;
-        color: #666;
-        margin-top: 10px;
-        margin-bottom: 0;
-        font-weight: normal;
     }
 
-    /* Goal Step Box */
-    #thevenco-case-study.thevenco-vendor-page .goal-step-box {
-        background: #fff;
-        border: 1px solid #eaeaea;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-        height: 100%;
-    }
-
-    /* Arrow Flow */
-    #thevenco-case-study.thevenco-vendor-page .workflow-arrow {
-        color: #a5110d;
-        font-weight: bold;
-        margin: 0 10px;
-    }
-
-    @media (max-width: 768px) {
-        #thevenco-case-study.thevenco-vendor-page .glance-row {
-            flex-direction: column;
-        }
-        #thevenco-case-study.thevenco-vendor-page .glance-label, 
-        #thevenco-case-study.thevenco-vendor-page .glance-value {
-            width: 100%;
-        }
-        #thevenco-case-study.thevenco-vendor-page .glance-label {
-            margin-bottom: 5px;
-        }
-    }
-
-    /* Hero Section Styles */
-    #thevenco-case-study.thevenco-vendor-page .hero-shell {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-        margin-bottom: 80px;
-    }
-    #thevenco-case-study.thevenco-vendor-page .hero-copy {
-        flex: 1;
-    }
-    #thevenco-case-study.thevenco-vendor-page .hero-media {
-        flex: 1;
-        position: relative;
-    }
-   #thevenco-case-study.thevenco-vendor-page .hero-badge{
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 16px 8px 10px;
-      background: rgba(255, 255, 255, 0.9);
-      border: 1px solid rgba(178, 13, 13, 0.14);
-      border-radius: 50px;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06),
-            inset 0 1px 0 rgba(255, 255, 255, 0.9);
-      position: relative;
-      overflow: hidden;
-      color: #a5110d;
-      margin-bottom: 20px;
-    }
-
-    #thevenco-case-study.thevenco-vendor-page .hero-badge span {
-        color: #8e0808;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 1.8px;
-        line-height: 1;
-        text-transform: uppercase;
-        -webkit-text-fill-color: unset;
-    }
-    #thevenco-case-study.thevenco-vendor-page .hero-copy h1 {
-        font-size: 3rem;
-        font-weight: 800;
-        margin-bottom: 15px;
-        line-height: 1.2;
-    }
-    #thevenco-case-study.thevenco-vendor-page .hero-copy h4 {
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-bottom: 20px;
-        color: #666;
-    }
-    #thevenco-case-study.thevenco-vendor-page .hero-copy p {
-        font-size: 1.1rem;
-        color: #666;
-        margin-bottom: 30px;
-        line-height: 1.6;
-    }
-    #thevenco-case-study.thevenco-vendor-page .hero-visual-card {
-        background: #fff;
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-    }
-    #thevenco-case-study.thevenco-vendor-page .hero-visual-card img {
+    #thevenco-case-study.thevenco-vendor-page .glance-label,
+    #thevenco-case-study.thevenco-vendor-page .glance-value {
         width: 100%;
-        height: auto;
-        display: block;
     }
-    #thevenco-case-study.thevenco-vendor-page .flying-tag {
-        position: absolute;
-        top: -20px;
-        right: -20px;
-        background: #fff;
-        padding: 15px 20px;
-        border-radius: 12px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        text-align: center;
-    }
-    #thevenco-case-study.thevenco-vendor-page .flying-tag span {
-        display: block;
-        font-size: 12px;
-        color: #666;
+
+    #thevenco-case-study.thevenco-vendor-page .glance-label {
         margin-bottom: 5px;
     }
-    #thevenco-case-study.thevenco-vendor-page .flying-tag strong {
-        display: block;
-        font-size: 16px;
-        color: #1a1a1a;
+}
+
+/* Hero Section Styles */
+#thevenco-case-study.thevenco-vendor-page .hero-shell {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+#thevenco-case-study.thevenco-vendor-page .hero-copy {
+    flex: 1;
+}
+
+#thevenco-case-study.thevenco-vendor-page .hero-media {
+    flex: 1;
+    position: relative;
+}
+
+#thevenco-case-study.thevenco-vendor-page .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px 8px 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(178, 13, 13, 0.14);
+    border-radius: 50px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    position: relative;
+    overflow: hidden;
+    color: #a5110d;
+    margin-bottom: 20px;
+}
+
+#thevenco-case-study.thevenco-vendor-page .hero-badge span {
+    color: #8e0808;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    line-height: 1;
+    text-transform: uppercase;
+    -webkit-text-fill-color: unset;
+}
+
+#thevenco-case-study.thevenco-vendor-page .hero-copy h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+#thevenco-case-study.thevenco-vendor-page .hero-copy h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+#thevenco-case-study.thevenco-vendor-page .hero-copy p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+#thevenco-case-study.thevenco-vendor-page .hero-visual-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+#thevenco-case-study.thevenco-vendor-page .hero-visual-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#thevenco-case-study.thevenco-vendor-page .flying-tag {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#thevenco-case-study.thevenco-vendor-page .flying-tag span {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+#thevenco-case-study.thevenco-vendor-page .flying-tag strong {
+    display: block;
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+#thevenco-case-study.thevenco-vendor-page .floating-card {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#thevenco-case-study.thevenco-vendor-page .floating-card .label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+#thevenco-case-study.thevenco-vendor-page .floating-card strong {
+    display: block;
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+/* Glance Panel */
+#thevenco-case-study.thevenco-vendor-page .glance-panel {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    #thevenco-case-study.thevenco-vendor-page .hero-shell {
+        flex-direction: column;
+        gap: 30px;
     }
+
+    #thevenco-case-study.thevenco-vendor-page .hero-copy h1 {
+        font-size: 2.5rem;
+    }
+
+    #thevenco-case-study.thevenco-vendor-page .hero-visual-card {
+        min-height: 300px;
+    }
+
+    #thevenco-case-study.thevenco-vendor-page .flying-tag,
     #thevenco-case-study.thevenco-vendor-page .floating-card {
-        position: absolute;
-        bottom: -20px;
-        left: -20px;
-        background: #fff;
-        padding: 15px 20px;
-        border-radius: 12px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        text-align: center;
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        margin: 10px;
+        display: inline-block;
     }
-    #thevenco-case-study.thevenco-vendor-page .floating-card .label {
-        display: block;
-        font-size: 12px;
-        color: #666;
-        margin-bottom: 5px;
-    }
-    #thevenco-case-study.thevenco-vendor-page .floating-card strong {
-        display: block;
-        font-size: 16px;
-        color: #1a1a1a;
+}
+
+@media (max-width: 767px) {
+    #thevenco-case-study.thevenco-vendor-page .hero-copy h1 {
+        font-size: 2rem;
     }
 
-    /* Glance Panel */
+    #thevenco-case-study.thevenco-vendor-page .hero-copy h4 {
+        font-size: 1.2rem;
+    }
+
     #thevenco-case-study.thevenco-vendor-page .glance-panel {
-        background: #fff;
-        border: 1px solid #eaeaea;
-        border-radius: 12px;
-        padding: 30px;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        padding: 20px;
     }
 
-  
-    /* Responsive adjustments */
-    @media (max-width: 991px) {
-        #thevenco-case-study.thevenco-vendor-page .hero-shell {
-            flex-direction: column;
-            gap: 30px;
-        }
-        #thevenco-case-study.thevenco-vendor-page .hero-copy h1 {
-            font-size: 2.5rem;
-        }
-        #thevenco-case-study.thevenco-vendor-page .hero-visual-card {
-            min-height: 300px;
-        }
-        #thevenco-case-study.thevenco-vendor-page .flying-tag,
-        #thevenco-case-study.thevenco-vendor-page .floating-card {
-            position: relative;
-            top: auto;
-            right: auto;
-            bottom: auto;
-            left: auto;
-            margin: 10px;
-            display: inline-block;
-        }
+    #thevenco-case-study.thevenco-vendor-page .num-card,
+    #thevenco-case-study.thevenco-vendor-page .info-card,
+    #thevenco-case-study.thevenco-vendor-page .role-card {
+        padding: 20px;
     }
-
-    @media (max-width: 767px) {
-        #thevenco-case-study.thevenco-vendor-page .hero-copy h1 {
-            font-size: 2rem;
-        }
-        #thevenco-case-study.thevenco-vendor-page .hero-copy h4 {
-            font-size: 1.2rem;
-        }
-        #thevenco-case-study.thevenco-vendor-page .glance-panel {
-            padding: 20px;
-        }
-        #thevenco-case-study.thevenco-vendor-page .num-card,
-        #thevenco-case-study.thevenco-vendor-page .info-card,
-        #thevenco-case-study.thevenco-vendor-page .role-card {
-            padding: 20px;
-        }
-    }
+}
 
 
 
-    /* ==========================================
+/* ==========================================
      START: MISY CASE STUDY SECTION
      ========================================== */
 
-    #misy-case-study.misy-page {
-        color: #333;
-        font-family: inherit;
-        background-color: #fff;
-    }
-    #misy-case-study.misy-page h1, 
-    #misy-case-study.misy-page h2, 
-    #misy-case-study.misy-page h3, 
-    #misy-case-study.misy-page h4, 
-    #misy-case-study.misy-page h5,
-    #misy-case-study.misy-page h6 {
-        color: #1a1a1a;
-        font-weight: 700;
-    }
-    #misy-case-study.misy-page .section-spacer {
-        padding: 80px 0;
-    }
-    #misy-case-study.misy-page .bg-light-gray {
-        background-color: #f8f9fa;
-    }
-    #misy-case-study.misy-page .theme-text-primary {
-        color: #a5110d; /* Theme Primary Color for this page */
-    }
-    #misy-case-study.misy-page .btn-custom-primary {
-        background-color: #a5110d;
-        color: #fff;
-        padding: 12px 30px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-block;
-        transition: 0.3s ease;
-        border: 2px solid #a5110d;
-    }
-    #misy-case-study.misy-page .btn-custom-primary:hover {
-        background-color: transparent;
-        color: #a5110d;
-    }
-    #misy-case-study.misy-page .btn-custom-outline {
-        background-color: transparent;
-        color: #1a1a1a;
-        padding: 12px 30px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-block;
-        transition: 0.3s ease;
-        border: 2px solid #e0e0e0;
-    }
-    #misy-case-study.misy-page .btn-custom-outline:hover {
-        border-color: #a5110d;
-        color: #a5110d;
-    }
+#misy-case-study.misy-page {
+    color: #333;
+    font-family: inherit;
+    background-color: #fff;
+}
 
-    /* Glance Table */
+#misy-case-study.misy-page h1,
+#misy-case-study.misy-page h2,
+#misy-case-study.misy-page h3,
+#misy-case-study.misy-page h4,
+#misy-case-study.misy-page h5,
+#misy-case-study.misy-page h6 {
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+#misy-case-study.misy-page .section-spacer {
+    padding: 80px 0;
+}
+
+#misy-case-study.misy-page .bg-light-gray {
+    background-color: #f8f9fa;
+}
+
+#misy-case-study.misy-page .theme-text-primary {
+    color: #a5110d;
+    /* Theme Primary Color for this page */
+}
+
+#misy-case-study.misy-page .btn-custom-primary {
+    background-color: #a5110d;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease;
+    border: 2px solid #a5110d;
+}
+
+#misy-case-study.misy-page .btn-custom-primary:hover {
+    background-color: transparent;
+    color: #a5110d;
+}
+
+#misy-case-study.misy-page .btn-custom-outline {
+    background-color: transparent;
+    color: #1a1a1a;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease;
+    border: 2px solid #e0e0e0;
+}
+
+#misy-case-study.misy-page .btn-custom-outline:hover {
+    border-color: #a5110d;
+    color: #a5110d;
+}
+
+/* Glance Table */
+#misy-case-study.misy-page .glance-row {
+    display: flex;
+    border-bottom: 1px solid #eaeaea;
+    padding: 15px 0;
+}
+
+#misy-case-study.misy-page .glance-row:last-child {
+    border-bottom: none;
+}
+
+#misy-case-study.misy-page .glance-label {
+    width: 30%;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+#misy-case-study.misy-page .glance-value {
+    width: 70%;
+    color: #555;
+}
+
+/* Challenge Cards & Numbered Cards */
+#misy-case-study.misy-page .num-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 30px;
+    height: 100%;
+    transition: 0.3s ease;
+    border-top: 4px solid #a5110d;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+
+#misy-case-study.misy-page .num-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Info Cards (Features, Impact) */
+#misy-case-study.misy-page .info-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    border: 1px solid #f1f1f1;
+}
+
+#misy-case-study.misy-page .info-card h4,
+#misy-case-study.misy-page .info-card h5,
+#misy-case-study.misy-page .info-card h6 {
+    margin-bottom: 15px;
+}
+
+#misy-case-study.misy-page .info-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* Check List */
+#misy-case-study.misy-page .check-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#misy-case-study.misy-page .check-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+#misy-case-study.misy-page .check-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #a5110d;
+    font-weight: bold;
+}
+
+/* Tech Stack Boxes */
+#misy-case-study.misy-page .tech-box {
+    border: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: 600;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#misy-case-study.misy-page .tech-box p {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+/* Goal Step Box */
+#misy-case-study.misy-page .goal-step-box {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    height: 100%;
+    border-top: 4px solid #a5110d;
+}
+
+/* About Image Custom Styling */
+#misy-case-study.misy-page .about-wrapper .about-image {
+    /* box-shadow: 0px 0px 10px #80808047; */
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#misy-case-study.misy-page .about-wrapper .about-image img {
+    border-radius: 25px;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* Timeline Icon Colors */
+#misy-case-study.misy-page .timeline-icon.bg-primary {
+    background-color: #a5110d;
+    color: #fff;
+}
+
+/* Solution Cards */
+#misy-case-study.misy-page .misy-solution-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 35px 30px;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#misy-case-study.misy-page .misy-solution-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #a5110d 0%, #c41e1a 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#misy-case-study.misy-page .misy-solution-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-color: #a5110d;
+}
+
+#misy-case-study.misy-page .misy-solution-card:hover::before {
+    transform: scaleX(1);
+}
+
+#misy-case-study.misy-page .misy-solution-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: linear-gradient(135deg, #a5110d 0%, #c41e1a 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#misy-case-study.misy-page .misy-solution-card:hover .misy-solution-icon {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(165, 17, 13, 0.3);
+}
+
+#misy-case-study.misy-page .misy-solution-icon i {
+    color: #fff;
+    font-size: 32px;
+}
+
+#misy-case-study.misy-page .misy-solution-card h4 {
+    font-weight: 700;
+    color: #1a1a1a;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#misy-case-study.misy-page .misy-solution-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
     #misy-case-study.misy-page .glance-row {
-        display: flex;
-        border-bottom: 1px solid #eaeaea;
-        padding: 15px 0;
-    }
-    #misy-case-study.misy-page .glance-row:last-child {
-        border-bottom: none;
-    }
-    #misy-case-study.misy-page .glance-label {
-        width: 30%;
-        font-weight: 700;
-        color: #1a1a1a;
-    }
-    #misy-case-study.misy-page .glance-value {
-        width: 70%;
-        color: #555;
-    }
-
-    /* Challenge Cards & Numbered Cards */
-    #misy-case-study.misy-page .num-card {
-        background: #fff;
-        border: 1px solid #eaeaea;
-        border-radius: 8px;
-        padding: 30px;
-        height: 100%;
-        transition: 0.3s ease;
-        border-top: 4px solid #a5110d;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.03);
-    }
-    #misy-case-study.misy-page .num-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    }
-
-    /* Info Cards (Features, Impact) */
-    #misy-case-study.misy-page .info-card {
-        background: #fff;
-        padding: 30px;
-        border-radius: 8px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        height: 100%;
-        border: 1px solid #f1f1f1;
-    }
-    #misy-case-study.misy-page .info-card h4, 
-    #misy-case-study.misy-page .info-card h5,
-    #misy-case-study.misy-page .info-card h6 {
-        margin-bottom: 15px;
-    }
-    #misy-case-study.misy-page .info-card p {
-        color: #666;
-        font-size: 0.95rem;
-        margin-bottom: 0;
-    }
-
-    /* Check List */
-    #misy-case-study.misy-page .check-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    #misy-case-study.misy-page .check-list li {
-        position: relative;
-        padding-left: 25px;
-        margin-bottom: 15px;
-        color: #444;
-        font-size: 0.95rem;
-    }
-    #misy-case-study.misy-page .check-list li::before {
-        content: '✓';
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: #a5110d;
-        font-weight: bold;
-    }
-
-    /* Tech Stack Boxes */
-    #misy-case-study.misy-page .tech-box {
-        border: 1px solid #eee;
-        padding: 20px;
-        text-align: center;
-        border-radius: 6px;
-        font-weight: 600;
-        background: #fff;
-        height: 100%;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-    }
-    #misy-case-study.misy-page .tech-box p {
-        font-size: 0.85rem;
-        color: #666;
-        margin-top: 10px;
-        margin-bottom: 0;
-        font-weight: normal;
     }
 
-    /* Goal Step Box */
-    #misy-case-study.misy-page .goal-step-box {
-        background: #fff;
-        border: 1px solid #eaeaea;
-        padding: 30px;
-        border-radius: 8px;
-        text-align: center;
-        height: 100%;
-        border-top: 4px solid #a5110d;
-    }
-
-    /* About Image Custom Styling */
-    #misy-case-study.misy-page .about-wrapper .about-image {
-        /* box-shadow: 0px 0px 10px #80808047; */
-        border-radius: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #misy-case-study.misy-page .about-wrapper .about-image img {
-        border-radius: 25px;
+    #misy-case-study.misy-page .glance-label,
+    #misy-case-study.misy-page .glance-value {
         width: 100%;
-        height: 450px;
-        object-fit: cover;
     }
 
-    /* Timeline Icon Colors */
-    #misy-case-study.misy-page .timeline-icon.bg-primary {
-        background-color: #a5110d;
-        color: #fff;
+    #misy-case-study.misy-page .glance-label {
+        margin-bottom: 5px;
     }
-
-    /* Solution Cards */
-    #misy-case-study.misy-page .misy-solution-card {
-        background: #fff;
-        border: 1px solid #eaeaea;
-        border-radius: 12px;
-        padding: 35px 30px;
-        height: 100%;
-        transition: all 0.3s ease;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-    }
-
-    #misy-case-study.misy-page .misy-solution-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: linear-gradient(90deg, #a5110d 0%, #c41e1a 100%);
-        transform: scaleX(0);
-        transition: transform 0.3s ease;
-    }
-
-    #misy-case-study.misy-page .misy-solution-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-        border-color: #a5110d;
-    }
-
-    #misy-case-study.misy-page .misy-solution-card:hover::before {
-        transform: scaleX(1);
-    }
-
-    #misy-case-study.misy-page .misy-solution-icon {
-        width: 80px;
-        height: 80px;
-        margin: 0 auto 25px;
-        background: linear-gradient(135deg, #a5110d 0%, #c41e1a 100%);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease;
-    }
-
-    #misy-case-study.misy-page .misy-solution-card:hover .misy-solution-icon {
-        transform: scale(1.1);
-        box-shadow: 0 10px 25px rgba(165, 17, 13, 0.3);
-    }
-
-    #misy-case-study.misy-page .misy-solution-icon i {
-        color: #fff;
-        font-size: 32px;
-    }
-
-    #misy-case-study.misy-page .misy-solution-card h4 {
-        font-weight: 700;
-        color: #1a1a1a;
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-
-    #misy-case-study.misy-page .misy-solution-card p {
-        color: #666;
-        font-size: 15px;
-        line-height: 1.6;
-        margin: 0;
-    }
-
-    @media (max-width: 768px) {
-        #misy-case-study.misy-page .glance-row {
-            flex-direction: column;
-        }
-        #misy-case-study.misy-page .glance-label, 
-        #misy-case-study.misy-page .glance-value {
-            width: 100%;
-        }
-        #misy-case-study.misy-page .glance-label {
-            margin-bottom: 5px;
-        }
-    }
+}
 
 
-     /* ---------------------------------------------------------
+/* ---------------------------------------------------------
        Strictly Scoped CSS Hierarchy for HerStay
        Target: #herstay-case-study.herstay-page
        --------------------------------------------------------- */
-    #herstay-case-study.herstay-page {
-        /* HerStay Theme Color */
-        --herstay-primary: #a5110d;
-        --herstay-secondary: #a5110d;
-    }
+#herstay-case-study.herstay-page {
+    /* HerStay Theme Color */
+    --herstay-primary: #a5110d;
+    --herstay-secondary: #a5110d;
+}
 
-    /* App Placeholder Styling */
-    #herstay-case-study.herstay-page .herstay-app-placeholder {
-        border: 2px dashed #e0e0e0;
-        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    }
+/* App Placeholder Styling */
+#herstay-case-study.herstay-page .herstay-app-placeholder {
+    border: 2px dashed #e0e0e0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
 
-    /* Objective Wrapper */
+/* Objective Wrapper */
+#herstay-case-study.herstay-page .herstay-objective-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Solution Image Wrapper */
+#herstay-case-study.herstay-page .herstay-solution-image-wrapper {
+    transition: transform 0.3s ease;
+}
+
+#herstay-case-study.herstay-page .herstay-solution-image-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+/* Feature Items */
+#herstay-case-study.herstay-page .herstay-feature-item {
+    transition: all 0.3s ease;
+}
+
+#herstay-case-study.herstay-page .herstay-feature-item:hover {
+    transform: translateX(5px);
+}
+
+/* Product Cards */
+#herstay-case-study.herstay-page .herstay-product-card {
+    transition: all 0.3s ease;
+}
+
+#herstay-case-study.herstay-page .herstay-product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(255, 77, 109, 0.15);
+    border-color: var(--herstay-primary);
+}
+
+#herstay-case-study.herstay-page .herstay-product-card:hover .icon-wrapper {
+    background: var(--herstay-secondary);
+}
+
+/* Step Cards */
+#herstay-case-study.herstay-page .herstay-step-card {
+    transition: all 0.4s ease;
+}
+
+#herstay-case-study.herstay-page .herstay-step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(255, 77, 109, 0.2);
+    border-color: var(--herstay-primary);
+}
+
+#herstay-case-study.herstay-page .herstay-step-card:hover .step-icon {
+    background: linear-gradient(135deg, #a5110d 0%, #a5110d 100%) !important;
+}
+
+#herstay-case-study.herstay-page .herstay-step-card:hover .step-icon i {
+    color: #fff !important;
+}
+
+#herstay-case-study.herstay-page .herstay-step-card:hover .step-number {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Timeline Icon Override for HerStay */
+#herstay-case-study.herstay-page .timeline-icon {
+    background: var(--herstay-primary) !important;
+}
+
+#herstay-case-study.herstay-page .timeline-icon.bg-info {
+    background: var(--herstay-primary) !important;
+}
+
+#herstay-case-study.herstay-page .timeline-icon.bg-warning {
+    background: var(--herstay-secondary) !important;
+}
+
+#herstay-case-study.herstay-page .timeline-icon.bg-primary {
+    background: var(--herstay-primary) !important;
+}
+
+#herstay-case-study.herstay-page .timeline-icon.bg-secondary {
+    background: #6c757d !important;
+}
+
+#herstay-case-study.herstay-page .timeline-icon.bg-success {
+    background: #28a745 !important;
+}
+
+/* Service Card Icon Override */
+#herstay-case-study.herstay-page .service-card-items .icon {
+    color: var(--herstay-primary) !important;
+}
+
+/* Tech Category Box Icon Override */
+#herstay-case-study.herstay-page .tech-category-box h4 i {
+    color: var(--herstay-primary) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
     #herstay-case-study.herstay-page .herstay-objective-wrapper {
-        position: relative;
-        overflow: hidden;
+        padding: 30px 20px !important;
     }
 
-    /* Solution Image Wrapper */
-    #herstay-case-study.herstay-page .herstay-solution-image-wrapper {
-        transition: transform 0.3s ease;
+    #herstay-case-study.herstay-page .herstay-objective-content h3 {
+        font-size: 16px !important;
     }
 
-    #herstay-case-study.herstay-page .herstay-solution-image-wrapper:hover {
-        transform: translateY(-5px);
+    #herstay-case-study.herstay-page .herstay-objective-content p {
+        font-size: 16px !important;
     }
 
-    /* Feature Items */
-    #herstay-case-study.herstay-page .herstay-feature-item {
-        transition: all 0.3s ease;
-    }
-
-    #herstay-case-study.herstay-page .herstay-feature-item:hover {
-        transform: translateX(5px);
-    }
-
-    /* Product Cards */
-    #herstay-case-study.herstay-page .herstay-product-card {
-        transition: all 0.3s ease;
-    }
-
-    #herstay-case-study.herstay-page .herstay-product-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 30px rgba(255, 77, 109, 0.15);
-        border-color: var(--herstay-primary);
-    }
-
-    #herstay-case-study.herstay-page .herstay-product-card:hover .icon-wrapper {
-        background: var(--herstay-secondary);
-    }
-
-    /* Step Cards */
     #herstay-case-study.herstay-page .herstay-step-card {
-        transition: all 0.4s ease;
+        padding: 25px 20px !important;
     }
 
-    #herstay-case-study.herstay-page .herstay-step-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 35px rgba(255, 77, 109, 0.2);
-        border-color: var(--herstay-primary);
+    #herstay-case-study.herstay-page .herstay-step-card .step-icon {
+        width: 60px !important;
+        height: 60px !important;
     }
 
-    #herstay-case-study.herstay-page .herstay-step-card:hover .step-icon {
-        background: linear-gradient(135deg, #a5110d 0%, #a5110d 100%) !important;
+    #herstay-case-study.herstay-page .herstay-step-card .step-icon i {
+        font-size: 24px !important;
     }
 
-    #herstay-case-study.herstay-page .herstay-step-card:hover .step-icon i {
-        color: #fff !important;
+    #herstay-case-study.herstay-page .herstay-step-card .step-number {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 20px !important;
+        top: -10px !important;
+        right: -10px !important;
     }
-
-    #herstay-case-study.herstay-page .herstay-step-card:hover .step-number {
-        transform: scale(1.1) rotate(5deg);
-    }
-
-    /* Timeline Icon Override for HerStay */
-    #herstay-case-study.herstay-page .timeline-icon {
-        background: var(--herstay-primary) !important;
-    }
-
-    #herstay-case-study.herstay-page .timeline-icon.bg-info {
-        background: var(--herstay-primary) !important;
-    }
-
-    #herstay-case-study.herstay-page .timeline-icon.bg-warning {
-        background: var(--herstay-secondary) !important;
-    }
-
-    #herstay-case-study.herstay-page .timeline-icon.bg-primary {
-        background: var(--herstay-primary) !important;
-    }
-
-    #herstay-case-study.herstay-page .timeline-icon.bg-secondary {
-        background: #6c757d !important;
-    }
-
-    #herstay-case-study.herstay-page .timeline-icon.bg-success {
-        background: #28a745 !important;
-    }
-
-    /* Service Card Icon Override */
-    #herstay-case-study.herstay-page .service-card-items .icon {
-        color: var(--herstay-primary) !important;
-    }
-
-    /* Tech Category Box Icon Override */
-    #herstay-case-study.herstay-page .tech-category-box h4 i {
-        color: var(--herstay-primary) !important;
-    }
-
-    /* Responsive Adjustments */
-    @media (max-width: 768px) {
-        #herstay-case-study.herstay-page .herstay-objective-wrapper {
-            padding: 30px 20px !important;
-        }
-
-        #herstay-case-study.herstay-page .herstay-objective-content h3 {
-            font-size: 16px !important;
-        }
-
-        #herstay-case-study.herstay-page .herstay-objective-content p {
-            font-size: 16px !important;
-        }
-
-        #herstay-case-study.herstay-page .herstay-step-card {
-            padding: 25px 20px !important;
-        }
-
-        #herstay-case-study.herstay-page .herstay-step-card .step-icon {
-            width: 60px !important;
-            height: 60px !important;
-        }
-
-        #herstay-case-study.herstay-page .herstay-step-card .step-icon i {
-            font-size: 24px !important;
-        }
-
-        #herstay-case-study.herstay-page .herstay-step-card .step-number {
-            width: 50px !important;
-            height: 50px !important;
-            font-size: 20px !important;
-            top: -10px !important;
-            right: -10px !important;
-        }
-    }
+}
 
 
-    /* ==========================================
+/* ==========================================
      START: MEET ZANE CASE STUDY SECTION
      ========================================== */
-   
-    #meetzane-case-study.meetzane-page {
-        color: #333;
-        background-color: #fff;
-    }
-    #meetzane-case-study.meetzane-page h1, 
-    #meetzane-case-study.meetzane-page h2, 
-    #meetzane-case-study.meetzane-page h3, 
-    #meetzane-case-study.meetzane-page h4, 
-    #meetzane-case-study.meetzane-page h5,
-    #meetzane-case-study.meetzane-page h6 {
-        color: #1a1a1a;
-        font-weight: 700;
-    }
-    #meetzane-case-study.meetzane-page .section-spacer {
-        padding: 80px 0;
-    }
-    #meetzane-case-study.meetzane-page .bg-light-gray {
-        background-color: #f8f9fa;
-    }
-    #meetzane-case-study.meetzane-page .theme-text-primary {
-        color: #a5110d; /* Theme Primary Color for this page */
-    }
-    #meetzane-case-study.meetzane-page .btn-custom-primary {
-        background-color: #a5110d;
-        color: #fff;
-        padding: 12px 30px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-block;
-        transition: 0.3s ease;
-        border: 2px solid #a5110d;
-    }
-    #meetzane-case-study.meetzane-page .btn-custom-primary:hover {
-        background-color: transparent;
-        color: #a5110d;
-    }
-    #meetzane-case-study.meetzane-page .btn-custom-outline {
-        background-color: transparent;
-        color: #1a1a1a;
-        padding: 12px 30px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-block;
-        transition: 0.3s ease;
-        border: 2px solid #e0e0e0;
-    }
-    #meetzane-case-study.meetzane-page .btn-custom-outline:hover {
-        border-color: #a5110d;
-        color: #a5110d;
-    }
 
-    /* Glance Table */
+#meetzane-case-study.meetzane-page {
+    color: #333;
+    background-color: #fff;
+}
+
+#meetzane-case-study.meetzane-page h1,
+#meetzane-case-study.meetzane-page h2,
+#meetzane-case-study.meetzane-page h3,
+#meetzane-case-study.meetzane-page h4,
+#meetzane-case-study.meetzane-page h5,
+#meetzane-case-study.meetzane-page h6 {
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+#meetzane-case-study.meetzane-page .section-spacer {
+    padding: 80px 0;
+}
+
+#meetzane-case-study.meetzane-page .bg-light-gray {
+    background-color: #f8f9fa;
+}
+
+#meetzane-case-study.meetzane-page .theme-text-primary {
+    color: #a5110d;
+    /* Theme Primary Color for this page */
+}
+
+#meetzane-case-study.meetzane-page .btn-custom-primary {
+    background-color: #a5110d;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease;
+    border: 2px solid #a5110d;
+}
+
+#meetzane-case-study.meetzane-page .btn-custom-primary:hover {
+    background-color: transparent;
+    color: #a5110d;
+}
+
+#meetzane-case-study.meetzane-page .btn-custom-outline {
+    background-color: transparent;
+    color: #1a1a1a;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease;
+    border: 2px solid #e0e0e0;
+}
+
+#meetzane-case-study.meetzane-page .btn-custom-outline:hover {
+    border-color: #a5110d;
+    color: #a5110d;
+}
+
+/* Glance Table */
+#meetzane-case-study.meetzane-page .glance-row {
+    display: flex;
+    border-bottom: 1px solid #eaeaea;
+    padding: 15px 0;
+}
+
+#meetzane-case-study.meetzane-page .glance-row:last-child {
+    border-bottom: none;
+}
+
+#meetzane-case-study.meetzane-page .glance-label {
+    width: 30%;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+#meetzane-case-study.meetzane-page .glance-value {
+    width: 70%;
+    color: #555;
+}
+
+/* Challenge Cards & Numbered Cards */
+#meetzane-case-study.meetzane-page .num-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 30px;
+    height: 100%;
+    transition: 0.3s ease;
+    border-top: 4px solid #a5110d;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+
+#meetzane-case-study.meetzane-page .num-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Info Cards (Features, Impact) */
+#meetzane-case-study.meetzane-page .info-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    border: 1px solid #f1f1f1;
+}
+
+#meetzane-case-study.meetzane-page .info-card h4,
+#meetzane-case-study.meetzane-page .info-card h5,
+#meetzane-case-study.meetzane-page .info-card h6 {
+    margin-bottom: 15px;
+}
+
+#meetzane-case-study.meetzane-page .info-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* Check List */
+#meetzane-case-study.meetzane-page .check-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#meetzane-case-study.meetzane-page .check-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+#meetzane-case-study.meetzane-page .check-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #a5110d;
+    font-weight: bold;
+}
+
+/* Tech Stack Boxes */
+#meetzane-case-study.meetzane-page .tech-box {
+    border: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: 600;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#meetzane-case-study.meetzane-page .tech-box p {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+/* Goal Step Box */
+#meetzane-case-study.meetzane-page .goal-step-box {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    height: 100%;
+    border-top: 4px solid #a5110d;
+}
+
+/* About Image Custom Styling */
+#meetzane-case-study.meetzane-page .about-wrapper .about-image {
+    /* box-shadow: 0px 0px 10px #80808047; */
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#meetzane-case-study.meetzane-page .about-wrapper .about-image img {
+    border-radius: 25px;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* Timeline Icon Colors */
+#meetzane-case-study.meetzane-page .timeline-icon.bg-primary {
+    background-color: #a5110d;
+    color: #fff;
+}
+
+/* Solution Cards */
+#meetzane-case-study.meetzane-page .meetzane-solution-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 35px 30px;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#meetzane-case-study.meetzane-page .meetzane-solution-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #a5110d 0%, #c41e1a 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+#meetzane-case-study.meetzane-page .meetzane-solution-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-color: #a5110d;
+}
+
+#meetzane-case-study.meetzane-page .meetzane-solution-card:hover::before {
+    transform: scaleX(1);
+}
+
+#meetzane-case-study.meetzane-page .meetzane-solution-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: linear-gradient(135deg, #a5110d 0%, #c41e1a 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#meetzane-case-study.meetzane-page .meetzane-solution-card:hover .meetzane-solution-icon {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(165, 17, 13, 0.3);
+}
+
+#meetzane-case-study.meetzane-page .meetzane-solution-icon i {
+    color: #fff;
+    font-size: 32px;
+}
+
+#meetzane-case-study.meetzane-page .meetzane-solution-card h4 {
+    font-weight: 700;
+    color: #1a1a1a;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#meetzane-case-study.meetzane-page .meetzane-solution-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
     #meetzane-case-study.meetzane-page .glance-row {
-        display: flex;
-        border-bottom: 1px solid #eaeaea;
-        padding: 15px 0;
-    }
-    #meetzane-case-study.meetzane-page .glance-row:last-child {
-        border-bottom: none;
-    }
-    #meetzane-case-study.meetzane-page .glance-label {
-        width: 30%;
-        font-weight: 700;
-        color: #1a1a1a;
-    }
-    #meetzane-case-study.meetzane-page .glance-value {
-        width: 70%;
-        color: #555;
-    }
-
-    /* Challenge Cards & Numbered Cards */
-    #meetzane-case-study.meetzane-page .num-card {
-        background: #fff;
-        border: 1px solid #eaeaea;
-        border-radius: 8px;
-        padding: 30px;
-        height: 100%;
-        transition: 0.3s ease;
-        border-top: 4px solid #a5110d;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.03);
-    }
-    #meetzane-case-study.meetzane-page .num-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    }
-
-    /* Info Cards (Features, Impact) */
-    #meetzane-case-study.meetzane-page .info-card {
-        background: #fff;
-        padding: 30px;
-        border-radius: 8px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        height: 100%;
-        border: 1px solid #f1f1f1;
-    }
-    #meetzane-case-study.meetzane-page .info-card h4, 
-    #meetzane-case-study.meetzane-page .info-card h5,
-    #meetzane-case-study.meetzane-page .info-card h6 {
-        margin-bottom: 15px;
-    }
-    #meetzane-case-study.meetzane-page .info-card p {
-        color: #666;
-        font-size: 0.95rem;
-        margin-bottom: 0;
-    }
-
-    /* Check List */
-    #meetzane-case-study.meetzane-page .check-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    #meetzane-case-study.meetzane-page .check-list li {
-        position: relative;
-        padding-left: 25px;
-        margin-bottom: 20px;
-        color: #444;
-        font-size: 0.95rem;
-    }
-    #meetzane-case-study.meetzane-page .check-list li::before {
-        content: '✓';
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: #a5110d;
-        font-weight: bold;
-    }
-
-    /* Tech Stack Boxes */
-    #meetzane-case-study.meetzane-page .tech-box {
-        border: 1px solid #eee;
-        padding: 20px;
-        text-align: center;
-        border-radius: 6px;
-        font-weight: 600;
-        background: #fff;
-        height: 100%;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-    }
-    #meetzane-case-study.meetzane-page .tech-box p {
-        font-size: 0.85rem;
-        color: #666;
-        margin-top: 10px;
-        margin-bottom: 0;
-        font-weight: normal;
     }
 
-    /* Goal Step Box */
-    #meetzane-case-study.meetzane-page .goal-step-box {
-        background: #fff;
-        border: 1px solid #eaeaea;
-        padding: 30px;
-        border-radius: 8px;
-        text-align: center;
-        height: 100%;
-        border-top: 4px solid #a5110d;
-    }
-
-    /* About Image Custom Styling */
-   #meetzane-case-study.meetzane-page .about-wrapper .about-image {
-        /* box-shadow: 0px 0px 10px #80808047; */
-        border-radius: 25px;
-        display: flex;
-        justify-content: center;
-    }
-    #meetzane-case-study.meetzane-page .about-wrapper .about-image img {
-        border-radius: 25px;
+    #meetzane-case-study.meetzane-page .glance-label,
+    #meetzane-case-study.meetzane-page .glance-value {
         width: 100%;
-        height: 450px;
-        object-fit: cover;
     }
 
-    /* Timeline Icon Colors */
-    #meetzane-case-study.meetzane-page .timeline-icon.bg-primary {
-        background-color: #a5110d;
-        color: #fff;
+    #meetzane-case-study.meetzane-page .glance-label {
+        margin-bottom: 5px;
     }
-
-    /* Solution Cards */
-    #meetzane-case-study.meetzane-page .meetzane-solution-card {
-        background: #fff;
-        border: 1px solid #eaeaea;
-        border-radius: 12px;
-        padding: 35px 30px;
-        height: 100%;
-        transition: all 0.3s ease;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-    }
-
-    #meetzane-case-study.meetzane-page .meetzane-solution-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: linear-gradient(90deg, #a5110d 0%, #c41e1a 100%);
-        transform: scaleX(0);
-        transition: transform 0.3s ease;
-    }
-
-    #meetzane-case-study.meetzane-page .meetzane-solution-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-        border-color: #a5110d;
-    }
-
-    #meetzane-case-study.meetzane-page .meetzane-solution-card:hover::before {
-        transform: scaleX(1);
-    }
-
-    #meetzane-case-study.meetzane-page .meetzane-solution-icon {
-        width: 80px;
-        height: 80px;
-        margin: 0 auto 25px;
-        background: linear-gradient(135deg, #a5110d 0%, #c41e1a 100%);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease;
-    }
-
-    #meetzane-case-study.meetzane-page .meetzane-solution-card:hover .meetzane-solution-icon {
-        transform: scale(1.1);
-        box-shadow: 0 10px 25px rgba(165, 17, 13, 0.3);
-    }
-
-    #meetzane-case-study.meetzane-page .meetzane-solution-icon i {
-        color: #fff;
-        font-size: 32px;
-    }
-
-    #meetzane-case-study.meetzane-page .meetzane-solution-card h4 {
-        font-weight: 700;
-        color: #1a1a1a;
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-
-    #meetzane-case-study.meetzane-page .meetzane-solution-card p {
-        color: #666;
-        font-size: 15px;
-        line-height: 1.6;
-        margin: 0;
-    }
-
-    @media (max-width: 768px) {
-        #meetzane-case-study.meetzane-page .glance-row {
-            flex-direction: column;
-        }
-        #meetzane-case-study.meetzane-page .glance-label, 
-        #meetzane-case-study.meetzane-page .glance-value {
-            width: 100%;
-        }
-        #meetzane-case-study.meetzane-page .glance-label {
-            margin-bottom: 5px;
-        }
-    }
+}
 
 
 
 
-    /* ---------------------------------------------------------
+/* ---------------------------------------------------------
        Strictly Scoped CSS Hierarchy for ListIt
        Target: #listit-case-study.listit-page
        --------------------------------------------------------- */
-    #listit-case-study.listit-page {
-        /* ListIt Theme Color */
-        --listit-primary: #A5110D;
-        --listit-secondary: #A5110D;
-    }
+#listit-case-study.listit-page {
+    /* ListIt Theme Color */
+    --listit-primary: #A5110D;
+    --listit-secondary: #A5110D;
+}
 
-    /* App Placeholder Styling */
-    #listit-case-study.listit-page .listit-app-placeholder {
-        border: 2px dashed #e0e0e0;
-        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    }
+/* App Placeholder Styling */
+#listit-case-study.listit-page .listit-app-placeholder {
+    border: 2px dashed #e0e0e0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
 
-    /* Objective Wrapper */
+/* Objective Wrapper */
+#listit-case-study.listit-page .listit-objective-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Solution Image Wrapper */
+#listit-case-study.listit-page .listit-solution-image-wrapper {
+    transition: transform 0.3s ease;
+}
+
+#listit-case-study.listit-page .listit-solution-image-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+/* Feature Items */
+#listit-case-study.listit-page .listit-feature-item {
+    transition: all 0.3s ease;
+}
+
+#listit-case-study.listit-page .listit-feature-item:hover {
+    transform: translateX(5px);
+}
+
+/* Product Cards */
+#listit-case-study.listit-page .listit-product-card {
+    transition: all 0.3s ease;
+}
+
+#listit-case-study.listit-page .listit-product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(255, 107, 0, 0.15);
+    border-color: var(--listit-primary);
+}
+
+#listit-case-study.listit-page .listit-product-card:hover .icon-wrapper {
+    background: var(--listit-secondary);
+}
+
+/* Timeline Icon Override for ListIt */
+#listit-case-study.listit-page .timeline-icon {
+    background: var(--listit-primary) !important;
+}
+
+#listit-case-study.listit-page .timeline-icon.bg-info {
+    background: var(--listit-primary) !important;
+}
+
+#listit-case-study.listit-page .timeline-icon.bg-warning {
+    background: var(--listit-secondary) !important;
+}
+
+#listit-case-study.listit-page .timeline-icon.bg-primary {
+    background: var(--listit-primary) !important;
+}
+
+#listit-case-study.listit-page .timeline-icon.bg-secondary {
+    background: #6c757d !important;
+}
+
+#listit-case-study.listit-page .timeline-icon.bg-success {
+    background: #28a745 !important;
+}
+
+/* Service Card Icon Override */
+#listit-case-study.listit-page .service-card-items .icon {
+    color: var(--listit-primary) !important;
+}
+
+/* Tech Category Box Icon Override */
+#listit-case-study.listit-page .tech-category-box h4 i {
+    color: var(--listit-primary) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
     #listit-case-study.listit-page .listit-objective-wrapper {
-        position: relative;
-        overflow: hidden;
+        padding: 30px 20px !important;
     }
 
-    /* Solution Image Wrapper */
-    #listit-case-study.listit-page .listit-solution-image-wrapper {
-        transition: transform 0.3s ease;
+    #listit-case-study.listit-page .listit-objective-content h3 {
+        font-size: 16px !important;
     }
 
-    #listit-case-study.listit-page .listit-solution-image-wrapper:hover {
-        transform: translateY(-5px);
+    #listit-case-study.listit-page .listit-objective-content p {
+        font-size: 16px !important;
     }
+}
 
-    /* Feature Items */
-    #listit-case-study.listit-page .listit-feature-item {
-        transition: all 0.3s ease;
-    }
+.img-frame {
+    position: relative;
+    /* width: min(100%, 560px); */
+    padding: 12px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ffffff 0%, #fff5f4 100%);
+    border: 1px solid rgba(165, 17, 13, 0.08);
+    box-shadow: 0 30px 70px rgba(17, 17, 17, 0.12);
+    overflow: hidden;
+}
 
-    #listit-case-study.listit-page .listit-feature-item:hover {
-        transform: translateX(5px);
-    }
-
-    /* Product Cards */
-    #listit-case-study.listit-page .listit-product-card {
-        transition: all 0.3s ease;
-    }
-
-    #listit-case-study.listit-page .listit-product-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 30px rgba(255, 107, 0, 0.15);
-        border-color: var(--listit-primary);
-    }
-
-    #listit-case-study.listit-page .listit-product-card:hover .icon-wrapper {
-        background: var(--listit-secondary);
-    }
-
-    /* Timeline Icon Override for ListIt */
-    #listit-case-study.listit-page .timeline-icon {
-        background: var(--listit-primary) !important;
-    }
-
-    #listit-case-study.listit-page .timeline-icon.bg-info {
-        background: var(--listit-primary) !important;
-    }
-
-    #listit-case-study.listit-page .timeline-icon.bg-warning {
-        background: var(--listit-secondary) !important;
-    }
-
-    #listit-case-study.listit-page .timeline-icon.bg-primary {
-        background: var(--listit-primary) !important;
-    }
-
-    #listit-case-study.listit-page .timeline-icon.bg-secondary {
-        background: #6c757d !important;
-    }
-
-    #listit-case-study.listit-page .timeline-icon.bg-success {
-        background: #28a745 !important;
-    }
-
-    /* Service Card Icon Override */
-    #listit-case-study.listit-page .service-card-items .icon {
-        color: var(--listit-primary) !important;
-    }
-
-    /* Tech Category Box Icon Override */
-    #listit-case-study.listit-page .tech-category-box h4 i {
-        color: var(--listit-primary) !important;
-    }
-
-    /* Responsive Adjustments */
-    @media (max-width: 768px) {
-        #listit-case-study.listit-page .listit-objective-wrapper {
-            padding: 30px 20px !important;
-        }
-
-        #listit-case-study.listit-page .listit-objective-content h3 {
-            font-size: 16px !important;
-        }
-
-        #listit-case-study.listit-page .listit-objective-content p {
-            font-size: 16px !important;
-        }
-    }
-
-      .img-frame {
-        position: relative;
-        /* width: min(100%, 560px); */
-        padding: 12px;
-        border-radius: 30px;
-        background: linear-gradient(135deg, #ffffff 0%, #fff5f4 100%);
-        border: 1px solid rgba(165, 17, 13, 0.08);
-        box-shadow: 0 30px 70px rgba(17, 17, 17, 0.12);
-        overflow: hidden;
-    }
-
-    .img-frame img{
-        border-radius: 30px !important;
-    }
+.img-frame img {
+    border-radius: 30px !important;
+}
 
 
 
-   
-    /* ---------------------------------------------------------
+
+/* ---------------------------------------------------------
        Strictly Scoped CSS Hierarchy 
        Target: #gamedev-case-study.gamedev-page 
        --------------------------------------------------------- */
-    #gamedev-case-study.gamedev-page {
-        color: #333;
-        background-color: #fff;
-    }
-    
-    #gamedev-case-study.gamedev-page h1, 
-    #gamedev-case-study.gamedev-page h2, 
-    #gamedev-case-study.gamedev-page h3, 
-    #gamedev-case-study.gamedev-page h4, 
-    #gamedev-case-study.gamedev-page h5,
-    #gamedev-case-study.gamedev-page h6 {
-        color: #1a1a1a;
-        font-weight: 700;
-    }
+#gamedev-case-study.gamedev-page {
+    color: #333;
+    background-color: #fff;
+}
 
-     #gamedev-case-study.gamedev-page .about-image .img-frame img.img-custom-anim-left {
-        width: 100%;
-        object-fit: cover;
-        height: 450px;
-    }
-    
-    #gamedev-case-study.gamedev-page .section-spacer {
-        padding: 80px 0;
-    }
-    
-    #gamedev-case-study.gamedev-page .bg-light-gray {
-        background-color: #f8f9fa;
-    }
-    
-    #gamedev-case-study.gamedev-page .theme-text-primary {
-        color: #a5110d;
-    }
-    
-    /* Buttons - Using existing button styles */
-    #gamedev-case-study.gamedev-page .btn-custom-primary {
-        background-color: #a5110d;
-        color: #fff;
-        padding: 12px 30px;
-        border-radius: 25px;
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-block;
-        transition: 0.3s ease;
-        border: 2px solid #a5110d;
-    }
-    #gamedev-case-study.gamedev-page .btn-custom-primary:hover {
-        background-color: transparent;
-        color: #a5110d;
-    }
-    #gamedev-case-study.gamedev-page .btn-custom-outline {
-        background-color: transparent;
-        color: #1a1a1a;
-        padding: 12px 30px;
-        border-radius: 25px;
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-block;
-        transition: 0.3s ease;
-        border: 2px solid #e0e0e0;
-    }
-    #gamedev-case-study.gamedev-page .btn-custom-outline:hover {
-        border-color: #a5110d;
-        color: #a5110d;
-    }
+#gamedev-case-study.gamedev-page h1,
+#gamedev-case-study.gamedev-page h2,
+#gamedev-case-study.gamedev-page h3,
+#gamedev-case-study.gamedev-page h4,
+#gamedev-case-study.gamedev-page h5,
+#gamedev-case-study.gamedev-page h6 {
+    color: #1a1a1a;
+    font-weight: 700;
+}
 
-    /* Service Card Icon Override */
-    #gamedev-case-study.gamedev-page .service-card-items .icon {
-        color: #a5110d ;
-    }
+#gamedev-case-study.gamedev-page .about-image .img-frame img.img-custom-anim-left {
+    width: 100%;
+    object-fit: cover;
+    height: 450px;
+}
 
-    /* Timeline Icon Override */
-    #gamedev-case-study.gamedev-page .timeline-icon {
-        background: #a5110d ;
-    }
+#gamedev-case-study.gamedev-page .section-spacer {
+    padding: 80px 0;
+}
 
-    #gamedev-case-study.gamedev-page .timeline-icon.bg-info {
-        background: #a5110d ;
-    }
+#gamedev-case-study.gamedev-page .bg-light-gray {
+    background-color: #f8f9fa;
+}
 
-    #gamedev-case-study.gamedev-page .timeline-icon.bg-warning {
-        background: #a5110d ;
-    }
+#gamedev-case-study.gamedev-page .theme-text-primary {
+    color: #a5110d;
+}
 
-    #gamedev-case-study.gamedev-page .timeline-icon.bg-primary {
-        background: #a5110d ;
-    }
+/* Buttons - Using existing button styles */
+#gamedev-case-study.gamedev-page .btn-custom-primary {
+    background-color: #a5110d;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease;
+    border: 2px solid #a5110d;
+}
 
-    #gamedev-case-study.gamedev-page .timeline-icon.bg-secondary {
-        background: #6c757d ;
-    }
+#gamedev-case-study.gamedev-page .btn-custom-primary:hover {
+    background-color: transparent;
+    color: #a5110d;
+}
 
-    #gamedev-case-study.gamedev-page .timeline-icon.bg-success {
-        background: #28a745 ;
-    }
+#gamedev-case-study.gamedev-page .btn-custom-outline {
+    background-color: transparent;
+    color: #1a1a1a;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease;
+    border: 2px solid #e0e0e0;
+}
 
-    /* Platform Cards - Alternative Design */
-    #gamedev-case-study.gamedev-page .platform-card {
-        background: #fff;
-        border: 2px solid #f0f0f0;
-        border-radius: 16px;
-        padding: 40px 30px;
-        text-align: center;
-        height: 100%;
-        transition: 0.3s ease;
-        position: relative;
-        overflow: hidden;
-    }
-    /* #gamedev-case-study.gamedev-page .platform-card::before {
+#gamedev-case-study.gamedev-page .btn-custom-outline:hover {
+    border-color: #a5110d;
+    color: #a5110d;
+}
+
+/* Service Card Icon Override */
+#gamedev-case-study.gamedev-page .service-card-items .icon {
+    color: #a5110d;
+}
+
+/* Timeline Icon Override */
+#gamedev-case-study.gamedev-page .timeline-icon {
+    background: #a5110d;
+}
+
+#gamedev-case-study.gamedev-page .timeline-icon.bg-info {
+    background: #a5110d;
+}
+
+#gamedev-case-study.gamedev-page .timeline-icon.bg-warning {
+    background: #a5110d;
+}
+
+#gamedev-case-study.gamedev-page .timeline-icon.bg-primary {
+    background: #a5110d;
+}
+
+#gamedev-case-study.gamedev-page .timeline-icon.bg-secondary {
+    background: #6c757d;
+}
+
+#gamedev-case-study.gamedev-page .timeline-icon.bg-success {
+    background: #28a745;
+}
+
+/* Platform Cards - Alternative Design */
+#gamedev-case-study.gamedev-page .platform-card {
+    background: #fff;
+    border: 2px solid #f0f0f0;
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    height: 100%;
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* #gamedev-case-study.gamedev-page .platform-card::before {
         content: '';
         position: absolute;
         top: 0;
@@ -5259,709 +5349,1231 @@ section#about-us-cta .main-button {
         transform: scaleX(0);
         transition: 0.3s ease;
     } */
-    #gamedev-case-study.gamedev-page .platform-card:hover {
-        border-color:  #a5110d;
-        transform: translateY(-8px);
-        box-shadow: 0 12px 30px rgba(255, 0, 0, 0.15);
-    }
-    #gamedev-case-study.gamedev-page .platform-card:hover::before {
-        transform: scaleX(1);
-    }
-    #gamedev-case-study.gamedev-page .platform-card .platform-icon {
-        width: 80px;
-        height: 80px;
-        background: linear-gradient(135deg, rgba(255, 0, 0, 0.1) 0%, rgba(255, 0, 0, 0.05) 100%);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 25px;
-        transition: 0.3s ease;
-    }
-    #gamedev-case-study.gamedev-page .platform-card:hover .platform-icon {
-        background: #a5110d;
-        transform: scale(1.1);
-    }
-    #gamedev-case-study.gamedev-page .platform-card .platform-icon i {
-        font-size: 36px;
-        color: #a5110d !important;
-        transition: 0.3s ease;
-    }
-    #gamedev-case-study.gamedev-page .platform-card:hover .platform-icon i {
-        color: #fff !important;
-    }
-    #gamedev-case-study.gamedev-page .platform-card h6 {
-        font-size: 1.25rem;
-        font-weight: 700;
-        color: #1a1a1a;
-        margin-bottom: 15px;
-        transition: 0.3s ease;
-    }
-    #gamedev-case-study.gamedev-page .platform-card:hover h6 {
-        color: #a5110d;
-    }
-    #gamedev-case-study.gamedev-page .platform-card p {
-        font-size: 0.95rem;
-        color: #666;
-        line-height: 1.6;
-        margin: 0;
-    }
+#gamedev-case-study.gamedev-page .platform-card:hover {
+    border-color: #a5110d;
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(255, 0, 0, 0.15);
+}
 
-    /* Tech Stack Badges */
-    #gamedev-case-study.gamedev-page .tech-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-        justify-content: center;
-        margin-top: 24px;
-    }
+#gamedev-case-study.gamedev-page .platform-card:hover::before {
+    transform: scaleX(1);
+}
 
-    #gamedev-case-study.gamedev-page .tech-badge {
-        background: #a5110d;
-        color: #ffffff;
-        padding: 0px 20px;
-        border-radius: 50px;
-        font-size: 0.95rem;
-        font-weight: 600;
-        border: 2px solid #a5110d;
-        transition: 0.3s ease;
-    }
+#gamedev-case-study.gamedev-page .platform-card .platform-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.1) 0%, rgba(255, 0, 0, 0.05) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    transition: 0.3s ease;
+}
 
-    #gamedev-case-study.gamedev-page .tech-badge:hover {
-        transform: none;
-        box-shadow: none;
-    }
- 
+#gamedev-case-study.gamedev-page .platform-card:hover .platform-icon {
+    background: #a5110d;
+    transform: scale(1.1);
+}
 
-    /* Portfolio Cards */
-    #gamedev-case-study.gamedev-page .portfolio-card {
-        background: #fff;
-        border: 1px solid #eaeaea;
-        border-radius: 8px;
-        overflow: hidden;
-        height: 100%;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-        transition: 0.3s ease;
-    }
-    #gamedev-case-study.gamedev-page .portfolio-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    }
-    #gamedev-case-study.gamedev-page .portfolio-img {
-        width: 100%;
-        height: 350px;
-        background-color: #ddd;
-        object-fit: cover;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #888;
-        font-size: 0.9rem;
-    }
-    #gamedev-case-study.gamedev-page .portfolio-content {
-        padding: 20px;
-    }
-    #gamedev-case-study.gamedev-page .portfolio-content h6 {
-        margin-bottom: 10px;
-        font-size: 1.1rem;
-    }
-    #gamedev-case-study.gamedev-page .portfolio-content p {
-        font-size: 0.9rem;
-        color: #666;
-        margin-bottom: 15px;
-    }
-    #gamedev-case-study.gamedev-page .portfolio-link {
-        font-size: 0.9rem;
-        font-weight: 600;
-        color: #a5110d;
-        text-decoration: none;
-    }
-    #gamedev-case-study.gamedev-page .portfolio-link:hover {
-        text-decoration: underline;
-    }
+#gamedev-case-study.gamedev-page .platform-card .platform-icon i {
+    font-size: 36px;
+    color: #a5110d !important;
+    transition: 0.3s ease;
+}
 
-    #gamedev-case-study.gamedev-page .service-card-items {
-        height:100%;
-    }
+#gamedev-case-study.gamedev-page .platform-card:hover .platform-icon i {
+    color: #fff !important;
+}
 
-    #gamedev-case-study.gamedev-page .custom-service-icon-wrapper {
-        font-size: 24px;
-    }
+#gamedev-case-study.gamedev-page .platform-card h6 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+}
 
-    #gamedev-case-study.gamedev-page .service-card-items:hover .icon {
-        color: white;
-    }
+#gamedev-case-study.gamedev-page .platform-card:hover h6 {
+    color: #a5110d;
+}
 
-    #gamedev-case-study.gamedev-page .portfolio-card .portfolio-img img {
-        height: 100%;
-        object-fit: cover;
-        width: 100%;
-    }
+#gamedev-case-study.gamedev-page .platform-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Tech Stack Badges */
+#gamedev-case-study.gamedev-page .tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+#gamedev-case-study.gamedev-page .tech-badge {
+    background: #a5110d;
+    color: #ffffff;
+    padding: 0px 20px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: 2px solid #a5110d;
+    transition: 0.3s ease;
+}
+
+#gamedev-case-study.gamedev-page .tech-badge:hover {
+    transform: none;
+    box-shadow: none;
+}
 
 
-    /* Responsive */
-    @media (max-width: 768px) {
-        #gamedev-case-study.gamedev-page .section-spacer {
-            padding: 60px 0;
-        }
+/* Portfolio Cards */
+#gamedev-case-study.gamedev-page .portfolio-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: 0.3s ease;
+}
+
+#gamedev-case-study.gamedev-page .portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+#gamedev-case-study.gamedev-page .portfolio-img {
+    width: 100%;
+    height: 350px;
+    background-color: #ddd;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+#gamedev-case-study.gamedev-page .portfolio-content {
+    padding: 20px;
+}
+
+#gamedev-case-study.gamedev-page .portfolio-content h6 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+#gamedev-case-study.gamedev-page .portfolio-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#gamedev-case-study.gamedev-page .portfolio-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #a5110d;
+    text-decoration: none;
+}
+
+#gamedev-case-study.gamedev-page .portfolio-link:hover {
+    text-decoration: underline;
+}
+
+#gamedev-case-study.gamedev-page .service-card-items {
+    height: 100%;
+}
+
+#gamedev-case-study.gamedev-page .custom-service-icon-wrapper {
+    font-size: 24px;
+}
+
+#gamedev-case-study.gamedev-page .service-card-items:hover .icon {
+    color: white;
+}
+
+#gamedev-case-study.gamedev-page .portfolio-card .portfolio-img img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    #gamedev-case-study.gamedev-page .section-spacer {
+        padding: 60px 0;
     }
+}
 
 
 
 
-       /* ---------------------------------------------------------
+/* ---------------------------------------------------------
        Strictly Scoped CSS Hierarchy 
        Target: #customwebapp-case-study.customwebapp-page 
        --------------------------------------------------------- */
-    #customwebapp-case-study.customwebapp-page {
-        color: #333;
-        font-family: inherit;
-        background-color: #fff;
-    }
-    
-    #customwebapp-case-study.customwebapp-page h1, 
-    #customwebapp-case-study.customwebapp-page h2, 
-    #customwebapp-case-study.customwebapp-page h3, 
-    #customwebapp-case-study.customwebapp-page h4, 
-    #customwebapp-case-study.customwebapp-page h5,
-    #customwebapp-case-study.customwebapp-page h6 {
-        color: #1a1a1a;
-        font-weight: 700;
-    }
-    
+#customwebapp-case-study.customwebapp-page {
+    color: #333;
+    font-family: inherit;
+    background-color: #fff;
+}
+
+#customwebapp-case-study.customwebapp-page h1,
+#customwebapp-case-study.customwebapp-page h2,
+#customwebapp-case-study.customwebapp-page h3,
+#customwebapp-case-study.customwebapp-page h4,
+#customwebapp-case-study.customwebapp-page h5,
+#customwebapp-case-study.customwebapp-page h6 {
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+#customwebapp-case-study.customwebapp-page .section-spacer {
+    padding: 80px 0;
+}
+
+#customwebapp-case-study.customwebapp-page .bg-light-gray {
+    background-color: #f8f9fa;
+}
+
+#customwebapp-case-study.customwebapp-page .theme-text-primary {
+    color: var(--primary-red, #ff0000);
+}
+
+/* Buttons - Using existing button styles */
+#customwebapp-case-study.customwebapp-page .btn-custom-primary {
+    background-color: var(--primary-red, #ff0000);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease;
+    border: 2px solid var(--primary-red, #ff0000);
+}
+
+#customwebapp-case-study.customwebapp-page .btn-custom-primary:hover {
+    background-color: transparent;
+    color: var(--primary-red, #ff0000);
+}
+
+#customwebapp-case-study.customwebapp-page .btn-custom-outline {
+    background-color: transparent;
+    color: #1a1a1a;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease;
+    border: 2px solid #e0e0e0;
+}
+
+#customwebapp-case-study.customwebapp-page .btn-custom-outline:hover {
+    border-color: var(--primary-red, #ff0000);
+    color: var(--primary-red, #ff0000);
+}
+
+/* Service Card Icon Override */
+#customwebapp-case-study.customwebapp-page .service-card-items .icon {
+    color: var(--primary-red, #ff0000);
+}
+
+/* Timeline Icon Override */
+#customwebapp-case-study.customwebapp-page .timeline-icon {
+    background: var(--primary-red, #ff0000);
+}
+
+#customwebapp-case-study.customwebapp-page .timeline-icon.bg-info {
+    background: var(--primary-red, #ff0000);
+}
+
+#customwebapp-case-study.customwebapp-page .timeline-icon.bg-warning {
+    background: var(--primary-red, #ff0000);
+}
+
+#customwebapp-case-study.customwebapp-page .timeline-icon.bg-primary {
+    background: var(--primary-red, #ff0000);
+}
+
+#customwebapp-case-study.customwebapp-page .timeline-icon.bg-secondary {
+    background: #6c757d;
+}
+
+#customwebapp-case-study.customwebapp-page .timeline-icon.bg-success {
+    background: #28a745;
+}
+
+#customwebapp-case-study.customwebapp-page .service-card-items:hover .icon {
+    color: white;
+}
+
+/* Platform Cards - Alternative Design */
+#customwebapp-case-study.customwebapp-page .platform-card {
+    background: #fff;
+    border: 2px solid #f0f0f0;
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: left;
+    height: 100%;
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#customwebapp-case-study.customwebapp-page .platform-card:hover {
+    border-color: var(--primary-red, #ff0000);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(255, 0, 0, 0.15);
+}
+
+#customwebapp-case-study.customwebapp-page .platform-card:hover::before {
+    transform: scaleX(1);
+}
+
+#customwebapp-case-study.customwebapp-page .platform-card h6 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+}
+
+#customwebapp-case-study.customwebapp-page .platform-card:hover h6 {
+    color: var(--primary-red, #ff0000);
+}
+
+#customwebapp-case-study.customwebapp-page .platform-card .tech-tags {
+    color: var(--primary-red, #ff0000);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+#customwebapp-case-study.customwebapp-page .platform-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+
+#customwebapp-case-study.customwebapp-page .service-card-items {
+    height: 100%;
+}
+
+#customwebapp-case-study.customwebapp-page .custom-service-icon-wrapper {
+    font-size: 24px;
+}
+
+#customwebapp-case-study.customwebapp-page .service-card-items:hover .icon {
+    color: white;
+}
+
+#customwebapp-case-study.customwebapp-page .portfolio-card .portfolio-img img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+#customwebapp-case-study.customwebapp-page .about-image .img-frame img {
+    width: 100%;
+    object-fit: cover;
+    height: 450px;
+}
+
+
+#customwebapp-case-study.customwebapp-page .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+    background: #f0eeee;
+}
+
+#customwebapp-case-study.customwebapp-page section.cta-section .main-button {
+    max-width: unset;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
     #customwebapp-case-study.customwebapp-page .section-spacer {
-        padding: 80px 0;
+        padding: 60px 0;
     }
-    
-    #customwebapp-case-study.customwebapp-page .bg-light-gray {
-        background-color: #f8f9fa;
-    }
-    
-    #customwebapp-case-study.customwebapp-page .theme-text-primary {
-        color: var(--primary-red, #ff0000);
-    }
-    
-    /* Buttons - Using existing button styles */
-    #customwebapp-case-study.customwebapp-page .btn-custom-primary {
-        background-color: var(--primary-red, #ff0000);
-        color: #fff;
-        padding: 12px 30px;
-        border-radius: 25px;
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-block;
-        transition: 0.3s ease;
-        border: 2px solid var(--primary-red, #ff0000);
-    }
-    #customwebapp-case-study.customwebapp-page .btn-custom-primary:hover {
-        background-color: transparent;
-        color: var(--primary-red, #ff0000);
-    }
-    #customwebapp-case-study.customwebapp-page .btn-custom-outline {
-        background-color: transparent;
-        color: #1a1a1a;
-        padding: 12px 30px;
-        border-radius: 25px;
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-block;
-        transition: 0.3s ease;
-        border: 2px solid #e0e0e0;
-    }
-    #customwebapp-case-study.customwebapp-page .btn-custom-outline:hover {
-        border-color: var(--primary-red, #ff0000);
-        color: var(--primary-red, #ff0000);
-    }
-
-    /* Service Card Icon Override */
-    #customwebapp-case-study.customwebapp-page .service-card-items .icon {
-        color: var(--primary-red, #ff0000) ;
-    }
-
-    /* Timeline Icon Override */
-    #customwebapp-case-study.customwebapp-page .timeline-icon {
-        background: var(--primary-red, #ff0000) ;
-    }
-
-    #customwebapp-case-study.customwebapp-page .timeline-icon.bg-info {
-        background: var(--primary-red, #ff0000) ;
-    }
-
-    #customwebapp-case-study.customwebapp-page .timeline-icon.bg-warning {
-        background: var(--primary-red, #ff0000) ;
-    }
-
-    #customwebapp-case-study.customwebapp-page .timeline-icon.bg-primary {
-        background: var(--primary-red, #ff0000) ;
-    }
-
-    #customwebapp-case-study.customwebapp-page .timeline-icon.bg-secondary {
-        background: #6c757d ;
-    }
-
-    #customwebapp-case-study.customwebapp-page .timeline-icon.bg-success {
-        background: #28a745 ;
-    }
-
-    #customwebapp-case-study.customwebapp-page .service-card-items:hover .icon {
-        color: white;
-    }
-
-    /* Platform Cards - Alternative Design */
-    #customwebapp-case-study.customwebapp-page .platform-card {
-        background: #fff;
-        border: 2px solid #f0f0f0;
-        border-radius: 16px;
-        padding: 40px 30px;
-        text-align: left;
-        height: 100%;
-        transition: 0.3s ease;
-        position: relative;
-        overflow: hidden;
-    }
-    #customwebapp-case-study.customwebapp-page .platform-card:hover {
-        border-color: var(--primary-red, #ff0000);
-        transform: translateY(-8px);
-        box-shadow: 0 12px 30px rgba(255, 0, 0, 0.15);
-    }
-    #customwebapp-case-study.customwebapp-page .platform-card:hover::before {
-        transform: scaleX(1);
-    }
-    #customwebapp-case-study.customwebapp-page .platform-card h6 {
-        font-size: 1.25rem;
-        font-weight: 700;
-        color: #1a1a1a;
-        margin-bottom: 15px;
-        transition: 0.3s ease;
-    }
-    #customwebapp-case-study.customwebapp-page .platform-card:hover h6 {
-        color: var(--primary-red, #ff0000);
-    }
-    #customwebapp-case-study.customwebapp-page .platform-card .tech-tags {
-        color: var(--primary-red, #ff0000);
-        font-weight: 600;
-        font-size: 0.9rem;
-        margin-bottom: 15px;
-        display: block;
-    }
-    #customwebapp-case-study.customwebapp-page .platform-card p {
-        font-size: 0.95rem;
-        color: #666;
-        line-height: 1.6;
-        margin: 0;
-    }
+}
 
 
 
-      #customwebapp-case-study.customwebapp-page .service-card-items {
-        height:100%;
-    }
-
-    #customwebapp-case-study.customwebapp-page .custom-service-icon-wrapper {
-        font-size: 24px;
-    }
-
-    #customwebapp-case-study.customwebapp-page .service-card-items:hover .icon {
-        color: white;
-    }
-
-    #customwebapp-case-study.customwebapp-page .portfolio-card .portfolio-img img {
-        height: 100%;
-        object-fit: cover;
-        width: 100%;
-    }
-
-    #customwebapp-case-study.customwebapp-page .about-image .img-frame img {
-        width: 100%;
-        object-fit: cover;
-        height: 450px;
-    }
-
-
-    #customwebapp-case-study.customwebapp-page .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
-        background: #f0eeee;
-    }
-
-    #customwebapp-case-study.customwebapp-page section.cta-section .main-button{
-        max-width: unset;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-        #customwebapp-case-study.customwebapp-page .section-spacer {
-            padding: 60px 0;
-        }
-    }
-
-
-
-     /* ---------------------------------------------------------
+/* ---------------------------------------------------------
        Strictly Scoped CSS Hierarchy 
        Target: #customsoftware-case-study.customsoftware-page 
        --------------------------------------------------------- */
-    #customsoftware-case-study.customsoftware-page {
-        color: #333;
-        background-color: #fff;
-    }
-    
-    #customsoftware-case-study.customsoftware-page h1, 
-    #customsoftware-case-study.customsoftware-page h2, 
-    #customsoftware-case-study.customsoftware-page h3, 
-    #customsoftware-case-study.customsoftware-page h4, 
-    #customsoftware-case-study.customsoftware-page h5,
-    #customsoftware-case-study.customsoftware-page h6 {
-        color: #1a1a1a;
-        font-weight: 700;
-    }
-    
+#customsoftware-case-study.customsoftware-page {
+    color: #333;
+    background-color: #fff;
+}
+
+#customsoftware-case-study.customsoftware-page h1,
+#customsoftware-case-study.customsoftware-page h2,
+#customsoftware-case-study.customsoftware-page h3,
+#customsoftware-case-study.customsoftware-page h4,
+#customsoftware-case-study.customsoftware-page h5,
+#customsoftware-case-study.customsoftware-page h6 {
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+#customsoftware-case-study.customsoftware-page .section-spacer {
+    padding: 80px 0;
+}
+
+#customsoftware-case-study.customsoftware-page .bg-light-gray {
+    background-color: #f8f9fa;
+}
+
+#customsoftware-case-study.customsoftware-page .theme-text-primary {
+    color: var(--primary-red, #ff0000);
+}
+
+
+/* Service Card Icon Override */
+#customsoftware-case-study.customsoftware-page .service-card-items .icon {
+    color: var(--primary-red, #ff0000);
+}
+
+/* Timeline Icon Override */
+#customsoftware-case-study.customsoftware-page .timeline-icon {
+    background: var(--primary-red, #ff0000);
+}
+
+#customsoftware-case-study.customsoftware-page .timeline-icon.bg-info {
+    background: var(--primary-red, #ff0000);
+}
+
+#customsoftware-case-study.customsoftware-page .timeline-icon.bg-warning {
+    background: var(--primary-red, #ff0000);
+}
+
+#customsoftware-case-study.customsoftware-page .timeline-icon.bg-primary {
+    background: var(--primary-red, #ff0000);
+}
+
+#customsoftware-case-study.customsoftware-page .timeline-icon.bg-secondary {
+    background: #6c757d;
+}
+
+#customsoftware-case-study.customsoftware-page .timeline-icon.bg-success {
+    background: #28a745;
+}
+
+/* Platform Cards - Alternative Design */
+#customsoftware-case-study.customsoftware-page .platform-card {
+    background: #fff;
+    border: 2px solid #f0f0f0;
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: left;
+    height: 100%;
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#customsoftware-case-study.customsoftware-page .platform-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--primary-red, #ff0000);
+    transform: scaleX(0);
+    transition: 0.3s ease;
+}
+
+#customsoftware-case-study.customsoftware-page .platform-card:hover {
+    border-color: var(--primary-red, #ff0000);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(255, 0, 0, 0.15);
+}
+
+#customsoftware-case-study.customsoftware-page .platform-card:hover::before {
+    transform: scaleX(1);
+}
+
+#customsoftware-case-study.customsoftware-page .platform-card h6 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+}
+
+#customsoftware-case-study.customsoftware-page .platform-card:hover h6 {
+    color: var(--primary-red, #ff0000);
+}
+
+#customsoftware-case-study.customsoftware-page .platform-card .tech-tags {
+    color: var(--primary-red, #ff0000);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+#customsoftware-case-study.customsoftware-page .platform-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#customsoftware-case-study .service-card-items,
+#customsoftware-case-study .web-app-feature-card,
+#customcrm-case-study .service-card-items,
+#customcrm-case-study .web-app-feature-card,
+#customerp-case-study .service-card-items,
+#customerp-case-study .web-app-feature-card {
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+#customsoftware-case-study .custom-service-icon-wrapper,
+#customsoftware-case-study .web-app-feature-card .icon-wrap,
+#customcrm-case-study .custom-service-icon-wrapper,
+#customcrm-case-study .web-app-feature-card .icon-wrap,
+#customerp-case-study .custom-service-icon-wrapper,
+#customerp-case-study .web-app-feature-card .icon-wrap {
+    font-size: 24px;
+    margin: 0 auto 20px auto;
+}
+
+#customsoftware-case-study .service-card-items .title,
+#customsoftware-case-study .service-card-items .content,
+#customsoftware-case-study .web-app-feature-card h4,
+#customsoftware-case-study .web-app-feature-card p,
+#customcrm-case-study .service-card-items .title,
+#customcrm-case-study .service-card-items .content,
+#customcrm-case-study .web-app-feature-card h4,
+#customcrm-case-study .web-app-feature-card p,
+#customerp-case-study .service-card-items .title,
+#customerp-case-study .service-card-items .content,
+#customerp-case-study .web-app-feature-card h4,
+#customerp-case-study .web-app-feature-card p {
+    text-align: center;
+}
+
+#customsoftware-case-study.customsoftware-page .service-card-items:hover .icon {
+    color: white;
+}
+
+#customsoftware-case-study.customsoftware-page .portfolio-card .portfolio-img img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+#customsoftware-case-study.customsoftware-page .about-image .img-frame img {
+    width: 100%;
+    object-fit: cover;
+    height: 450px;
+}
+
+
+#customsoftware-case-study.customsoftware-page .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label::after {
+    border-color: transparent rgb(255 255 255) transparent transparent;
+}
+
+#customsoftware-case-study.customsoftware-page section.cta-section .main-button {
+    max-width: unset;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
     #customsoftware-case-study.customsoftware-page .section-spacer {
-        padding: 80px 0;
+        padding: 60px 0;
     }
-    
-    #customsoftware-case-study.customsoftware-page .bg-light-gray {
-        background-color: #f8f9fa;
-    }
-    
-    #customsoftware-case-study.customsoftware-page .theme-text-primary {
-        color: var(--primary-red, #ff0000);
-    }
-  
-
-    /* Service Card Icon Override */
-    #customsoftware-case-study.customsoftware-page .service-card-items .icon {
-        color: var(--primary-red, #ff0000);
-    }
-
-    /* Timeline Icon Override */
-    #customsoftware-case-study.customsoftware-page .timeline-icon {
-        background: var(--primary-red, #ff0000);
-    }
-
-    #customsoftware-case-study.customsoftware-page .timeline-icon.bg-info {
-        background: var(--primary-red, #ff0000);
-    }
-
-    #customsoftware-case-study.customsoftware-page .timeline-icon.bg-warning {
-        background: var(--primary-red, #ff0000);
-    }
-
-    #customsoftware-case-study.customsoftware-page .timeline-icon.bg-primary {
-        background: var(--primary-red, #ff0000);
-    }
-
-    #customsoftware-case-study.customsoftware-page .timeline-icon.bg-secondary {
-        background: #6c757d;
-    }
-
-    #customsoftware-case-study.customsoftware-page .timeline-icon.bg-success {
-        background: #28a745;
-    }
-
-    /* Platform Cards - Alternative Design */
-    #customsoftware-case-study.customsoftware-page .platform-card {
-        background: #fff;
-        border: 2px solid #f0f0f0;
-        border-radius: 16px;
-        padding: 40px 30px;
-        text-align: left;
-        height: 100%;
-        transition: 0.3s ease;
-        position: relative;
-        overflow: hidden;
-    }
-    #customsoftware-case-study.customsoftware-page .platform-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: var(--primary-red, #ff0000);
-        transform: scaleX(0);
-        transition: 0.3s ease;
-    }
-    #customsoftware-case-study.customsoftware-page .platform-card:hover {
-        border-color: var(--primary-red, #ff0000);
-        transform: translateY(-8px);
-        box-shadow: 0 12px 30px rgba(255, 0, 0, 0.15);
-    }
-    #customsoftware-case-study.customsoftware-page .platform-card:hover::before {
-        transform: scaleX(1);
-    }
-    #customsoftware-case-study.customsoftware-page .platform-card h6 {
-        font-size: 1.25rem;
-        font-weight: 700;
-        color: #1a1a1a;
-        margin-bottom: 15px;
-        transition: 0.3s ease;
-    }
-    #customsoftware-case-study.customsoftware-page .platform-card:hover h6 {
-        color: var(--primary-red, #ff0000);
-    }
-    #customsoftware-case-study.customsoftware-page .platform-card .tech-tags {
-        color: var(--primary-red, #ff0000);
-        font-weight: 600;
-        font-size: 0.9rem;
-        margin-bottom: 15px;
-        display: block;
-    }
-    #customsoftware-case-study.customsoftware-page .platform-card p {
-        font-size: 0.95rem;
-        color: #666;
-        line-height: 1.6;
-        margin: 0;
-    }
-
-     #customsoftware-case-study.customsoftware-page .service-card-items {
-        height:100%;
-    }
-
-    #customsoftware-case-study.customsoftware-page .custom-service-icon-wrapper {
-        font-size: 24px;
-    }
-
-    #customsoftware-case-study.customsoftware-page .service-card-items:hover .icon {
-        color: white;
-    }
-
-    #customsoftware-case-study.customsoftware-page .portfolio-card .portfolio-img img {
-        height: 100%;
-        object-fit: cover;
-        width: 100%;
-    }
-
-    #customsoftware-case-study.customsoftware-page .about-image .img-frame img {
-        width: 100%;
-        object-fit: cover;
-        height: 450px;
-    }
+}
 
 
-    #customsoftware-case-study.customsoftware-page .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label::after {
-        border-color: transparent rgb(255 255 255) transparent transparent;
-    }
+.blog-content-body h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 24px 0px 12px;
+}
 
-    #customsoftware-case-study.customsoftware-page section.cta-section .main-button{
-        max-width: unset;
-    }
-    /* Responsive */
-    @media (max-width: 768px) {
-        #customsoftware-case-study.customsoftware-page .section-spacer {
-            padding: 60px 0;
-        }
-    }
+.blog-content-body ul {
+    padding: 0;
+    margin: 0;
+    list-style: disc;
+    padding-left: 16px;
+}
+
+.news-details-wrapper .news-post-details .single-news-post .post-content .blog-content-body h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-top: 24px;
+}
+
+.img-frame img {
+    min-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
 
 
-    .blog-content-body h2 {
-        font-size: 36px;
-        font-weight: 800;
-        margin: 24px 0px 12px;
-    }
+.section-spacer {
+    padding: 80px 0;
+}
 
-    .blog-content-body ul {
-        padding: 0;
-        margin: 0;
-        list-style: disc;
-        padding-left: 16px;
-    }
+.bg-light-gray {
+    background-color: #f8f9fa;
+}
 
-    .news-details-wrapper .news-post-details .single-news-post .post-content .blog-content-body h3 {
-        margin-bottom: 10px;
-        font-size: 20px;
-        margin-top: 24px;
-    }
+.theme-text-primary {
+    color: var(--primary-red, #ff0000);
+}
 
-    .img-frame img {
-        min-height: 400px;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 30px !important;
-    }
+/* Buttons - Using existing button styles */
+.btn-custom-primary {
+    background-color: var(--primary-red, #ff0000);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease;
+    border: 2px solid var(--primary-red, #ff0000);
+}
 
-    h1,h2,h3,h4,h5{
-        font-weight: 700;
-    }
-    
+.btn-custom-primary:hover {
+    background-color: transparent;
+    color: var(--primary-red, #ff0000);
+}
 
-    .section-spacer {
-        padding: 80px 0;
-    }
-    
-    .bg-light-gray {
-        background-color: #f8f9fa;
-    }
-    
-    .theme-text-primary {
-        color: var(--primary-red, #ff0000);
-    }
-    
-    /* Buttons - Using existing button styles */
-    .btn-custom-primary {
-        background-color: var(--primary-red, #ff0000);
-        color: #fff;
-        padding: 12px 30px;
-        border-radius: 25px;
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-block;
-        transition: 0.3s ease;
-        border: 2px solid var(--primary-red, #ff0000);
-    }
-  .btn-custom-primary:hover {
-        background-color: transparent;
-        color: var(--primary-red, #ff0000);
-    }
-   .btn-custom-outline {
-        background-color: transparent;
-        color: #1a1a1a;
-        padding: 12px 30px;
-        border-radius: 25px;
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-block;
-        transition: 0.3s ease;
-        border: 2px solid #e0e0e0;
-    }
+.btn-custom-outline {
+    background-color: transparent;
+    color: #1a1a1a;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease;
+    border: 2px solid #e0e0e0;
+}
+
 .btn-custom-outline:hover {
-        border-color: var(--primary-red, #ff0000);
-        color: var(--primary-red, #ff0000);
+    border-color: var(--primary-red, #ff0000);
+    color: var(--primary-red, #ff0000);
+}
+
+/* Service Card Icon Override */
+.service-card-items .icon {
+    color: var(--primary-red, #ff0000);
+}
+
+.service-card-items:hover .icon {
+    color: white;
+}
+
+/* Timeline Icon Override */
+#ai-chatbot-case-study.ai-chatbot-page .timeline-icon {
+    background: var(--primary-red, #ff0000);
+}
+
+#ai-chatbot-case-study.ai-chatbot-page .timeline-icon.bg-info {
+    background: var(--primary-red, #ff0000);
+}
+
+#ai-chatbot-case-study.ai-chatbot-page .timeline-icon.bg-warning {
+    background: var(--primary-red, #ff0000);
+}
+
+#ai-chatbot-case-study.ai-chatbot-page .timeline-icon.bg-primary {
+    background: var(--primary-red, #ff0000);
+}
+
+#ai-chatbot-case-study.ai-chatbot-page .timeline-icon.bg-secondary {
+    background: #6c757d;
+}
+
+#ai-chatbot-case-study.ai-chatbot-page .timeline-icon.bg-success {
+    background: #28a745;
+}
+
+/* Platform Cards - Alternative Design */
+.platform-card {
+    background: #fff;
+    border: 2px solid #f0f0f0;
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: left;
+    height: 100%;
+    transition: 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.platform-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--primary-red, #ff0000);
+    transform: scaleX(0);
+    transition: 0.3s ease;
+}
+
+.platform-card:hover {
+    border-color: var(--primary-red, #ff0000);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(255, 0, 0, 0.15);
+}
+
+.platform-card:hover::before {
+    transform: scaleX(1);
+}
+
+.platform-card h6 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+}
+
+#ai-chatbot-case-study.ai-chatbot-page .platform-card:hover h6 {
+    color: var(--primary-red, #ff0000);
+}
+
+#ai-chatbot-case-study.ai-chatbot-page .platform-card .tech-tags {
+    color: var(--primary-red, #ff0000);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+#ai-chatbot-case-study.ai-chatbot-page .platform-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #ai-chatbot-case-study.ai-chatbot-page .section-spacer {
+        padding: 60px 0;
+    }
+}
+
+#native-mobile-dev-page.native-mobile-app-page .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon,
+#flutter-dev-page.flutter-app-page .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon,
+#fullstack-dev-page.fullstack-app-page .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+    background: #a5110d;
+}
+
+#native-mobile-dev-page.native-mobile-app-page .timeline-icon.bg-info,
+#flutter-dev-page.flutter-app-page .timeline-icon.bg-info,
+#fullstack-dev-page.fullstack-app-page .timeline-icon.bg-info {
+    background: var(--primary-red, #ff0000);
+}
+
+#native-mobile-dev-page.native-mobile-app-page .timeline-icon.bg-warning,
+#flutter-dev-page.flutter-app-page .timeline-icon.bg-warning,
+#fullstack-dev-page.fullstack-app-page .timeline-icon.bg-warning {
+    background: var(--primary-red, #ff0000);
+}
+
+#native-mobile-dev-page.native-mobile-app-page .timeline-icon.bg-primary,
+#flutter-dev-page.flutter-app-page .timeline-icon.bg-primary,
+#fullstack-dev-page.fullstack-app-page .timeline-icon.bg-primary {
+    background: var(--primary-red, #ff0000);
+}
+
+#native-mobile-dev-page.native-mobile-app-page .timeline-icon.bg-secondary,
+#flutter-dev-page.flutter-app-page .timeline-icon.bg-secondary,
+#fullstack-dev-page.fullstack-app-page .timeline-icon.bg-secondary {
+    background: #6c757d;
+}
+
+#native-mobile-dev-page.native-mobile-app-page .timeline-icon.bg-success,
+#flutter-dev-page.flutter-app-page .timeline-icon.bg-success,
+#fullstack-dev-page.fullstack-app-page .timeline-icon.bg-success {
+    background: #28a745;
+}
+
+#native-mobile-dev-page.native-mobile-app-page .platform-card:hover h6,
+#flutter-dev-page.flutter-app-page .platform-card:hover h6,
+#fullstack-dev-page.fullstack-app-page .platform-card:hover h6 {
+    color: var(--primary-red, #ff0000);
+}
+
+#native-mobile-dev-page.native-mobile-app-page .platform-card p,
+#flutter-dev-page.flutter-app-page .platform-card p,
+#fullstack-dev-page.fullstack-app-page .platform-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    #native-mobile-dev-page.native-mobile-app-page .section-spacer,
+    #flutter-dev-page.flutter-app-page .section-spacer,
+    #fullstack-dev-page.fullstack-app-page .section-spacer {
+        padding: 60px 0;
+    }
+}
+
+
+#wordpress-case-study .wp-hero-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+#wordpress-case-study .wp-highlight-item {
+    background: #f8f9fa;
+    border-left: 4px solid #a5110d;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #2c3e50;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+#wordpress-case-study .wp-tech-category-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #a5110d;
+    border-bottom: 2px solid #a5110d;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#wordpress-case-study .wp-cta-banner {
+    background: linear-gradient(135deg, #a5110d 0%, #6e0b09 100%);
+    border-radius: 16px;
+    padding: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#wordpress-case-study .wp-cta-banner h2 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#wordpress-case-study .wp-cta-banner p {
+    color: #f0f0f0;
+    max-width: 750px;
+    margin: 0 auto 25px auto;
+    font-size: 1.05rem;
+}
+
+#wordpress-case-study .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+    background: #a5110d;
+}
+
+
+
+/* Custom Scoped Styles for UI/UX Design Page */
+
+#uiux-case-study .uiux-hero-badge {
+    display: inline-block;
+    background: rgba(165, 17, 13, 0.1);
+    color: #a5110d;
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+#uiux-case-study .uiux-cta-banner {
+    background: linear-gradient(135deg, #a5110d 0%, #6e0b09 100%);
+    border-radius: 16px;
+    padding: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#uiux-case-study .uiux-cta-banner h2 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#uiux-case-study .uiux-cta-banner p {
+    color: #f0f0f0;
+    max-width: 750px;
+    margin: 0 auto 20px auto;
+    font-size: 1.05rem;
+}
+
+/* ---------------------------------------------------------
+   Strictly Scoped CSS Hierarchy 
+   Target: .webwebappdesign-page (Website & Mobile UI/UX Design Pages)
+   --------------------------------------------------------- */
+
+
+.webwebappdesign-page .section-spacer {
+    padding: 80px 0;
+}
+
+.webwebappdesign-page .bg-light-gray {
+    background-color: #f8f9fa;
+}
+
+.webwebappdesign-page .theme-text-primary {
+    color: #a5110d;
+}
+
+
+/* Timeline Process Section (matching custom-web-development) */
+.webwebappdesign-page .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+    background: #a5110d;
+    color: #fff;
+}
+
+.webwebappdesign-page .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+    background: #f0eeee;
+    border-radius: 12px;
+    padding: 24px 28px;
+    transition: 0.3s ease;
+}
+
+.webwebappdesign-page .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
+    border-color: transparent #f0eeee transparent transparent;
+}
+
+.webwebappdesign-page .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.webwebappdesign-page .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.webwebappdesign-page .timeline-centered .timeline-entry .timeline-entry-inner .timeline-time span {
+    color: #a5110d;
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+/* Callout Box Component */
+.webwebappdesign-page .web-app-callout-box {
+    background: #fff;
+    border-left: 5px solid #a5110d;
+    border-radius: 8px;
+    padding: 28px 32px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    margin: 40px auto 0 auto;
+    text-align: center;
+    max-width: 900px;
+}
+
+.webwebappdesign-page .web-app-callout-box h5 {
+    color: #a5110d;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+.webwebappdesign-page .web-app-callout-box p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Feature Cards (UI/UX Design Features) */
+.webwebappdesign-page .web-app-feature-card {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 28px 24px;
+    height: 100%;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.webwebappdesign-page .web-app-feature-card:hover {
+    border-color: #a5110d;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(165, 17, 13, 0.08);
+}
+
+.webwebappdesign-page .web-app-feature-card .icon-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+    background: rgba(165, 17, 13, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    color: #a5110d;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.webwebappdesign-page .web-app-feature-card:hover .icon-wrap {
+    background: #a5110d;
+    color: #fff;
+}
+
+.webwebappdesign-page .web-app-feature-card h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.webwebappdesign-page .web-app-feature-card p {
+    font-size: 0.92rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Portfolio Section */
+.webwebappdesign-page .web-app-portfolio-card {
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 14px;
+    overflow: hidden;
+    height: 100%;
+    transition: 0.35s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.webwebappdesign-page .web-app-portfolio-card:hover {
+    border-color: #a5110d;
+    transform: translateY(-7px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+}
+
+.webwebappdesign-page .web-app-portfolio-card .portfolio-thumb {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+    background: #f8f9fa;
+}
+
+.webwebappdesign-page .web-app-portfolio-card .portfolio-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.webwebappdesign-page .web-app-portfolio-card:hover .portfolio-thumb img {
+    transform: scale(1.05);
+}
+
+.webwebappdesign-page .web-app-portfolio-card .portfolio-body {
+    padding: 26px 24px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.webwebappdesign-page .web-app-portfolio-card .project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.webwebappdesign-page .web-app-portfolio-card .project-badge {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #a5110d;
+    background: rgba(165, 17, 13, 0.08);
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.webwebappdesign-page .web-app-portfolio-card .project-industry {
+    font-size: 0.85rem;
+    color: #777;
+    font-weight: 500;
+}
+
+.webwebappdesign-page .web-app-portfolio-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+}
+
+.webwebappdesign-page .web-app-portfolio-card p {
+    font-size: 0.92rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.webwebappdesign-page .web-app-portfolio-card .case-study-btn {
+    color: #a5110d;
+    font-weight: 700;
+    font-size: 0.92rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.3s ease;
+}
+
+.webwebappdesign-page .web-app-portfolio-card .case-study-btn:hover {
+    color: #700a07;
+    gap: 10px;
+}
+
+/* Stats Counter Row */
+.webwebappdesign-page .web-app-stats-row {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.webwebappdesign-page .web-app-stat-item {
+    background: #f8f9fa;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: 0.3s ease;
+    height: 100%;
+}
+
+.webwebappdesign-page .web-app-stat-item:hover {
+    background: #fff;
+    border-color: #a5110d;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.webwebappdesign-page .web-app-stat-item h3 {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #a5110d;
+    margin-bottom: 6px;
+}
+
+.webwebappdesign-page .web-app-stat-item p {
+    font-size: 0.95rem;
+    color: #555;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Related Services Cards */
+.webwebappdesign-page .web-app-related-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 32px 24px;
+    height: 100%;
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.webwebappdesign-page .web-app-related-card:hover {
+    border-color: #a5110d;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(165, 17, 13, 0.08);
+}
+
+.webwebappdesign-page .web-app-related-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.webwebappdesign-page .web-app-related-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    flex-grow: 1;
+}
+
+.webwebappdesign-page .web-app-related-card .related-link {
+    color: #a5110d;
+    font-weight: 700;
+    font-size: 0.92rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.3s ease;
+}
+
+.webwebappdesign-page .web-app-related-card .related-link:hover {
+    color: #700a07;
+    gap: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .webwebappdesign-page .section-spacer {
+        padding: 50px 0;
     }
 
-    /* Service Card Icon Override */
-    .service-card-items .icon {
-        color: var(--primary-red, #ff0000) ;
-    }
-
-   .service-card-items:hover .icon {
-        color: white;
-    }
-
-    /* Timeline Icon Override */
-    #ai-chatbot-case-study.ai-chatbot-page .timeline-icon {
-        background: var(--primary-red, #ff0000) ;
-    }
-
-    #ai-chatbot-case-study.ai-chatbot-page .timeline-icon.bg-info {
-        background: var(--primary-red, #ff0000) ;
-    }
-
-    #ai-chatbot-case-study.ai-chatbot-page .timeline-icon.bg-warning {
-        background: var(--primary-red, #ff0000) ;
-    }
-
-    #ai-chatbot-case-study.ai-chatbot-page .timeline-icon.bg-primary {
-        background: var(--primary-red, #ff0000) ;
-    }
-
-    #ai-chatbot-case-study.ai-chatbot-page .timeline-icon.bg-secondary {
-        background: #6c757d ;
-    }
-
-    #ai-chatbot-case-study.ai-chatbot-page .timeline-icon.bg-success {
-        background: #28a745 ;
-    }
-
-    /* Platform Cards - Alternative Design */
-    .platform-card {
-        background: #fff;
-        border: 2px solid #f0f0f0;
-        border-radius: 16px;
-        padding: 40px 30px;
-        text-align: left;
-        height: 100%;
-        transition: 0.3s ease;
-        position: relative;
-        overflow: hidden;
-    }
-    .platform-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: var(--primary-red, #ff0000);
-        transform: scaleX(0);
-        transition: 0.3s ease;
-    }
-    .platform-card:hover {
-        border-color: var(--primary-red, #ff0000);
-        transform: translateY(-8px);
-        box-shadow: 0 12px 30px rgba(255, 0, 0, 0.15);
-    }
-    .platform-card:hover::before {
-        transform: scaleX(1);
-    }
-  .platform-card h6 {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: #1a1a1a;
+    .webwebappdesign-page .web-app-stat-item {
         margin-bottom: 15px;
-        transition: 0.3s ease;
     }
-    #ai-chatbot-case-study.ai-chatbot-page .platform-card:hover h6 {
-        color: var(--primary-red, #ff0000);
-    }
-    #ai-chatbot-case-study.ai-chatbot-page .platform-card .tech-tags {
-        color: var(--primary-red, #ff0000);
-        font-weight: 600;
-        font-size: 0.9rem;
-        margin-bottom: 15px;
-        display: block;
-    }
-    #ai-chatbot-case-study.ai-chatbot-page .platform-card p {
-        font-size: 0.95rem;
-        color: #666;
-        line-height: 1.6;
-        margin: 0;
-    }
+}
 
-    /* Responsive */
-    @media (max-width: 768px) {
-        #ai-chatbot-case-study.ai-chatbot-page .section-spacer {
-            padding: 60px 0;
-        }
-    }
 
-     #native-mobile-dev-page.native-mobile-app-page .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
-        background: #a5110d;
-    
-    }
- 
+div#customsoftware-case-study .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px 28px;
+    transition: 0.3s ease;
+}
 
-    #native-mobile-dev-page.native-mobile-app-page .timeline-icon.bg-info {
-        background: var(--primary-red, #ff0000) ;
-    }
-
-    #native-mobile-dev-page.native-mobile-app-page .timeline-icon.bg-warning {
-        background: var(--primary-red, #ff0000) ;
-    }
-
-    #native-mobile-dev-page.native-mobile-app-page .timeline-icon.bg-primary {
-        background: var(--primary-red, #ff0000) ;
-    }
-
-    #native-mobile-dev-page.native-mobile-app-page .timeline-icon.bg-secondary {
-        background: #6c757d ;
-    }
-
-    #native-mobile-dev-page.native-mobile-app-page .timeline-icon.bg-success {
-        background: #28a745 ;
-    }
-
-    #native-mobile-dev-page.native-mobile-app-page .platform-card:hover h6 {
-        color: var(--primary-red, #ff0000);
-    }
-    #native-mobile-dev-page.native-mobile-app-page .platform-card p {
-        font-size: 0.95rem;
-        color: #666;
-        line-height: 1.6;
-        margin: 0;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-        #native-mobile-dev-page.native-mobile-app-page .section-spacer {
-            padding: 60px 0;
-        }
-    }
+div#customsoftware-case-study .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
+    border-color: transparent #fff transparent transparent;
+}

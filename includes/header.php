@@ -325,6 +325,19 @@ if (!defined('BASE_URL')) {
                                                             href="<?php echo url('/services/responsive-web-design.php'); ?>">Responsive
                                                             Design</a></li>
                                                 </ul>
+                                             </li>
+
+                                            
+                                             <!-- UI/UX & Design -->
+                                            <li class="has-nested-menu">
+                                                <a href="<?php echo url('/services/ui_ux_design.php'); ?>">UI/UX & Design <i
+                                                        class="fa-solid fa-chevron-right arrow-right"></i></a>
+                                                <ul class="nested-submenu">
+                                                    <li><a
+                                                            href="<?php echo url('/services/web_web_app_design.php'); ?>">Website & Web App UI/UX Design</a></li>
+                                                    <li><a
+                                                            href="<?php echo url('/services/mobile_app_ui.php'); ?>">Mobile App UI/UX Design</a></li>
+                                                </ul>
                                             </li>
 
                                              <!-- 2. Ai Chat Bot -->
@@ -357,6 +370,27 @@ if (!defined('BASE_URL')) {
                                                 </ul>
                                             </li>
 
+                                              <!-- Custom Software -->
+                                            <li class="has-nested-menu">
+                                               <a href="<?php echo url('/services/custom-software-development.php'); ?>">Custom Software Development</a>
+                                            </li>
+
+                                             <!-- Custom crm -->
+                                            <li class="has-nested-menu">
+                                               <a href="<?php echo url('/services/custom-crm-development.php'); ?>">Custom CRM Development</a>
+                                            </li>
+
+
+                                             <!-- Custom ERP -->
+                                            <li class="has-nested-menu">
+                                               <a href="<?php echo url('/services/custom-erp-development.php'); ?>">Custom ERP Development</a>
+                                            </li>
+
+                                            <!-- 2. Ai Chat Bot -->
+                                            <li class="has-nested-menu">
+                                                <a href="<?php echo url('/services/ai-chatbot.php'); ?>">AI Chatbot Development</a>
+                                            </li>
+
                                             <!-- Normal Submenu Items (Jo nested nahi hain) -->
                                             <li><a href="<?= url('on-demand-hire') ?>">On Demand Hire</a></li>
 
@@ -372,138 +406,6 @@ if (!defined('BASE_URL')) {
 
 
 
-                                    <!-- Desktop -->
-                                    <!-- <li class="has-dropdown dropdown mega-dropdown d-none d-lg-inline-block">
-                                        <a href="<?= url('service') ?>" class="nav-link dropdown-toggle">
-                                            Services <i class="fas fa-chevron-down"></i>
-                                        </a>
-
-                                        <div class="mega-menu">
-                                            <div class="mega-container">
-                                                <div class="mega-row">
-
-                                                    
-                                                    <div class="mega-col">
-                                                        <h6 class="mega-title">Mobile App Development</h6>
-                                                        <ul class="mega-list">
-                                                            <li><a
-                                                                    href="<?php echo url('/services/iphone-app-development.php'); ?>">iPhone
-                                                                    App Development</a></li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/android-app-development.php'); ?>">Android
-                                                                    App Development</a></li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/native-mobile-app-development.php'); ?>">Native
-                                                                    Mobile App Development</a></li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/hybrid-mobile-app-development.php'); ?>">Hybrid
-                                                                    Mobile App Development</a></li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/custom-application-development.php'); ?>">Custom
-                                                                    Application Development</a></li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/bootstrap-development.php'); ?>">Bootstrap
-                                                                    Development</a></li>
-                                                        </ul>
-                                                    </div>
-
-                                                    <div class="mega-col">
-                                                        <h6 class="mega-title">Web & CMS Development</h6>
-                                                        <ul class="mega-list">
-                                                            <li><a
-                                                                    href="<?php echo url('/services/php-website-development.php'); ?>">PHP
-                                                                    Development</a></li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/wordpress-development.php'); ?>">WordPress
-                                                                    Development</a></li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/angular-js-development.php'); ?>">Angular
-                                                                    JS</a></li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/laravel-development.php'); ?>">Laravel</a>
-                                                            </li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/node-js-development.php'); ?>">Node
-                                                                    JS</a></li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/codeigniter-development.php'); ?>">CodeIgniter</a>
-                                                            </li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/drupal-development.php'); ?>">Drupal</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-
-                                                    <div class="mega-col">
-                                                        <h6 class="mega-title">E-Commerce Development</h6>
-                                                        <ul class="mega-list">
-                                                            <li><a
-                                                                    href="<?php echo url('/services/ecommerce-website-design.php'); ?>">Ecommerce
-                                                                    Design</a></li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/magento-development.php'); ?>">Magento</a>
-                                                            </li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/woocommerce-development.php'); ?>">WooCommerce</a>
-                                                            </li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/bigcommerce-development.php'); ?>">BigCommerce</a>
-                                                            </li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/shopify-development.php'); ?>">Shopify</a>
-                                                            </li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/shopify-development.php'); ?>">Shopping
-                                                                    Cart</a></li>
-                                                        </ul>
-                                                    </div>
-
-                                                    <div class="mega-col">
-                                                        <h6 class="mega-title">Web Design</h6>
-                                                        <ul class="mega-list">
-                                                            <li><a
-                                                                    href="<?php echo url('/services/html5-development.php'); ?>">HTML5
-                                                                    Development</a></li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/graphic-design.php'); ?>">Graphic
-                                                                    Design</a></li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/logo-designing.php'); ?>">Logo
-                                                                    Design</a></li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/website-redesigning.php'); ?>">Website
-                                                                    Redesign</a></li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/custom-website-design.php'); ?>">Custom
-                                                                    Design</a></li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/responsive-web-design.php'); ?>">Responsive
-                                                                    Design</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="mega-col">
-                                                        <h6 class="mega-title">Online Marketing</h6>
-                                                        <ul class="mega-list">
-                                                            <li><a
-                                                                    href="<?php echo url('/services/search-engine-optimization.php'); ?>">SEO</a>
-                                                            </li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/ppc-management-services.php'); ?>">PPC
-                                                                    Management</a></li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/social-media-marketing.php'); ?>">Social
-                                                                    Media</a></li>
-                                                            <li><a
-                                                                    href="<?php echo url('/services/search-engine-marketing.php'); ?>">SEM</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li> -->
-                                    <!-- Desktop End-->
 
                                     <!-- Mobile -->
                                     <li class="has-dropdown d-block d-lg-none">
@@ -615,14 +517,15 @@ if (!defined('BASE_URL')) {
                                             </li>
 
 
-
-                                            
                                             <li class="has-dropdown">
-                                                <a href="javascript:void(0);">AI Development</a>
+                                                <a href="<?php echo url('/services/ui_ux_design.php'); ?>">UI/UX & Design</a>
                                                 <ul class="submenu">
-                                                    <li><a href="<?php echo url('/services/ai-chatbot.php'); ?>">AI Chatbot Development</a></li>
+                                                    <li><a href="<?php echo url('/services/web_web_app_design.php'); ?>">Website & Web App UI/UX Design</a></li>
+                                                    <li><a href="<?php echo url('/services/mobile_app_ui.php'); ?>">Mobile App UI/UX Design</a></li>
                                                 </ul>
                                             </li>
+
+                                          
 
                                             <li class="has-dropdown">
                                                 <a href="javascript:void(0);">Online Marketing</a>
@@ -642,6 +545,27 @@ if (!defined('BASE_URL')) {
                                                 </ul>
                                             </li>
 
+                                            
+
+                                            <li class="has-dropdown">
+                                                <a href="<?php echo url('/services/custom-software-development.php'); ?>">Custom Software Development</a>
+                                            </li>
+
+                                            <li class="has-dropdown">
+                                                <a href="<?php echo url('/services/custom-crm-development.php'); ?>">Custom CRM Development</a>
+                                            </li>
+
+
+                                            <li class="has-dropdown">
+                                                <a href="<?php echo url('/services/custom-erp-development.php'); ?>">Custom ERP Development</a>
+                                            </li>
+
+                                            <li class="has-dropdown">
+                                                <a href="<?php echo url('/services/ai-chatbot.php'); ?>">AI Chatbot Development</a>
+                                            </li>
+
+
+
                                             <li class="has-dropdown">
                                                 <a href="<?= url('on-demand-hire') ?>">
                                                     On Demand Hire
@@ -652,70 +576,6 @@ if (!defined('BASE_URL')) {
                                     </li>
                                     <!-- Mobile End-->
 
-
-                                    <!-- Hire Resource Start-->
-
-                                    <!-- <li class="has-dropdown">
-                                        <a href="<?= url('/') ?>">
-                                            hire-resources
-                                            <i class="fa-solid fa-chevron-down"></i>
-                                        </a>
-                                        <ul class="submenu">
-                                            <li><a href="<?= url('hire-resources/hire-android-app-developer') ?>">hire android app
-                                                    developer</a></li>
-                                            <li><a
-                                                    href="<?= url('hire-resources/hire-cross-platform-developer') ?>">hire cross-platform developer</a>
-                                            </li>
-                                            <li><a
-                                                    href="<?= url('hire-resources/hire-magento-developer') ?>">hire magento developer</a>
-                                            </li>
-                                            <li><a href="<?= url('hire-resources/hire-php-developer') ?>">hire php developer</a>
-                                            </li>
-                                            <li><a
-                                                    href="<?= url('hire-resources/hire-wordpress-developer') ?>">hire wordpress developer</a>
-                                            </li>
-                                        </ul>
-                                    </li> -->
-
-                                    <!-- Hire Resource Start-->
-
-
-
-                                    <!-- Our Product start -->
-
-                                    <!-- Desktop -->
-                                    <!-- <li class="has-dropdown dropdown mega-dropdown d-none d-lg-inline-block">
-                                        <a href="<?= url('service') ?>" class="nav-link dropdown-toggle">
-                                            Our Product <i class="fas fa-chevron-down"></i>
-                                        </a>
-                                        <ul class="submenu">
-                                            <li><a href="#">Venco</a></li>
-                                            <li><a href="#">Medical ERP</a></li>
-                                            <li><a href="#">Real State CRM</a></li>
-                                            <li><a href="#">Manufacturing ERP</a></li>
-                                        </ul>
-                                    </li> -->
-                                    <!-- Desktop End-->
-
-                                    <!-- Mobile -->
-                                    <!-- <li class="has-dropdown d-block d-lg-none">
-                                        <a href="#">
-                                            Our Product
-                                            <i class="fa-solid fa-chevron-down"></i>
-                                        </a>
-
-                                        <ul class="submenu">
-                                            <li><a href="#">Venco</a></li>
-                                            <li><a href="#">Medical ERP</a></li>
-                                            <li><a href="#">Real State CRM</a></li>
-                                            <li><a href="#">Manufacturing ERP</a></li>
-                                        </ul>
-                                    </li> -->
-                                    <!-- Mobile End-->
-
-
-
-                                    <!-- Our Product end -->
 
 
 
@@ -728,28 +588,6 @@ if (!defined('BASE_URL')) {
                                     <li class="has-dropdown">
                                         <a href="<?= url('blog') ?>">Blog</a>
                                     </li>
-
-
-                                    <!-- New Menu Added 05-08-2026 -->
-
-                                    <!-- <li>
-                                        <a href="<?= url('products') ?>">
-                                            Our Products
-                                            <i class="fa-solid fa-chevron-down"></i>
-                                        </a>
-                                        <ul class="submenu">
-                                            <li><a href="the-vanco.php">The Venco</a></li>
-                                            <li><a href="<?= url('health-card') ?>">Health Card</a></li>
-                                            <li><a href="<?= url('real-estate-crm') ?>">Real Estate CRM</a></li>
-                                            <li><a href="<?= url('manufacturing-erp') ?>">Manufacturing ERP</a></li>
-                                        </ul>
-                                    </li> -->
-
-                                     <!-- <li class="has-dropdown">
-                                        <a href="<?= url('blog') ?>">Blog</a>
-                                    </li> -->
-
-                                    <!-- Our Product end-->
 
                                     <!-- New Menu Added 05-08-2026 -->
 
