@@ -158,7 +158,6 @@
                 </div>
             </div>
 
-
             <!-- 7. Mind Therapy -->
             <div class="col-xl-4 col-lg-6 col-md-6" id="filter-wrapper" data-category="web">
                 <div class="news-box-items mt-0">
@@ -298,6 +297,217 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- New 1. AgreeSplit INC -->
+            <div class="col-xl-4 col-lg-6 col-md-6" id="filter-wrapper" data-category="mobile">
+                <div class="news-box-items mt-0">
+                    <div class="news-image wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                        <a href="javascript:void(0);" class="open-project-details" data-bs-toggle="offcanvas"
+                            data-bs-target="#projectOffcanvas"
+                            data-title="AgreeSplit INC – Smart Bill Splitting &amp; Expense Agreement App"
+                            data-category="Mobile Development"
+                            data-tags="Expense Tracker, Bill Splitting, Fintech, Agreements"
+                            data-about="AgreeSplit is a smart and transparent expense-sharing and formal agreement mobile application designed to simplify how friends, roommates, and travel groups split bills and manage shared financial commitments. Beyond traditional bill tracking, AgreeSplit introduces digital peer-to-peer agreements that help users legally and mutually acknowledge shared obligations, pending settlements, and personal contracts. With an intuitive and clean iOS/Android mobile interface, users can create group or individual splits, upload receipts, track unsettled dues, manage follow-up requests, and access small claims guidelines for total peace of mind."
+                            data-features="Individual &amp; Group Bill Splitting: Flexible options to split household expenses, trips, or dining bills evenly or custom.|Digital Written Agreements: Create, review, and digitally sign binding agreements between members for shared financial responsibilities.|Unsettled vs Settled Bill Dashboard: Clear real-time visualization of who owes whom with instant settlement updates.|Member Network &amp; Directory: Keep track of mutual contacts, follow teammates, and send gentle payment reminders.|Small Claims &amp; Legal Reference Guide: Integrated guide and tips for transparent conflict resolution and contract assurance.|Push Notifications: Instant alerts for newly added expenses, agreement approvals, and payment confirmations.|Multi-Currency &amp; Receipt Uploads: Seamless attachment of receipts and bill breakdowns for clear audit trails."
+                            data-tools="Flutter, Firebase, Manage Expenses"
+                            data-img="assets/images/portfolio/Agreesplit INC.png">
+                            <img src="assets/images/portfolio/Agreesplit INC.png" alt="AgreeSplit INC">
+                        </a>
+                    </div>
+                    <div class="news-content">
+                        <h5>AgreeSplit – Expense Agreement &amp; Bill Splitting</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New 2. Artista Tour -->
+            <div class="col-xl-4 col-lg-6 col-md-6" id="filter-wrapper" data-category="mobile">
+                <div class="news-box-items mt-0">
+                    <div class="news-image wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                        <a href="javascript:void(0);" class="open-project-details" data-bs-toggle="offcanvas"
+                            data-bs-target="#projectOffcanvas"
+                            data-title="Artista Tour – Tour Guide &amp; Travel Experience Booking Platform"
+                            data-category="Mobile Development" data-tags="Travel, Tourism, Tour Guide, Booking App"
+                            data-about="Artista Tour is a dedicated travel experience and local guide booking mobile application that bridges travelers with certified local tour guides. Whether exploring architectural landmarks like Sagrada Familia or embarking on hidden city cultural walks, users can discover, schedule, and book custom guided experiences in just a few taps. For guides, the app offers a comprehensive business management suite featuring schedule scheduling, booking management, ticket capacity tracking, and an integrated earnings wallet with automated payouts and administrative commission handling."
+                            data-features="Dual Onboarding Flow: Dedicated registration and tailored interfaces for both travelers/customers and professional tour guides.|Interactive Tour Catalog: Detailed sightseeing listings with rich imagery, duration, start locations, and ratings.|Real-Time Availability &amp; Booking: Secure instant reservation with transparent seat capacity and time-slot scheduling.|Tour Guide Business Suite: Create and publish custom itineraries, set pricing/free tours, and manage booking approvals.|Integrated Digital Wallet: Transparent earnings breakdown, commission tracking, and seamless payout withdrawal requests.|In-App Notifications &amp; Alerts: Immediate reminders for upcoming bookings, tour status changes, and traveler queries."
+                            data-tools="Flutter, Node.js" data-img="assets/images/portfolio/Artista Tour.png">
+                            <img src="assets/images/portfolio/Artista Tour.png" alt="Artista Tour">
+                        </a>
+                    </div>
+                    <div class="news-content">
+                        <h5>Artista Tour – Travel &amp; Tour Guide Booking App</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New 3. BIG JQK -->
+            <div class="col-xl-4 col-lg-6 col-md-6" id="filter-wrapper" data-category="mobile">
+                <div class="news-box-items mt-0">
+                    <div class="news-image wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.6s">
+                        <a href="javascript:void(0);" class="open-project-details" data-bs-toggle="offcanvas"
+                            data-bs-target="#projectOffcanvas"
+                            data-title="BIG JQK – Contact Network Marketing &amp; Referral Earnings App"
+                            data-category="Mobile Development" data-tags="Fintech, Referral Network, Affiliate, Wallet"
+                            data-about="BIG JQK is a high-yield affiliate networking and commission tracking mobile application designed to streamline promotional pushes and referral campaigns. The app provides members with a modern dashboard showcasing real-time earnings, active user metrics, and campaign execution mechanisms such as 'Push Self' and 'We Push'. With built-in contact synchronization (WhatsApp, Telegram, Phone) and an integrated wallet control center, users can effortlessly manage marketing campaigns, track performance bonuses, and request instant earnings withdrawals."
+                            data-features="Interactive Earnings Dashboard: Gauge-style earnings monitor displaying cumulative revenue, active users, and campaign IDs.|Push Campaign Management: Dedicated 'Push Self' and 'We Push' modules for automated promotional sharing and affiliate outreach.|Direct Social Contact Sync: Quick connect and messaging integration with WhatsApp, Telegram, and native contacts.|Secure Wallet Control: Real-time ledger of completed commissions, transaction histories, and instant withdrawal request processing.|Multi-Tier Referral Tracking: Monitor downstream active users and dynamic commission rewards.|High Security Authentication: Encrypted user sessions, PIN/Biometric verification, and fraud prevention mechanisms."
+                            data-tools="Flutter, Firebase Backend" data-img="assets/images/portfolio/BIG JQK.png">
+                            <img src="assets/images/portfolio/BIG JQK.png" alt="BIG JQK App">
+                        </a>
+                    </div>
+                    <div class="news-content">
+                        <h5>BIG JQK – Affiliate Referral &amp; Earnings App</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New 4. Aphrova AI -->
+            <div class="col-xl-4 col-lg-6 col-md-6" id="filter-wrapper" data-category="mobile">
+                <div class="news-box-items mt-0">
+                    <div class="news-image wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.8s">
+                        <a href="javascript:void(0);" class="open-project-details" data-bs-toggle="offcanvas"
+                            data-bs-target="#projectOffcanvas"
+                            data-title="Aphrova AI – Next-Gen Generative AI Face Swap &amp; Art Studio"
+                            data-category="Mobile Development"
+                            data-tags="Artificial Intelligence, AI Face Swap, Image Generation, Deep Learning"
+                            data-about="Aphrova AI is a state-of-the-art generative mobile studio that unleashes the creative power of deep learning and computer vision into the palm of your hand. Featuring a luxury dark-mode design with glowing crimson accents, the app allows users to perform hyper-realistic Face Swaps across varied style presets, animate static portraits into dynamic dance routines, and generate custom AI art through tailored natural language prompts (Cyberpunk, Monet, Fantasy, and more). Equipped with a tokenized credit system, user gallery, and high-resolution rendering pipelines, it provides an ultra-fast, premium AI creation suite."
+                            data-features="Hyper-Realistic Face Swap: Instant face transfer across curated models, movie posters, and high-fashion aesthetics.|AI Dance &amp; Motion Animation: Transform static images into rhythmic dance clips and expressive video clips.|Text-to-Image AI Art Studio: Type natural language descriptions with custom style filters (Cyberpunk, General, Monet, etc.) to generate artwork in seconds.|Token &amp; Credit Economy: Integrated credit tracking and in-app purchase system for rendering high-demand AI tasks.|Style Swap &amp; Dress-Up: Instant wardrobe and persona changing with realistic garment and lighting blending.|High-Speed Cloud Inference: Cloud GPU pipeline delivering generated media in ultra-high resolution with minimal latency."
+                            data-tools="Flutter, Firebase, AI APIs" data-img="assets/images/portfolio/Ai App.png">
+                            <img src="assets/images/portfolio/Ai App.png" alt="Aphrova AI">
+                        </a>
+                    </div>
+                    <div class="news-content">
+                        <h5>Aphrova AI – AI Face Swap &amp; Creative Studio</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New 5. BeAmOrg -->
+            <div class="col-xl-4 col-lg-6 col-md-6" id="filter-wrapper" data-category="mobile">
+                <div class="news-box-items mt-0">
+                    <div class="news-image wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                        <a href="javascript:void(0);" class="open-project-details" data-bs-toggle="offcanvas"
+                            data-bs-target="#projectOffcanvas"
+                            data-title="BeAmOrg – Enterprise HRMS, Attendance &amp; Workforce Management App"
+                            data-category="Mobile Development"
+                            data-tags="Enterprise, HRMS, Task Management, Attendance, Team Collaboration"
+                            data-about="BeAmOrg is an all-in-one enterprise workforce management and employee self-service mobile application. Crafted to empower modern corporate and remote teams, the application brings time tracking, daily attendance punch-in/out, task boards, leave approvals, company announcements, and project meeting schedules into a clean, unified mobile hub. Employees can submit leave requests, monitor project deadlines, and interact via internal corporate messaging, while managers and HR admins retain complete visibility over workforce productivity and operational workflows."
+                            data-features="Geo-Verified Punch-In/Out Attendance: Easy one-tap daily attendance check-in and check-out with accurate time stamping.|Interactive Task &amp; Project Board: Categorized daily and completed task tracking with priority badges (High, Medium, Normal) and status progression.|Leave Request &amp; Approvals: End-to-end leave application workflow with day counters, status pills (Approved, Pending), and reason submission.|Company Messages &amp; Announcements: Internal communication channel for real-time team broadcasts and direct employee chats.|Upcoming Meetings &amp; Schedule: Agenda tracker showing time, project names, and assigned meeting hosts.|Comprehensive Employee Profile: Centralized digital ID, department details, team hierarchy, and assigned organizational modules."
+                            data-tools="Flutter, Node.js" data-img="assets/images/portfolio/BeAmOrg.png">
+                            <img src="assets/images/portfolio/BeAmOrg.png" alt="BeAmOrg Enterprise App">
+                        </a>
+                    </div>
+                    <div class="news-content">
+                        <h5>BeAmOrg – Enterprise HRMS &amp; Workforce Management</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New 6. Carpooling App -->
+            <div class="col-xl-4 col-lg-6 col-md-6" id="filter-wrapper" data-category="mobile">
+                <div class="news-box-items mt-0">
+                    <div class="news-image wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                        <a href="javascript:void(0);" class="open-project-details" data-bs-toggle="offcanvas"
+                            data-bs-target="#projectOffcanvas"
+                            data-title="Daily Commute &amp; Urban Carpooling Mobile App"
+                            data-category="Mobile Development"
+                            data-tags="Carpooling, Ride Sharing, Daily Commute, Green Transport"
+                            data-about="This smart urban carpooling and ride-sharing mobile application connects daily commuters, corporate workers, and students heading in the same direction. Designed to cut travel costs and reduce urban traffic congestion, riders can effortlessly discover verified carpools between home, workplaces, and university campuses. Drivers can publish daily recurring schedules, set available passenger seats, and manage recurring morning and evening commute times. The platform features an instant 'Switch to Driver Mode' toggle, integrated ride history, scheduled pool planning, in-app rider chat, and an instant alternative taxi booking fallback."
+                            data-features="Find &amp; Book Carpools: Discover verified shared rides matching daily home-to-work or university routes.|Driver &amp; Passenger Mode: Seamless one-tap toggle to alternate between booking seats and offering rides as a driver.|Recurring Commute Planner: Schedule daily recurring departure times with seat capacity counters and morning/evening toggles.|Seat Availability &amp; Requests: Live passenger count with real-time seat status (e.g., 2 seats left, instant booking).|In-App Chat &amp; Coordination: Integrated rider-driver messaging for convenient pickup point and timing alignment.|Carpools History &amp; Analytics: Full record of completed shared rides, fare distributions, and cost-savings statistics.|Taxi Booking Fallback: One-tap option to book a standard taxi if no carpooling matches are available on the route."
+                            data-tools="Flutter, Firebase" data-img="assets/images/portfolio/car pooling.png">
+                            <img src="assets/images/portfolio/car pooling.png" alt="Carpooling App">
+                        </a>
+                    </div>
+                    <div class="news-content">
+                        <h5>Urban Carpooling &amp; Daily Commute App</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New 7. ByYourWay Parcel & Freight Delivery -->
+            <div class="col-xl-4 col-lg-6 col-md-6" id="filter-wrapper" data-category="mobile">
+                <div class="news-box-items mt-0">
+                    <div class="news-image wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                        <a href="javascript:void(0);" class="open-project-details" data-bs-toggle="offcanvas"
+                            data-bs-target="#projectOffcanvas"
+                            data-title="ByYourWay – On-Demand Parcel &amp; Heavy Freight Logistics App"
+                            data-category="Mobile Development"
+                            data-tags="Logistics, Parcel Delivery, Freight, Courier, Real-Time Tracking"
+                            data-about="ByYourWay is a modern parcel, logistics, and freight delivery application designed to simplify intercity cargo and package transportation ('Parcel Your Package By Your Way'). Whether shipping light parcels or handling heavy freight up to 200kg+, shippers can create instant dispatch requests, assign verified transport drivers, track packages on live maps, and monitor shipments across defined lifecycle states: Pending, Running, and Completed. The clean, user-centric mobile UI equips businesses and individual senders with transparent freight pricing, driver verification badges, and comprehensive delivery audit trails."
+                            data-features="Effortless Shipment Creation: One-tap 'Add Shipment' wizard with weight specifications (e.g., 200 kg), pickup, and drop destinations.|Real-Time GPS Tracking: Live route visualization and parcel milestone tracking ('Track Shipment') from origin to destination.|Multi-State Shipment Monitoring: Filter and manage logistics through intuitive Pending, Running, and Completed order tabs.|Driver Allocation &amp; Verification: View assigned driver profile photos, driver license IDs, and direct communication links.|Transparent Pricing &amp; Weight Tiers: Clear fixed-rate or weight-based fare calculation ($50.00 base pricing, distance multipliers).|Shipped &amp; Delivery Confirmations: Digital POD (Proof of Delivery) with timestamped delivery receipts and status badges.|Comprehensive History &amp; Requests: Centralized requests manager for recurring corporate and commercial supply chains."
+                            data-tools="Flutter, Laravel" data-img="assets/images/portfolio/Byyourway.png">
+                            <img src="assets/images/portfolio/Byyourway.png" alt="ByYourWay Parcel Delivery">
+                        </a>
+                    </div>
+                    <div class="news-content">
+                        <h5>ByYourWay – Parcel &amp; Freight Logistics App</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New 8. Car Rental Mobile Application -->
+            <div class="col-xl-4 col-lg-6 col-md-6" id="filter-wrapper" data-category="mobile">
+                <div class="news-box-items mt-0">
+                    <div class="news-image wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.6s">
+                        <a href="javascript:void(0);" class="open-project-details" data-bs-toggle="offcanvas"
+                            data-bs-target="#projectOffcanvas"
+                            data-title="Car Rental – On-Demand Vehicle Fleet &amp; Self-Drive Booking App"
+                            data-category="Mobile Development"
+                            data-tags="Car Rental, Vehicle Booking, Fleet Management, Map Discovery"
+                            data-about="Car Rental is an end-to-end self-drive and chauffeur vehicle rental mobile app crafted for travelers, corporate clients, and urban explorers. Users can discover a diverse fleet of verified vehicles—from practical hatchbacks and sedans (Toyota Corolla) to premium SUVs and MUVs (Kia Carens, Hyundai Creta). The app features interactive map-based vehicle locating, flexible date-picker duration scheduling, transparent tier pricing (Daily, 7-day, 15-day, 30-day packages), detailed engine and transmission specifications, and complete booking lifecycle oversight (Pending, Active, Completed, Cancelled)."
+                            data-features="Interactive Map Vehicle Discovery: View real-time available rental vehicles on an interactive city street map.|Comprehensive Vehicle Catalog: Explore cars with detailed specifications (Fuel type, Seating capacity, Intercity options, Transmission).|Flexible Date Picker &amp; Rental Duration: Choose custom start and end dates with automatic multi-day rate calculations.|Tiered Discount Packages: Dynamic pricing models with special discounts for 7-day ($70/day), 15-day ($120/day), or 30-day leases.|Instant Booking &amp; Reservation Confirmation: Frictionless checkout with vehicle reserve hold and digital security deposit handling.|Booking History &amp; Status Tracking: Track reservation states including Pending approval, Completed trips, and cancellation management.|User Rating &amp; Review System: Transparent feedback scores (star ratings) and authentic vehicle condition feedback."
+                            data-tools="Flutter, Firebase" data-img="assets/images/portfolio/Car Rental.png">
+                            <img src="assets/images/portfolio/Car Rental.png" alt="Car Rental App">
+                        </a>
+                    </div>
+                    <div class="news-content">
+                        <h5>Car Rental – Vehicle Fleet &amp; Booking App</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New 9. Clothing Partner LTD -->
+            <div class="col-xl-4 col-lg-6 col-md-6" id="filter-wrapper" data-category="mobile">
+                <div class="news-box-items mt-0">
+                    <div class="news-image wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.8s">
+                        <a href="javascript:void(0);" class="open-project-details" data-bs-toggle="offcanvas"
+                            data-bs-target="#projectOffcanvas"
+                            data-title="Clothing Partner LTD – Multi-Brand Fashion &amp; Apparel B2B/B2C Marketplace"
+                            data-category="Mobile Development"
+                            data-tags="E-Commerce, Fashion, Clothing, B2B Marketplace, Barcode Scanner"
+                            data-about="Clothing Partner LTD is a sophisticated mobile commerce and fashion distribution platform tailored for apparel retailers, brand distributors (such as Hermes Paris), and fashion shoppers. Designed with a luxury dark and clean contrast visual identity, users can browse seasonal collections (Flored shirts, T-shirt dresses, mini-shorts), filter by department, color swatches, and sizing, view interactive product lookbooks, and scan physical products in-store via a built-in barcode scanner. Retail partners benefit from vendor profile management, catalog publishing, and digital order processing."
+                            data-features="Brand Showcase &amp; Vendor Profiles: Dedicated designer and boutique storefronts with verified contact emails and seller bios.|Advanced Search &amp; Multi-Facet Filters: Deep filtering by Popularity, Price (Low-High), Category, Department, Color palettes, and Sizes (M, L, XL, XXL).|Interactive Product Detail Page: Multi-angle fashion lookbook, color swatch picker, size selector, discounted pricing, and customer reviews.|Integrated Barcode / QR Code Scanner: Scan physical retail garment tags in real-time to retrieve instant stock and online listings.|Recently Viewed &amp; Wishlist: Quick-access shelf for past viewed styles and favorited seasonal clothing lines.|Product Management for Partners: Seamless catalog uploading with photo uploads, pricing discounts, and inventory status (In Stock / Out).|Secure Authentication &amp; Profile Center: Comprehensive profile management, security settings, password updates, and order history."
+                            data-tools="Flutter, Node.js" data-img="assets/images/portfolio/Clothing Partner LTD.png">
+                            <img src="assets/images/portfolio/Clothing Partner LTD.png" alt="Clothing Partner LTD">
+                        </a>
+                    </div>
+                    <div class="news-content">
+                        <h5>Clothing Partner – Fashion &amp; Apparel Marketplace</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New 10. CallToFix -->
+            <div class="col-xl-4 col-lg-6 col-md-6" id="filter-wrapper" data-category="mobile">
+                <div class="news-box-items mt-0">
+                    <div class="news-image wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                        <a href="javascript:void(0);" class="open-project-details" data-bs-toggle="offcanvas"
+                            data-bs-target="#projectOffcanvas"
+                            data-title="CallToFix – On-Demand Home Services &amp; Skilled Worker Booking App"
+                            data-category="Mobile Development"
+                            data-tags="On-Demand Services, Home Renovation, Handyman, Service Marketplace"
+                            data-about="CallToFix ('Truly Canadian') is a premier on-demand home maintenance, renovation, and skilled handyman services mobile application. Connecting homeowners with over 2,000+ verified professionals and service workers across Canada, CallToFix offers streamlined booking for Home Renovations (Basement, Bathroom, Kitchen), Appliance Repairs, AC &amp; HVAC Services, Maid Services, Towing, and Snow Removal. Homeowners can browse upfront pricing, select custom service packages or video consultations, apply coupons, pick convenient time slots, and schedule certified contractors with absolute confidence."
+                            data-features="2000+ Verified Service Pros: Access licensed, background-checked Canadian tradesmen, contractors, and handymen.|Comprehensive Multi-Category Grid: Dedicated booking categories for Home Renovations, AC Services, Maid Services, Towing, and Snow Removal.|Upfront Transparent Pricing: Fixed package fees (e.g. $100 AC Service / Video Consult) with detailed breakdown of included tasks.|Smart Cart &amp; Slot Booking: Add multiple services to cart, apply promotional discount coupons, and pick custom calendar dates/time slots.|Video Consultation Mode: Instant remote diagnosis and virtual consultation with expert technicians before home visits.|Real-Time Order Tracking &amp; History: Monitor booked service stages from worker assignment to arrival and service completion.|Secure Digital Payments: Built-in support for credit cards, Apple Pay, Google Pay, and digital invoicing."
+                            data-tools="Flutter, Node.js" data-img="assets/images/portfolio/Call to fix.png">
+                            <img src="assets/images/portfolio/Call to fix.png" alt="CallToFix Canadian Home Services">
+                        </a>
+                    </div>
+                    <div class="news-content">
+                        <h5>CallToFix – On-Demand Home Services &amp; Handyman App</h5>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     </div>
