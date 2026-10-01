@@ -2531,13 +2531,13 @@ if (isset($pdo) && $pdo) {
     document.addEventListener("DOMContentLoaded", () => {
         const counters = document.querySelectorAll(".counter");
 
-        // Scroll hone par counter trigger karne ke liye IntersectionObserver
+        // Trigger counter animation when visible in viewport
         const observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const counter = entry.target;
                     const target = +counter.getAttribute("data-target");
-                    const duration = 2000; // Counter total time (2 seconds)
+                    const duration = 2000;
                     const increment = target / (duration / 16);
 
                     let currentCount = 0;
@@ -2547,15 +2547,15 @@ if (isset($pdo) && $pdo) {
                             counter.innerText = Math.ceil(currentCount);
                             setTimeout(updateCounter, 16);
                         } else {
-                            counter.innerText = target; // Final value set karna
+                            counter.innerText = target;
                         }
                     };
 
                     updateCounter();
-                    observer.unobserve(counter); // Ek baar count hone ke baad dobara trigger na ho
+                    observer.unobserve(counter);
                 }
             });
-        }, { threshold: 0.5 }); // Jab card 50% screen par dikhega tabhi counter start hoga
+        }, { threshold: 0.5 });
 
         counters.forEach(counter => {
             observer.observe(counter);
