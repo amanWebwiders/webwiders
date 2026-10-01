@@ -391,7 +391,7 @@ if (!defined('BASE_URL')) {
                                                 <a href="<?php echo url('/services/ai-chatbot.php'); ?>">AI Chatbot Development</a>
                                             </li>
 
-                                            <!-- Normal Submenu Items (Jo nested nahi hain) -->
+                                            <!-- Normal Submenu Items -->
                                             <li><a href="<?= url('on-demand-hire') ?>">On Demand Hire</a></li>
 
                                         </ul>

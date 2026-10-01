@@ -2152,12 +2152,10 @@ demo off canvas Offcanvas
 /* ---- NEW NESTED MENU CSS (Only for Desktop 1200px and above) ---- */
 @media (min-width: 1200px) {
 
-    /* Parent list item ko relative banana zaroori hai */
     .header-main .main-menu ul li .submenu li.has-nested-menu {
         position: relative;
     }
 
-    /* Right side icon ki styling */
     .header-main .main-menu ul li .submenu li.has-nested-menu>a .arrow-right {
         position: absolute;
         right: 20px;
@@ -2166,13 +2164,10 @@ demo off canvas Offcanvas
         transition: all 0.3s ease;
     }
 
-    /* Naya Nested Submenu ki styling */
     .header-main .main-menu ul li .submenu li .nested-submenu {
         position: absolute;
         left: 100%;
-        /* Parent menu ke bilkul right me khulega */
         top: 0;
-        /* Parent li ke top se align hoga */
         min-width: 250px;
         background: var(--black);
         padding: 20px 0;
@@ -2181,19 +2176,16 @@ demo off canvas Offcanvas
         visibility: hidden;
         opacity: 0;
         transform: translateY(10px);
-        /* Halki si niche se aane wali animation ke liye */
         transition: all 0.4s ease-in-out;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
 
-    /* Hover karne par Nested Submenu dikhana */
     .header-main .main-menu ul li .submenu li.has-nested-menu:hover .nested-submenu {
         visibility: visible;
         opacity: 1;
         transform: translateY(0);
     }
 
-    /* Hover par arrow ka color change (Aapki theme ke hisab se) */
     .header-main .main-menu ul li .submenu li.has-nested-menu:hover>a .arrow-right {
         color: var(--theme);
     }
@@ -2952,10 +2944,6 @@ section#about-us-cta .main-button {
     /* Slight zoom effect on hover */
 }
 
-/* Specific positioning for Web Projects to show the top portion */
-.news-section .news-box-items .news-image img.web-project-img {
-    object-position: top center !important;
-}
 
 .news-section .news-box-items .news-content {
     flex-grow: 1;
